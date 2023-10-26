@@ -14,4 +14,21 @@ Existen dos tipos de niveles de estudio de la economía, la microeconomía que e
 
 \underline{\textbf{En resumen:}}
 
-
+```{=tex}
+\begin{table}[htb]
+    \centering
+    \begin{tabular}{|p{20mm}|p{30mm}|p{45mm}|p{45mm}|}
+        \hline
+        Tipo & Clasificación & Definición & Ejemplo \\ \hline
+        \multirow{3}{3cm}{Sistema Económico:} & Centralizado & \hspace{2mm} Un solo agente administra todos los bienes. & \hspace{2mm} El gobierno regulariza, produce y administra todos los bienes.\\ \cline{2-4}
+        & Descentralizado & \hspace{2mm} Los bienes son repartidos por la sociedad. Rol ejercido por el mercado. & \hspace{2mm} Varias empresas producen un mismo bien, por lo que la sociedad escoge a quien comprar.\\ \cline{2-4}
+        & Mixto & \hspace{2mm} Algunos bienes o mercados son centralizados y otros descentralizados. & \hspace{2mm} El petróleo tiene intervenidos los precios y el gobierno tiene el monopolio de distribución. En contraste, el maíz es producido por distintos semilleros.\\ \cline{1-4}
+        \multirow{3}{3cm}{Niveles de Estudio:} & Microeconomía & \hspace{2mm} Estudio de unidades económicas individuales. & \hspace{2mm} La administración de una familia o empresa. \\ \cline{2-4}
+        & Macroeconomía & \hspace{2mm} Estudio de unidades económicas agregadas. & \hspace{2mm} La administración de un país en base a variables como el PIB, la UF, el desempleo, etc. \\ \cline{1-4}
+        \multirow{3}{3cm}{Recursos:} & Económicos & \hspace{2mm} Tienen valor económico y son escasos. & \hspace{2mm} El trigo, Los bienes raíces o el agua. \\ \cline{2-4}
+        & Libres & \hspace{2mm} No tienen valor económico. & \hspace{2mm} El sol. \\ \cline{1-4}
+    \end{tabular}
+    \caption{Clasificación de la economía.}
+    \label{tabla:final}
+\end{table}
+```
