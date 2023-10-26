@@ -1,9 +1,17 @@
-# Introduction
+# Introducción a la economía.
 
-This is a book created from markdown and executable code.
+## Definición y clasificación de la economía:
 
-See @knuth84 for additional discussion of literate programming.
+La palabra economía significa literalmente "administración del hogar",\footnote{Del griego \emph{oikos} y \emph{nomos}.} pero su definición es "el estudio del modo en que la sociedad asigna recursos escasos a necesidades múltiples". Los recursos pueden ser o no escasos, para los que lo son se le llaman recursos económicos, y para los que no recursos libres. Los libres no tienen un valor económico, por lo tanto, tampoco tienen dueños. A ambos bienes las personas les otorgan un valor.\footnote{Se puede distinguir entre valor de uso y valor de intercambio de acuerdo a David Ricardo.} En particular, los recursos escasos generan un \emph{trade-off}, por lo que surge un problema para asignar su valor.
 
-```{r}
-1 + 1
-```
+{\color{red}La economía estudia el modo en que la sociedad gestiona sus recursos escasos, es más, el problema fundamental de la economía es la \textbf{escasez de recursos.} Si no existiera este problema, la ciencia de la economía no existiría. Esta ciencia busca entender el modo en que se interrelacionan las personas a nivel económico, es decir, en el mercado. Para que exista este último termino, tiene que haber compradores y vendedores que realicen transacciones de entre ellos, ya sea de forma física o no.}
+
+<!-- #El texto de arriba viene de clases de texto, 1.1 parte 1 linea 4. -->
+
+\color{black}
+
+Existen dos tipos de niveles de estudio de la economía, la microeconomía que estudia unidades económicas individuales y la macroeconomía que estudia variables económicas agregadas. Un sistema económico es la forma en que se asignan los recursos, existen los centralizados, es decir, los que un solo planificador asigna los recursos, los descentralizados, que la sociedad en general asigna los recursos y los mixtos, que asignan algunos bienes el estado y el otro la sociedad. La econometría es el estudio de estas cuestiones basado en técnicas estadísticas para testear postulados macroeconómicos y microeconómicos.
+
+\underline{\textbf{En resumen:}}
+
+
