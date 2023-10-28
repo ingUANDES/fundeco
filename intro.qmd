@@ -32,3 +32,49 @@ Existen dos tipos de niveles de estudio de la economía, la microeconomía que e
     \label{tabla:final}
 \end{table}
 ```
+## Los Diez Principios de la economía:
+
+Los diez principios de la economía son afirmaciones que muestran hechos relevantes del análisis económico de acuerdo a \cite{mankiw_principios_2012}. Estos responden a tres preguntas.
+
+```{=tex}
+\begin{enumerate}
+    \item ¿Cómo los individuos toman decisiones? (eficiencia, escasez, costos de oportunidad e incentivos.) 
+    \item ¿Cómo interactúan los individuos? (derechos de propiedad, fallas del mercado y externalidades.)
+    \item ¿Cómo funciona la economía en su conjunto? (productividad, inflación y ciclo económico) 
+\end{enumerate}
+```
+En la siguiente tabla se explican estas proposiciones:
+
+```{=tex}
+\begin{table}[H]
+    \centering
+    \scalebox{0.95}{\begin{tabular}{|p{20mm}|p{30mm}|p{37mm}|p{53mm}|}
+        \hline
+        Numero: & Principio: & Explicación: & Ejemplo: \\ \hline
+        1 & \hspace{2mm} “Los individuos enfrentan disyuntivas.” & \hspace{2mm} Esto se refiere a escoger una cosa u otra. & \hspace{2mm} Los dos tipos de disyuntivas son: \par \hspace{2mm} \underline{Eficiencia}, es decir como la sociedad aprovecha al máximo sus recursos. \par \hspace{2mm} \underline{Equidad}, como la sociedad distribuye equitativamente los recursos. \par \hspace{2mm} Ambos tipos de disyuntiva son dependientes uno al otro. \\ \hline
+        2 & \hspace{2mm} “El costo de algo es aquello a lo que se renuncia por obtenerlo.” & \hspace{2mm} Esto se refiere a \underline{“el costo} \underline{oportunidad”}, o bien, a lo que se renuncia por obtener otro bien. También se le conoce como \textit{precio sombra}. & \hspace{2mm} Comprar para el desayuno un plátano renunciando a comer una manzana. \\ \hline
+        3 & \hspace{2mm} “Pensamiento marginal.” & \hspace{2mm} Solo venderemos algo si la \textit{ganancia marginal} supera el \textit{costo marginal}. & \hspace{2mm}  El costo de producir manzanas, con todos los gastos que conlleva, es menor al beneficio y por lo tanto al ingreso que me proporciona este. \\ \hline
+        4 & \hspace{2mm} “Los individuos responden a incentivos.” & \hspace{2mm} Cuando hay cambios en los costos, beneficios o se hace propaganda, o publicidad en un producto. & \hspace{2mm} Si el plátano vale más que la naranja, compraré naranja, pero si el plátano hace mejor para la salud, compraré plátano. \\ \hline
+        5 & \hspace{2mm} “El comercio puede mejorar el bienestar de todos.” & \hspace{2mm} Cuando hay \underline{competencia} todos ganan, o al menos, no se pierde. Hay más especialización y se intenta abaratar los costos sin perder la especialización. & \hspace{2mm} Chile puede producir autos, pero no será eficiente, porque china lo hace mejor, pero si puede vender cerezas, ya que, chile es superior a china en ese rubro. \\ \hline
+        \end{tabular}}
+    \caption{Principios de la economía (1-5).}
+    \label{tabla:final}
+\end{table}
+```
+```{=tex}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{16mm}|p{30mm}|p{59mm}|p{40mm}|}
+        \hline
+        Numero: & Principio: & Explicación: & Ejemplo: \\ \hline
+        6 & \hspace{2mm} “Normalmente, los mercados son un buen mecanismo de asignación de recursos.” & \hspace{2mm} Primer teorema del bienestar social \underline{(PTB):} La mano invisible de Adam Smith dice que los mercados se regulan solos y lo hacen bien. {\color{red}{Este principio concluye que es el egoísmo individual, con relación a la economía, el que trae mayores beneficios a la sociedad y no la solidaridad de los individuos.}}    & \hspace{2mm} Las personas producirán y comprarán pan según el precio que tengan las panaderías y la calidad que tenga. \\ \hline
+        7 & \hspace{2mm} “En ocasiones, el gobierno puede mejorar los resultados del mercado.” & \hspace{2mm} Segundo teorema del bienestar social \underline{(STB):} Por fallas del mercado, externalidades o poder de mercado. & \hspace{2mm} Impuesto a las empresas que contaminan, evitan una externalidad negativa ayudando al común de la gente. \\ \hline
+        8 & \hspace{2mm} “El nivel de vida de un país depende de su capacidad para producir bienes y servicios.” & \hspace{2mm} Un punto que afecta es el \underline{PIB per cápita}, lo que produce el país dividido su población. Y la \underline{productividad}, que es la cantidad de bienes y servicios producidos por cada unidad de trabajo. & \hspace{2mm} Chile no solo tiene un PIB per cápita mayor que el de sus vecinos de la región, sino que también tiene farmacias, supermercados, etc. \\ \hline
+        9 & \hspace{2mm} “Los precios suben cuando el Banco Central imprime mucho dinero” & \hspace{2mm} \underline{Inflación:} o también desvalorización del valor de la moneda por su gran cantidad de circulación. & \hspace{2mm} Al imprimir más billetes hay más plata circulando, esto hace que se gaste más plata, pero que al mismo tiempo esta plata tenga menos valor, ya que, la cantidad de bienes y servicios en la economía siguen siendo los mismos. \\ \hline
+        10 & \hspace{2mm} “La sociedad enfrenta una disyuntiva a corto plazo entre inflación y desempleo.” & \hspace{2mm} \underline{Curva de \cite{phillips_relation_1958}:} hay un intercambio de inflación por desempleo. \underline{Ciclo económico:} Hay una variación de intensidad en la actividad económica, como el empleo y la producción. & \hspace{2mm} La gran depresión (1929). \\ \hline
+    \end{tabular}
+    \caption{Principios de la economía (6-10).}
+    \label{tabla:final}
+\end{table}
+```
+

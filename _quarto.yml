@@ -18,6 +18,13 @@ format:
     theme: cosmo
   pdf:
     documentclass: scrreprt
+    include-in-header: 
+      - text: |
+          \usepackage{multirow}
+          \usepackage{array} 
+          \usepackage{hhline} 
+          \usepackage{geometry} 
+
 
 editor: visual
 
