@@ -14,6 +14,79 @@ Existen dos tipos de niveles de estudio de la economía, la microeconomía que e
 
 \underline{\textbf{En resumen:}}
 
+::: {.content-visible when-format="html"}
+```{=html}
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg" style="undefined;table-layout: fixed; width: 710px">
+<colgroup>
+<col style="width: 86px">
+<col style="width: 111px">
+<col style="width: 235px">
+<col style="width: 278px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-0pky">Tipo</th>
+    <th class="tg-0pky">Clasificación</th>
+    <th class="tg-0pky">Definición</th>
+    <th class="tg-0pky">Ejemplo</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow" rowspan="3">Sistema Económico:</td>
+    <td class="tg-0pky">Centralizado</td>
+    <td class="tg-0pky"> Un solo agente administra todos los bienes.</td>
+    <td class="tg-0pky"> El gobierno regulariza, produce y administra todos los bienes.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Descentralizado</td>
+    <td class="tg-0pky"> Los bienes son repartidos por la sociedad. Rol ejercido por el mercado.</td>
+    <td class="tg-0pky"> Varias empresas producen un mismo bien, por lo que la sociedad escoge a quien comprar.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Mixto</td>
+    <td class="tg-0pky"> Algunos bienes o mercados son centralizados y otros descentralizados.</td>
+    <td class="tg-0pky"> El petróleo tiene intervenidos los precios y el gobierno tiene el monopolio de distribución. En contraste, el maíz es producido por distintos semilleros.</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" rowspan="3">Niveles de Estudio:</td>
+    <td class="tg-0pky">Microeconomía</td>
+    <td class="tg-0pky"> Estudio de unidades económicas individuales.</td>
+    <td class="tg-0pky"> La administración de una familia o empresa.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Macroeconomía</td>
+    <td class="tg-0pky"> Estudio de unidades económicas agregadas.</td>
+    <td class="tg-0pky"> La administración de un país en base a variables como el PIB, la UF, el desempleo, etc.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Económicos</td>
+    <td class="tg-0pky"> Tienen valor económico y son escasos.</td>
+    <td class="tg-0pky"> El trigo, Los bienes raíces o el agua.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Libres</td>
+    <td class="tg-0pky"> No tienen valor económico.</td>
+    <td class="tg-0pky"> El sol.</td>
+  </tr>
+</tbody>
+</table>
+```
+
+:::
+
+::: {.content-visible when-format="pdf"}
+
 ```{=tex}
 \begin{table}[htb]
     \centering
@@ -32,6 +105,9 @@ Existen dos tipos de niveles de estudio de la economía, la microeconomía que e
     \label{tabla:final}
 \end{table}
 ```
+
+:::
+
 ## Los Diez Principios de la economía:
 
 Los diez principios de la economía son afirmaciones que muestran hechos relevantes del análisis económico de acuerdo a \cite{mankiw_principios_2012}. Estos responden a tres preguntas.
@@ -77,4 +153,3 @@ En la siguiente tabla se explican estas proposiciones:
     \label{tabla:final}
 \end{table}
 ```
-
