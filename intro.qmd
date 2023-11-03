@@ -78,3 +78,6 @@ En la siguiente tabla se explican estas proposiciones:
 \end{table}
 ```
 
+## Modelos y supuestos:
+El análisis de un modelo económico toma en cuenta supuestos, los modelos económicos analizan: 
+
