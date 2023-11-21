@@ -5,6 +5,7 @@ book:
   title: "Fundeco"
   author: "Norah Jones"
   date: "28/9/2023"
+  language: es
   chapters:
     - index.qmd
     - intro.qmd
@@ -22,9 +23,7 @@ format:
       - text: |
           \usepackage{multirow}
           \usepackage{array} 
-          \usepackage{hhline} 
-          \usepackage{geometry} 
-
+          \usepackage{hhline}
 
 editor: visual
 

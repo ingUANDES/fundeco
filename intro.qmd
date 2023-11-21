@@ -82,11 +82,9 @@ Existen dos tipos de niveles de estudio de la economía, la microeconomía que e
 </tbody>
 </table>
 ```
-
 :::
 
 ::: {.content-visible when-format="pdf"}
-
 ```{=tex}
 \begin{table}[htb]
     \centering
@@ -105,23 +103,19 @@ Existen dos tipos de niveles de estudio de la economía, la microeconomía que e
     \label{tabla:final}
 \end{table}
 ```
-
 :::
 
 ## Los Diez Principios de la economía:
 
 Los diez principios de la economía son afirmaciones que muestran hechos relevantes del análisis económico de acuerdo a \cite{mankiw_principios_2012}. Estos responden a tres preguntas.
 
-1. ¿Cómo los individuos toman decisiones? (eficiencia, escasez, costos de oportunidad e incentivos.)
-2. ¿Cómo interactúan los individuos? (derechos de propiedad, fallas del mercado y externalidades.)
-3. ¿Cómo funciona la economía en su conjunto? (productividad, inflación y ciclo económico) 
-
+1.  ¿Cómo los individuos toman decisiones? (eficiencia, escasez, costos de oportunidad e incentivos.)
+2.  ¿Cómo interactúan los individuos? (derechos de propiedad, fallas del mercado y externalidades.)
+3.  ¿Cómo funciona la economía en su conjunto? (productividad, inflación y ciclo económico)
 
 En la siguiente tabla se explican estas proposiciones:
 
-
 ::: {.content-visible when-format="pdf"}
-
 ```{=tex}
 \begin{table}[H]
     \centering
@@ -154,7 +148,6 @@ En la siguiente tabla se explican estas proposiciones:
     \label{tabla:final}
 \end{table}
 ```
-
 :::
 
 ::: {.content-visible when-format="html"}
@@ -239,6 +232,159 @@ En la siguiente tabla se explican estas proposiciones:
 ```
 :::
 
-
 ## Modelos y supuestos:
-El análisis de un modelo económico toma en cuenta supuestos, los modelos económicos analizan: 
+
+El análisis de un modelo económico toma en cuenta supuestos, los modelos económicos analizan:
+
+1.  Un problema y su información relevante.
+2.  deducciones lógicas con ayuda de las matemáticas.
+
+Y el supuesto de este modelo se centra en:
+
+1.  cuales son estos.
+2.  ¿son algunos mejores que otros?, ¿son más necesarios?, ¿son suficientes?
+
+A base de estos conceptos se hace un análisis positivo y otro negativo.
+
+::: {.callout-note title="Ejemplo"}
+¿Cómo afectará un aumento de la inflación en el mercado de la comida rápida?[^intro-1]
+
+En este caso solo tenemos un supuesto, que es el aumento de la inflación y el problema a resolver es cómo influye esto en este mercado. Dos posibles análisis de respuesta:
+
+-   Si el causante de la inflación es un aumento del salario mínimo: Los sueldos aumentan y la gente tendrá más dinero para gastar. Por consecuencia, el aumento del gasto de las personas va a generar escasez y esta escasez un aumento de los precios. Esos precios siendo los del mercado de comida rápida también.
+
+-   Si hay una mayor emisión/impresión de papel moneda (billetes): La gente tiene más acceso a crédito y podrá gastar más dinero, lo que generará escasez y aumento de precios. En particular, también afectando los precios en el mercado de comida rápida.
+:::
+
+[^intro-1]: Ver [Boletín del Índice de Precios al Consumidor (IPC) en Chile](https://www.ine.gob.cl/estadisticas/economia/indices-de-precio-e-inflacion/indice-de-precios-al-consumidor), que es la medida con la que se monitorea la inflación
+
+##Fronteras de posibilidades de producción o FPP:
+
+Hay tres términos que se relacionan cuando hablamos de posibilidades de producción:
+
+Tenemos los [**los factores productivos**]{.underline}, es decir, el uso que se le da a el capital humano, los recursos naturales, el capital físico y las tecnologías para producir el bien.
+
+El [**conjunto de posibilidades de producción**]{.underline} es el grupo que reúne los distintos resultados al decidir fabricar una combinación de bienes con factores productivos variables que sirven como insumo en todos los procesos productivos que se analizan. Así la [**frontera de posibilidades de producción (FPP)**]{.underline} se representa por las combinaciones de producción (en la frontera del conjunto de posibilidades) que puede tener una economía teniendo en cuenta que sus factores productivos se utilizan de forma eficiente (es decir, no se puede producir más con otra asignación de recursos).
+
+Finalmente tenemos el [**costo de oportunidad**]{.underline} que, en simples palabras, es cuanto de un producto (por ejemplo $y_1$ en la @fig-FPP ) se pierde al aumentar la producción en una cierta cantidad de otro bien (por ejemplo $y_2$ en la @fig-FPP).
+
+[**FPP de forma matemática y gráfica:**]{.underline}
+
+Digamos que tenemos un factor o insumo productivo limitado $\bar x$. Si queremos crear una unidad del bien $y_1$ se gastarán $a_1$ unidades del factor, y al fabricar una unidad del bien $y_2$ se usaran $a_2$ unidades del factor. Si lo vemos matemáticamente tenemos una suerte de restricción presupuestaria que nos obliga a explicar el uso de recursos $\bar x$ como una decisión de producción $(y_1,y_2)$:
+
+$$
+\bar x=a_1y_1+a_2y_2
+$$ {#eq-FPP} En consecuencia, la máxima cantidad de $y_n$ para $n = 1$ ó $2$, se representa como: $$
+\bar x=a_ny_n \Leftrightarrow y_n=\frac{\bar x}{a_n}
+$$
+
+Entonces gráficamente podemos representar tanto la frontera (con la ecuación @eq-FPP) como la región bajo la misma que representa combinaciones de producción factibles que no maximizan la cantidad producida (ineficientes):
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+#| label: fig-FPP
+#| fig-cap: "FPP entre los bienes $y_1$ e $y_2$."
+\begin{tikzpicture}
+    % Eje x
+    \draw (-1,0) -- (3,0) node[right] {$y_1$};
+    \draw (0,-0.1) -- (0,0.1);
+    \draw (3,-0.1) -- (3,0.1);
+    
+    % Etiquetas en el eje x
+    \node[below] at (2.5,-0.1) {$\frac{\bar x}{a_1}$};
+    
+    % Eje y
+    \draw (0,-1) -- (0,3) node[above] {$y_2$};
+    \draw (-0.1,0) -- (0.1,0);
+    \draw (-0.1,3) -- (0.1,3);
+    
+    % Etiquetas en el eje y
+    \node[left] at (-0.1,2) {$\frac{\bar x}{a_2}$};
+    
+    % Recta
+    \draw[dashed] (0,2) -- (2.5,0);
+    
+    % Triángulo
+    \fill[gray!30] (0,0) -- (0,2) -- (2.5,0) -- cycle;
+
+
+    
+\end{tikzpicture}
+```
+
+Note que el coeficiente $a_i$ nos explica los requerimientos de insumo por cantidad producida. De esta forma, podemos interpretar $a_i\cdot y_i$ como la demanda del insumo dependiente en la cantidad que se quiere producir. Denotemos esa demanda por $x_i(y_i)=a_i\cdot y_i$. Si no hay otros insumos en el proceso de producción, entonces al invertir $x_i(y_i)$ obtendremos la función de producción. En el caso anteriormente mencionado, sería $y_i(x_i)=\frac{x_i}{a_i}$. Con este ejemplo podemos ver que si aumentamos marginalmente la contratación del insumo $i$, entonces la producción aumentará en un valor de $\frac{1}{a_i}$. Ese valor, equivalente a la derivada de la función de producción respecto del factor productivo, es lo que se conoce como productividad marginal. En conclusión, el inverso del coeficiente $a_i$ es la productividad marginal del insumo en el sector $i$.
+
+::: {.callout-note title="Ejemplo"}
+Un granjero tiene $216$ hectáreas, si planta lechuga podrá producir $1/3$ toneladas por hectárea. Si cosecho $34$ toneladas de lechuga, y el resto de las hectáreas las usó para sembrar maíz, sabemos que la producción de maíz es igual a $57$ toneladas. Grafique la FPP.
+
+**Respuesta:**
+
+[Paso I: Interpretar.]{.underline}
+
+Diremos que $y_1$ es la cantidad de lechuga e $y_2$ la cantidad de maíz, ambos se miden en toneladas, el costo de oportunidad para la lechuga en base al maíz estará en función de $a_1$ y $a_2$. La escasez estará dada por el factor limitante que es $\bar h$ y fijo en $216$ de acuerdo al enunciado.
+
+Si por hectárea se produce $1/3$ de tonelada de lechuga, entonces $\frac{1}{a_1}=\frac{1}{3}$. Utilizando la ecuación @eq-FPP para $y_1=34$ e $y_2=57$, es decir asumiendo tecnologías con un solo insumo y lineales, tenemos lo siguiente si reemplazamos la información previa:
+
+$$\bar h=216=\underbrace{3}_{\frac{1}{a_1}=\frac{1}{3}}\cdot \underbrace{34}_{y_1}+a_2\cdot \underbrace{52}
+_{y_2}.$$
+
+[Paso II: Escribir las ecuaciones y resolver.]{.underline}
+
+Entonces, es posible obtener $a_2$ resolviendo lo anterior:
+
+$$
+\bar h=a_1y_1+a_2y_2
+$$ $$
+216= 3y_1+a_2y_2 \Leftrightarrow 216=3 \cdot 34+57a_2
+$$ $$
+216-102=34+57a_2 \Leftrightarrow \\frac{114}{57}=a_2
+$$ $$
+a_2=2
+$$
+
+En resumen, del enunciado hemos interpretado cuánto vale $a_1$. Luego, hemos deducido cuánto vale $a_2$ para poder completar la ecuación de la FPP y así tener la información para graficarla. Así, la ecuación resulta:
+
+$$
+\bar h = 3y_1+2y_2
+$$
+
+[Paso III: Calcular cantidades máximas de cada bien.]{.underline}
+
+$$
+216=3y_1 \Leftrightarrow y_1=72
+$$
+
+$$
+216h=2y_2 \Leftrightarrow y_2=108
+$$
+
+[Paso IV: Hacer el gráfico.]{.underline}
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    % Eje x
+    \draw (-1,0) -- (3.5,0) node[right] {Lechuga};
+    \draw (0,-0.1) -- (0,0.1);
+    \draw (3.5,-0.1) -- (3.5,0.1);
+    
+    % Etiquetas en el eje x
+    \node[below] at (2,-0.1) {$72$};
+    
+    % Eje y
+    \draw (0,-1) -- (0,3.5) node[above] {Maíz};
+    \draw (-0.1,0) -- (0.1,0);
+    \draw (-0.1,3.5) -- (0.1,3.5);
+    
+    % Etiquetas en el eje y
+    \node[left] at (-0.1,3) {$108$};
+    
+    % Recta
+    \draw[dashed] (0,3) -- (2,0);
+    
+    % Triángulo
+    \fill[gray!30] (0,0) -- (0,3) -- (2,0) -- cycle;
+    
+\end{tikzpicture}
+```
+:::
