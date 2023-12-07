@@ -388,3 +388,24 @@ $$
 \end{tikzpicture}
 ```
 :::
+
+## Especialización y comercio:
+
+Al comparar dos productores puede que cada uno use más unidades de factor productivo para hacer un bien que otro. Entonces definiremos dos conceptos:
+
+**Ventaja absoluta:** es la habilidad por producir el mismo bien, pero con menos unidades de factor.
+
+**Ventaja comparativa:** Habilidad de un productor para producir un mismo bien con menos costo de oportunidad.
+
+¿Como se calcula cada uno?
+
+Tenemos dos productores estos son el productor "D" y el productor "E", también dos bienes que requieren de los mismos factores de producción uno es el bien "b", que cuesta producirlo $a_1$ en D y $a_2$ en E, y el otro es el bien "c", que cuesta producirlo $a_3$ en D y $a_4$ en E. Además el factor productivo limitante los denotaremos como x.
+
+La ecuación para comparar la producción de sus bienes es la siguiente:
+
+```{=tex}
+\begin{center}
+    D: $x = a_1 b + a_2 c$ \\
+    E: $x = a_3 b + a_4 c$  
+\end{center}
+```
