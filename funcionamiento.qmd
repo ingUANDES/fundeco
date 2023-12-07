@@ -1,3 +1,40 @@
 # Funcionamiento de los mercados.
 
 ## Costos de producción:
+
+$$
+\pi = IT-CT \Leftrightarrow \pi = IT-CT(H_1,H_2,L,K)
+$$
+
+Donde "$\pi$" es el beneficio, "$IT$" el ingreso, y "$CT$" es el gasto. Y donde "$H_1$" es materia prima, estos son los materiales que se extraen directamente de la naturaleza, como la madera. "$H_2$" es insumos, a diferencia de la materia prima son elementos ya procesados, como el cartón. "$L$" es mano de obra, es el gasto que se hace por tener empleados, por ejemplo, el sueldo. y "$K$" gastos generales, son los gastos que se hacen constantemente, como el arriendo de un lugar.
+
+[Ejercicio resuelto:]{.underline}
+
+Se tiene una ferretería que tiene de gastos \$100 en materia prima, \$150 en insumos, \$50 en mano de obra y tiene de ingresos y beneficios \$850 y \$350 respectivamente ¿Cuánto son sus gastos generales?
+
+[Respuesta:]{.underline}
+
+Se tiene una ferretería que tiene de gastos \$100 en materia prima, \$150 en insumos, \$50 en mano de obra y tiene de ingresos y beneficios \$850 y \$350 respectivamente ¿Cuánto son sus gastos generales?
+
+**Respuesta:**
+
+
+Reemplazamos en $\pi = IT-CT(H_1,H_2,L,K)$.
+$$
+350 = 850-(100+150+50+K)
+$$
+
+$$
+350 = 850-\Sexpr{100+150+50}-K
+$$
+
+$$
+350 = \Sexpr{850-(100+150+50)}-K
+$$
+
+$$
+\Sexpr{350-(850-(100+150+50))} = -K\]
+\[K= \$ \Sexpr{-(350-(850-(100+150+50)))}
+$$
+
+## Oferta:
