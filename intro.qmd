@@ -403,9 +403,119 @@ Tenemos dos productores estos son el productor "D" y el productor "E", también 
 
 La ecuación para comparar la producción de sus bienes es la siguiente:
 
+$$
+\begin{matrix}
+D: x = a_1 b + a_2 c\\
+E: x = a_3 b + a_4 c\\
+\end{matrix}
+$$
+
+[Ejercicio resuelto:]{.underline}
+
+En la chocolatería E se hace chocolate dulce "d" y le cuesta producirlo 10 gramos de cacao, pero en la chocolatería B le cuesta producirlo 15 gramos de cacao. Ambos producen también chocolate amargo "a", a la chocolatería E le cuesta 12 gramos de cacao producirlo, mientras que en la B le cuesta 20 gramos.
+
+Si los dos tienen la misma cantidad de caco "x" ¿Quién tiene la ventaja absoluta en los distintos bienes? Y ¿Quién tiene la ventaja comparativa en estos chocolates?
+
+**Respuesta:**
+
+[Paso I: Escribir la ecuación.]{.underline}
+
+$$
+\begin{matrix}    E: $x = 10d + 12a$ \\    B: $x = 15d + 20a$\end{matrix}
+$$
+
+[Paso II: Calcular la ventaja absoluta.]{.underline}
+
+Para esto, solo tenemos que comparar los coeficientes de cada bien con el de la otra chocolatería, el de menos coeficiente, es el que tiene mayor ventaja absoluta:
+
+$$
+\begin{matrix}    \text{d: $E = 10$, $B = 15$} \\    \text{E tiene la ventaja absoluta.}\\    \text{a: $E = 12$, $B = 20$} \\    \text{E tiene la ventaja absoluta.}\end{matrix}
+$$
+
+\underline{Paso III: Calcular la ventaja comparativa.}
+
+hay que tener en cuenta que, al estar comparando ventajas comparativas, no se usan signos negativos.
+
 ```{=tex}
 \begin{center}
-    D: $x = a_1 b + a_2 c$ \\
-    E: $x = a_3 b + a_4 c$  
+        E : $10d = 12a$ \\
+        B : $15d = 20a$
 \end{center}
 ```
+Luego:
+
+$$
+\textrm{E :} d = a\frac{12}{10}
+$$ $$
+\textrm{B :} d = a\frac{20}{15}
+$$
+
+$$
+\textrm{E :} a = d\frac{10}{12}
+$$ $$
+\textrm{B :} a = d\frac{15}{20}
+$$ Se compara, el que tenga menor coeficiente tiene la ventaja:
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{10mm}|p{10mm}|p{10mm}|p{25mm}|}
+        \hline
+        X & E: & B: & Tiene la ventaja comparativa: \\ \hline
+        d = \par & $a\dfrac{18}{15}$ & $a\dfrac{20}{15}$ & E \\ \hline
+        a = \par & $d\dfrac{10}{12}$ & $d\dfrac{9}{12}$ & B \\ \hline
+    \end{tabular}
+\end{table}
+```
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con Lenguaje Matemático</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>X</th>
+        <th>E:</th>
+        <th>B:</th>
+        <th>Tiene la ventaja comparativa:</th>
+    </tr>
+    <tr>
+        <td>d =</td>
+        <td>$$a\frac{18}{15}$$</td>
+        <td>$$a\frac{20}{15}$$</td>
+        <td>E</td>
+    </tr>
+    <tr>
+        <td>a =</td>
+        <td>$$d\frac{10}{12}$$</td>
+        <td>$$d\frac{9}{12}$$</td>
+        <td>B</td>
+    </tr>
+</table>
+
+</body>
+</html>
+```
+:::

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Fundamentos de Economía",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+    "text": "Prefacio\nEste apunte nace de las notas tomadas por Reimundo Fuenzalida el primer semestre del 2022. A través de los semestres sucesivos ha ido integrando revisiones, ejercicios y las ayudantías que se han hecho a través de los años."
   },
   {
     "objectID": "intro.html#definición-y-clasificación-de-la-economía",
@@ -32,7 +32,7 @@
     "href": "intro.html#especialización-y-comercio",
     "title": "1  Introducción a la economía.",
     "section": "1.4 Especialización y comercio:",
-    "text": "1.4 Especialización y comercio:\nAl comparar dos productores puede que cada uno use más unidades de factor productivo para hacer un bien que otro. Entonces definiremos dos conceptos:\nVentaja absoluta: es la habilidad por producir el mismo bien, pero con menos unidades de factor.\nVentaja comparativa: Habilidad de un productor para producir un mismo bien con menos costo de oportunidad.\n¿Como se calcula cada uno?\nTenemos dos productores estos son el productor “D” y el productor “E”, también dos bienes que requieren de los mismos factores de producción uno es el bien “b”, que cuesta producirlo \\(a_1\\) en D y \\(a_2\\) en E, y el otro es el bien “c”, que cuesta producirlo \\(a_3\\) en D y \\(a_4\\) en E. Además el factor productivo limitante los denotaremos como x.\nLa ecuación para comparar la producción de sus bienes es la siguiente:"
+    "text": "1.4 Especialización y comercio:\nAl comparar dos productores puede que cada uno use más unidades de factor productivo para hacer un bien que otro. Entonces definiremos dos conceptos:\nVentaja absoluta: es la habilidad por producir el mismo bien, pero con menos unidades de factor.\nVentaja comparativa: Habilidad de un productor para producir un mismo bien con menos costo de oportunidad.\n¿Como se calcula cada uno?\nTenemos dos productores estos son el productor “D” y el productor “E”, también dos bienes que requieren de los mismos factores de producción uno es el bien “b”, que cuesta producirlo \\(a_1\\) en D y \\(a_2\\) en E, y el otro es el bien “c”, que cuesta producirlo \\(a_3\\) en D y \\(a_4\\) en E. Además el factor productivo limitante los denotaremos como x.\nLa ecuación para comparar la producción de sus bienes es la siguiente:\n\\[\n\\begin{matrix}\nD: x = a_1 b + a_2 c\\\\\nE: x = a_3 b + a_4 c\\\\\n\\end{matrix}\n\\]\nEjercicio resuelto:\nEn la chocolatería E se hace chocolate dulce “d” y le cuesta producirlo 10 gramos de cacao, pero en la chocolatería B le cuesta producirlo 15 gramos de cacao. Ambos producen también chocolate amargo “a”, a la chocolatería E le cuesta 12 gramos de cacao producirlo, mientras que en la B le cuesta 20 gramos.\nSi los dos tienen la misma cantidad de caco “x” ¿Quién tiene la ventaja absoluta en los distintos bienes? Y ¿Quién tiene la ventaja comparativa en estos chocolates?\nRespuesta:\nPaso I: Escribir la ecuación.\n\\[\n\\begin{matrix}    E: $x = 10d + 12a$ \\\\    B: $x = 15d + 20a$\\end{matrix}\n\\]\nPaso II: Calcular la ventaja absoluta.\nPara esto, solo tenemos que comparar los coeficientes de cada bien con el de la otra chocolatería, el de menos coeficiente, es el que tiene mayor ventaja absoluta:\n\\[\n\\begin{matrix}    \\text{d: $E = 10$, $B = 15$} \\\\    \\text{E tiene la ventaja absoluta.}\\\\    \\text{a: $E = 12$, $B = 20$} \\\\    \\text{E tiene la ventaja absoluta.}\\end{matrix}\n\\]\n\nhay que tener en cuenta que, al estar comparando ventajas comparativas, no se usan signos negativos.\nLuego:\n\\[\n\\textrm{E :} d = a\\frac{12}{10}\n\\] \\[\n\\textrm{B :} d = a\\frac{20}{15}\n\\]\n\\[\n\\textrm{E :} a = d\\frac{10}{12}\n\\] \\[\n\\textrm{B :} a = d\\frac{15}{20}\n\\] Se compara, el que tenga menor coeficiente tiene la ventaja:\n\n\n\n\n    \n    \n    Tabla con Lenguaje Matemático\n    \n    \n    \n\n\n\n\n\n\n\nX\nE:\nB:\nTiene la ventaja comparativa:\n\n\nd =\n$$a\\frac{18}{15}$$\n$$a\\frac{20}{15}$$\nE\n\n\na =\n$$d\\frac{10}{12}$$\n$$d\\frac{9}{12}$$\nB"
   },
   {
     "objectID": "intro.html#footnotes",
@@ -42,10 +42,10 @@
     "text": "Ver Boletín del Índice de Precios al Consumidor (IPC) en Chile, que es la medida con la que se monitorea la inflación↩︎"
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+    "objectID": "funcionamiento.html#costos-de-producción",
+    "href": "funcionamiento.html#costos-de-producción",
+    "title": "2  Funcionamiento de los mercados.",
+    "section": "2.1 Costos de producción:",
+    "text": "2.1 Costos de producción:"
   }
 ]
