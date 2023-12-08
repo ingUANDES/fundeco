@@ -62,6 +62,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -134,6 +136,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#costos-de-producción" id="toc-costos-de-producción" class="nav-link active" data-scroll-target="#costos-de-producción"><span class="header-section-number">2.1</span> Costos de producción:</a></li>
+  <li><a href="#oferta" id="toc-oferta" class="nav-link" data-scroll-target="#oferta"><span class="header-section-number">2.2</span> Oferta:</a></li>
   </ul>
 </nav>
     </div>
@@ -159,6 +162,118 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="costos-de-producción" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="costos-de-producción"><span class="header-section-number">2.1</span> Costos de producción:</h2>
+<p><span class="math display">\[
+\pi = IT-CT \Leftrightarrow \pi = IT-CT(H_1,H_2,L,K)
+\]</span></p>
+<p>Donde “<span class="math inline">\(\pi\)</span>” es el beneficio, “<span class="math inline">\(IT\)</span>” el ingreso, y “<span class="math inline">\(CT\)</span>” es el gasto. Y donde “<span class="math inline">\(H_1\)</span>” es materia prima, estos son los materiales que se extraen directamente de la naturaleza, como la madera. “<span class="math inline">\(H_2\)</span>” es insumos, a diferencia de la materia prima son elementos ya procesados, como el cartón. “<span class="math inline">\(L\)</span>” es mano de obra, es el gasto que se hace por tener empleados, por ejemplo, el sueldo. y “<span class="math inline">\(K\)</span>” gastos generales, son los gastos que se hacen constantemente, como el arriendo de un lugar.</p>
+<p><u>Ejercicio resuelto:</u></p>
+<p>Se tiene una ferretería que tiene de gastos $100 en materia prima, $150 en insumos, $50 en mano de obra y tiene de ingresos y beneficios $850 y $350 respectivamente ¿Cuánto son sus gastos generales?</p>
+<p><u>Respuesta:</u></p>
+<p>Se tiene una ferretería que tiene de gastos $100 en materia prima, $150 en insumos, $50 en mano de obra y tiene de ingresos y beneficios $850 y $350 respectivamente ¿Cuánto son sus gastos generales?</p>
+<p><strong>Respuesta:</strong></p>
+<p>Reemplazamos en <span class="math inline">\(\pi = IT-CT(H_1,H_2,L,K)\)</span>. <span class="math display">\[
+350 = 850-(100+150+50+K)
+\]</span></p>
+<p><span class="math display">\[
+350 = 850-300-K
+\]</span></p>
+<p><span class="math display">\[
+350 = 550-K
+\]</span></p>
+<p><span class="math display">\[
+K = 200
+\]</span></p>
+</section>
+<section id="oferta" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="oferta"><span class="header-section-number">2.2</span> Oferta:</h2>
+<p>La oferta, en breves palabras, es el mínimo valor al cual se está dispuesto a vender determinada cantidad. Donde <span class="math inline">\(Q\)</span> es la cantidad que se va a producir, <span class="math inline">\(a\)</span> es una contante y <span class="math inline">\(b&gt;0\)</span> es la pendiente si asumimos una forma funcional lineal para la relación. Así la función determina el valor del bien que se produce es:</p>
+<p><span class="math display">\[
+P(Q)=a+bQ
+\]</span></p>
+<p>Para entender bien mostraremos un gráfico, donde (utilizando punto para los decimales) <span class="math inline">\(a=0.5\)</span>, <span class="math inline">\(b=0.5\)</span>:</p>
+
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+
+    .chart-container {
+      text-align: center;
+    }
+  </style>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <!-- Use a proper library for interactive charts -->
+  <title>HTML Equivalent</title>
+
+
+
+<div>
+  
+<table data-quarto-postprocess="true" class="table">
+<caption>Tabla de oferta:</caption>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Precio (\(P\))</td>
+<td data-quarto-table-cell-role="th">Cantidad (\(Q\))</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>1.5</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>2.5</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>3.5</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>4.5</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+
+
 
 
 </section>

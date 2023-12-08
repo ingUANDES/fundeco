@@ -18,23 +18,183 @@ Se tiene una ferretería que tiene de gastos \$100 en materia prima, \$150 en in
 
 **Respuesta:**
 
-
-Reemplazamos en $\pi = IT-CT(H_1,H_2,L,K)$.
-$$
+Reemplazamos en $\pi = IT-CT(H_1,H_2,L,K)$. $$
 350 = 850-(100+150+50+K)
 $$
 
 $$
-350 = 850-\Sexpr{100+150+50}-K
+350 = 850-300-K
 $$
 
 $$
-350 = \Sexpr{850-(100+150+50)}-K
+350 = 550-K
 $$
 
 $$
-\Sexpr{350-(850-(100+150+50))} = -K\]
-\[K= \$ \Sexpr{-(350-(850-(100+150+50)))}
+K = 200
 $$
 
 ## Oferta:
+
+La oferta, en breves palabras, es el mínimo valor al cual se está dispuesto a vender determinada cantidad. Donde $Q$ es la cantidad que se va a producir, $a$ es una contante y $b>0$ es la pendiente si asumimos una forma funcional lineal para la relación. Así la función determina el valor del bien que se produce es:
+
+$$
+P(Q)=a+bQ
+$$
+
+Para entender bien mostraremos un gráfico, donde (utilizando punto para los decimales) $a=0.5$, $b=0.5$:
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+
+\begin{multicols}{2}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{25mm}|p{25mm}|}
+        \multicolumn{2}{c}{Tabla de oferta:} \\ 
+        \hline
+        Precio ($P$) & Cantidad ($Q$) \\ \hline
+        1 & 1 \\ \hline
+        1,5 & 2 \\ \hline
+        2 & 3 \\ \hline
+        2,5 & 4 \\ \hline
+        3 & 5 \\ \hline
+        3,5 & 6 \\ \hline
+        4 & 7 \\ \hline
+        4,5 & 8 \\ \hline
+        5 & 9 \\ \hline
+        \end{tabular}
+\end{table}
+
+
+\begin{center}
+    \begin{tikzpicture}
+    \begin{axis}[grid=both,
+    unit vector ratio*=1 1 1,
+    axis x line=bottom,
+    axis y line=left,
+    axis line style=thick,
+    xmax=10,xmin=0,
+    ymax=10,ymin=0,
+    xtick={0,2,4,6,8,10},
+    ytick={0,2,4,6,8,10},
+    minor tick num=3,
+    xlabel=Cantidad.,
+    ylabel=Precio.,
+    ylabel near ticks,
+    ylabel style={align=center},
+    xlabel near ticks,
+    ]
+    
+    \addplot[draw, smooth] coordinates {(0,0.5) (10,5.5)};
+    \end{axis}
+    \end{tikzpicture}
+\end{center}
+\end{multicols}
+```
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+
+    .chart-container {
+      text-align: center;
+    }
+  </style>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <!-- Use a proper library for interactive charts -->
+  <title>HTML Equivalent</title>
+</head>
+<body>
+
+<div>
+  <table>
+  <caption>Tabla de oferta:</caption>
+  <tr>
+    <th>Precio (\(P\))</th>
+    <th>Cantidad (\(Q\))</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>1.5</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>2.5</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>3.5</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>4.5</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>9</td>
+  </tr>
+</table>
+</div>
+
+
+</body>
+</html>
+```
+
+\begin{tikzpicture}
+	\begin{axis}[grid=both,
+	unit vector ratio*=1 1 1,
+	axis x line=bottom,
+	axis y line=left,
+	axis line style=thick,
+	xmax=10,xmin=0,
+	ymax=10,ymin=0,
+	xtick={0,2,4,6,8,10},
+	ytick={0,2,4,6,8,10},
+	minor tick num=3,
+	xlabel=Cantidad.,
+	ylabel=Precio.,
+	ylabel near ticks,
+	ylabel style={align=center},
+	xlabel near ticks,
+	]
+	
+	\addplot[draw, smooth] coordinates {(0,0.5) (10,5.5)};
+	\end{axis}
+	\end{tikzpicture}
+:::

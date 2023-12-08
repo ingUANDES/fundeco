@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Fundamentos de Economía",
-    "section": "",
-    "text": "Prefacio\nEste apunte nace de las notas tomadas por Reimundo Fuenzalida el primer semestre del 2022. A través de los semestres sucesivos ha ido integrando revisiones, ejercicios y las ayudantías que se han hecho a través de los años."
+    "objectID": "funcionamiento.html#costos-de-producción",
+    "href": "funcionamiento.html#costos-de-producción",
+    "title": "2  Funcionamiento de los mercados.",
+    "section": "2.1 Costos de producción:",
+    "text": "2.1 Costos de producción:\n\\[\n\\pi = IT-CT \\Leftrightarrow \\pi = IT-CT(H_1,H_2,L,K)\n\\]\nDonde “\\(\\pi\\)” es el beneficio, “\\(IT\\)” el ingreso, y “\\(CT\\)” es el gasto. Y donde “\\(H_1\\)” es materia prima, estos son los materiales que se extraen directamente de la naturaleza, como la madera. “\\(H_2\\)” es insumos, a diferencia de la materia prima son elementos ya procesados, como el cartón. “\\(L\\)” es mano de obra, es el gasto que se hace por tener empleados, por ejemplo, el sueldo. y “\\(K\\)” gastos generales, son los gastos que se hacen constantemente, como el arriendo de un lugar.\nEjercicio resuelto:\nSe tiene una ferretería que tiene de gastos $100 en materia prima, $150 en insumos, $50 en mano de obra y tiene de ingresos y beneficios $850 y $350 respectivamente ¿Cuánto son sus gastos generales?\nRespuesta:\nSe tiene una ferretería que tiene de gastos $100 en materia prima, $150 en insumos, $50 en mano de obra y tiene de ingresos y beneficios $850 y $350 respectivamente ¿Cuánto son sus gastos generales?\nRespuesta:\nReemplazamos en \\(\\pi = IT-CT(H_1,H_2,L,K)\\). \\[\n350 = 850-(100+150+50+K)\n\\]\n\\[\n350 = 850-300-K\n\\]\n\\[\n350 = 550-K\n\\]\n\\[\nK = 200\n\\]"
+  },
+  {
+    "objectID": "funcionamiento.html#oferta",
+    "href": "funcionamiento.html#oferta",
+    "title": "2  Funcionamiento de los mercados.",
+    "section": "2.2 Oferta:",
+    "text": "2.2 Oferta:\nLa oferta, en breves palabras, es el mínimo valor al cual se está dispuesto a vender determinada cantidad. Donde \\(Q\\) es la cantidad que se va a producir, \\(a\\) es una contante y \\(b&gt;0\\) es la pendiente si asumimos una forma funcional lineal para la relación. Así la función determina el valor del bien que se produce es:\n\\[\nP(Q)=a+bQ\n\\]\nPara entender bien mostraremos un gráfico, donde (utilizando punto para los decimales) \\(a=0.5\\), \\(b=0.5\\):\n\n\n\n\n  \n  \n  \n   \n  HTML Equivalent\n\n\n\n\n  \n\nTabla de oferta:\n\n\nPrecio (\\(P\\))\nCantidad (\\(Q\\))\n\n\n1\n1\n\n\n1.5\n2\n\n\n2\n3\n\n\n2.5\n4\n\n\n3\n5\n\n\n3.5\n6\n\n\n4\n7\n\n\n4.5\n8\n\n\n5\n9"
   },
   {
     "objectID": "intro.html#definición-y-clasificación-de-la-economía",
@@ -40,12 +47,5 @@
     "title": "1  Introducción a la economía.",
     "section": "",
     "text": "Ver Boletín del Índice de Precios al Consumidor (IPC) en Chile, que es la medida con la que se monitorea la inflación↩︎"
-  },
-  {
-    "objectID": "funcionamiento.html#costos-de-producción",
-    "href": "funcionamiento.html#costos-de-producción",
-    "title": "2  Funcionamiento de los mercados.",
-    "section": "2.1 Costos de producción:",
-    "text": "2.1 Costos de producción:"
   }
 ]

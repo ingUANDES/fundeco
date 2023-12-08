@@ -25,6 +25,8 @@ format:
           \usepackage{multirow}
           \usepackage{array} 
           \usepackage{hhline}
+          \usepackage{pgfplots}
+          \usepackage{multicol}
 
 editor: visual
 
