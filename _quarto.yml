@@ -12,6 +12,7 @@ book:
     - index.qmd
     - intro.qmd
     - funcionamiento.qmd
+    - 3interverción.qmd
     - references.qmd
 
 bibliography: references.bib
@@ -21,7 +22,7 @@ format:
     theme: cosmo
     
   pdf:
-    documentclass: scrreprt
+    documentclass: scrreport
     include-in-header: 
       - text: |
           \usepackage{multirow}

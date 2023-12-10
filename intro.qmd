@@ -2,15 +2,15 @@
 
 ## Definición y clasificación de la economía:
 
-La palabra economía significa literalmente "administración del hogar",\footnote{Del griego \emph{oikos} y \emph{nomos}.} pero su definición es "el estudio del modo en que la sociedad asigna recursos escasos a necesidades múltiples". Los recursos pueden ser o no escasos, para los que lo son se le llaman recursos económicos, y para los que no recursos libres. Los libres no tienen un valor económico, por lo tanto, tampoco tienen dueños. A ambos bienes las personas les otorgan un valor.\footnote{Se puede distinguir entre valor de uso y valor de intercambio de acuerdo a David Ricardo.} En particular, los recursos escasos generan un \emph{trade-off}, por lo que surge un problema para asignar su valor.
+  La palabra economía significa literalmente "administración del hogar",\footnote{Del griego \emph{oikos} y \emph{nomos}.} pero su definición es "el estudio del modo en que la sociedad asigna recursos escasos a necesidades múltiples". Los recursos pueden ser o no escasos, para los que lo son se le llaman recursos económicos, y para los que no recursos libres. Los libres no tienen un valor económico, por lo tanto, tampoco tienen dueños. A ambos bienes las personas les otorgan un valor.\footnote{Se puede distinguir entre valor de uso y valor de intercambio de acuerdo a David Ricardo.} En particular, los recursos escasos generan un \emph{trade-off}, por lo que surge un problema para asignar su valor.
 
-{\color{red}La economía estudia el modo en que la sociedad gestiona sus recursos escasos, es más, el problema fundamental de la economía es la \textbf{escasez de recursos.} Si no existiera este problema, la ciencia de la economía no existiría. Esta ciencia busca entender el modo en que se interrelacionan las personas a nivel económico, es decir, en el mercado. Para que exista este último termino, tiene que haber compradores y vendedores que realicen transacciones de entre ellos, ya sea de forma física o no.}
+  {\color{red}La economía estudia el modo en que la sociedad gestiona sus recursos escasos, es más, el problema fundamental de la economía es la \textbf{escasez de recursos.} Si no existiera este problema, la ciencia de la economía no existiría. Esta ciencia busca entender el modo en que se interrelacionan las personas a nivel económico, es decir, en el mercado. Para que exista este último termino, tiene que haber compradores y vendedores que realicen transacciones de entre ellos, ya sea de forma física o no.}
 
 <!-- #El texto de arriba viene de clases de texto, 1.1 parte 1 linea 4. -->
 
 \color{black}
 
-Existen dos tipos de niveles de estudio de la economía, la microeconomía que estudia unidades económicas individuales y la macroeconomía que estudia variables económicas agregadas. Un sistema económico es la forma en que se asignan los recursos, existen los centralizados, es decir, los que un solo planificador asigna los recursos, los descentralizados, que la sociedad en general asigna los recursos y los mixtos, que asignan algunos bienes el estado y el otro la sociedad. La econometría es el estudio de estas cuestiones basado en técnicas estadísticas para testear postulados macroeconómicos y microeconómicos.
+  Existen dos tipos de niveles de estudio de la economía, la microeconomía que estudia unidades económicas individuales y la macroeconomía que estudia variables económicas agregadas. Un sistema económico es la forma en que se asignan los recursos, existen los centralizados, es decir, los que un solo planificador asigna los recursos, los descentralizados, que la sociedad en general asigna los recursos y los mixtos, que asignan algunos bienes el estado y el otro la sociedad. La econometría es el estudio de estas cuestiones basado en técnicas estadísticas para testear postulados macroeconómicos y microeconómicos.
 
 \underline{\textbf{En resumen:}}
 
@@ -107,13 +107,13 @@ Existen dos tipos de niveles de estudio de la economía, la microeconomía que e
 
 ## Los Diez Principios de la economía:
 
-Los diez principios de la economía son afirmaciones que muestran hechos relevantes del análisis económico de acuerdo a \cite{mankiw_principios_2012}. Estos responden a tres preguntas.
+  Los diez principios de la economía son afirmaciones que muestran hechos relevantes del análisis económico de acuerdo a \cite{mankiw_principios_2012}. Estos responden a tres preguntas.
 
 1.  ¿Cómo los individuos toman decisiones? (eficiencia, escasez, costos de oportunidad e incentivos.)
 2.  ¿Cómo interactúan los individuos? (derechos de propiedad, fallas del mercado y externalidades.)
 3.  ¿Cómo funciona la economía en su conjunto? (productividad, inflación y ciclo económico)
 
-En la siguiente tabla se explican estas proposiciones:
+  En la siguiente tabla se explican estas proposiciones:
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -234,22 +234,22 @@ En la siguiente tabla se explican estas proposiciones:
 
 ## Modelos y supuestos:
 
-El análisis de un modelo económico toma en cuenta supuestos, los modelos económicos analizan:
+  El análisis de un modelo económico toma en cuenta supuestos, los modelos económicos analizan:
 
 1.  Un problema y su información relevante.
 2.  deducciones lógicas con ayuda de las matemáticas.
 
-Y el supuesto de este modelo se centra en:
+  Y el supuesto de este modelo se centra en:
 
 1.  cuales son estos.
 2.  ¿son algunos mejores que otros?, ¿son más necesarios?, ¿son suficientes?
 
-A base de estos conceptos se hace un análisis positivo y otro negativo.
+  A base de estos conceptos se hace un análisis positivo y otro negativo.
 
 ::: {.callout-note title="Ejemplo"}
-¿Cómo afectará un aumento de la inflación en el mercado de la comida rápida?[^intro-1]
+  ¿Cómo afectará un aumento de la inflación en el mercado de la comida rápida?[^intro-1]
 
-En este caso solo tenemos un supuesto, que es el aumento de la inflación y el problema a resolver es cómo influye esto en este mercado. Dos posibles análisis de respuesta:
+  En este caso solo tenemos un supuesto, que es el aumento de la inflación y el problema a resolver es cómo influye esto en este mercado. Dos posibles análisis de respuesta:
 
 -   Si el causante de la inflación es un aumento del salario mínimo: Los sueldos aumentan y la gente tendrá más dinero para gastar. Por consecuencia, el aumento del gasto de las personas va a generar escasez y esta escasez un aumento de los precios. Esos precios siendo los del mercado de comida rápida también.
 
@@ -258,27 +258,27 @@ En este caso solo tenemos un supuesto, que es el aumento de la inflación y el p
 
 [^intro-1]: Ver [Boletín del Índice de Precios al Consumidor (IPC) en Chile](https://www.ine.gob.cl/estadisticas/economia/indices-de-precio-e-inflacion/indice-de-precios-al-consumidor), que es la medida con la que se monitorea la inflación
 
-##Fronteras de posibilidades de producción o FPP:
+## Fronteras de posibilidades de producción o FPP:
 
-Hay tres términos que se relacionan cuando hablamos de posibilidades de producción:
+  Hay tres términos que se relacionan cuando hablamos de posibilidades de producción:
 
-Tenemos los [**los factores productivos**]{.underline}, es decir, el uso que se le da a el capital humano, los recursos naturales, el capital físico y las tecnologías para producir el bien.
+  Tenemos los [**los factores productivos**]{.underline}, es decir, el uso que se le da a el capital humano, los recursos naturales, el capital físico y las tecnologías para producir el bien.
 
-El [**conjunto de posibilidades de producción**]{.underline} es el grupo que reúne los distintos resultados al decidir fabricar una combinación de bienes con factores productivos variables que sirven como insumo en todos los procesos productivos que se analizan. Así la [**frontera de posibilidades de producción (FPP)**]{.underline} se representa por las combinaciones de producción (en la frontera del conjunto de posibilidades) que puede tener una economía teniendo en cuenta que sus factores productivos se utilizan de forma eficiente (es decir, no se puede producir más con otra asignación de recursos).
+  El [**conjunto de posibilidades de producción**]{.underline} es el grupo que reúne los distintos resultados al decidir fabricar una combinación de bienes con factores productivos variables que sirven como insumo en todos los procesos productivos que se analizan. Así la [**frontera de posibilidades de producción (FPP)**]{.underline} se representa por las combinaciones de producción (en la frontera del conjunto de posibilidades) que puede tener una economía teniendo en cuenta que sus factores productivos se utilizan de forma eficiente (es decir, no se puede producir más con otra asignación de recursos).
 
-Finalmente tenemos el [**costo de oportunidad**]{.underline} que, en simples palabras, es cuanto de un producto (por ejemplo $y_1$ en la @fig-FPP ) se pierde al aumentar la producción en una cierta cantidad de otro bien (por ejemplo $y_2$ en la @fig-FPP).
+  Finalmente tenemos el [**costo de oportunidad**]{.underline} que, en simples palabras, es cuanto de un producto (por ejemplo $y_1$ en la @fig-FPP ) se pierde al aumentar la producción en una cierta cantidad de otro bien (por ejemplo $y_2$ en la @fig-FPP).
 
-[**FPP de forma matemática y gráfica:**]{.underline}
+&nbsp; **[FPP de forma matemática y gráfica:]{.underline}**
 
-Digamos que tenemos un factor o insumo productivo limitado $\bar x$. Si queremos crear una unidad del bien $y_1$ se gastarán $a_1$ unidades del factor, y al fabricar una unidad del bien $y_2$ se usaran $a_2$ unidades del factor. Si lo vemos matemáticamente tenemos una suerte de restricción presupuestaria que nos obliga a explicar el uso de recursos $\bar x$ como una decisión de producción $(y_1,y_2)$:
+  Digamos que tenemos un factor o insumo productivo limitado $\bar x$. Si queremos crear una unidad del bien $y_1$ se gastarán $a_1$ unidades del factor, y al fabricar una unidad del bien $y_2$ se usaran $a_2$ unidades del factor. Si lo vemos matemáticamente tenemos una suerte de restricción presupuestaria que nos obliga a explicar el uso de recursos $\bar x$ como una decisión de producción $(y_1,y_2)$:
 
 $$
 \bar x=a_1y_1+a_2y_2
-$$ {#eq-FPP} En consecuencia, la máxima cantidad de $y_n$ para $n = 1$ ó $2$, se representa como: $$
+$$ {#eq-FPP}   En consecuencia, la máxima cantidad de $y_n$ para $n = 1$ ó $2$, se representa como: $$
 \bar x=a_ny_n \Leftrightarrow y_n=\frac{\bar x}{a_n}
 $$
 
-Entonces gráficamente podemos representar tanto la frontera (con la ecuación @eq-FPP) como la región bajo la misma que representa combinaciones de producción factibles que no maximizan la cantidad producida (ineficientes):
+  Entonces gráficamente podemos representar tanto la frontera (con la ecuación @eq-FPP) como la región bajo la misma que representa combinaciones de producción factibles que no maximizan la cantidad producida (ineficientes):
 
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
@@ -312,25 +312,25 @@ Entonces gráficamente podemos representar tanto la frontera (con la ecuación @
 \end{tikzpicture}
 ```
 
-Note que el coeficiente $a_i$ nos explica los requerimientos de insumo por cantidad producida. De esta forma, podemos interpretar $a_i\cdot y_i$ como la demanda del insumo dependiente en la cantidad que se quiere producir. Denotemos esa demanda por $x_i(y_i)=a_i\cdot y_i$. Si no hay otros insumos en el proceso de producción, entonces al invertir $x_i(y_i)$ obtendremos la función de producción. En el caso anteriormente mencionado, sería $y_i(x_i)=\frac{x_i}{a_i}$. Con este ejemplo podemos ver que si aumentamos marginalmente la contratación del insumo $i$, entonces la producción aumentará en un valor de $\frac{1}{a_i}$. Ese valor, equivalente a la derivada de la función de producción respecto del factor productivo, es lo que se conoce como productividad marginal. En conclusión, el inverso del coeficiente $a_i$ es la productividad marginal del insumo en el sector $i$.
+  Note que el coeficiente $a_i$ nos explica los requerimientos de insumo por cantidad producida. De esta forma, podemos interpretar $a_i\cdot y_i$ como la demanda del insumo dependiente en la cantidad que se quiere producir. Denotemos esa demanda por $x_i(y_i)=a_i\cdot y_i$. Si no hay otros insumos en el proceso de producción, entonces al invertir $x_i(y_i)$ obtendremos la función de producción. En el caso anteriormente mencionado, sería $y_i(x_i)=\frac{x_i}{a_i}$. Con este ejemplo podemos ver que si aumentamos marginalmente la contratación del insumo $i$, entonces la producción aumentará en un valor de $\frac{1}{a_i}$. Ese valor, equivalente a la derivada de la función de producción respecto del factor productivo, es lo que se conoce como productividad marginal. En conclusión, el inverso del coeficiente $a_i$ es la productividad marginal del insumo en el sector $i$.
 
 ::: {.callout-note title="Ejemplo"}
-Un granjero tiene $216$ hectáreas, si planta lechuga podrá producir $1/3$ toneladas por hectárea. Si cosecho $34$ toneladas de lechuga, y el resto de las hectáreas las usó para sembrar maíz, sabemos que la producción de maíz es igual a $57$ toneladas. Grafique la FPP.
+  Un granjero tiene $216$ hectáreas, si planta lechuga podrá producir $1/3$ toneladas por hectárea. Si cosecho $34$ toneladas de lechuga, y el resto de las hectáreas las usó para sembrar maíz, sabemos que la producción de maíz es igual a $57$ toneladas. Grafique la FPP.
 
 **Respuesta:**
 
-[Paso I: Interpretar.]{.underline}
+&nbsp; [Paso I: Interpretar.]{.underline}
 
-Diremos que $y_1$ es la cantidad de lechuga e $y_2$ la cantidad de maíz, ambos se miden en toneladas, el costo de oportunidad para la lechuga en base al maíz estará en función de $a_1$ y $a_2$. La escasez estará dada por el factor limitante que es $\bar h$ y fijo en $216$ de acuerdo al enunciado.
+  Diremos que $y_1$ es la cantidad de lechuga e $y_2$ la cantidad de maíz, ambos se miden en toneladas, el costo de oportunidad para la lechuga en base al maíz estará en función de $a_1$ y $a_2$. La escasez estará dada por el factor limitante que es $\bar h$ y fijo en $216$ de acuerdo al enunciado.
 
-Si por hectárea se produce $1/3$ de tonelada de lechuga, entonces $\frac{1}{a_1}=\frac{1}{3}$. Utilizando la ecuación @eq-FPP para $y_1=34$ e $y_2=57$, es decir asumiendo tecnologías con un solo insumo y lineales, tenemos lo siguiente si reemplazamos la información previa:
+  Si por hectárea se produce $1/3$ de tonelada de lechuga, entonces $\frac{1}{a_1}=\frac{1}{3}$. Utilizando la ecuación @eq-FPP para $y_1=34$ e $y_2=57$, es decir asumiendo tecnologías con un solo insumo y lineales, tenemos lo siguiente si reemplazamos la información previa:
 
 $$\bar h=216=\underbrace{3}_{\frac{1}{a_1}=\frac{1}{3}}\cdot \underbrace{34}_{y_1}+a_2\cdot \underbrace{52}
 _{y_2}.$$
 
-[Paso II: Escribir las ecuaciones y resolver.]{.underline}
+&nbsp; [Paso II: Escribir las ecuaciones y resolver.]{.underline}
 
-Entonces, es posible obtener $a_2$ resolviendo lo anterior:
+  Entonces, es posible obtener $a_2$ resolviendo lo anterior:
 
 $$
 \bar h=a_1y_1+a_2y_2
@@ -342,13 +342,13 @@ $$ $$
 a_2=2
 $$
 
-En resumen, del enunciado hemos interpretado cuánto vale $a_1$. Luego, hemos deducido cuánto vale $a_2$ para poder completar la ecuación de la FPP y así tener la información para graficarla. Así, la ecuación resulta:
+  En resumen, del enunciado hemos interpretado cuánto vale $a_1$. Luego, hemos deducido cuánto vale $a_2$ para poder completar la ecuación de la FPP y así tener la información para graficarla. Así, la ecuación resulta:
 
 $$
 \bar h = 3y_1+2y_2
 $$
 
-[Paso III: Calcular cantidades máximas de cada bien.]{.underline}
+&nbsp; [Paso III: Calcular cantidades máximas de cada bien.]{.underline}
 
 $$
 216=3y_1 \Leftrightarrow y_1=72
@@ -358,7 +358,7 @@ $$
 216h=2y_2 \Leftrightarrow y_2=108
 $$
 
-[Paso IV: Hacer el gráfico.]{.underline}
+&nbsp; [Paso IV: Hacer el gráfico.]{.underline}
 
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
@@ -391,17 +391,17 @@ $$
 
 ## Especialización y comercio:
 
-Al comparar dos productores puede que cada uno use más unidades de factor productivo para hacer un bien que otro. Entonces definiremos dos conceptos:
+&nbsp; Al comparar dos productores puede que cada uno use más unidades de factor productivo para hacer un bien que otro. Entonces definiremos dos conceptos:
 
-**Ventaja absoluta:** es la habilidad por producir el mismo bien, pero con menos unidades de factor.
+&nbsp; **Ventaja absoluta:** es la habilidad por producir el mismo bien, pero con menos unidades de factor.
 
-**Ventaja comparativa:** Habilidad de un productor para producir un mismo bien con menos costo de oportunidad.
+&nbsp; **Ventaja comparativa:** Habilidad de un productor para producir un mismo bien con menos costo de oportunidad.
 
-¿Como se calcula cada uno?
+&nbsp; ¿Como se calcula cada uno?
 
-Tenemos dos productores estos son el productor "D" y el productor "E", también dos bienes que requieren de los mismos factores de producción uno es el bien "b", que cuesta producirlo $a_1$ en D y $a_2$ en E, y el otro es el bien "c", que cuesta producirlo $a_3$ en D y $a_4$ en E. Además el factor productivo limitante los denotaremos como x.
+&nbsp; Tenemos dos productores estos son el productor "D" y el productor "E", también dos bienes que requieren de los mismos factores de producción uno es el bien "b", que cuesta producirlo $a_1$ en D y $a_2$ en E, y el otro es el bien "c", que cuesta producirlo $a_3$ en D y $a_4$ en E. Además el factor productivo limitante los denotaremos como x.
 
-La ecuación para comparar la producción de sus bienes es la siguiente:
+&nbsp; La ecuación para comparar la producción de sus bienes es la siguiente:
 
 $$
 \begin{matrix}
@@ -410,31 +410,31 @@ E: x = a_3 b + a_4 c\\
 \end{matrix}
 $$
 
-[Ejercicio resuelto:]{.underline}
+&nbsp; [Ejercicio resuelto:]{.underline}
 
-En la chocolatería E se hace chocolate dulce "d" y le cuesta producirlo 10 gramos de cacao, pero en la chocolatería B le cuesta producirlo 15 gramos de cacao. Ambos producen también chocolate amargo "a", a la chocolatería E le cuesta 12 gramos de cacao producirlo, mientras que en la B le cuesta 20 gramos.
+&nbsp; En la chocolatería E se hace chocolate dulce "d" y le cuesta producirlo 10 gramos de cacao, pero en la chocolatería B le cuesta producirlo 15 gramos de cacao. Ambos producen también chocolate amargo "a", a la chocolatería E le cuesta 12 gramos de cacao producirlo, mientras que en la B le cuesta 20 gramos.
 
-Si los dos tienen la misma cantidad de caco "x" ¿Quién tiene la ventaja absoluta en los distintos bienes? Y ¿Quién tiene la ventaja comparativa en estos chocolates?
+&nbsp; Si los dos tienen la misma cantidad de caco "x" ¿Quién tiene la ventaja absoluta en los distintos bienes? Y ¿Quién tiene la ventaja comparativa en estos chocolates?
 
 **Respuesta:**
 
-[Paso I: Escribir la ecuación.]{.underline}
+&nbsp; [Paso I: Escribir la ecuación.]{.underline}
 
 $$
 \begin{matrix}    E: $x = 10d + 12a$ \\    B: $x = 15d + 20a$\end{matrix}
 $$
 
-[Paso II: Calcular la ventaja absoluta.]{.underline}
+&nbsp; [Paso II: Calcular la ventaja absoluta.]{.underline}
 
-Para esto, solo tenemos que comparar los coeficientes de cada bien con el de la otra chocolatería, el de menos coeficiente, es el que tiene mayor ventaja absoluta:
+&nbsp; Para esto, solo tenemos que comparar los coeficientes de cada bien con el de la otra chocolatería, el de menos coeficiente, es el que tiene mayor ventaja absoluta:
 
 $$
 \begin{matrix}    \text{d: $E = 10$, $B = 15$} \\    \text{E tiene la ventaja absoluta.}\\    \text{a: $E = 12$, $B = 20$} \\    \text{E tiene la ventaja absoluta.}\end{matrix}
 $$
 
-\underline{Paso III: Calcular la ventaja comparativa.}
+&nbsp; [Paso III: Calcular la ventaja comparativa.]{.underline}
 
-hay que tener en cuenta que, al estar comparando ventajas comparativas, no se usan signos negativos.
+&nbsp; hay que tener en cuenta que, al estar comparando ventajas comparativas, no se usan signos negativos.
 
 ```{=tex}
 \begin{center}
@@ -442,7 +442,7 @@ hay que tener en cuenta que, al estar comparando ventajas comparativas, no se us
         B : $15d = 20a$
 \end{center}
 ```
-Luego:
+&nbsp; Luego:
 
 $$
 \textrm{E :} d = a\frac{12}{10}
@@ -454,7 +454,8 @@ $$
 \textrm{E :} a = d\frac{10}{12}
 $$ $$
 \textrm{B :} a = d\frac{15}{20}
-$$ Se compara, el que tenga menor coeficiente tiene la ventaja:
+$$ 
+&nbsp; Se compara, el que tenga menor coeficiente tiene la ventaja:
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}

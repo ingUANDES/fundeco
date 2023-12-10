@@ -6,19 +6,19 @@ $$
 \pi = IT-CT \Leftrightarrow \pi = IT-CT(H_1,H_2,L,K)
 $$
 
-Donde "$\pi$" es el beneficio, "$IT$" el ingreso, y "$CT$" es el gasto. Y donde "$H_1$" es materia prima, estos son los materiales que se extraen directamente de la naturaleza, como la madera. "$H_2$" es insumos, a diferencia de la materia prima son elementos ya procesados, como el cartón. "$L$" es mano de obra, es el gasto que se hace por tener empleados, por ejemplo, el sueldo. y "$K$" gastos generales, son los gastos que se hacen constantemente, como el arriendo de un lugar.
+&nbsp; Donde "$\pi$" es el beneficio, "$IT$" el ingreso, y "$CT$" es el gasto. Y donde "$H_1$" es materia prima, estos son los materiales que se extraen directamente de la naturaleza, como la madera. "$H_2$" es insumos, a diferencia de la materia prima son elementos ya procesados, como el cartón. "$L$" es mano de obra, es el gasto que se hace por tener empleados, por ejemplo, el sueldo. y "$K$" gastos generales, son los gastos que se hacen constantemente, como el arriendo de un lugar.
 
-[Ejercicio resuelto:]{.underline}
+&nbsp; [Ejercicio resuelto:]{.underline}
 
-Se tiene una ferretería que tiene de gastos \$100 en materia prima, \$150 en insumos, \$50 en mano de obra y tiene de ingresos y beneficios \$850 y \$350 respectivamente ¿Cuánto son sus gastos generales?
+&nbsp; Se tiene una ferretería que tiene de gastos \$100 en materia prima, \$150 en insumos, \$50 en mano de obra y tiene de ingresos y beneficios \$850 y \$350 respectivamente ¿Cuánto son sus gastos generales?
 
-[Respuesta:]{.underline}
+&nbsp; [Respuesta:]{.underline}
 
-Se tiene una ferretería que tiene de gastos \$100 en materia prima, \$150 en insumos, \$50 en mano de obra y tiene de ingresos y beneficios \$850 y \$350 respectivamente ¿Cuánto son sus gastos generales?
+&nbsp; Se tiene una ferretería que tiene de gastos \$100 en materia prima, \$150 en insumos, \$50 en mano de obra y tiene de ingresos y beneficios \$850 y \$350 respectivamente ¿Cuánto son sus gastos generales?
 
-**Respuesta:**
+&nbsp; **Respuesta:**
 
-Reemplazamos en $\pi = IT-CT(H_1,H_2,L,K)$. $$
+&nbsp; Reemplazamos en $\pi = IT-CT(H_1,H_2,L,K)$. $$
 350 = 850-(100+150+50+K)
 $$
 
@@ -36,13 +36,13 @@ $$
 
 ## Oferta:
 
-La oferta, en breves palabras, es el mínimo valor al cual se está dispuesto a vender determinada cantidad. Donde $Q$ es la cantidad que se va a producir, $a$ es una contante y $b>0$ es la pendiente si asumimos una forma funcional lineal para la relación. Así la función determina el valor del bien que se produce es:
+&nbsp; La oferta, en breves palabras, es el mínimo valor al cual se está dispuesto a vender determinada cantidad. Donde $Q$ es la cantidad que se va a producir, $a$ es una contante y $b>0$ es la pendiente si asumimos una forma funcional lineal para la relación. Así la función determina el valor del bien que se produce es:
 
 $$
 P(Q)=a+bQ
 $$
 
-Para entender bien mostraremos un gráfico, donde (utilizando punto para los decimales) $a=0.5$, $b=0.5$:
+&nbsp; Para entender bien mostraremos un gráfico, donde (utilizando punto para los decimales) $a=0.5$, $b=0.5$:
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -203,11 +203,12 @@ Para entender bien mostraremos un gráfico, donde (utilizando punto para los dec
 
 ## Demanda:
 
-Mientras que la oferta se enfoca en el productor la demanda ve el comportamiento de los consumidores. La cantidad demandada es cuanto está dispuesto a comprar el consumidor para un determinado precio. La ley de demanda dice que a mayor precio habrá una menor cantidad demandada. Dicha relación, asumiendo una forma lineal se puede re-escribir como:
+&nbsp; Mientras que la oferta se enfoca en el productor la demanda ve el comportamiento de los consumidores. La cantidad demandada es cuanto está dispuesto a comprar el consumidor para un determinado precio. La ley de demanda dice que a mayor precio habrá una menor cantidad demandada. Dicha relación, asumiendo una forma lineal se puede re-escribir como:
 
 $$
 P(Q)=a-bQ
-$$ Para los valores $a=21$, $b=0.8$, que podría ser el mismo caso anterior, el gráfico sería así:
+$$
+&nbsp; Para los valores $a=21$, $b=0.8$, que podría ser el mismo caso anterior, el gráfico sería así:
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -362,13 +363,13 @@ $$ Para los valores $a=21$, $b=0.8$, que podría ser el mismo caso anterior, el 
 ```
 :::
 
-Como se puede ver, mientras más cantidad hay, menos demanda hay. Por lo que el precio demandado baja.
+&nbsp; Como se puede ver, mientras más cantidad hay, menos demanda hay. Por lo que el precio demandado baja.
 
 ## Equilibrio de mercado:
 
-Cuando el valor de la demanda y de la oferta son iguales, significa que hay equilibrio de mercado. Esto se puede ver en la intersección de ambas curvas en un gráfico.
+&nbsp; Cuando el valor de la demanda y de la oferta son iguales, significa que hay equilibrio de mercado. Esto se puede ver en la intersección de ambas curvas en un gráfico.
 
-Si decimos que los dos gráficos anteriores son del mismo bien entonces el gráfico del equilibrio de mercado sería:
+&nbsp; Si decimos que los dos gráficos anteriores son del mismo bien entonces el gráfico del equilibrio de mercado sería:
 
 ::: {.content-visible when-format="html"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
@@ -426,11 +427,11 @@ Si decimos que los dos gráficos anteriores son del mismo bien entonces el gráf
 ```
 :::
 
-El punto de intersección es cuando el precio es de \$11 y hay 12,5 unidades de producción. Este es el punto de equilibrio de mercado, si el mercado está sobre ese punto es que hay un exceso de oferta, y su está más bajo, es que hay escasez.
+&nbsp; El punto de intersección es cuando el precio es de \$11 y hay 12,5 unidades de producción. Este es el punto de equilibrio de mercado, si el mercado está sobre ese punto es que hay un exceso de oferta, y su está más bajo, es que hay escasez.
 
 ## Cambios de curvas:
 
-Podemos analizar que sucediera si hay un cambio en la curva de oferta y demanda, los cambios se relacionan de la siguiente forma:
+&nbsp; Podemos analizar que sucediera si hay un cambio en la curva de oferta y demanda, los cambios se relacionan de la siguiente forma:
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -507,13 +508,13 @@ Podemos analizar que sucediera si hay un cambio en la curva de oferta y demanda,
 ```
 :::
 
-Por lo general, lo que hace que las curvas cambien de posición son eventos bruscos, por ejemplo, en el mercado de las lecherías, si se contamina con un antibiótico la central de "colun" la curva de oferta aumentaría, ya que, es menos lo que se podría ofrecer.
+&nbsp; Por lo general, lo que hace que las curvas cambien de posición son eventos bruscos, por ejemplo, en el mercado de las lecherías, si se contamina con un antibiótico la central de "colun" la curva de oferta aumentaría, ya que, es menos lo que se podría ofrecer.
 
-Puede ocurrir que cambien las posiciones de ambas curvas simultáneamente.
+&nbsp; Puede ocurrir que cambien las posiciones de ambas curvas simultáneamente.
 
-Ahora veremos cómo afecta esto en el punto de equilibrio:
+&nbsp; Ahora veremos cómo afecta esto en el punto de equilibrio:
 
-Tomaremos como situación antes del cambio el siguiente gráfico.
+&nbsp; Tomaremos como situación antes del cambio el siguiente gráfico.
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -578,14 +579,14 @@ Tomaremos como situación antes del cambio el siguiente gráfico.
 ```
 :::
 
-Los siguientes gráficos representan el cambio:
+&nbsp; Los siguientes gráficos representan el cambio:
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
 
 \begin{multicols}{2}
 \begin{center}
-    Curva de oferta se desplaza hacia la izquierda:
+    \indent Curva de oferta se desplaza hacia la izquierda:
     
     \begin{tikzpicture}[scale=0.9]
     \begin{axis}[grid=both,
@@ -618,7 +619,7 @@ Los siguientes gráficos representan el cambio:
 \end{center}
 
 \begin{center}
-    Curva de demanda e desplaza hacia la derecha:
+    \indent Curva de demanda e desplaza hacia la derecha:
     
     \begin{tikzpicture}[scale=0.9]
     \begin{axis}[grid=both,
@@ -657,7 +658,7 @@ Los siguientes gráficos representan el cambio:
 \begin{multicols}{2}
 
 \begin{center}
-    Curva de oferta e desplaza hacia la derecha:
+    \indent Curva de oferta e desplaza hacia la derecha:
     
     \begin{tikzpicture}[scale=0.9]
     \begin{axis}[grid=both,
@@ -690,7 +691,7 @@ Los siguientes gráficos representan el cambio:
 \end{center}
  
 \begin{center}
-    Curva de demanda e desplaza hacia la izquierda:
+    \indent Curva de demanda e desplaza hacia la izquierda:
     
     \begin{tikzpicture}[scale=0.9]
     \begin{axis}[grid=both,
@@ -727,7 +728,7 @@ Los siguientes gráficos representan el cambio:
 :::
 
 ::: {.content-visible when-format="html"}
-Curva de oferta se desplaza hacia la izquierda:
+&nbsp; Curva de oferta se desplaza hacia la izquierda:
 
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
@@ -751,7 +752,7 @@ Curva de oferta se desplaza hacia la izquierda:
 \end{tikzpicture}
 ```
 
-Curva de demanda e desplaza hacia la derecha:
+&nbsp; Curva de demanda e desplaza hacia la derecha:
 
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
@@ -762,8 +763,8 @@ Curva de demanda e desplaza hacia la derecha:
     \draw[help lines, color=gray!30] (0,0) grid (25,25);
 
     % Ejes
-    \draw[->, thick] (0,0) -- (25,0) node[below] {Cantidad};
-    \draw[->, thick] (0,0) -- (0,25) node[left] {Precio};
+    \draw[->, thick] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[->, thick] (0,0) -- (0,25) node[left] {\Huge Precio};
 
     % Líneas de función
     \draw[blue, thick] (0,5) -- (25,19);
@@ -776,7 +777,7 @@ Curva de demanda e desplaza hacia la derecha:
 \end{tikzpicture}
 ```
 
-Curva de oferta e desplaza hacia la derecha:
+&nbsp; Curva de oferta e desplaza hacia la derecha:
 
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
@@ -786,8 +787,8 @@ Curva de oferta e desplaza hacia la derecha:
     \draw[help lines, color=gray!30] (0,0) grid (25,25);
 
     % Ejes
-    \draw[->, thick] (0,0) -- (25,0) node[below] {Cantidad};
-    \draw[->, thick] (0,0) -- (0,25) node[left] {Precio};
+    \draw[->, thick] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[->, thick] (0,0) -- (0,25) node[left] {\Huge Precio};
 
     % Líneas de función
     \draw[blue, thick] (0,1) -- (25,18);
@@ -800,7 +801,7 @@ Curva de oferta e desplaza hacia la derecha:
 \end{tikzpicture}
 ```
 
-Curva de demanda e desplaza hacia la izquierda:
+&nbsp; Curva de demanda e desplaza hacia la izquierda:
 
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
@@ -810,8 +811,8 @@ Curva de demanda e desplaza hacia la izquierda:
     \draw[help lines, color=gray!30] (0,0) grid (25,25);
 
     % Ejes
-    \draw[->, thick] (0,0) -- (25,0) node[below] {Cantidad};
-    \draw[->, thick] (0,0) -- (0,25) node[left] {Precio};
+    \draw[->, thick] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[->, thick] (0,0) -- (0,25) node[left] {\Huge Precio};
 
     % Líneas de función
     \draw[blue, thick] (0,5) -- (25,19);
@@ -827,9 +828,10 @@ Curva de demanda e desplaza hacia la izquierda:
 
 ## Elasticidad:
 
-La elasticidad de la oferta y la demanda se calcula con esta fórmula: $$
+&nbsp; La elasticidad de la oferta y la demanda se calcula con esta fórmula: $$
 \in =\left|\frac{\triangle\%Q}{\triangle\%P} \right|
-$$ Donde $\in$ es la elasticidad, $\triangle\%$ el cambio porcentual, Q es la demanda y P el precio.
+$$
+&nbsp; Donde $\in$ es la elasticidad, $\triangle\%$ el cambio porcentual, Q es la demanda y P el precio.
 
 $$
 f(x)= \left\{ \begin{array}{lcc}
@@ -841,9 +843,9 @@ f(x)= \left\{ \begin{array}{lcc}
 \right.
 $$
 
-[Ejercicio resuelto:]{.underline}
+&nbsp; [Ejercicio resuelto:]{.underline}
 
-Tenemos las siguientes expresiones $P_1(Q)$ y $P_2(Q)$ que son la ecuación de oferta hace un año y de ahora respectivamente y $P_3(Q)$ y $P_4(Q)$ que son la ecuación de demanda de hace un año y actual, calcule y clasifique su elasticidad.
+&nbsp; Tenemos las siguientes expresiones $P_1(Q)$ y $P_2(Q)$ que son la ecuación de oferta hace un año y de ahora respectivamente y $P_3(Q)$ y $P_4(Q)$ que son la ecuación de demanda de hace un año y actual, calcule y clasifique su elasticidad.
 
 $$
 \begin{matrix}
@@ -852,11 +854,11 @@ $$
 \end{matrix}
 $$
 
-**Respuesta:**
+&nbsp; **Respuesta:**
 
-[Paso I: encontrar el equilibrio de mercado del antes y el ahora.]{.underline}
+&nbsp; [Paso I: encontrar el equilibrio de mercado del antes y el ahora.]{.underline}
 
-Equilibrio antiguo:
+&nbsp; Equilibrio antiguo:
 
 $$
 10+4Q=310-6Q \Leftrightarrow 300=10Q \Leftrightarrow Q=30
@@ -870,7 +872,7 @@ $$
 (30,130)
 $$
 
-Equilibrio actual:
+&nbsp; Equilibrio actual:
 
 $$
 30+4Q=200-6Q \Leftrightarrow 170=10Q \Leftrightarrow Q=17
@@ -884,7 +886,7 @@ $$
 (17,98)
 $$
 
-[Paso II: Calcular la elasticidad y clasificarla.]{.underline}
+&nbsp; [Paso II: Calcular la elasticidad y clasificarla.]{.underline}
 
 $$
 \in =\left|\dfrac{1-\frac{17}{30}}{1-\frac{98}{130}} \right|
@@ -902,5 +904,5 @@ $$
 \in =1,7604
 $$
 
-Es elástica.
+&nbsp; Es elástica.
 
