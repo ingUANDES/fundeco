@@ -14,6 +14,34 @@
     "text": "2.2 Oferta:\nLa oferta, en breves palabras, es el mínimo valor al cual se está dispuesto a vender determinada cantidad. Donde \\(Q\\) es la cantidad que se va a producir, \\(a\\) es una contante y \\(b&gt;0\\) es la pendiente si asumimos una forma funcional lineal para la relación. Así la función determina el valor del bien que se produce es:\n\\[\nP(Q)=a+bQ\n\\]\nPara entender bien mostraremos un gráfico, donde (utilizando punto para los decimales) \\(a=0.5\\), \\(b=0.5\\):\n\n\n\n\n  \n  \n  \n   \n  HTML Equivalent\n\n\n\n\n  \n\nTabla de oferta:\n\n\nPrecio (\\(P\\))\nCantidad (\\(Q\\))\n\n\n1\n1\n\n\n1.5\n2\n\n\n2\n3\n\n\n2.5\n4\n\n\n3\n5\n\n\n3.5\n6\n\n\n4\n7\n\n\n4.5\n8\n\n\n5\n9"
   },
   {
+    "objectID": "funcionamiento.html#demanda",
+    "href": "funcionamiento.html#demanda",
+    "title": "2  Funcionamiento de los mercados.",
+    "section": "2.3 Demanda:",
+    "text": "2.3 Demanda:\nMientras que la oferta se enfoca en el productor la demanda ve el comportamiento de los consumidores. La cantidad demandada es cuanto está dispuesto a comprar el consumidor para un determinado precio. La ley de demanda dice que a mayor precio habrá una menor cantidad demandada. Dicha relación, asumiendo una forma lineal se puede re-escribir como:\n\\[\nP(Q)=a-bQ\n\\] Para los valores \\(a=21\\), \\(b=0.8\\), que podría ser el mismo caso anterior, el gráfico sería así:\n\n\n\n\n    \n    \n    \n    Tabla de Demanda\n\n\n\n    \n\nTabla de demanda:\n\n\nPrecio ($P$)\nCantidad ($Q$)\n\n\n20.2\n1\n\n\n19.4\n2\n\n\n18.6\n3\n\n\n17.8\n4\n\n\n17\n5\n\n\n16.2\n6\n\n\n15.4\n7\n\n\n14.6\n8\n\n\n13.8\n9\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nComo se puede ver, mientras más cantidad hay, menos demanda hay. Por lo que el precio demandado baja."
+  },
+  {
+    "objectID": "funcionamiento.html#equilibrio-de-mercado",
+    "href": "funcionamiento.html#equilibrio-de-mercado",
+    "title": "2  Funcionamiento de los mercados.",
+    "section": "2.4 Equilibrio de mercado:",
+    "text": "2.4 Equilibrio de mercado:\nCuando el valor de la demanda y de la oferta son iguales, significa que hay equilibrio de mercado. Esto se puede ver en la intersección de ambas curvas en un gráfico.\nSi decimos que los dos gráficos anteriores son del mismo bien entonces el gráfico del equilibrio de mercado sería:\n\n\n\n\n\nGráfico de un equilibrio de mercado arbitriario\n\n\n\n\nEl punto de intersección es cuando el precio es de $11 y hay 12,5 unidades de producción. Este es el punto de equilibrio de mercado, si el mercado está sobre ese punto es que hay un exceso de oferta, y su está más bajo, es que hay escasez."
+  },
+  {
+    "objectID": "funcionamiento.html#cambios-de-curvas",
+    "href": "funcionamiento.html#cambios-de-curvas",
+    "title": "2  Funcionamiento de los mercados.",
+    "section": "2.5 Cambios de curvas:",
+    "text": "2.5 Cambios de curvas:\nPodemos analizar que sucediera si hay un cambio en la curva de oferta y demanda, los cambios se relacionan de la siguiente forma:\n\n\n\n\n    \n    \n    \n    Tabla de Oferta y Demanda\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\nSin cambio en la oferta\nUn incremento de la oferta\nUn decremento de la oferta\n\n\nSin cambio en la oferta\nP igual\nQ igual\nP disminuye\nQ aumenta\nP aumenta\nQ disminuye\n\n\nUn incremento de la oferta\nP aumenta\nQ aumenta\nP ambiguo\nQ aumenta\nP aumenta\nQ ambiguo\n\n\nUn decremento de la oferta\nP disminuye\nQ disminuye\nP disminuye\nQ ambiguo\nP ambiguo\nQ disminuye\n\n\n\n\n\n\n\nPor lo general, lo que hace que las curvas cambien de posición son eventos bruscos, por ejemplo, en el mercado de las lecherías, si se contamina con un antibiótico la central de “colun” la curva de oferta aumentaría, ya que, es menos lo que se podría ofrecer.\nPuede ocurrir que cambien las posiciones de ambas curvas simultáneamente.\nAhora veremos cómo afecta esto en el punto de equilibrio:\nTomaremos como situación antes del cambio el siguiente gráfico.\n\n\n\n\n\n\n\n\n\nLos siguientes gráficos representan el cambio:\nCurva de oferta se desplaza hacia la izquierda:\n\n\n\n\n\n\n\n\n\nCurva de demanda e desplaza hacia la derecha:\n\n\n\n\n\n\n\n\n\nCurva de oferta e desplaza hacia la derecha:\n\n\n\n\n\n\n\n\n\nCurva de demanda e desplaza hacia la izquierda:"
+  },
+  {
+    "objectID": "funcionamiento.html#elasticidad",
+    "href": "funcionamiento.html#elasticidad",
+    "title": "2  Funcionamiento de los mercados.",
+    "section": "2.6 Elasticidad:",
+    "text": "2.6 Elasticidad:\nLa elasticidad de la oferta y la demanda se calcula con esta fórmula: \\[\n\\in =\\left|\\frac{\\triangle\\%Q}{\\triangle\\%P} \\right|\n\\] Donde \\(\\in\\) es la elasticidad, \\(\\triangle\\%\\) el cambio porcentual, Q es la demanda y P el precio.\n\\[\nf(x)= \\left\\{ \\begin{array}{lcc}\n     \\text{Inelástica} &   \\text{si}  & \\in &lt; 1 \\\\\n     \\\\ \\text{Absolutamente inelástica} &  \\text{si} & \\in = 0 \\\\\n     \\\\ \\text{Elasticidad unitaria} &  \\text{si}  & \\in = 1 \\\\\n     \\\\ \\text{Elástica} &  \\text{si}  & \\in &gt; 1\n     \\end{array}\n\\right.\n\\]\nEjercicio resuelto:\nTenemos las siguientes expresiones \\(P_1(Q)\\) y \\(P_2(Q)\\) que son la ecuación de oferta hace un año y de ahora respectivamente y \\(P_3(Q)\\) y \\(P_4(Q)\\) que son la ecuación de demanda de hace un año y actual, calcule y clasifique su elasticidad.\n\\[\n\\begin{matrix}\n    P_1(Q)=10+4Q &  P_2(Q)=30+4Q \\\\\n    P_3(Q)=310-6Q & P_4(Q)=200-6Q \\\\\n\\end{matrix}\n\\]\nRespuesta:\nPaso I: encontrar el equilibrio de mercado del antes y el ahora.\nEquilibrio antiguo:\n\\[\n10+4Q=310-6Q \\Leftrightarrow 300=10Q \\Leftrightarrow Q=30\n\\]\n\\[\nP_3(Q)=310-6 \\cdot 30 \\Leftrightarrow P_3 = P_1 = 130\n\\]\n\\[\n(30,130)\n\\]\nEquilibrio actual:\n\\[\n30+4Q=200-6Q \\Leftrightarrow 170=10Q \\Leftrightarrow Q=17\n\\]\n\\[\nP_2(Q)=30+4 \\cdot 17 \\Leftrightarrow P_2 = P_4 = 98\n\\]\n\\[\n(17,98)\n\\]\nPaso II: Calcular la elasticidad y clasificarla.\n\\[\n\\in =\\left|\\dfrac{1-\\frac{17}{30}}{1-\\frac{98}{130}} \\right|\n\\]\n\\[\n\\in =\\dfrac{\\frac{13}{30}}{\\frac{32}{130}}\n\\]\n\\[\n\\in =\\dfrac{1690}{960}\n\\]\n\\[\n\\in =1,7604\n\\]\nEs elástica."
+  },
+  {
     "objectID": "intro.html#definición-y-clasificación-de-la-economía",
     "href": "intro.html#definición-y-clasificación-de-la-economía",
     "title": "1  Introducción a la economía.",

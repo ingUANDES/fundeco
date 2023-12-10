@@ -127,47 +127,47 @@ Para entender bien mostraremos un gráfico, donde (utilizando punto para los dec
 
 <div>
   <table>
-  <caption>Tabla de oferta:</caption>
-  <tr>
-    <th>Precio (\(P\))</th>
-    <th>Cantidad (\(Q\))</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td>1.5</td>
-    <td>2</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>3</td>
-  </tr>
-  <tr>
-    <td>2.5</td>
-    <td>4</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>5</td>
-  </tr>
-  <tr>
-    <td>3.5</td>
-    <td>6</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>7</td>
-  </tr>
-  <tr>
-    <td>4.5</td>
-    <td>8</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>9</td>
-  </tr>
+<caption>Tabla de oferta:</caption>
+<tr>
+<th>Precio (\(P\))</th>
+<th>Cantidad (\(Q\))</th>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td>3.5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>4</td>
+<td>7</td>
+</tr>
+<tr>
+<td>4.5</td>
+<td>8</td>
+</tr>
+<tr>
+<td>5</td>
+<td>9</td>
+</tr>
 </table>
 </div>
 
@@ -175,26 +175,732 @@ Para entender bien mostraremos un gráfico, donde (utilizando punto para los dec
 </body>
 </html>
 ```
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}[>=stealth, thick]
+
+
+    % Cuadrícula gris
+    \draw[gray!30] (0,0) grid (10,10);
+
+    % Línea
+    \draw[blue, smooth] (0,0.5) -- (10,5.5);
+
+    % Etiquetas
+    \node[below left] at (0,0) {0};
+    \node[below] at (10,0) {10};
+    \node[left] at (0,10) {10};
+    \node[below] at (5,0) {Cantidad.};
+    \node[left, rotate=90] at (0,5.5) {};
+
+    % Ejes
+    \draw[->] (0,0) -- (11,0) node[below] {\Huge Cantidad};
+    \draw[->] (0,0) -- (0,11) node[left] {\Huge Precio};
+
+\end{tikzpicture}
+```
+:::
+
+## Demanda:
+
+Mientras que la oferta se enfoca en el productor la demanda ve el comportamiento de los consumidores. La cantidad demandada es cuanto está dispuesto a comprar el consumidor para un determinado precio. La ley de demanda dice que a mayor precio habrá una menor cantidad demandada. Dicha relación, asumiendo una forma lineal se puede re-escribir como:
+
+$$
+P(Q)=a-bQ
+$$ Para los valores $a=21$, $b=0.8$, que podría ser el mismo caso anterior, el gráfico sería así:
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{25mm}|p{25mm}|}
+        \multicolumn{2}{c}{Tabla de demanda:} \\
+        \hline
+        Precio: ($P$) & Cantidad ($Q$): \\ \hline
+        20,2 & 1 \\ \hline
+        19,4 & 2 \\ \hline
+        18,6 & 3 \\ \hline
+        17,8 & 4 \\ \hline
+        17 & 5 \\ \hline
+        16,2 & 6 \\ \hline
+        15,4 & 7 \\ \hline
+        14,6 & 8 \\ \hline
+        13,8 & 9 \\ \hline
+        \end{tabular}
+\end{table}
+
+\begin{center}
+    \begin{tikzpicture}
+    \begin{axis}[grid=both,
+    unit vector ratio*=1 1 1,
+    axis x line=bottom,
+    axis y line=left,
+    axis line style=thick,
+    xmax=25,xmin=0,
+    ymax=25,ymin=0,
+    xtick={0,5,10,15,20,25},
+    ytick={0,5,10,15,20,25},
+    minor tick num=3,
+    xlabel=Cantidad.,
+    ylabel=Precio.,
+    ylabel near ticks,
+    ylabel style={align=center},
+    xlabel near ticks,
+    ]
+    
+    \addplot[draw, smooth] coordinates {(0,21) (25,0)};
+    \end{axis}
+    \end{tikzpicture}
+\end{center}
+
+\end{multicols}
+```
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <title>Tabla de Demanda</title>
+</head>
+<body>
+
+    <table>
+<caption>Tabla de demanda:</caption>
+<tr>
+<th>Precio ($P$)</th>
+<th>Cantidad ($Q$)</th>
+</tr>
+<tr>
+<td>20.2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>19.4</td>
+<td>2</td>
+</tr>
+<tr>
+<td>18.6</td>
+<td>3</td>
+</tr>
+<tr>
+<td>17.8</td>
+<td>4</td>
+</tr>
+<tr>
+<td>17</td>
+<td>5</td>
+</tr>
+<tr>
+<td>16.2</td>
+<td>6</td>
+</tr>
+<tr>
+<td>15.4</td>
+<td>7</td>
+</tr>
+<tr>
+<td>14.6</td>
+<td>8</td>
+</tr>
+<tr>
+<td>13.8</td>
+<td>9</td>
+</tr>
+</table>
+
+</body>
+</html>
+```
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}[>=stealth, thick]
+
+
+    % Cuadrícula gris
+    \draw[gray!30] (0,0) grid (6,6);
+
+    % Línea azul
+    \draw[blue, smooth, domain=0:6] plot (\x, {6-\x});
+
+    % Etiquetas
+    \node[below left] at (0,0) {0};
+    \node[below] at (6,0) {6};
+    \node[left] at (0,6) {6};
+    \node[below] at (3,0) {Cantidad.};
+    \node[left, rotate=90] at (0,3) {};
+
+    % Ejes
+    \draw[->] (0,0) -- (7,0) node[below] {Cantidad};
+    \draw[->] (0,0) -- (0,7) node[left] {Precio};
+
+
+\end{tikzpicture}
+```
+:::
+
+Como se puede ver, mientras más cantidad hay, menos demanda hay. Por lo que el precio demandado baja.
+
+## Equilibrio de mercado:
+
+Cuando el valor de la demanda y de la oferta son iguales, significa que hay equilibrio de mercado. Esto se puede ver en la intersección de ambas curvas en un gráfico.
+
+Si decimos que los dos gráficos anteriores son del mismo bien entonces el gráfico del equilibrio de mercado sería:
+
+::: {.content-visible when-format="html"}
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+#| label: Equilibrio de mercado
+#| fig-cap: "Gráfico de un equilibrio de mercado arbitriario"
+\begin{tikzpicture}
+
+    \draw[thick, domain=0:6, smooth, variable=\x, blue] plot ({\x},{6-\x});
+    \draw[thick, domain=0:3.1, smooth, variable=\x, red] plot ({\x},{2*\x});
+
+    \node[below left] at (0,0) {0};
+    \node[below] at (6,0) {6};
+    \node[left] at (0,6) {6};
+
+    \node[below] at (3.3,4.5)  {Punto de};
+    \node[below] at (3.3,4) {equilibrio};
+
+    % Líneas de cuadrícula a escala
+    \draw[gray!30, dashed] (0,0) grid (6,6);
+
+    \draw[->, thick] (0,0) -- (7,0) node[below] {Cantidad};
+    \draw[->, thick] (0,0) -- (0,7) node[left] {Precio};
+\end{tikzpicture}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+
+\begin{center}
+    \begin{tikzpicture}
+    \begin{axis}[grid=both,
+    unit vector ratio*=1 1 1,
+    axis x line=bottom,
+    axis y line=left,
+    axis line style=thick,
+    xmax=25,xmin=0,
+    ymax=25,ymin=0,
+    xtick={0,5,10,15,20,25},
+    ytick={0,5,10,15,20,25},
+    minor tick num=3,
+    xlabel=Cantidad.,
+    ylabel=Precio.,
+    ylabel near ticks,
+    ylabel style={align=center},
+    xlabel near ticks,
+    ]
+ 
+    \addplot[draw, smooth] coordinates {(0,21) (25,0)};
+    \addplot[draw, smooth] coordinates {(0,0.5) (25,13)};
+    \end{axis}
+    \end{tikzpicture}
+\end{center}
+```
+:::
+
+El punto de intersección es cuando el precio es de \$11 y hay 12,5 unidades de producción. Este es el punto de equilibrio de mercado, si el mercado está sobre ese punto es que hay un exceso de oferta, y su está más bajo, es que hay escasez.
+
+## Cambios de curvas:
+
+Podemos analizar que sucediera si hay un cambio en la curva de oferta y demanda, los cambios se relacionan de la siguiente forma:
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{25mm}|p{25mm}|p{25mm}|p{25mm}|p{25mm}|}
+        \hline
+         & Sin cambio en la oferta & Un incremento de la oferta & Un decremento de la oferta  \\ \hline
+        Sin cambio en la oferta & P igual \par Q igual & P disminuye \par Q aumenta & P aumenta \par Q disminuye \\ \hline
+        Un incremento de la oferta & P aumenta \par Q aumenta & P ambiguo \par Q aumenta & P aumenta \par Q ambiguo\\ \hline
+        Un decremento de la oferta & P disminuye \par Q disminuye & P disminuye \par Q ambiguo & P ambiguo \par Q disminuye \\ \hline
+    \end{tabular}
+\end{table}
+```
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <title>Tabla de Oferta y Demanda</title>
+</head>
+<body>
+
+    <table>
+<tr>
+<th></th>
+<th>Sin cambio en la oferta</th>
+<th>Un incremento de la oferta</th>
+<th>Un decremento de la oferta</th>
+</tr>
+<tr>
+<th>Sin cambio en la oferta</th>
+<td>P igual <br> Q igual</td>
+<td>P disminuye <br> Q aumenta</td>
+<td>P aumenta <br> Q disminuye</td>
+</tr>
+<tr>
+<th>Un incremento de la oferta</th>
+<td>P aumenta <br> Q aumenta</td>
+<td>P ambiguo <br> Q aumenta</td>
+<td>P aumenta <br> Q ambiguo</td>
+</tr>
+<tr>
+<th>Un decremento de la oferta</th>
+<td>P disminuye <br> Q disminuye</td>
+<td>P disminuye <br> Q ambiguo</td>
+<td>P ambiguo <br> Q disminuye</td>
+</tr>
+</table>
+
+</body>
+</html>
+```
+:::
+
+Por lo general, lo que hace que las curvas cambien de posición son eventos bruscos, por ejemplo, en el mercado de las lecherías, si se contamina con un antibiótico la central de "colun" la curva de oferta aumentaría, ya que, es menos lo que se podría ofrecer.
+
+Puede ocurrir que cambien las posiciones de ambas curvas simultáneamente.
+
+Ahora veremos cómo afecta esto en el punto de equilibrio:
+
+Tomaremos como situación antes del cambio el siguiente gráfico.
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+
+\begin{center}
+    \begin{tikzpicture}[scale=0.9]
+    \begin{axis}[grid=both,
+    unit vector ratio*=1 1 1,
+    axis x line=bottom,
+    axis y line=left,
+    axis line style=thick,
+    xmax=25,xmin=0,
+    ymax=25,ymin=0,
+    xtick={0,5,10,15,20,25},
+    ytick={0,5,10,15,20,25},
+    minor tick num=3,
+    xlabel=Cantidad.,
+    ylabel=Precio.,
+    ]
+    \addplot [
+    domain=0:25, 
+    samples=100, 
+    color=black,
+    ]
+    {5+0.7*x};
+    \addplot [
+    domain=0:25, 
+    samples=100, 
+    color=black,
+    ]
+    {17-0.6*x};
+    \end{axis}
+    \end{tikzpicture}
+\end{center}
+```
+:::
+
+::: {.content-visible when-format="html"}
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
 
 \begin{tikzpicture}
-	\begin{axis}[grid=both,
-	unit vector ratio*=1 1 1,
-	axis x line=bottom,
-	axis y line=left,
-	axis line style=thick,
-	xmax=10,xmin=0,
-	ymax=10,ymin=0,
-	xtick={0,2,4,6,8,10},
-	ytick={0,2,4,6,8,10},
-	minor tick num=3,
-	xlabel=Cantidad.,
-	ylabel=Precio.,
-	ylabel near ticks,
-	ylabel style={align=center},
-	xlabel near ticks,
-	]
-	
-	\addplot[draw, smooth] coordinates {(0,0.5) (10,5.5)};
-	\end{axis}
-	\end{tikzpicture}
+
+    % Cuadrícula
+    \draw[help lines, color=gray!30] (0,0) grid (25,25);
+
+    % Ejes
+    \draw[->, thick] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[->, thick] (0,0) -- (0,25) node[left] {\Huge Precio};
+
+    % Líneas de función
+    \draw[blue, thick] (0,5) -- (25,19);
+    \draw[red, thick] (0,17) -- (25,0);
+
+    % Etiquetas
+    \node[below] at (25,0) {25};
+    \node[left] at (0,25) {25};
+    \node[left, blue] at (25,19) {$5 + 0.7x$};
+    \node[left, red] at (25,-7) {$17 - 0.6x$};
+
+\end{tikzpicture}
+```
 :::
+
+Los siguientes gráficos representan el cambio:
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+
+\begin{multicols}{2}
+\begin{center}
+    Curva de oferta se desplaza hacia la izquierda:
+    
+    \begin{tikzpicture}[scale=0.9]
+    \begin{axis}[grid=both,
+    unit vector ratio*=1 1 1,
+    axis x line=bottom,
+    axis y line=left,
+    axis line style=thick,
+    xmax=25,xmin=0,
+    ymax=25,ymin=0,
+    xtick={0,5,10,15,20,25},
+    ytick={0,5,10,15,20,25},
+    minor tick num=3,
+    xlabel=Cantidad.,
+    ylabel=Precio.,
+    ]
+    \addplot [
+    domain=0:25, 
+    samples=100, 
+    color=black,
+    ]
+    {8+0.7*x};
+    \addplot [
+    domain=0:25, 
+    samples=100, 
+    color=black,
+    ]
+    {17-0.6*x};
+    \end{axis}
+    \end{tikzpicture}
+\end{center}
+
+\begin{center}
+    Curva de demanda e desplaza hacia la derecha:
+    
+    \begin{tikzpicture}[scale=0.9]
+    \begin{axis}[grid=both,
+    unit vector ratio*=1 1 1,
+    axis x line=bottom,
+    axis y line=left,
+    axis line style=thick,
+    xmax=25,xmin=0,
+    ymax=25,ymin=0,
+    xtick={0,5,10,15,20,25},
+    ytick={0,5,10,15,20,25},
+    minor tick num=3,
+    xlabel=Cantidad.,
+    ylabel=Precio.,
+    ]
+    \addplot [
+    domain=0:25, 
+    samples=100, 
+    color=black,
+    ]
+    {5+0.7*x};
+    \addplot [
+    domain=0:25, 
+    samples=100, 
+    color=black,
+    ]
+    {22-0.6*x};
+    \end{axis}
+    \end{tikzpicture}
+\end{center}
+
+\end{multicols}
+
+\newpage
+
+\begin{multicols}{2}
+
+\begin{center}
+    Curva de oferta e desplaza hacia la derecha:
+    
+    \begin{tikzpicture}[scale=0.9]
+    \begin{axis}[grid=both,
+    unit vector ratio*=1 1 1,
+    axis x line=bottom,
+    axis y line=left,
+    axis line style=thick,
+    xmax=25,xmin=0,
+    ymax=25,ymin=0,
+    xtick={0,5,10,15,20,25},
+    ytick={0,5,10,15,20,25},
+    minor tick num=3,
+    xlabel=Cantidad.,
+    ylabel=Precio.,
+    ]
+    \addplot [
+    domain=0:25, 
+    samples=100, 
+    color=black,
+    ]
+    {1+0.7*x};
+    \addplot [
+    domain=0:25, 
+    samples=100, 
+    color=black,
+    ]
+    {17-0.6*x};
+    \end{axis}
+    \end{tikzpicture}
+\end{center}
+ 
+\begin{center}
+    Curva de demanda e desplaza hacia la izquierda:
+    
+    \begin{tikzpicture}[scale=0.9]
+    \begin{axis}[grid=both,
+    unit vector ratio*=1 1 1,
+    axis x line=bottom,
+    axis y line=left,
+    axis line style=thick,
+    xmax=25,xmin=0,
+    ymax=25,ymin=0,
+    xtick={0,5,10,15,20,25},
+    ytick={0,5,10,15,20,25},
+    minor tick num=3,
+    xlabel=Cantidad.,
+    ylabel=Precio.,
+    ]
+    \addplot [
+    domain=0:25, 
+    samples=100, 
+    color=black,
+    ]
+    {5+0.7*x};
+    \addplot [
+    domain=0:25, 
+    samples=100, 
+    color=black,
+    ]
+    {12-0.6*x};
+    \end{axis}
+    \end{tikzpicture}
+\end{center}
+
+\end{multicols}
+```
+:::
+
+::: {.content-visible when-format="html"}
+Curva de oferta se desplaza hacia la izquierda:
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}[scale=0.9]
+
+    % Cuadrícula
+    \draw[help lines, color=gray!30] (0,0) grid (25,25);
+
+    % Ejes
+    \draw[->, thick] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[->, thick] (0,0) -- (0,25) node[left] {\Huge Precio};
+
+    % Líneas de función
+    \draw[blue, thick] (0,8) -- (25,25);
+    \draw[red, thick] (0,17) -- (25,0);
+
+    % Etiquetas
+    \node[below] at (25,0) {25};
+    \node[left] at (0,25) {25};
+
+\end{tikzpicture}
+```
+
+Curva de demanda e desplaza hacia la derecha:
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+
+\begin{tikzpicture}
+
+    % Cuadrícula
+    \draw[help lines, color=gray!30] (0,0) grid (25,25);
+
+    % Ejes
+    \draw[->, thick] (0,0) -- (25,0) node[below] {Cantidad};
+    \draw[->, thick] (0,0) -- (0,25) node[left] {Precio};
+
+    % Líneas de función
+    \draw[blue, thick] (0,5) -- (25,19);
+    \draw[red, thick] (0,22) -- (25,0);
+
+    % Etiquetas
+    \node[below] at (25,0) {25};
+    \node[left] at (0,25) {25};
+
+\end{tikzpicture}
+```
+
+Curva de oferta e desplaza hacia la derecha:
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+
+    % Cuadrícula
+    \draw[help lines, color=gray!30] (0,0) grid (25,25);
+
+    % Ejes
+    \draw[->, thick] (0,0) -- (25,0) node[below] {Cantidad};
+    \draw[->, thick] (0,0) -- (0,25) node[left] {Precio};
+
+    % Líneas de función
+    \draw[blue, thick] (0,1) -- (25,18);
+    \draw[red, thick] (0,17) -- (25,0);
+
+    % Etiquetas
+    \node[below] at (25,0) {25};
+    \node[left] at (0,25) {25};
+
+\end{tikzpicture}
+```
+
+Curva de demanda e desplaza hacia la izquierda:
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+
+    % Cuadrícula
+    \draw[help lines, color=gray!30] (0,0) grid (25,25);
+
+    % Ejes
+    \draw[->, thick] (0,0) -- (25,0) node[below] {Cantidad};
+    \draw[->, thick] (0,0) -- (0,25) node[left] {Precio};
+
+    % Líneas de función
+    \draw[blue, thick] (0,5) -- (25,19);
+    \draw[red, thick] (0,12) -- (25,0);
+
+    % Etiquetas
+    \node[below] at (25,0) {25};
+    \node[left] at (0,25) {25};
+
+\end{tikzpicture}
+```
+:::
+
+## Elasticidad:
+
+La elasticidad de la oferta y la demanda se calcula con esta fórmula: $$
+\in =\left|\frac{\triangle\%Q}{\triangle\%P} \right|
+$$ Donde $\in$ es la elasticidad, $\triangle\%$ el cambio porcentual, Q es la demanda y P el precio.
+
+$$
+f(x)= \left\{ \begin{array}{lcc}
+     \text{Inelástica} &   \text{si}  & \in < 1 \\
+     \\ \text{Absolutamente inelástica} &  \text{si} & \in = 0 \\
+     \\ \text{Elasticidad unitaria} &  \text{si}  & \in = 1 \\
+     \\ \text{Elástica} &  \text{si}  & \in > 1
+     \end{array}
+\right.
+$$
+
+[Ejercicio resuelto:]{.underline}
+
+Tenemos las siguientes expresiones $P_1(Q)$ y $P_2(Q)$ que son la ecuación de oferta hace un año y de ahora respectivamente y $P_3(Q)$ y $P_4(Q)$ que son la ecuación de demanda de hace un año y actual, calcule y clasifique su elasticidad.
+
+$$
+\begin{matrix}
+    P_1(Q)=10+4Q &  P_2(Q)=30+4Q \\
+    P_3(Q)=310-6Q & P_4(Q)=200-6Q \\
+\end{matrix}
+$$
+
+**Respuesta:**
+
+[Paso I: encontrar el equilibrio de mercado del antes y el ahora.]{.underline}
+
+Equilibrio antiguo:
+
+$$
+10+4Q=310-6Q \Leftrightarrow 300=10Q \Leftrightarrow Q=30
+$$
+
+$$
+P_3(Q)=310-6 \cdot 30 \Leftrightarrow P_3 = P_1 = 130
+$$
+
+$$
+(30,130)
+$$
+
+Equilibrio actual:
+
+$$
+30+4Q=200-6Q \Leftrightarrow 170=10Q \Leftrightarrow Q=17
+$$
+
+$$
+P_2(Q)=30+4 \cdot 17 \Leftrightarrow P_2 = P_4 = 98
+$$
+
+$$
+(17,98)
+$$
+
+[Paso II: Calcular la elasticidad y clasificarla.]{.underline}
+
+$$
+\in =\left|\dfrac{1-\frac{17}{30}}{1-\frac{98}{130}} \right|
+$$
+
+$$
+\in =\dfrac{\frac{13}{30}}{\frac{32}{130}}
+$$
+
+$$
+\in =\dfrac{1690}{960}
+$$
+
+$$
+\in =1,7604
+$$
+
+Es elástica.
+
