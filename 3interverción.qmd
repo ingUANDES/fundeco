@@ -1,8 +1,10 @@
 # Intervenciones del mercado.
-## Economía de bienestar:
-&nbsp; La economía de bien estar se basa en la disposición de un comprador a pagar o un productor a producir. Por lo que se puede ver desde el punto de vista del oferente y del demandante:
 
-&nbsp; En el siguiente gráfico veremos de forma clara la representación de ambos puntos de vista:
+## Economía de bienestar:
+
+  La economía de bien estar se basa en la disposición de un comprador a pagar o un productor a producir. Por lo que se puede ver desde el punto de vista del oferente y del demandante:
+
+  En el siguiente gráfico veremos de forma clara la representación de ambos puntos de vista:
 
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
@@ -52,43 +54,39 @@
 \end{tikzpicture}
 ```
 
-&nbsp; Donde ``EC'' es el excedente del consumidor y ``EP'' es el excedente del productor.
+  Donde `EC'' es el excedente del consumidor y`EP'' es el excedente del productor.
 
-&nbsp; **Excedente del consumidor:**
+  **Excedente del consumidor:**
 
-&nbsp; Se calcula como el precio que está dispuesto a pagar el consumidor menos lo que paga. De forma puntual se puede formular como:
-$$
+  Se calcula como el precio que está dispuesto a pagar el consumidor menos lo que paga. De forma puntual se puede formular como: $$
 ec = p_c - P_e
 $$
 
-&nbsp; Donde $ec$ es el excedente de un consumidor especifico, $p_c$ es el precio máximo dispuesto a pagar y $P_e$ el precio en el equilibrio.
+  Donde $ec$ es el excedente de un consumidor especifico, $p_c$ es el precio máximo dispuesto a pagar y $P_e$ el precio en el equilibrio.
 
-&nbsp; De forma general es el área marcada con naranjo en el gráfico, pero también lo puedes calcular con la siguiente formula.
-$$
+  De forma general es el área marcada con naranjo en el gráfico, pero también lo puedes calcular con la siguiente formula. $$
 EC = \int_{0}^{Q_e}{P_d(Q)-P_e \ dQ}
 $$
 
-&nbsp; Donde “$P_e$” es el precio de equilibrio y “$Q_0$”, es la cantidad en el equilibrio.
+  Donde "$P_e$" es el precio de equilibrio y "$Q_0$", es la cantidad en el equilibrio.
 
-&nbsp; **Excedente del productor:**
+  **Excedente del productor:**
 
-&nbsp; De forma general es el área marcada con naranjo en el gráfico, pero también lo puedes calcular con la siguiente formula.
-$$
+  De forma general es el área marcada con naranjo en el gráfico, pero también lo puedes calcular con la siguiente formula. $$
 EC = \int_{0}^{Q_e}{P_e-P_s(Q) \ dQ}
 $$
 
 ## Intervención del gobierno:
 
-&nbsp; Las intervenciones estatales son cambios forzados que hace el gobierno a un mercado, estos generan una pérdida de eficiencia, también llamada **peso muerto**, esto hace que cambien las decisiones de las personas.
+  Las intervenciones estatales son cambios forzados que hace el gobierno a un mercado, estos generan una pérdida de eficiencia, también llamada **peso muerto**, esto hace que cambien las decisiones de las personas.
 
-&nbsp; Una de las formas de intervención del gobierno es agregar por ley un **precio máximo**, este es el precio máximo legal, y también puede agregar un **precio mínimo** que es el precio mínimo legal. Si el precio máximo esta por sobre el equilibrio no influye en el mercado, pero si esta por debajo, genera escasez. Por otro lado, si el precio mínimo esta por debajo del equilibrio, no influye en el mercado. Por el contrario, si esta sobre el equilibrio genera superávit.
+  Una de las formas de intervención del gobierno es agregar por ley un **precio máximo**, este es el precio máximo legal, y también puede agregar un **precio mínimo** que es el precio mínimo legal. Si el precio máximo esta por sobre el equilibrio no influye en el mercado, pero si esta por debajo, genera escasez. Por otro lado, si el precio mínimo esta por debajo del equilibrio, no influye en el mercado. Por el contrario, si esta sobre el equilibrio genera superávit.
 
-&nbsp; Para que el gobierno se financie, les agrega un impuesto a los productos que hará subir el costo y precio de estos, dicho de otra forma el excedente del consumidor y productor disminuye, y ambos pagan la misma cantidad de impuesto al comprar o vender ese producto.
+  Para que el gobierno se financie, les agrega un impuesto a los productos que hará subir el costo y precio de estos, dicho de otra forma el excedente del consumidor y productor disminuye, y ambos pagan la misma cantidad de impuesto al comprar o vender ese producto.
 
-&nbsp; También existen otras intervenciones del estado, como, por ejemplo, el subsidio, se le conoce como el impuesto negativo, ya que, el consumidor paga menos. Igual que los impuestos, pero de forma contraría, la financiación del estado es repartido equitativamente entre los participantes de ese mercado. 
+  También existen otras intervenciones del estado, como, por ejemplo, el subsidio, se le conoce como el impuesto negativo, ya que, el consumidor paga menos. Igual que los impuestos, pero de forma contraría, la financiación del estado es repartido equitativamente entre los participantes de ese mercado.
 
-&nbsp; Los siguientes gráficos son posibles ejemplos de ambas situaciones. Donde, ``O mer'' es oferta sin impuesto o subsidio, ``D mer'' es demanda sin impuesto o subsidio, el área negra es la perdida de eficiencia o peso muerto, ``GOB'' es lo que recibe o financia el gobierno, dependiendo si es impuesto o subsidio respectivamente y EC y EP son los excedentes del consumidor y productor respectivamente.
-
+  Los siguientes gráficos son posibles ejemplos de ambas situaciones. Donde, `O mer'' es oferta sin impuesto o subsidio,`D mer'' es demanda sin impuesto o subsidio, el área negra es la perdida de eficiencia o peso muerto, \`\`GOB'' es lo que recibe o financia el gobierno, dependiendo si es impuesto o subsidio respectivamente y EC y EP son los excedentes del consumidor y productor respectivamente.
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -734,13 +732,14 @@ $$
 :::
 
 ## Comercio internacional:
-&nbsp; Existe un término que se llama **precio mundial** que hace referencia al valor del costo de oportunidad. Esto hace que exista una ventaja comparativa en cada país que incentiva a cada país a especializarse en algún o algunos bienes específicos.
 
-&nbsp; Para saber si conviene importar o exportar se hace un diagrama agregando el precio mundial y el excedente al exportar o importar un bien.
+  Existe un término que se llama **precio mundial** que hace referencia al valor del costo de oportunidad. Esto hace que exista una ventaja comparativa en cada país que incentiva a cada país a especializarse en algún o algunos bienes específicos.
+
+  Para saber si conviene importar o exportar se hace un diagrama agregando el precio mundial y el excedente al exportar o importar un bien.
 
 & nbsp; **Exportaciones.**
 
-&nbsp; En el caso de una economía local, que tenga un precio en el equilibrio menor que el del precio mundial y decida exportar, tendrá un gráfico, donde ``BE'' es el beneficio de exportación y ``PM'' es el precio mundial, de la siguiente manera:
+  En el caso de una economía local, que tenga un precio en el equilibrio menor que el del precio mundial y decida exportar, tendrá un gráfico, donde `BE'' es el beneficio de exportación y`PM'' es el precio mundial, de la siguiente manera:
 
 \newpage
 
@@ -778,11 +777,9 @@ $$
 \end{tikzpicture}
 ```
 
+  **Importaciones.**
 
-&nbsp; **Importaciones.**
-
-&nbsp; Para el caso de las importaciones sucede porque el precio de equilibrio local es más alto que el precio mundial. Entonces, los consumidores deciden importar. En este caso, llamaremos a “BI” como lo que no se pierde por la decisión de importar.
-
+  Para el caso de las importaciones sucede porque el precio de equilibrio local es más alto que el precio mundial. Entonces, los consumidores deciden importar. En este caso, llamaremos a "BI" como lo que no se pierde por la decisión de importar.
 
 ```{r, engine='tikz',echo=FALSE,out.width="50%"}
 #| fig-align: center
@@ -819,9 +816,9 @@ $$
 \end{tikzpicture}
 ```
 
-&nbsp; **Arancel:**
+  **Arancel:**
 
-&nbsp; El **arancel** por su parte es un impuesto a los productos traídos del extranjero creando que el precio de estos suba. Esto influye en los consumidores del país, porque el valor de lo que compren va a ser igual a la suma del arancel y el precio mundial. En el gráfico “Ar” lo llamaremos arancel, el área negra será la perdida de eficiencia y "PA", lo que gana el gobierno por medio del arancel.
+  El **arancel** por su parte es un impuesto a los productos traídos del extranjero creando que el precio de estos suba. Esto influye en los consumidores del país, porque el valor de lo que compren va a ser igual a la suma del arancel y el precio mundial. En el gráfico "Ar" lo llamaremos arancel, el área negra será la perdida de eficiencia y "PA", lo que gana el gobierno por medio del arancel.
 
 \newpage
 
@@ -875,7 +872,7 @@ $$
 
 ## Consecuencias de la intervención en los participantes de un mercado.
 
-&nbsp; Como vimos en los gráficos anteriores al hacer una intervención en el mercado, algunos participantes pueden ganar o perder excedente. Aun así, es importante aclarar que un mercado intervenido, siempre tendrá su dosis de ineficiencia. En las siguientes tablas veremos como afecta en cada tipo de intervención.
+  Como vimos en los gráficos anteriores al hacer una intervención en el mercado, algunos participantes pueden ganar o perder excedente. Aun así, es importante aclarar que un mercado intervenido, siempre tendrá su dosis de ineficiencia. En las siguientes tablas veremos como afecta en cada tipo de intervención.
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -962,8 +959,7 @@ $$
 ```
 :::
 
-&nbsp; Para el caso del comercio internacional sería de la siguiente forma:
-
+  Para el caso del comercio internacional sería de la siguiente forma:
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -1036,6 +1032,5 @@ $$
 
 </body>
 </html>
-
 ```
 :::

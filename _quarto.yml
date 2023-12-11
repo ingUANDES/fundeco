@@ -15,6 +15,7 @@ book:
     - 3interverción.qmd
     - 4sistimpo.qmd
     - 5varia.qmd
+    - 6finan.qmd
     - references.qmd
 
 bibliography: references.bib
