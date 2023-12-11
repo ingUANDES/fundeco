@@ -280,7 +280,8 @@ $$
 
   Entonces gráficamente podemos representar tanto la frontera (con la ecuación @eq-FPP) como la región bajo la misma que representa combinaciones de producción factibles que no maximizan la cantidad producida (ineficientes):
 
-```{r, engine='tikz',echo=FALSE,out.width="60%"}
+
+```{r, engine='tikz',echo=FALSE,out.width="40%"}
 #| fig-align: center
 #| label: fig-FPP
 #| fig-cap: "FPP entre los bienes $y_1$ e $y_2$."

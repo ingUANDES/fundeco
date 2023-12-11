@@ -13,6 +13,8 @@ book:
     - intro.qmd
     - funcionamiento.qmd
     - 3interverción.qmd
+    - 4sistimpo.qmd
+    - 5varia.qmd
     - references.qmd
 
 bibliography: references.bib
