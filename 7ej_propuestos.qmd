@@ -1,0 +1,131 @@
+# Ejercicios propuestos:
+
+## Sobre capitulo I:
+
+### :
+
+1)  A causa de las constantes enfermedades pulmonares y riesgos para la salud, el gobierno decide aumentar el impuesto al tabaco. Como consecuencia de esto, un 37% de los fumadores deja este vicio y hay un 45% menos de enfermedades relacionadas al uso de esta ¿Qué principio esta relacionado con este cambio económico?
+2)  Dado que bajaron las enfermedades y que el estado logró recaudar más dinero por el aumento del impuesto anterior, el gobierno decide aumentar más aún el impuesto a este bien de consumo. Esta vez, aumento el mercado negro de este servicio y junto a esto, el estado recaudó menos y por la mala calidad del tabaco traficado aumento un %15 las enfermedades relacionadas a este habito. ¿Qué principio es el que esta relacionado con este nuevo cambió?
+3)  Ahora, un comprador cualquiera de cigarrillos al ver que subieron los impuestos, tiene que decidir entre comprar una cajetilla o comprar la revista que compra todos los domingos ¿Que principio es el que se relaciona a esta situación?
+
+### :
+
+  Con respecto al modelo de economía circular. 1) ¿Qué demandan los hogares? 2) ¿Qué demandan las empresas? 3) ¿Qué ofrecen los hogares? 4) ¿Qué ofrecen las empresas?
+
+### :
+
+  Tenemos que un pastelero tiene como insumo limitante 100 huevos, para hacer un pie de limón gasta 10 huevos, mientras que para hacer un kg de pan gasta 5 huevos. 1) si quiere hacer 3 pie de limón, cuanto es la máxima cantidad de pan que puede hacer. 2) exprese la situación en la forma matemática $\bar x=a_1y_1+a_2y_2$. 3) Haga un gráfico de la situación. 4) Ahora, digamos que le llegaron más huevos y le alcanzó para hacer 15 pie de limón y 15 kg de pan, cuantos huevos más tiene.
+
+### :
+
+  Un productor "$A$" de chocolate tiene como factor limitante el cacao, si quiere producir chocolate dulce necesita "$c$" de este bien por cada kg y si quiere producir chocolate amargo necesita "$d$" de este bien por cada kg. Para gastar todo su cacao necesita producir "$e$" kg de chocolate dulce y "$f$" de chocolate amargo.
+
+1)  Haga la ecuación que represente kas FPP.
+2)  Haga el gráfico de esta ecuación.
+
+
+## Sobre capitulo II:
+
+
+### :
+1) Calcule el precio Demandado ($P$) de un bien para una producción de 5 unidades ($Q=5$). Usted sabe que si no se producen unidades el precio demandado es de \$5000. Adicionalmente, usted sabe que la función de demanda es lineal de la forma: $P(Q)=a-250Q$
+
+
+2) Calcule la función inversa de demanda para $P(Q)=a-bQ$
+
+
+3) Asuma una función de demanda igual a $P(Q)=a-235Q$. Si Usted sabe que 10 unidades se valoran a un precio de 7650, ¿Cuál sería el precio de referencia si no se produce nada?
+
+###:
+&nbsp; Grafique las siguientes demandas:
+
+1)
+$$
+P(Q)=\$10 - 1Q
+$$
+
+2)
+$$
+P(Q)=\$12 - 2Q
+$$
+
+
+3)
+$$
+P(Q)=\$50 - 2.5Q
+$$
+
+
+\newpage
+
+### :
+Calcule la función demanda de los siguiente gráficos.
+1)
+
+```{r, engine='tikz',echo=FALSE,out.width="100%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:25,samples=100] plot (\x,{5-0.2*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+
+\newpage
+
+2)
+
+```{r, engine='tikz',echo=FALSE,out.width="100%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:6.6,samples=100] plot (\x,{20-3*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+
+\newpage
+
+3)
+
+```{r, engine='tikz',echo=FALSE,out.width="100%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:5,samples=100] plot (\x,{10-2*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
