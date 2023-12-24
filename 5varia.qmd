@@ -1,7 +1,8 @@
 # Variables macroeconómicas.
+
 ## Producto interno bruto:
 
-&nbsp; El producto interno bruto o PIB mide dos cosas al mismo tiempo, lo que producen todas las personas en la economía y lo que gastan todas las personas en la economía, existen tres tipos:
+  El producto interno bruto o PIB mide dos cosas al mismo tiempo, lo que producen todas las personas en la economía y lo que gastan todas las personas en la economía, existen tres tipos:
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -17,7 +18,6 @@
 \end{table}
 ```
 :::
-
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -49,37 +49,38 @@
 <body>
 
     <table>
-        <tr>
-            <th>PIB de corrientes o nominal:</th>
-            <th>PIB a precios constantes o real:</th>
-            <th>Deflactor del PIB:</th>
-        </tr>
-        <tr>
-            <td>Mide la producción total de cada bien \(q_{i,t}\) por sus precios \(p_{i,t}\).</td>
-            <td>Mide el cambio de la producción de un bien \(q_{i,0}\) por su precio con respecto a un año base \(q_{i,0}\).</td>
-            <td>Calcula el nivel de precios con el PIB nominal partido el real.</td>
-        </tr>
-        <tr>
-            <td>\(Y=\sum{q_{i,t}p_{i,t}}\)</td>
-            <td>\(y=\sum{q_{i,0}p_{i,0}}\)</td>
-            <td>\(Def \, PIB =\frac{PIB\ nominal}{PIB\ real}\)</td>
-        </tr>
-    </table>
+    <tr>
+        <th>PIB de corrientes o nominal:</th>
+        <th>PIB a precios constantes o real:</th>
+        <th>Deflactor del PIB:</th>
+    </tr>
+    <tr>
+        <td>Mide la producción total de cada bien \(q_{i,t}\) por sus precios \(p_{i,t}\).</td>
+        <td>Mide el cambio de la producción de un bien \(q_{i,0}\) por su precio con respecto a un año base \(q_{i,0}\).</td>
+        <td>Calcula el nivel de precios con el PIB nominal partido el real.</td>
+    </tr>
+    <tr>
+        <td>\(Y=\sum{q_{i,t}p_{i,t}}\)</td>
+        <td>\(y=\sum{q_{i,0}p_{i,0}}\)</td>
+        <td>\(Def \, PIB =\frac{PIB\ nominal}{PIB\ real}\)</td>
+    </tr>
+</table>
 
 </body>
 
 </html>
 
-
 ```
 :::
-&nbsp; El PIB se puede medir de tres formas:
 
-- Por el lado del gasto: $Y=C+I+G+X+M$.
-- Por el lado del producto: con la matriz insumo-producto.
-- Por el lado de los ingresos: hogares son dueños de factores productivos.
+  El PIB se puede medir de tres formas:
+
+-   Por el lado del gasto: $Y=C+I+G+X+M$.
+-   Por el lado del producto: con la matriz insumo-producto.
+-   Por el lado de los ingresos: hogares son dueños de factores productivos.
 
 ## Crecimiento del PIB:
+
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
 \begin{table}[h]
@@ -125,19 +126,19 @@
 <body>
 
     <table>
-        <tr>
-            <th>PIB real</th>
-            <th>PIB nominal</th>
-        </tr>
-        <tr>
-            <td>Considera cambio de precios y cantidades a través del tiempo \(t\).</td>
-            <td>Solo considera los cambios en cantidades a través del tiempo \(t\).</td>
-        </tr>
-        <tr>
-            <td>\(\Delta\%{PIB}_t=\frac{{PIB}_t-{PIB}_{t-1}}{{PIB}_{t-1}}\)</td>
-            <td>\(\textrm{inflación}_t=\frac{Deflactor_t-Deflactor_{t-1}}{Deflactor_{t-1}}\)</td>
-        </tr>
-    </table>
+    <tr>
+        <th>PIB real</th>
+        <th>PIB nominal</th>
+    </tr>
+    <tr>
+        <td>Considera cambio de precios y cantidades a través del tiempo \(t\).</td>
+        <td>Solo considera los cambios en cantidades a través del tiempo \(t\).</td>
+    </tr>
+    <tr>
+        <td>\(\Delta\%{PIB}_t=\frac{{PIB}_t-{PIB}_{t-1}}{{PIB}_{t-1}}\)</td>
+        <td>\(\textrm{inflación}_t=\frac{Deflactor_t-Deflactor_{t-1}}{Deflactor_{t-1}}\)</td>
+    </tr>
+</table>
 
 </body>
 
@@ -146,26 +147,22 @@
 :::
 
 ## Otros medidores:
-&nbsp; **IMACEC:** el índice mensual de actividad económica es otro medidor que incluye el $90\%$ de los bienes y servicios del PIB.
 
-&nbsp; **IPC:** el índice de precios al consumidor es la medida del costo total de bienes y servicios de un consumidor promedio. Para calcularlo se necesitan hacer los siguientes pasos:
-1) Fijar la canasta: lo que consume un consumidor promedio.
-2) Encontrar los precios de los bienes de la canasta.
-3) Calcular los costos de la canasta.
-4) Elegir un año base y calcular el índice con la siguiente formula:
-$$
+  **IMACEC:** el índice mensual de actividad económica es otro medidor que incluye el $90\%$ de los bienes y servicios del PIB.
+
+  **IPC:** el índice de precios al consumidor es la medida del costo total de bienes y servicios de un consumidor promedio. Para calcularlo se necesitan hacer los siguientes pasos: 1) Fijar la canasta: lo que consume un consumidor promedio. 2) Encontrar los precios de los bienes de la canasta. 3) Calcular los costos de la canasta. 4) Elegir un año base y calcular el índice con la siguiente formula: $$
 \text{IPC}=\frac{\text{Precio de la canasta actual}}{\text{Precio de la canasta del año base}}
 $$
 
-&nbsp; El problema del IPC es que a veces sobreestima los valores de la canasta o agrega bienes que pueden ser innecesario y también que no mide la calidad de la canasta. Aun así, podemos medir la inflación con esta medida:
+  El problema del IPC es que a veces sobreestima los valores de la canasta o agrega bienes que pueden ser innecesario y también que no mide la calidad de la canasta. Aun así, podemos medir la inflación con esta medida:
 
 $$
 \text{Infalción}_t=\frac{IPC_t-IPC_{t-1}}{IPC_{t-1}}
 $$
 
-&nbsp; Para poder mantener un precio real sobre un bien o servicio se **indexa**, la indexación es dar un precio que no le afecta la inflación, como, por ejemplo, las UTM, la UF, etc.
+  Para poder mantener un precio real sobre un bien o servicio se **indexa**, la indexación es dar un precio que no le afecta la inflación, como, por ejemplo, las UTM, la UF, etc.
 
-&nbsp; La UF o unidad de fomento es un índice que se ajusta todos los días con respecto a la inflación, para que algunos contractos no se desvaloricen.
+  La UF o unidad de fomento es un índice que se ajusta todos los días con respecto a la inflación, para que algunos contractos no se desvaloricen.
 
 ## Desempleo:
 
@@ -182,15 +179,13 @@ graph TD
 
 ```
 
-&nbsp; Existen dos tipos de desempleo:
-- **Friccional:** la persona busca un trabajo que se adapte a sus gustos y necesidades.
-- **Estructural:** por pocos empleos disponibles es imposible darle empleo a todos los que necesiten uno.
+  Existen dos tipos de desempleo: - **Friccional:** la persona busca un trabajo que se adapte a sus gustos y necesidades. - **Estructural:** por pocos empleos disponibles es imposible darle empleo a todos los que necesiten uno.
 
-&nbsp; Para mantener a la persona cesante con un ingreso durante un tiempo existe un seguro de desempleo, está dado por ley que cuando se firma un contrato se tiene que estar afiliado automáticamente a ese seguro.
+  Para mantener a la persona cesante con un ingreso durante un tiempo existe un seguro de desempleo, está dado por ley que cuando se firma un contrato se tiene que estar afiliado automáticamente a ese seguro.
 
 ## Otros factores de la producción:
-&nbsp; Para que una sociedad tenga una alta calidad de vida se necesitan producir bienes y servicios, dicho de otra forma, se necesita **productividad**.
-Y para tener productividad se necesita:
+
+  Para que una sociedad tenga una alta calidad de vida se necesitan producir bienes y servicios, dicho de otra forma, se necesita **productividad**. Y para tener productividad se necesita:
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -235,31 +230,30 @@ Y para tener productividad se necesita:
 <body>
 
     <table>
-        <tr>
-            <th>Capital humano:</th>
-            <td>Capacidades de los trabajadores en hacer un trabajo gracias a su educación y especialización.</td>
-        </tr>
-        <tr>
-            <th>Capital físico:</th>
-            <td>Conjunto de equipos y estructuras que se necesitan para producir.</td>
-        </tr>
-        <tr>
-            <th>Recursos naturales:</th>
-            <td>Los da la naturaleza, son cosas como minerales, ríos, tierra.</td>
-        </tr>
-        <tr>
-            <th>Conocimiento tecnológico:</th>
-            <td>Comprensión de la mejor forma en que la sociedad puede producir un bien.</td>
-        </tr>
-    </table>
+    <tr>
+        <th>Capital humano:</th>
+        <td>Capacidades de los trabajadores en hacer un trabajo gracias a su educación y especialización.</td>
+    </tr>
+    <tr>
+        <th>Capital físico:</th>
+        <td>Conjunto de equipos y estructuras que se necesitan para producir.</td>
+    </tr>
+    <tr>
+        <th>Recursos naturales:</th>
+        <td>Los da la naturaleza, son cosas como minerales, ríos, tierra.</td>
+    </tr>
+    <tr>
+        <th>Conocimiento tecnológico:</th>
+        <td>Comprensión de la mejor forma en que la sociedad puede producir un bien.</td>
+    </tr>
+</table>
 
 </body>
 
 </html>
-
 ```
 :::
 
-&nbsp; Para incrementar la producción se tiene que invertir en recursos naturales, pero de forma coherente con las necesidades y posibilidades de las personas. Por esta misma razón el rendimiento del capital es decreciente, por esta razón, es más fácil para un país pobre mejorar económicamente que para uno rico. A esto se le llama **efecto convergencia**.
+  Para incrementar la producción se tiene que invertir en recursos naturales, pero de forma coherente con las necesidades y posibilidades de las personas. Por esta misma razón el rendimiento del capital es decreciente, por esta razón, es más fácil para un país pobre mejorar económicamente que para uno rico. A esto se le llama **efecto convergencia**.
 
-&nbsp; Los países con bajo capital humano tienen diferencias grandes salariales, pero para la producción es mejor invertir en educación, porque tienen mejor especialización y luego tendrán más salarios para poder estar más sanos, un trabajador enfermo produce menos que uno sano.
+  Los países con bajo capital humano tienen diferencias grandes salariales, pero para la producción es mejor invertir en educación, porque tienen mejor especialización y luego tendrán más salarios para poder estar más sanos, un trabajador enfermo produce menos que uno sano.
