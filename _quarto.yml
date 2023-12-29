@@ -18,6 +18,7 @@ book:
     - 6finan.qmd
     - 7ej_propuestos.qmd
     - 8ej_pauta.qmd
+    - 9ej_pauta.qmd
     - references.qmd
 
 bibliography: references.bib
