@@ -268,7 +268,7 @@
 
   Finalmente tenemos el [**costo de oportunidad**]{.underline} que, en simples palabras, es cuanto de un producto (por ejemplo $y_1$ en la @fig-FPP ) se pierde al aumentar la producción en una cierta cantidad de otro bien (por ejemplo $y_2$ en la @fig-FPP).
 
-&nbsp; **[FPP de forma matemática y gráfica:]{.underline}**
+  [**FPP de forma matemática y gráfica:**]{.underline}
 
   Digamos que tenemos un factor o insumo productivo limitado $\bar x$. Si queremos crear una unidad del bien $y_1$ se gastarán $a_1$ unidades del factor, y al fabricar una unidad del bien $y_2$ se usaran $a_2$ unidades del factor. Si lo vemos matemáticamente tenemos una suerte de restricción presupuestaria que nos obliga a explicar el uso de recursos $\bar x$ como una decisión de producción $(y_1,y_2)$:
 
@@ -279,7 +279,6 @@ $$ {#eq-FPP}   En consecuencia, la máxima cantidad de $y_n$ para $n = 1$ ó $2
 $$
 
   Entonces gráficamente podemos representar tanto la frontera (con la ecuación @eq-FPP) como la región bajo la misma que representa combinaciones de producción factibles que no maximizan la cantidad producida (ineficientes):
-
 
 ```{r, engine='tikz',echo=FALSE,out.width="40%"}
 #| fig-align: center
@@ -320,7 +319,7 @@ $$
 
 **Respuesta:**
 
-&nbsp; [Paso I: Interpretar.]{.underline}
+  [Paso I: Interpretar.]{.underline}
 
   Diremos que $y_1$ es la cantidad de lechuga e $y_2$ la cantidad de maíz, ambos se miden en toneladas, el costo de oportunidad para la lechuga en base al maíz estará en función de $a_1$ y $a_2$. La escasez estará dada por el factor limitante que es $\bar h$ y fijo en $216$ de acuerdo al enunciado.
 
@@ -329,7 +328,7 @@ $$
 $$\bar h=216=\underbrace{3}_{\frac{1}{a_1}=\frac{1}{3}}\cdot \underbrace{34}_{y_1}+a_2\cdot \underbrace{52}
 _{y_2}.$$
 
-&nbsp; [Paso II: Escribir las ecuaciones y resolver.]{.underline}
+  [Paso II: Escribir las ecuaciones y resolver.]{.underline}
 
   Entonces, es posible obtener $a_2$ resolviendo lo anterior:
 
@@ -349,7 +348,7 @@ $$
 \bar h = 3y_1+2y_2
 $$
 
-&nbsp; [Paso III: Calcular cantidades máximas de cada bien.]{.underline}
+  [Paso III: Calcular cantidades máximas de cada bien.]{.underline}
 
 $$
 216=3y_1 \Leftrightarrow y_1=72
@@ -359,7 +358,7 @@ $$
 216h=2y_2 \Leftrightarrow y_2=108
 $$
 
-&nbsp; [Paso IV: Hacer el gráfico.]{.underline}
+  [Paso IV: Hacer el gráfico.]{.underline}
 
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
@@ -392,17 +391,17 @@ $$
 
 ## Especialización y comercio:
 
-&nbsp; Al comparar dos productores puede que cada uno use más unidades de factor productivo para hacer un bien que otro. Entonces definiremos dos conceptos:
+  Al comparar dos productores puede que cada uno use más unidades de factor productivo para hacer un bien que otro. Entonces definiremos dos conceptos:
 
-&nbsp; **Ventaja absoluta:** es la habilidad por producir el mismo bien, pero con menos unidades de factor.
+  **Ventaja absoluta:** es la habilidad por producir el mismo bien, pero con menos unidades de factor.
 
-&nbsp; **Ventaja comparativa:** Habilidad de un productor para producir un mismo bien con menos costo de oportunidad.
+  **Ventaja comparativa:** Habilidad de un productor para producir un mismo bien con menos costo de oportunidad.
 
-&nbsp; ¿Como se calcula cada uno?
+  ¿Como se calcula cada uno?
 
-&nbsp; Tenemos dos productores estos son el productor "D" y el productor "E", también dos bienes que requieren de los mismos factores de producción uno es el bien "b", que cuesta producirlo $a_1$ en D y $a_2$ en E, y el otro es el bien "c", que cuesta producirlo $a_3$ en D y $a_4$ en E. Además el factor productivo limitante los denotaremos como x.
+  Tenemos dos productores estos son el productor "D" y el productor "E", también dos bienes que requieren de los mismos factores de producción uno es el bien "b", que cuesta producirlo $a_1$ en D y $a_2$ en E, y el otro es el bien "c", que cuesta producirlo $a_3$ en D y $a_4$ en E. Además el factor productivo limitante los denotaremos como x.
 
-&nbsp; La ecuación para comparar la producción de sus bienes es la siguiente:
+  La ecuación para comparar la producción de sus bienes es la siguiente:
 
 $$
 \begin{matrix}
@@ -411,31 +410,31 @@ E: x = a_3 b + a_4 c\\
 \end{matrix}
 $$
 
-&nbsp; [Ejercicio resuelto:]{.underline}
+  [Ejercicio resuelto:]{.underline}
 
-&nbsp; En la chocolatería E se hace chocolate dulce "d" y le cuesta producirlo 10 gramos de cacao, pero en la chocolatería B le cuesta producirlo 15 gramos de cacao. Ambos producen también chocolate amargo "a", a la chocolatería E le cuesta 12 gramos de cacao producirlo, mientras que en la B le cuesta 20 gramos.
+  En la chocolatería E se hace chocolate dulce "d" y le cuesta producirlo 10 gramos de cacao, pero en la chocolatería B le cuesta producirlo 15 gramos de cacao. Ambos producen también chocolate amargo "a", a la chocolatería E le cuesta 12 gramos de cacao producirlo, mientras que en la B le cuesta 20 gramos.
 
-&nbsp; Si los dos tienen la misma cantidad de caco "x" ¿Quién tiene la ventaja absoluta en los distintos bienes? Y ¿Quién tiene la ventaja comparativa en estos chocolates?
+  Si los dos tienen la misma cantidad de caco "x" ¿Quién tiene la ventaja absoluta en los distintos bienes? Y ¿Quién tiene la ventaja comparativa en estos chocolates?
 
 **Respuesta:**
 
-&nbsp; [Paso I: Escribir la ecuación.]{.underline}
+  [Paso I: Escribir la ecuación.]{.underline}
 
 $$
 \begin{matrix}    E: $x = 10d + 12a$ \\    B: $x = 15d + 20a$\end{matrix}
 $$
 
-&nbsp; [Paso II: Calcular la ventaja absoluta.]{.underline}
+  [Paso II: Calcular la ventaja absoluta.]{.underline}
 
-&nbsp; Para esto, solo tenemos que comparar los coeficientes de cada bien con el de la otra chocolatería, el de menos coeficiente, es el que tiene mayor ventaja absoluta:
+  Para esto, solo tenemos que comparar los coeficientes de cada bien con el de la otra chocolatería, el de menos coeficiente, es el que tiene mayor ventaja absoluta:
 
 $$
 \begin{matrix}    \text{d: $E = 10$, $B = 15$} \\    \text{E tiene la ventaja absoluta.}\\    \text{a: $E = 12$, $B = 20$} \\    \text{E tiene la ventaja absoluta.}\end{matrix}
 $$
 
-&nbsp; [Paso III: Calcular la ventaja comparativa.]{.underline}
+  [Paso III: Calcular la ventaja comparativa.]{.underline}
 
-&nbsp; hay que tener en cuenta que, al estar comparando ventajas comparativas, no se usan signos negativos.
+  hay que tener en cuenta que, al estar comparando ventajas comparativas, no se usan signos negativos.
 
 ```{=tex}
 \begin{center}
@@ -443,7 +442,7 @@ $$
         B : $15d = 20a$
 \end{center}
 ```
-&nbsp; Luego:
+  Luego:
 
 $$
 \textrm{E :} d = a\frac{12}{10}
@@ -455,8 +454,7 @@ $$
 \textrm{E :} a = d\frac{10}{12}
 $$ $$
 \textrm{B :} a = d\frac{15}{20}
-$$ 
-&nbsp; Se compara, el que tenga menor coeficiente tiene la ventaja:
+$$   Se compara, el que tenga menor coeficiente tiene la ventaja:
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
