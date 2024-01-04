@@ -1,0 +1,302 @@
+## Sobre capítulo II:
+
+### :
+
+1)  Calcule el precio Demandado ($P$) de un bien para una producción de 5 unidades ($Q=5$). Usted sabe que si no se producen unidades el precio demandado es de \$5000. Adicionalmente, usted sabe que la función de demanda es lineal de la forma: $$P(Q)=a-250Q$$
+
+  **RESPUESTA**
+
+  Tenemos que en el caso $Q=0$ el valor de $P(Q)=a=5000$, entonces con esto tenemos la función:
+
+$$
+P(Q)=5000-250Q
+$$
+
+  Ahora evaluamos $P(5)$ y esto nos da: $$
+P(5)=5000-250\cdot 5
+$$ $$
+P(5)=5000-1250
+$$ $$
+P(5)=3750
+$$
+
+2)  Calcule la función inversa de demanda para $P(Q)=a-bQ$
+
+  **RESPUESTA**
+
+  La función inversa de la demanda es la función inversa de $Q(P)$, por lo que la función inversa de $P(Q)=ab-bQ$ es esta misma.
+
+3)  Asuma una función de demanda igual a $P(Q)=a-235Q$. Si Usted sabe que 10 unidades se valoran a un precio de 7650, ¿Cuál sería el precio de referencia si no se produce nada?
+
+  **RESPUESTA**
+
+  El precio de referencia cuando no se produce nada es en este caso el valor de \`\`$a$'', para calcularlo tenemos que plantear la ecuación del enunciado:
+
+$$
+7650=a-235\cdot 10
+$$ $$
+7650=a-2350
+$$
+
+$$
+7650+2350=a
+$$ $$
+a=10000
+$$
+
+  Es decir el precio de referencia es equivalente a \$10.000.
+
+\newpage
+
+### :
+
+  Grafique las siguientes demandas:
+
+1)  $$
+    P(Q)=\$10 - 1Q
+    $$
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:10,samples=100] plot (\x,{10-\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+\newpage
+
+2)  $$
+    P(Q)=\$12 - 2Q
+    $$
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:6,samples=100] plot (\x,{12-2*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+\newpage
+
+3)  $$
+    P(Q)=\$50 - 2.5Q
+    $$
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:14.2,samples=100] plot (\x,{25-1.75*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+\newpage
+
+### :
+
+Calcule la función demanda de los siguiente gráficos. 1)
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:25,samples=100] plot (\x,{5-0.2*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+$$
+P(Q)=5-0.2Q
+$$
+
+\newpage
+
+2)  
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:6.6,samples=100] plot (\x,{20-3*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+$$
+P(Q)=20-3Q
+$$
+
+\newpage
+
+3)  
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:5,samples=100] plot (\x,{10-2*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+$$
+P(Q)=10-2Q
+$$
+
+### :
+
+  Tenemos una empresa forestal con las siguientes funciones de demanda y oferta: $$
+P_d(Q)=100-3Q
+$$ $$
+P_o(Q)=60+2Q
+$$
+
+  Por causas naturales una de los cultivos se incendiaron, dejando como nuevo punto de equilibrio $(4,88)$. Haga un gráfico del caso luego del evento y calcule la elasticidad.
+
+  **RESPUESTA**
+
+  Primero calculamos el punto de equilibrio inicial:
+
+$$
+100-3Q=60+2Q
+$$ $$
+`r 100-60`=`r 3+2`Q
+$$ $$
+`r (100-60)/(3+2)`
+$$
+
+Reemplazamos en $P(Q)$: $$
+P(`r (100-60)/(3+2)`)=100-3\cdot `r (100-60)/(3+2)`
+$$
+
+$$
+P = `r 100-3*(100-60)/(3+2)`
+$$
+
+  Entonces el punto inicial es $(8,76)$. Además, al ser un evento que le afecta a la oferta, ya que, los que demandan demandan lo mismo, pero los que ofrecen, ofrecen menos, tendremos un cambio en la curva de demanda.
+
+Ahora calcularemos la nueva oferta:
+
+$$
+88=a+2\cdot 4
+$$
+
+$$
+88=a+8 \Leftrightarrow a=80
+$$
+
+$$
+P_o(Q)=80+2Q
+$$
+
+  Finalmente hacemos el gráfico:
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (10,0) node[below] {Cantidad};
+    \draw[thick,->] (0,0) -- (0,10) node[left] {Precio};
+    
+    \node at (-0.5,-0.5) {0};
+    \node at (-0.5,2) {20};
+    \node at (-0.5,4) {40};
+    \node at (-0.5,6) {60};
+    \node at (-0.5,8) {80};
+    \node at (-0.5,10) {100};
+    \node at (2,-0.5) {20};
+    \node at (4,-0.5) {40};
+    \node at (6,-0.5) {60};
+    \node at (8,-0.5) {80};
+    \node at (10,-0.5) {100};
+    
+    \draw[thick] (0,10) -- (3.33,0);
+    \draw[thick] (0,8) -- (1,10);
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (10,10);
+\end{tikzpicture}
+```
+
+  Ahora calcularemos la elasticidad:
+
+  Recordemos que la elasticidad es:
+
+$$
+\in =\left|\dfrac{\triangle\%Q}{\triangle\%P} \right|
+$$
+
+  Entonces tenemos: $$
+\in=\left|\frac{88-76}{8-4} \right|
+$$ $$
+\in=\left|\frac{12}{4} \right|
+$$ $$
+\in=3
+$$
+
+  De esto podemos decir que es elástica.
+
