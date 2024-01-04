@@ -107,7 +107,7 @@
 
 ## Los Diez Principios de la economía:
 
-  Los diez principios de la economía son afirmaciones que muestran hechos relevantes del análisis económico de acuerdo a \cite{mankiw_principios_2012}. Estos responden a tres preguntas.
+  Los diez principios de la economía son afirmaciones que muestran hechos relevantes del análisis económico de acuerdo a @mankiw2012. Estos responden a tres preguntas.
 
 1.  ¿Cómo los individuos toman decisiones? (eficiencia, escasez, costos de oportunidad e incentivos.)
 2.  ¿Cómo interactúan los individuos? (derechos de propiedad, fallas del mercado y externalidades.)
