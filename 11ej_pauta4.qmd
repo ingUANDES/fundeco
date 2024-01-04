@@ -107,7 +107,7 @@ $$
   Buscamos la nueva demanda con el nuevo punto de equilibrio.
 
 $$
-P_d(Q)=a-Q \longleftrightarrow a-10=5+2\cdot10\]
+P_d(Q)=a-Q \longleftrightarrow a-10=5+2\cdot10
 $$ $$
 a=25+10=35
 $$ $$
@@ -284,48 +284,48 @@ $$
     <table>
 <caption>Tabla de demanda:</caption>
 <tr>
-    <th>decil:</th>
-    <th>Ingresos:</th>
+<th>decil:</th>
+<th>Ingresos:</th>
 </tr>
 <tr>
-    <td>0.1</td>
-    <td>0.01</td>
+<td>0.1</td>
+<td>0.01</td>
 </tr>
 <tr>
-    <td>0.2</td>
-    <td>0.02</td>
+<td>0.2</td>
+<td>0.02</td>
 </tr>
 <tr>
-    <td>0.3</td>
-    <td>0.03</td>
+<td>0.3</td>
+<td>0.03</td>
 </tr>
 <tr>
-    <td>0.4</td>
-    <td>0.06</td>
+<td>0.4</td>
+<td>0.06</td>
 </tr>
 <tr>
-    <td>0.5</td>
-    <td>0.1</td>
+<td>0.5</td>
+<td>0.1</td>
 </tr>
 <tr>
-    <td>0.6</td>
-    <td>0.15</td>
+<td>0.6</td>
+<td>0.15</td>
 </tr>
 <tr>
-    <td>0.7</td>
-    <td>0.28</td>
+<td>0.7</td>
+<td>0.28</td>
 </tr>
 <tr>
-    <td>0.8</td>
-    <td>0.39</td>
+<td>0.8</td>
+<td>0.39</td>
 </tr>
 <tr>
-    <td>0.9</td>
-    <td>0.5</td>
+<td>0.9</td>
+<td>0.5</td>
 </tr>
 <tr>
-    <td>1</td>
-    <td>1</td>
+<td>1</td>
+<td>1</td>
 </tr>
 </table>
 
@@ -447,39 +447,39 @@ $$
 
     <table>
 <tr>
-    <th>Medida:</th>
-    <th>Forma genérica:</th>
-    <th>Utilidad:</th>
+<th>Medida:</th>
+<th>Forma genérica:</th>
+<th>Utilidad:</th>
 </tr>
 <tr>
-    <td>Producto marginal del trabajo:</td>
-    <td>\[21K^2L^2-3K^3\]</td>
-    <td>\[\$162\]</td>
+<td>Producto marginal del trabajo:</td>
+<td>\[21K^2L^2-3K^3\]</td>
+<td>\[\$162\]</td>
 </tr>
 <tr>
-    <td>Producto marginal del capital:</td>
-    <td>\[14L^3K-6K^2L\]</td>
-    <td>\[\$200\]</td>
+<td>Producto marginal del capital:</td>
+<td>\[14L^3K-6K^2L\]</td>
+<td>\[\$200\]</td>
 </tr>
 <tr>
-    <td>Productividad media del trabajo:</td>
-    <td>\[7K^2L^2-3K^3\]</td>
-    <td>\[\$50\]</td>
+<td>Productividad media del trabajo:</td>
+<td>\[7K^2L^2-3K^3\]</td>
+<td>\[\$50\]</td>
 </tr>
 <tr>
-    <td>Productividad media del capital:</td>
-    <td>\[7L^3K-3K^2L\]</td>
-    <td>\[\$100\]</td>
+<td>Productividad media del capital:</td>
+<td>\[7L^3K-3K^2L\]</td>
+<td>\[\$100\]</td>
 </tr>
 <tr>
-    <td>Retornos de trabajo:</td>
-    <td>\[42K^2L\]</td>
-    <td>\[42, \text{es creciente.}\]</td>
+<td>Retornos de trabajo:</td>
+<td>\[42K^2L\]</td>
+<td>\[42, \text{es creciente.}\]</td>
 </tr>
 <tr>
-    <td>Retornos de capital:</td>
-    <td>\[14K^3 - 3K^3L\]</td>
-    <td>\[8, \text{es creciente.}\]</td>
+<td>Retornos de capital:</td>
+<td>\[14K^3 - 3K^3L\]</td>
+<td>\[8, \text{es creciente.}\]</td>
 </tr>
 </table>
 
@@ -503,4 +503,3 @@ $$ $$
 $$ $$
 L=\frac{111}{24}
 $$
-
