@@ -1,4 +1,3 @@
-
 ## Sobre capítulo VI:
 
 ### :
@@ -52,60 +51,60 @@
 
     <table>
 <tr>
-    <th>Bien de consumo:</th>
-    <th>2016</th>
-    <th>2017</th>
-    <th>2018</th>
-    <th>2019</th>
+<th>Bien de consumo:</th>
+<th>2016</th>
+<th>2017</th>
+<th>2018</th>
+<th>2019</th>
 </tr>
 <tr>
-    <td>Producción de cacao:</td>
-    <td>2u, 100wk</td>
-    <td>2u, 98wk</td>
-    <td>2u, 102wk</td>
-    <td>2u, 100wk</td>
+<td>Producción de cacao:</td>
+<td>2u, 100wk</td>
+<td>2u, 98wk</td>
+<td>2u, 102wk</td>
+<td>2u, 100wk</td>
 </tr>
 <tr>
-    <td>Venta de azúcar importado:</td>
-    <td>1u, 33wk</td>
-    <td>7u, 12wk</td>
-    <td>15u, 22wk</td>
-    <td>26u, 25wk</td>
+<td>Venta de azúcar importado:</td>
+<td>1u, 33wk</td>
+<td>7u, 12wk</td>
+<td>15u, 22wk</td>
+<td>26u, 25wk</td>
 </tr>
 <tr>
-    <td>Producción de caramelos:</td>
-    <td>4u, 11wk</td>
-    <td>3u, 17wk</td>
-    <td>5u, 19wk</td>
-    <td>4u, 21wk</td>
+<td>Producción de caramelos:</td>
+<td>4u, 11wk</td>
+<td>3u, 17wk</td>
+<td>5u, 19wk</td>
+<td>4u, 21wk</td>
 </tr>
 <tr>
-    <td>Venta de envoltorios de Reino Unido:</td>
-    <td>3u, 3wk</td>
-    <td>3u, 3wk</td>
-    <td>3u, 2wk</td>
-    <td>4u, 3wk</td>
+<td>Venta de envoltorios de Reino Unido:</td>
+<td>3u, 3wk</td>
+<td>3u, 3wk</td>
+<td>3u, 2wk</td>
+<td>4u, 3wk</td>
 </tr>
 <tr>
-    <td>Producción de chicle:</td>
-    <td>6u, 33wk</td>
-    <td>6u, 37wk</td>
-    <td>5u, 39wk</td>
-    <td>6u, 44wk</td>
+<td>Producción de chicle:</td>
+<td>6u, 33wk</td>
+<td>6u, 37wk</td>
+<td>5u, 39wk</td>
+<td>6u, 44wk</td>
 </tr>
 <tr>
-    <td>Producción de turrones:</td>
-    <td>4u, 78wk</td>
-    <td>5u, 81wk</td>
-    <td>5u, 88wk</td>
-    <td>5u, 98wk</td>
+<td>Producción de turrones:</td>
+<td>4u, 78wk</td>
+<td>5u, 81wk</td>
+<td>5u, 88wk</td>
+<td>5u, 98wk</td>
 </tr>
 <tr>
-    <td>Venta de plátano local:</td>
-    <td>7u, 10wk</td>
-    <td>8u, 12wk</td>
-    <td>8u, 15wk</td>
-    <td>9u, 18wk</td>
+<td>Venta de plátano local:</td>
+<td>7u, 10wk</td>
+<td>8u, 12wk</td>
+<td>8u, 15wk</td>
+<td>9u, 18wk</td>
 </tr>
 </table>
 
@@ -166,39 +165,39 @@
 
     <table>
 <tr>
-    <th>Año:</th>
-    <th>PIB real:</th>
-    <th>PIB nominal:</th>
-    <th>Deflactor:</th>
-    <th>Inflación:</th>
+<th>Año:</th>
+<th>PIB real:</th>
+<th>PIB nominal:</th>
+<th>Deflactor:</th>
+<th>Inflación:</th>
 </tr>
 <tr>
-    <td>2016:</td>
-    <td>824</td>
-    <td>824</td>
-    <td>1</td>
-    <td>0%</td>
+<td>2016:</td>
+<td>824</td>
+<td>824</td>
+<td>1</td>
+<td>0%</td>
 </tr>
 <tr>
-    <td>2017:</td>
-    <td>901</td>
-    <td>970</td>
-    <td>1.077</td>
-    <td>7,7%</td>
+<td>2017:</td>
+<td>901</td>
+<td>970</td>
+<td>1.077</td>
+<td>7,7%</td>
 </tr>
 <tr>
-    <td>2018:</td>
-    <td>860</td>
-    <td>954</td>
-    <td>1.109</td>
-    <td>3%</td>
+<td>2018:</td>
+<td>860</td>
+<td>954</td>
+<td>1.109</td>
+<td>3%</td>
 </tr>
 <tr>
-    <td>2019:</td>
-    <td>922</td>
-    <td>1200</td>
-    <td>1.302</td>
-    <td>17,4%</td>
+<td>2019:</td>
+<td>922</td>
+<td>1200</td>
+<td>1.302</td>
+<td>17,4%</td>
 </tr>
 </table>
 
@@ -253,19 +252,19 @@
 
     <table>
 <tr>
-    <th>PIB de corrientes o nominal:</th>
-    <th>PIB a precios constantes o real:</th>
-    <th>Deflactor del PIB:</th>
+<th>PIB de corrientes o nominal:</th>
+<th>PIB a precios constantes o real:</th>
+<th>Deflactor del PIB:</th>
 </tr>
 <tr>
-    <td>Mide la producción total de cada bien $q_{i,t}$ por sus precios $p_{i,t}$.</td>
-    <td>Mide el cambio de la producción de un bien $q_{i,0}$ por su precio con respecto a un año base $q_{i,0}$.</td>
-    <td>Calcula el nivel de precios con el PIB nominal partido el real.</td>
+<td>Mide la producción total de cada bien $q_{i,t}$ por sus precios $p_{i,t}$.</td>
+<td>Mide el cambio de la producción de un bien $q_{i,0}$ por su precio con respecto a un año base $q_{i,0}$.</td>
+<td>Calcula el nivel de precios con el PIB nominal partido el real.</td>
 </tr>
 <tr>
-    <td>\[Y=\sum{q_{i,t}p_{i,t}}\]</td>
-    <td>\[y=\sum{q_{i,0}p_{i,0}}\]</td>
-    <td>\[Def \, PIB =\frac{PIB\ nominal}{PIB\ real}\]</td>
+<td>\[Y=\sum{q_{i,t}p_{i,t}}\]</td>
+<td>\[y=\sum{q_{i,0}p_{i,0}}\]</td>
+<td>\[Def \, PIB =\frac{PIB\ nominal}{PIB\ real}\]</td>
 </tr>
 </table>
 
@@ -354,46 +353,46 @@ $$
 
     <table>
 <tr>
-    <th>Año</th>
-    <th>Inflación anual de Angola</th>
-    <th>Conversión enero 1UF a CLP</th>
-    <th>Conversión enero 1US a CLP</th>
-    <th>Conversión enero 1US a KZ</th>
+<th>Año</th>
+<th>Inflación anual de Angola</th>
+<th>Conversión enero 1UF a CLP</th>
+<th>Conversión enero 1US a CLP</th>
+<th>Conversión enero 1US a KZ</th>
 </tr>
 <tr>
-    <td>2018</td>
-    <td>$19,8\%$</td>
-    <td>$\$26800$</td>
-    <td>$\$640$</td>
-    <td>$253$Kz.</td>
+<td>2018</td>
+<td>$19,8\%$</td>
+<td>$\$26800$</td>
+<td>$\$640$</td>
+<td>$253$Kz.</td>
 </tr>
 <tr>
-    <td>2019</td>
-    <td>$17,1\%$</td>
-    <td>$\$27565$</td>
-    <td>$\$703$</td>
-    <td>$365$Kz.</td>
+<td>2019</td>
+<td>$17,1\%$</td>
+<td>$\$27565$</td>
+<td>$\$703$</td>
+<td>$365$Kz.</td>
 </tr>
 <tr>
-    <td>2020</td>
-    <td>$22,3\%$</td>
-    <td>$\$28310$</td>
-    <td>$\$793$</td>
-    <td>$578$Kz.</td>
+<td>2020</td>
+<td>$22,3\%$</td>
+<td>$\$28310$</td>
+<td>$\$793$</td>
+<td>$578$Kz.</td>
 </tr>
 <tr>
-    <td>2021</td>
-    <td>$25,8\%$</td>
-    <td>$\$29070$</td>
-    <td>$\$760$</td>
-    <td>$631$Kz.</td>
+<td>2021</td>
+<td>$25,8\%$</td>
+<td>$\$29070$</td>
+<td>$\$760$</td>
+<td>$631$Kz.</td>
 </tr>
 <tr>
-    <td>2022</td>
-    <td>No influye en el ejercicio</td>
-    <td>$\$31000$</td>
-    <td>$\$873$</td>
-    <td>$460$Kz.</td>
+<td>2022</td>
+<td>No influye en el ejercicio</td>
+<td>$\$31000$</td>
+<td>$\$873$</td>
+<td>$460$Kz.</td>
 </tr>
 </table>
 
@@ -448,7 +447,7 @@ $$
 \text{Inflación acumulada por año}=\left[(1+\text{inflación}_t)\cdot(1+\text{inflación}_{t+1})\cdot ... \cdot (1+\text{inflación}_{t+n})-1\right]\cdot 100\%
 $$
 
-  Ya que, si tenemos un bien que en el año base vale 1, y la inflación anual de los siguientes $n$ años es $I_k$ con \$k\in \mathbb{N}, k \leq n \$. Entonces:
+  Ya que, si tenemos un bien que en el año base vale 1, y la inflación anual de los siguientes $n$ años es $I_k$ con $k\in\mathbb{N}, k\leq n$. Entonces:
 
 $$
 \frac{1}{1+I_1}=\frac{1}{\text{Inflación acumulada 1° año}+1} \Leftrightarrow \text{Inflación acumulada 1° año}=I_1
@@ -543,4 +542,3 @@ $$
 4)  
 
   Como dice el enunciado "Usted", estamos hablando de ti, y tu resides en chile, no en Angola, por lo que indexar en UF te dará una referencia de la utilidad más precisa que la de la inflación de Angola.
-
