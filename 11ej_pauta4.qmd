@@ -405,12 +405,12 @@ $$
     \begin{tabular}{|p{40mm}|p{40mm}|p{40mm}|}
         \hline
         Medida: & Forma genérica: & Utilidad: \\\hline
-        Producto marginal del trabajo: & \[21K^2L^2-3K^3\] & \[\$162\] \\\hline
-        Producto marginal del capital: &  \[14L^3K-6K^2L\] & \[\$200\]\\\hline
-        Productividad media del trabajo: & \[7K^2L^2-3K^3\] & \[\$50\] \\\hline
-        Productividad media del capital: & \[7L^3K-3K^2L\] & \[\$100\] \\\hline
-        Retornos de trabajo: & \[42K^2L\] & \[42 \text{, es creciente.}\] \\\hline 
-        Retornos de capital: & \[14K^3 - 3K^3L\] & \[8 \text{, es creciente.}\] \\\hline
+        Producto marginal del trabajo: & $$21K^2L^2-3K^3$$ & $$\$162$$ \\\hline
+        Producto marginal del capital: &  $$14L^3K-6K^2L$$ & $$\$200$$\\\hline
+        Productividad media del trabajo: & $$7K^2L^2-3K^3$$ & $$\$50$$ \\\hline
+        Productividad media del capital: & $$7L^3K-3K^2L$$ & $$\$100$$ \\\hline
+        Retornos de trabajo: & $$42K^2L$$ & $$42 \text{, es creciente.}$$ \\\hline 
+        Retornos de capital: & $$14K^3 - 3K^3L$$ & $$8 \text{, es creciente.}$$ \\\hline
     \end{tabular}
     \label{tab:my_label}
 \end{table}
@@ -453,33 +453,33 @@ $$
 </tr>
 <tr>
 <td>Producto marginal del trabajo:</td>
-<td>\[21K^2L^2-3K^3\]</td>
-<td>\[\$162\]</td>
+<td>$$21K^2L^2-3K^3$$</td>
+<td>$$\$162$$</td>
 </tr>
 <tr>
 <td>Producto marginal del capital:</td>
-<td>\[14L^3K-6K^2L\]</td>
-<td>\[\$200\]</td>
+<td>$$14L^3K-6K^2L$$</td>
+<td>$$\$200$$</td>
 </tr>
 <tr>
 <td>Productividad media del trabajo:</td>
-<td>\[7K^2L^2-3K^3\]</td>
-<td>\[\$50\]</td>
+<td>$$7K^2L^2-3K^3$$</td>
+<td>$$\$50$$</td>
 </tr>
 <tr>
 <td>Productividad media del capital:</td>
-<td>\[7L^3K-3K^2L\]</td>
-<td>\[\$100\]</td>
+<td>$$7L^3K-3K^2L$$</td>
+<td>$$\$100$$</td>
 </tr>
 <tr>
 <td>Retornos de trabajo:</td>
-<td>\[42K^2L\]</td>
-<td>\[42, \text{es creciente.}\]</td>
+<td>$$42K^2L$$</td>
+<td>$$42, \text{es creciente.}$$</td>
 </tr>
 <tr>
 <td>Retornos de capital:</td>
-<td>\[14K^3 - 3K^3L\]</td>
-<td>\[8, \text{es creciente.}\]</td>
+<td>$$14K^3 - 3K^3L$$</td>
+<td>$$8, \text{es creciente.}$$</td>
 </tr>
 </table>
 
@@ -503,3 +503,790 @@ $$ $$
 $$ $$
 L=\frac{111}{24}
 $$
+
+
+### :
+&nbsp; Sea el mercado nacional de novelas formado por: los lectores locales $Q_D = 700 - 5P$ y los escritores locales $Q_S = 25P - 2000$, donde $P$ es el precio por libro y $Q$ es la cantidad de libros. Además, el mercado está abierto al comercio internacional y las novelas de autores extranjeros tienen un precio de \$70.
+&nbsp; Con esta información responda a las siguientes preguntas:
+
+a) Calcule la cantidad de novelas escritas por autores nacionales y la cantidad de novelas escritas por autores extranjeros que los lectores locales comprarían. Calcule además el excedente total
+del mercado nacional.
+
+b) Los escritores nacionales se organizan y deciden pedir apoyo del estado. ¿Qué argumentos cree que utilizarían?
+
+c) Imagine que el estado acepta la petición de los escritores nacionales y decide fijar un arancel de \$10 por libro importado. Calcule la recaudación que logra el estado y la pérdida de eficiencia que genera el arancel. ¿Por qué este arancel no ayuda en nada a los escritores locales?
+
+d) Luego del fracaso del arancel, los escritores organizados nuevamente acuden al estado pero ahora con una propuesta concreta: eliminar por completo la importación de libros. ¿De qué tamaño debe ser el arancel para lograr esto? ¿Cuál sería la recaudación y cuál la pérdida de eficiencia si el estado aplica la propuesta? \par
+
+&nbsp; **RESPUESTAS:**
+
+a)
+
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    % Líneas de oferta y demanda
+    \draw[red, very thick] (0,1.4) -- (7,0) node[midway,above right] {Demanda};
+    \draw[blue, very thick] (0,0.8) -- (7,1.08) node[midway,below left] {Oferta};
+
+    % Líneas punteadas
+    \draw[dashed, thick] (0,0.9) -- (2.5,0.9) -- (2.5,0);
+    \draw[dashed, thick] (0,0.7) -- (3.5,0.7) -- (3.5,0);
+    \draw[dashed, thick] (0,0.8) -- (3,0.8) -- (3,0);
+
+    % Puntos de coordenadas
+    \fill (2.5,0.9) circle (2pt) node[above right] {$250$};
+
+    % Etiquetas
+    \node[right] at (7,0.9) {Oferta};
+    \node[right] at (7,0) {700};
+    \node[above] at (0,1.5) {Precio, $P$};
+    \node[left] at (0,1.4) {$140$};
+    \node[left] at (0,0.9) {$90$};
+    \node[left] at (0,0.8) {$80$};
+    \node[below] at (2.5,0) {$250$};
+    \node[below] at (3,0) {$300$};
+    \node[below] at (3.5,0) {$350$};
+\end{tikzpicture}
+```
+&nbsp; Luego se tiene que $Q_D = 700 - 5(70) = 350$. Novelas locales = 0 y novelas extranjeras = 350 $$ET = 350(70)\div2 = 12,250$$
+
+
+b)
+
+&nbsp; Respuesta abierta. Podrían decir que no logran vender nada y hay que apoyar a la industria local: empleos, literatura local, etc.
+
+c)
+
+&nbsp; Ahora $P = 80 ==> Q_D = 700 - 5(80) = 300$, $Q_S = 0$. la recaudación es $R = 300(10) = 3,000$ El nuevo excedente total es ahora $ET = 300(60)\div2 = 9,000$. La pérdida de eficiencia es $PE = 12, 250 - 9, 000 = 3, 250$. No les ayuda en nada porque a \$80 el libro extranjero, ellos aún no logran vender.
+
+d)
+&nbsp; El arancel debe ser tal que nadie quiera importar, es decir $Q_D = Q_S: 700 - 5P = 25P - 2000$, de donde P = \$90 y arancel= \$20. Si nadie importa, la recaudación es nula. El excedente total es ahora $ET = 250(60)\div2 = 7,500$ y la pérdida de eficiencia es $PE = 12,250 - 7,500 = 4,750$.
+
+
+
+### :
+&nbsp; Una empresa tiene costos totales dados por $CT = {Q}^2 + 5Q + 36$, sabiendo esto calcule lo siguiente:
+
+a) Función de costos marginales para la empresa.
+
+b) Costo variable medio.
+
+c) Costo toal medio.
+
+&nbsp; Ahora repita los mismos calculos para un empresa con $CF = 200$ y $CV = 2{Q}^2 + 8Q$ en d,e,f.
+
+&nbsp; **RESPUESTAS:**
+
+a) Derivando la función de los costos totales obtenemos $CMG = 2Q + 5$
+
+b) Para obtener el costo variable medio debemos separar los costos totales y fijos. Los costos fijos serían $CF = 36$ y los costos variables $CV = {Q}^2 + 5Q$. Para el costo variable medio hay que dividir por Q. Quedando así $CVMe = \frac{{Q}^2+ 5Q}{Q} = Q + 5$. 
+
+c) Los costos totales medios son los costos totales divididos por Q. De esta forma quedaría: 
+$$CTMe = \frac{{Q}^2 + 5Q + 36}{Q} = Q + 5 + \frac{36}{Q}$$
+
+d) Para esta nueva empresa, armamos la función de costo total sumando los costos fijos más los variables. Obtenemos $CT = 2{Q}^2 + 8Q + 200$. Derivamos respecto a Q y obtenemos los costos marginales $CMg = 4Q + 8$.
+
+e) Para los costos variables medios obtenemos $CVMe = \frac{2{Q}^2 + 8Q}{Q} = 2Q + 8$.
+
+f) Para los costos totales medios obtenemos $CTMe = \frac{2{Q}^2 + 8Q + 200}{Q} = 2Q + 8 + \frac{200}{Q}$
+
+
+### :
+&nbsp; Imagine una empresa que vende parrillas. En su primer año vende 752 unidades, a un precio de \$279 cada una. Para conocer su elasticidad, el segundo año de operación venden las mismas parrillas a \$300 cada una, logrando vender 673 en total. ¿Cuál es su elasticidad de la demanda? ¿Qué puede decir sobre este bien?
+
+
+&nbsp; **RESPUESTA:**
+
+&nbsp; Para calcular la elasticidad de la demanda, es necesario saber la variación de la cantidad demandada respecto al precio. P y Q se reemplazan por los precios y cantidades promedio de los dos años. $\epsilon = \frac{\vartriangle Q}{\vartriangle P} \cdot \frac{P}{Q}$. Reemplazando quedaría de la siguiente forma: \\
+$$\epsilon = \frac{752 - 673}{300 - 279} \cdot \frac{289,5}{712,5} = \frac{79}{21} \cdot \frac{289,5}{712,5} = 1,5$$
+&nbsp; Al obtener $\epsilon > 1$, sabemos que estamos frente a una demanda elástica, y como también $\epsilon > 0$, sabemos que es un bien normal.
+
+
+### :
+
+&nbsp; Suponga que existe un mercado perfectamente competitivo con las siguientes curvas de oferta y demanda $P = 8000 - 25Q_d$ y $P = 500 + 5Q_s$. 
+
+a) Calcule el equilibrio de mercado.
+
+b) Suponga que se le aplica un impuesto directamente al productor de un 25\%. ¿Cuál sería la nueva cantidad de equilibrio una vez aplicado ese impuesto?
+
+c) ¿Que precio paga el consumidor y cuanto recibe el productor?
+
+d) ¿Cuanto recauda el estado?
+
+
+&nbsp; **RESPUESTAS:**
+
+
+a) El equilibrio de mercado se obtiene de la intersección de ambas funciones, resolviendo obtenemos $Q = 250$ y $P=1.750$.
+
+b) Aplicando el impuesto la nueva función de oferta es: $$P=(500 + 5Q) \cdot (1 + 0,25)$$ Desarrollando queda $P=625+6,25Q$. 
+
+&nbsp; La nueva oferta la intersectamos con la demanda anterior, que no ha cambiado, y obtenemos un nuevo equilibrio donde $Q=236$.
+
+c) Para ver el precio del consumidor y productor, reemplazamos la nueva cantidad de equilibrio en sus respectivas funciones de precio. Donde obtenemos: $$P_c= 8.000 - 25 \cdot 236 = 2.100$$ y $$P_p=500 + 5 \cdot 236 = 1.680$$.
+
+d) La recaudación del estado en este caso es: $$R=(P_c - P_p) \cdot Q$$ $$R = (2.100 - 1.680) \cdot 236 = 99.120$$.
+
+
+### :
+
+Sean $Q_s = \frac{100.000}{3} P$ y $Q_d = 300.000 - \frac{100.000}{3} P$, las respectivas curvas de oferta y demanda de un bien. Considere que el gobierno quiere reducir su consumo en $\frac{1}{3}$. Para eso decide gravar la producción con un impuesto por unidad vendida.
+
+a) Calcule de cuanto debe ser el impuesto $\tau$ para lograr su objetivo.
+
+b) Si quieren lograr lo mismo pero a través de fijación de precios. ¿A cuanto deberían fijarlo? ¿Sería precio máximo o mínimo?
+
+
+&nbsp; **RESPUESTAS:**
+
+
+a) 
+
+&nbsp; Para calcular el impuesto primero es necesario calcular el equilibrio sin intervención. Se obtiene el equilibrio $P = 4,5$ y $Q = 150.000$.
+
+&nbsp; Al reducir la cantidad en $\frac{1}{3}$ queda $Q=100.000$, por lo que reemplazando ese valor de Q en la curva de demanda tendríamos $P=6$.
+
+&nbsp; La curva inversa de oferta es $P = \frac{3}{100.000}Q$, si aplicamos el impuesto $\tau$ la nueva curva queda de la forma: $$P = \frac{3}{100.000}Q + \tau$$
+
+&nbsp; Sustituyendo el punto de equilibrio luego de la reducción en $\frac{1}{3}$ obtenemos $\tau = 3$.
+
+
+b)
+&nbsp; Si querían fijación de precios en lugar de impuestos debían haber fijado el precio mínimo del bien en 6, lo que no hubiera tenido mucho sentido ya que el equilibrio está por debajo de ese precio. 
+
+
+### :
+&nbsp; En esta pregunta analizaremos la importancia que puede tener la elasticidad precio de la demanda sobre varios aspectos de la intervención en un mercado. Imagine que la oferta de mercado es $Q_S= P$. Considere 3 posibles demandas de mercado: (i) $Q_D = 300 - 2P$, (ii) $Q_D = 200 - P$ y (iii) $Q_D = 100$.
+
+&nbsp; Para cada uno de los 3 escenarios de demanda:
+
+a) Calcule y grafique el equilibrio de mercado.
+
+b) Calcule la elasticidad precio de la demanda en el punto de equilibrio.
+
+c) Calcule el excedente del consumidor.
+
+&nbsp; Si el estado decide cobrar un impuesto de \$10 por unidad vendida (también para cada uno de los 3 escenarios de demanda):
+
+d) ¿Cómo se reparte el impuesto entre consumidores y productores?
+
+e) Calcule la recaudación que logra el estado.
+
+f) Calcule el nuevo excedente del consumidor.
+
+g) Calcule la pérdida de eficiencia que ocasiona el impuesto.
+
+h) En base a todas sus respuestas a)-g), haga una interpretación económica del efecto que tiene la elasticidad precio de la demanda sobre: el bienestar de consumidores, la incidencia de un
+impuesto (cuánto paga cada uno), la recaudación del gobierno y la ineficiencia de la intervención.
+
+
+&nbsp; **RESPUESTAS:**
+
+
+a) Calcule y grafique el equilibrio de mercado.
+
+(i) $300 - 2P = P \longrightarrow P = 100$ y $Q = 100 $
+(ii) $200 - P = P \longrightarrow P = 100$ y $Q = 100$
+(iii) $100 = P \longrightarrow P = 100$ y $Q = 100$.
+
+
+
+
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[->, thick] (0,0) -- (0,4) node[above] {Precio(P)};
+    \draw[->, thick] (0,0) -- (4,0) node[right] {Cantidad(Q)};
+    \node[below] at (3,0) {300};
+    \node[below] at (2.25,0) {225};
+    \node[below] at (1.5,0) {150};
+    \node[below] at (0.75,0) {75};
+    \node[below] at (0,0) {0};
+    \node[left] at (0,3) {200};
+    \node[left] at (0,2.5) {150};
+    \node[left] at (0,2) {100};
+    \node[left] at (0,1.5) {50};
+    \node[left] at (0,0) {0};
+    
+    \draw[color=blue, domain=0:2.5, samples=100] plot (\x, \x) node[right] {Oferta};
+    \draw[color=red, domain=0:3, samples=100] plot (\x, {1.5 - 0.5*\x}) node[right] {Demanda};
+    
+    \filldraw (1,1) circle (1pt) node[above right] {(100, 100)};
+\end{tikzpicture}
+```
+
+
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[->, thick] (0,0) -- (0,4) node[above] {Precio(P)};
+    \draw[->, thick] (0,0) -- (4,0) node[right] {Cantidad(Q)};
+    \node[below] at (3,0) {200};
+    \node[below] at (2.5,0) {150};
+    \node[below] at (2,0) {100};
+    \node[below] at (1.5,0) {50};
+    \node[below] at (0,0) {0};
+    \node[left] at (0,3) {200};
+    \node[left] at (0,2.5) {150};
+    \node[left] at (0,2) {100};
+    \node[left] at (0,1.5) {50};
+    \node[left] at (0,0) {0};
+    
+    \draw[color=blue, domain=0:2, samples=100] plot (\x, \x) node[right] {Oferta};
+    \draw[color=red, domain=0:2, samples=100] plot (\x, {2 - \x}) node[right] {Demanda};
+    
+    \filldraw (1,1) circle (1pt) node[above right] {(100, 100)};
+\end{tikzpicture}
+```
+
+
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[->, thick] (0,0) -- (0,4) node[above] {Precio(P)};
+    \draw[->, thick] (0,0) -- (4,0) node[right] {Cantidad(Q)};
+    \node[below] at (3,0) {200};
+    \node[below] at (2.5,0) {150};
+    \node[below] at (2,0) {100};
+    \node[below] at (1.5,0) {50};
+    \node[below] at (0,0) {0};
+    \node[left] at (0,3) {200};
+    \node[left] at (0,2.5) {150};
+    \node[left] at (0,2) {100};
+    \node[left] at (0,1.5) {50};
+    \node[left] at (0,0) {0};
+    
+    \draw[color=blue, domain=0:2, samples=100] plot (\x, \x) node[right] {Oferta};
+    \draw[color=red] (1,0) -- (1,2) node[right] {Demanda};
+    
+    \filldraw (1,1) circle (1pt) node[above right] {(100, 100)};
+\end{tikzpicture}
+```
+
+
+b) Calcule la elasticidad precio de la demanda en el punto de equilibrio.
+
+(i) $e_{P,D} = (-2)(\frac{100}{100}) = -2$
+(ii) $e_{P,D} = (-1)(\frac{100}{100}) = -1$
+(iii) $e_{P,D} = (0)(\frac{100}{100})  = 0$
+
+c) Calcule el excedente del consumidor.
+
+(i) $E_{C} = (100)(50)(\frac{1}{2}) = 2500$
+(ii) $E_{C} = (100)(100)(\frac{1}{2}) = 5000$
+(iii) $E_{C} = \infty$
+
+&nbsp; Si el estado decide cobrar un impuesto de \$10 por unidad vendida (también para cada uno de los 3 escenarios de demanda):
+
+d) ¿Cómo se reparte el impuesto entre consumidores y productores?
+
+(i) $300 - 2P = P - 10 \longrightarrow P = 103.\bar{3}$ $\Rrightarrow$ El consumidor paga \$$3.\bar{3}$ y el productor \$$6.\bar{6}$.
+(ii) $200 - P = P - 10 \longrightarrow P = 105$ $\Rrightarrow$ El consumidor paga \$5 y el productor \$5
+(iii) $100 = P - 10 \longrightarrow P = 110$ $\Rrightarrow$ El consumidor paga todo el impuesto.
+
+e) Calcule la recaudación que logra el estado.
+
+(i) $R = (10)(93.\bar{3}) = 933.\bar{3}$ 
+(ii) $R = (10)(95) = 950$ 
+(iii) $R = (10)(100) = 1000$ 
+
+
+f) Calcule el nuevo excedente del consumidor. 
+
+ (i)
+$$ Q = 300 - 2(103.\bar{3}) = 93.\bar{3} \longrightarrow $$ 
+$$E_{C} = (93.\bar{3})(150 - 103.\bar{3})(\frac{1}{2}) = 2177.\bar{7}$$  
+ (ii)
+$$Q = 200 - (105) = 95 \longrightarrow $$  
+$$E_{C} = (95)(200 - 105)(\frac{1}{2}) = 4512.5$$ 
+ (iii) 
+$$Q = 100 \longrightarrow E_{C} = \infty$$ 
+
+g) Calcule la pérdida de eficiencia que ocasiona el impuesto. 
+
+(i) $P_{e} = (10)(100 - 93.\bar{3})(\frac{1}{2}) = 33.\bar{3}$ 
+(ii) $P_{e} = (10)(100 - 95)(\frac{1}{2}) = 25$ 
+(iii) $P_{e} = 0 $ 
+
+h) Mientras más inelástica (o menos elástica) es la demanda: más pagan del impuesto los consumidores, menos es la pérdida de eficiencia, menor es el cambio en bienestar y mayor la recaudación. 
+
+
+
+### :
+&nbsp; Un grupo de pescadores de la X región se encuentra muy contento durantes estos últimos días. En los periódicos ha aparecido la noticia que el compuesto denominado “f” provoca un aceleramiento en el crecimiento de la anchoveta, un pez característico de la región. La buena noticia es que dicho compuesto es eliminado al mar por la compañía salmonera “Buen Salmón S.A.” al momento de realizar sus procesos de elaboración de salmón enlatado, lo cual ha traído como consecuencia un aumento del número de anchovetas pescadas durante las últimas semanas. Se ha realizado un estudio el cual ha estimado que el impacto positivo de la producción de salmones enlatados sobre la pesca de anchovetas está dada por $f(q) = \frac{bq^2}{4}$ donde “q” es la cantidad de latas producidas por “Buen Salmón SA”. La función de costos de la firma salmonera es $C(q) = a + bq^2$ y la demanda de mercado es $P(q) = a - cq$ Suponga competencia perfecta.
+
+a) ¿Cuánto produce y a qué precio la firma salmonera
+
+b) El encargado de pesca del conglomerado de pescadores atribuye el aumento de la cantidad extraída de anchovetas a su excelente gestión, y en base a esto solicita al grupo un aumento de su sueldo. ¿Se merece el aumento el encargado? Argumente claramente su respuesta
+
+c) ¿Cuál es el óptimo social de producción de la firma salmonera? Grafique y explique.
+
+&nbsp; **RESPUESTAS:**
+
+
+&nbsp; Se tiene que:
+$$f_{(q)}=\frac{bq^{2}}{4}$$
+&nbsp; Esta ecuación representa el valor que se le da a la externalidad. La siguente función  representa los costos totales
+
+$$C_{(q)}= a + bq^{2}$$
+
+&nbsp; Sigue que,
+
+a)
+
+&nbsp; En competencia perfecta 
+$$P = Cmg$$ 
+$$a - cq = 2bq$$
+$$Q=\frac{a}{2b+c}$$
+$$P=\frac{2ab}{2b+c}$$
+
+b)
+&nbsp; No merece el aumento, ya que el incremento de la extracción de anchovetas no se debe a su gestión, sino a la externalidad positiva que genera la empresa.
+
+c)
+
+$$C_{(q)}= a + bq^{2}-\frac{bq^{2}}{4}$$
+$$Cmg_{(q)}= 2bq-\frac{{bq}}{2}= \frac{{3bq}}{2}$$
+&nbsp; y con la condición de competencia perfecta 
+$$P = Cmg$$
+$$a - cq = \frac{{3bq}}{2}$$
+$${q*(\frac{{3b}}{2} + c)} = a $$
+
+
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+% Supply and demand curves
+\draw[red, very thick] (6,0) -- (0,6) node[right] {Demanda};
+\draw[blue, very thick] (0,0) -- (6,3) node[right] {$Cmg_{P}$};
+\draw[blue, very thick] (3,0) -- (6,1.5) node[right] {$Cmg_{S}$};
+
+% Dashed lines
+\draw[black, dashed, thick] (0,2) -- (4,2) -- (4,0);
+\draw[black, dashed, thick] (0,1) -- (5,1) -- (5,0);
+
+% Coordinate points
+\filldraw[black] (4,2) circle (2pt) node[above right] {$P_{e}$};
+\filldraw[black] (5,1) circle (2pt) node[above right] {$P_{social}$};
+
+% Labels
+\node[below right] at (6,0) {Cantidad, $Q$};
+\node[above left] at (0,6) {Precio, $P$};
+\end{tikzpicture}
+```
+
+
+
+
+
+
+
+### :
+
+&nbsp; Tenemos un mercado que tiene como funciones de oferta y demanda $P(Q)=1+Q$ y $P(Q)=\frac{11-Q}{2}$.
+
+a) Si se le agrega un precio máximo igual a 2, grafique la situación y calcule los excedentes del oferente y demandante.
+
+b) Si se le agrega un precio máximo igual a $\frac{9}{2}$, grafique la situación y calcule la ineficiencia.
+
+
+&nbsp; **RESPUESTAS:**
+a)
+
+Gráfico:
+
+&nbsp; Primero calculamos el punto de equilibrio (Q,P), esto es igual a:
+
+$$(\frac{11-2}{3}, 1+ \frac{11-2}{3})$$
+
+&nbsp; O también:
+
+$$(\frac{11-2}{2+1}, \frac{11}{2}- \frac{11-2}{2+1})$$
+
+&nbsp; Esto resulta:
+
+$$(3,4)$$
+
+&nbsp; Hacemos el gráfico tomando en cuenta el precio máximo.
+
+
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+
+    % oferta = P(Q)=1+Q
+    % demanda = P(Q)=(11-Q)/2
+    
+    % Área excedente del consumidor
+    \fill[orange!60] (0,5.5) -- (0,2) -- (1,2) -- (1,5.5) -- cycle;
+    
+    % Área excedente del productor
+    \fill[blue!60] (0,1) -- (1,1) -- (1,2) -- (0,2) -- cycle;
+    
+    % Pérdida de eficiencia.
+    \fill[black!40] (1,2) -- (1,5.5) -- (3,4) -- cycle;
+    
+    % Demanda
+    \draw [blue, line width=1pt](0,5.5) -- (11,0); % P(Q)=5-Q
+
+    % Oferta
+    \draw [red, line width=1pt](0,1) -- (10,11); % P(Q)=1+Q
+
+    % Fijación de precio
+    \draw [dashed, line width=1pt](0,2) -- (11,2);
+    
+    % Eje x
+    \draw[black, line width=2pt] (0,0) -- (10.98,0) node[right] {Q};
+    \draw[black, line width=1pt] (10.86,-0.15) -- (11.01,0);
+    \draw[black, line width=1pt] (10.86,0.15) -- (11.01,0);
+
+    % Eje y
+    \draw[black, line width=2pt] (0,0) -- (0,10.98) node[right] {P};
+    \draw[black, line width=1pt] (-0.15,10.86) -- (0,11.01);
+    \draw[black, line width=1pt] (0.15,10.86) -- (0,11.01);
+
+    % Leyendas
+    \node[below left] at (1,2) {2};
+    \node[below left] at (1,1) {1};
+    \node[below left] at (1,0) {0};
+    
+\end{tikzpicture}
+```
+
+
+&nbsp; Luego calculamos los excedentes:
+
+&nbsp; Importante:
+
+$$P_s(Q)=1+Q \Leftrightarrow Q_s(P)=P-1$$
+$$P_d(Q)=\frac{11-Q}{2} \Leftrightarrow Q_d(P)=11-2P$$
+
+$$\textrm{EC}=Q_s(2) \cdot (P_d(Q_s(2))-2)+\frac{P_d(0)-P_d(Q_s(2))}{2}$$
+
+$$\textrm{EC}=(2-1) \cdot (\frac{11-(2-1)}{2}-2)+\frac{11/2-(11-(2-1))/2}{2}$$
+
+$$\textrm{EC}=6$$
+
+b)
+
+&nbsp; Gráfico:
+
+&nbsp; Teniendo ya el punto de equilibrio por la parte a, seguimos añadiéndole el precio mínimo y veremos su ineficiencia.
+
+\begin{tikzpicture}
+
+    % oferta = P(Q)=1+Q
+    % demanda = P(Q)=(11-Q)/2
+    
+    % Area excedente del consumidor
+    \fill[orange!60] (0,5.5) -- (0,4.5) -- (2,4.5) -- cycle;
+    
+    % Area excedente del productor
+    \fill[blue!60] (0,1) -- (0,4.5) -- (2,4.5) -- (2,3) -- cycle;
+    
+    % perdida de eficiencia.
+    \fill[black] (2,4.5) -- (2,3) -- (3,4) -- cycle;
+    
+    % demanda
+    \draw [blue, line width=1pt](0,5.5) -- (11,0); %P(Q)=5-Q
+
+    % oferta
+    \draw [red, line width=1pt](0,1) -- (10,11); %P(Q)=1+Q
+
+    %fijación de precio
+    \draw [line width=1pt](0,4.5) -- (11,4.5);
+    
+    % Eje x
+    \draw[black, line width=2pt] (0,0) -- (10.98,0) node[right] {Q};
+    \draw[black, line width=1pt] (10.86,-0.15) -- (11.01,0);
+    \draw[black, line width=1pt] (10.86,0.15) -- (11.01,0);
+
+    % eje y
+    \draw[black, line width=2pt] (0,0) -- (0,10.98) node[right] {P};
+    \draw[black, line width=1pt] (-0.15,10.86) -- (0,11.01);
+    \draw[black, line width=1pt] (0.15,10.86) -- (0,11.01);
+
+    %leyendas
+    \node[] at (-0.8,5.5) {11/2};
+    \node[] at (-0.8,1) {1};
+    \node[] at (-0.8,4.5) {9/2};
+    
+\end{tikzpicture}
+
+&nbsp; Luego calculamos la ineficiencia, para esto lo tomaremos como la suma de dos triángulos rectángulos y que tengan el mismo valor para el cateto que los une:
+
+$$\textrm{IE} = \frac{\textrm{cateto compartido} \cdot (\textrm{cateto triángulo 1}+\textrm{cateto triángulo 2})}{2}$$
+
+$$\textrm{IE} = \frac{1}{2}(3 - Q_d(4,5))((3-P_s(Q_d(4,5)))+(4,5-3))$$
+
+$$\textrm{IE} = \frac{1}{2}(3 - (11-2(4,5)))((3-(1+(11-2(4,5))))+(4,5-3))$$
+
+$$\textrm{IE} = 0.75$$
+
+
+
+
+
+
+
+### :
+&nbsp; Imagine el mercado de las lámparas representado por las siguientes curvas de oferta y demanda: $$Q_d = 400 - 2P$$  $$Q_o = -60 + 2P$$. Además, el precio internacional de las lámparas es \$170.
+
+a) Calcule el equilibrio de mercado sin comercio internacional.
+
+b) Calcule el equilibrio de mercado si se abren al comercio internacional.
+
+c) Calcule como queda el equilibrio de mercado si se crea un impuesto que hace que la cantidad total exportada sea 140 unidades.
+
+
+&nbsp; **RESPUESTAS:**
+
+
+a) Para la primera parte necesitamos calcular el equilibrio de mercado, a partir de la intersección de las curvas de oferta y demanda dadas, donde obtenemos un precio de equilibrio $P=115$ y una cantidad de equilibrio $Q=170$.
+
+b) Ahora necesitamos calcular el equilibrio de ese mercado una vez que se abren al comercio internacional con un precio $P_I=170$. Reemplazando ese precio en la oferta y la demanda obtenemos $Q_o=280$ y $Q_d=60$. Como la oferta es mayor a la demanda en ese mercado, vemos que las exportaciones en este caso son: $$Exp = Q_o - Q_d = 280-60=220$$
+
+c) Si se crea un impuesto que hace que la cantidad exportada sea igual a 140, debemos hacer que las exportaciones, es decir, la cantidad ofertada menos la demandada, sea igual a 140 en lugar de 220 como en la pregunta anterior. Para eso hacemos lo siguiente:
+$$Exp = Q_o - Q_d = 140$$
+$$(-60+2P)-(400-2P)=140$$
+$$-460+4P=140$$
+$$4P=600$$
+$$P=150$$
+&nbsp; Reemplazando ese nuevo precio de equilibrio en la oferta y en la demanda se obtiene respectivamente:
+$$Q_d = 400 - 2\cdot 150 = 100$$
+$$Q_o = -60 + 2\cdot 150 = 240$$
+&nbsp; Por lo que ahora la exportaciones son:
+$$Exp = Q_o - Q_d = 240 - 100 = 140$$
+&nbsp; Además, el monto del impuesto es de 20, la diferencia del precio internacional $P_I=170$ y el nuevo precio de equilibrio $P=150$.
+
+
+### :
+
+a) Complete la siguiente tabla, que hace relación a los excedentes de los participantes de un mercado.
+
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <caption>Intervención I.</caption>
+    <tr>
+        <th>Intervención</th>
+        <th>Demandante</th>
+        <th>Oferente</th>
+    </tr>
+    <tr>
+        <td>Impuesto</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Subsidio</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Fijación precio máximo</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Fijación precio mínimo</td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{45mm}|p{30mm}|p{30mm}|}
+        \hline
+        Intervención & Demandante & Oferente \\
+        \hline
+        Impuesto & &  \\
+        \hline
+        Subsidio & &  \\
+        \hline
+        Fijación precio máximo & & \\
+        \hline
+        Fijación precio mínimo & &  \\
+        \hline
+    \end{tabular}
+    \caption{Intervención I.}
+    \label{tab:my_label}
+\end{table}
+```
+:::
+
+
+b) Una empresa de motores de autos petroleros tenia un subsidio hacia el consumidor para el año 2018, luego por temas de legislación en el congreso, en el año 2019 decidieron que las empresas que incentivan el uso de petroleo no tendrán más subsidio. Y finalmente, para recaudar más dinero para financiar pymes con ideas ecológicas, decidieron poner un impuesto en el año 2023 a las empresas que no usen energía renovable. Haga tres gráficos de oferta y demanda, que represente los tres años de este mercado.
+
+&nbsp; **RESPUESTAS:**
+
+a)
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <caption>Intervención I.</caption>
+    <tr>
+        <th>Intervención</th>
+        <th>Demandante</th>
+        <th>Oferente</th>
+    </tr>
+    <tr>
+        <td>Impuesto</td>
+        <td>Pierde excedente</td>
+        <td>Pierde excedente</td>
+    </tr>
+    <tr>
+        <td>Subsidio</td>
+        <td>Gana excedente</td>
+        <td>Gana excedente</td>
+    </tr>
+    <tr>
+        <td>Fijación precio máximo</td>
+        <td>Pierde excedente</td>
+        <td>Gana excedente</td>
+    </tr>
+    <tr>
+        <td>Fijación precio mínimo</td>
+        <td>Gana excedente</td>
+        <td>Pierde excedente</td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{45mm}|p{30mm}|p{30mm}|}
+        \hline
+        Intervención & Demandante & Oferente \\
+        \hline
+        Impuesto & Pierde excedente & Pierde excedente \\
+        \hline
+        Subsidio & Gana excedente & Gana excedente \\
+        \hline
+        Fijación precio máximo & Pierde excedente & Gana excedente \\
+        \hline
+        Fijación precio mínimo & Gana excedente & Pierde excedente \\
+        \hline
+    \end{tabular}
+    \caption{Intervención I.}
+    \label{tab:my_label}
+\end{table}
+```
+:::
+
+
+b)
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+
+    
+    % demanda inicial
+    \draw [blue, line width=1pt](0,5) -- (5,0);
+    \node at (3.1,2.5) {2018};
+
+    % oferta inicial
+    \draw [red, line width=1pt](0,1) -- (4,5);
+    \node at (3.1,3.4) {2018};
+    
+    % Demanda 2019
+    
+    \draw [blue, line width=1pt](0,4) -- (4,0);
+    \node at (2.7,0.5) {2019};
+
+    % oferta 2023
+    \draw [red, line width=1pt](0,2) -- (3,5);
+    \node at (2.2,4.8) {2023};
+
+    %Grafico base
+    % Eje x
+    \draw[black, line width=2pt] (0,0) -- (5.98,0) node[right] {Q};
+    \draw[black, line width=1pt] (5.86,-0.15) -- (6.01,0);
+    \draw[black, line width=1pt] (5.86,0.15) -- (6.01,0);
+
+    % eje y
+    \draw[black, line width=2pt] (0,0) -- (0,5.98) node[right] {P};
+    \draw[black, line width=1pt] (-0.15,5.86) -- (0,6.01);
+    \draw[black, line width=1pt] (0.15,5.86) -- (0,6.01);
+
+    %leyendas
+    
+\end{tikzpicture}
+```

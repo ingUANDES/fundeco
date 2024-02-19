@@ -1,4 +1,3 @@
-
 ## Sobre el capítulo III:
 
 ### :
@@ -385,4 +384,152 @@ $$
   Donde el área negra es el peso muerto, la naranja es el beneficio del importador y el área azul es el arancel.
 
   Si quitamos el arancel, los consumidores podrán comprar más barato, pero los productores quebraran por no tener ningún excedente.
+
+### :
+&nbsp; Se tienen las siguientes funciones de oferta y demanda de un mercado local $P(Q)=2.5+Q/2$ y $P(Q)=13-Q$, si el precio mundial es de \$2, y se le aplica un arancel de \$2.
+
+1) ¿Cuál es el equilibrio de mercado?
+2) ¿Cuál es el beneficio del importador?
+3) Si se le aplica un arancel del \$2, ¿cual será el valor del peso muerto?
+4) siguiendo la pregunta anterior, ¿Cuánto recaudará el gobierno?
+
+
+&nbsp; \textbf{RESPUESTAS:}
+
+1) (7,6)
+2) (25.75)
+3) 5.75
+4) 12
+
+
+### :
+El mercado local de diesel está representado por:
+
+$$Q = \frac{a-P}{12.5}  \hspace{1cm} \text{ y}   \hspace{1cm}   Q = \frac{P-b}{11}$$
+
+&nbsp; Donde $P$ se encuentra en pesos chilenos (\$) por litro de combustible y $Q$ muestra los litros de combustible (en millones) que se transan en este mercado. Actualmente se cobra un impuesto de \$130 por litro de diesel.
+
+a) Se le pide calcular la cantidad Q que se transa después de aplicado el impuesto. Exprese su resultado con dos decimales.
+
+
+b)  Muestre detalladamente los cálculos del ejercicio anterior. ¿Hay diferencia entre el precio que observan oferentes y demandantes? Si es así, cuál es el precio que observa el productor y cuál es el precio que observa el consumidor? ¿A cuánto asciende la recaudación del gobierno? Si hay pérdida de eficiencia, ¿a cuánto asciende? Grafique.
+
+
+c) En su cálculo, ¿aplicó el impuesto sobre el consumidor o sobre el productor? ¿Sería diferente el resultado si lo aplica al otro lado del mercado? ¿Por qué? Calcule la incidencia del impuesto y relaciónelo con la elasticidad precio propio de las curvas de oferta y demanda.
+
+
+d) En la actualidad, hay argumentos a favor de aumentar el impuesto sobre el diésel y otros argumentos a favor de disminuir (al menos temporalmente) ese mismo impuesto. Mencione al menos un argumento que apoye el alza de este impuesto y uno que apoye la disminución del impuesto. Y finalmente, concluya a favor de qué argumento se encuentra usted.
+
+&nbsp; **RESPUESTAS:**
+
+a)
+&nbsp; Con un impuesto unitario $\tau=$\$130, el precio que observan compradores y vendedores será diferente, tal que $\tau=130=P_c - P_v$ donde $P_c$ es el precio que observan y pagan los consumidores y $P_v$ es el precio que observan y reciben los oferentes por cada litro de combustible. Si se aplica el impuesto sobre los compradores, se tiene $P_c= P_v+\tau$ y reemplazando en la ecuación de la demanda para obtener el nuevo equilibrio:
+$$ \frac{a-P_v-\tau}{12.5}=\frac{P_v-b}{11}$$
+de donde $$P_v = \frac{11a+12.5b-11\tau}{11+12.5}$$
+$$Q^\prime=\frac{a-b-\tau}{23.5}$$
+
+b)
+
+&nbsp; Sí, hay diferencia entre el precio que observan oferentes y demandantes. Por ejemplo, con $a=900$, $b=300$ y $\tau=130$ antes del impuesto el equilibrio estaba dado por $Q_0=25.53$ millones de litros a un precio de $P_0=580.85$ por litro de diésel.  Con el impuesto, el precio que reciben los oferentes por litro es de \$520 ($P_v$), mientras que los consumidores pagan por litro  \$650 ($P_c$) y en el mercado se transa una menor cantidad que asciende a $Q^\prime = 20$ millones. En este caso, la recaudación del gobierno es de \$2.600 millones ($\tau Q^\prime$) y la pérdida de eficiencia es de \$719,1 millones ($\tau (Q_0-Q^\prime)$).
+
+c)
+
+&nbsp; El resultado es el mismo independientemente sobre quién se aplique el impuesto, puesto que finalmente la carga fiscal es compartida entre ambas partes del mercado (oferentes y demandantes). Sobre quién recae la mayor parte, depende de la sensibilidad ante los cambios en los precios del diésel (incidencia del impuesto), lo cual se calcula con la elasticidad precio propio de las curvas de oferta y demanda:
+$$|\varepsilon_D | =\frac{\partial Q}{\partial P} \frac{P}{Q}=|\frac{-1}{12.5} \frac{P}{Q}| < \frac{1}{11} \frac{P}{Q}=\frac{\partial Q}{\partial P} \frac{P}{Q}=\varepsilon_S$$
+&nbsp; En este caso, para cualquier par $(Q, P)$, la demanda es siempre más inelástica que la oferta. Es decir, es menos sensible a cambios en precios, lo cual hace que la incidencia fiscal recaiga en mayor medida sobre los consumidores. En este caso, del impuesto unitario de \$130, los consumidores pagan \$69,15 del impuesto por cada litro y los productores \$60,85 por litro.
+
+d)
+
+&nbsp; Argumentos para incrementar el impuesto: 
+- disminuir el efecto de la externalidad negativa de la contaminación que genera su uso, (ii) progresividad del impuesto considerando que las familias de mayores ingresos son las tienen automóvil y hacen uso de este combustible  y (iii) aumentar los ingresos del fisco considerando la necesidad de mayor gasto público por la pandemia. Argumentos para reducir el impuesto de forma temporal:
+- ayudar a las familias que han sufrido reducciones en el ingreso por la actual coyuntura de mayor desempleo, empresas con menores ingresos por medidas de confinamiento, etc.
+- incentivar la industria de transporte y el traslado en menores costos a otras empresas.
+
+
+### :
+
+¿Cuál es la incidencia fiscal? ¿A quién se le aplica el impuesto? ¿Cuál es el objetivo del impuesto?
+
+&nbsp; **RESPUESTA:**
+
+&nbsp; El capítulo 6 del Mankiew 6ta edición, define la incidencia fiscal como la forma en que los participantes de un mercado comparten la carga de un impuesto. El impuesto puede ser aplicado al vendedor, a los compradores o a ambos. Estos impuestos buscan recaudar dinero para gastos fiscales. Estos gastos fiscales tienen como objetivo generar un mayor o igual beneficio social que el costo social producido por el impuesto.
+
+### :
+Tenemos un mercado donde su función oferta y demanda iniciales son respectivamente:
+$$P(Q)=5+\frac{3}{2}Q, \quad \quad P(Q)=13-\frac{1}{2}Q$$
+Luego sus funciones de oferta y demanda cambian respectivamente:
+$$P(Q)=2+Q, \quad \quad P(Q)=15-aQ$$
+a) Calcule el punto de equilibrio inicial.  
+b) ¿Cuánto tendría que valer “a”, para que este mercado se absolutamente inelástico?  
+c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad sea unitaria?  
+
+&nbsp; **RESPUESTAS:**
+
+a) 
+&nbsp; Igualamos las funciones y calculamos “Q”:
+$$5+\frac{3}{2}Q=13-\frac{1}{2}Q$$
+$$2Q=8$$
+$$Q=4$$  
+&nbsp; A base de la cantidad, calculamos el precio.
+$$P(4)=13-\frac{1}{2}\cdot4$$
+$$P=11$$  
+&nbsp; Entonces el punto de equilibrio está en $(4,11)$.  
+b)
+&nbsp; Al ser absolutamente inelástica, “Q” debe tener el mismo valor en la situación final e inicial. Entonces:
+$$2+Q=15-aQ$$
+$$2+1\cdot 4 =15-a\cdot 4$$
+$$2+4-15=-4\cdot a$$
+$$9=4\cdot a$$
+$$a=2.25$$  
+&nbsp; Entonces para que a sea absolutamente inelástica, “a” tiene que valer 2,25.  
+
+c)  
+&nbsp; Para que su elasticidad sea unitaria, esta tiene que ser igual a 1, entonces formularemos la situación así:
+$$1 =\left|\frac{\triangle\%Q}{\triangle\%P}\right|$$  
+&nbsp; Simplificamos los “\%”.
+$$1 =\left|\frac{\triangle Q}{\triangle P}\right|$$  
+&nbsp; Buscamos el valor de “Q”:
+$$2+Q=15-aQ$$
+$$Q+aQ=13$$
+$$Q=\frac{13}{1+a}$$  
+&nbsp; Y en relación con este, buscamos el valor de “P”:
+$$P=15-\frac{13a}{1+a}$$  
+&nbsp; Y finalmente formulamos:
+$$1 =\left|\frac{Q_i-Q_f}{P_i-P_f}\right|$$
+$$1 =\left|\frac{4-\frac{13}{1+a}}{11-15+\frac{13a}{1+a}}\right|$$
+$$1 =\left|\frac{4-\frac{13}{1+a}}{-4+\frac{13a}{1+a}}\right|$$
+$$1 =\left|\frac{\frac{4(1+a)-13}{1+a}}{\frac{13a-4(1+a)}{1+a}}\right|$$
+$$1 =\left|\frac{4+4a-13}{13a-4-4a}\right|$$
+$$1 =\left|\frac{4a-9}{9a-4}\right|$$  
+&nbsp; Como “a” está en la demanda expresada con un signo negativo, entonces $a>0$.  
+&nbsp; Caso I: 
+$$1 =\frac{4a-9}{9a-4}$$
+$$9a-4 =4a-9$$
+$$5a=-5$$  
+&nbsp; No se cumple por ser de valor negativo  
+&nbsp; Caso II:
+$$1 =-\frac{4a-9}{9a-4}$$
+$$9a-4 =-4a+9$$
+$$13a =13$$
+$$a =1$$  
+&nbsp; Se cumple.  
+&nbsp; Entonces a es igual a 1.
+
+
+### :
+&nbsp; Una empresa dedicada a vender parrillas vende en su primer año 752 unidades, a un precio de \$279 cada una. El segundo año de operación venden 673 unidades a \$300 cada una. ¿Cuál es su elasticidad de la demanda?
+
+&nbsp; **RESPUESTAS:**
+
+
+&nbsp; Para resolver este ejercicio recordemos que la elasticidad es el cambio porcentual en la cantidad demanda sobre el cambio porcentual en el precio.
+$$\epsilon = \frac{\vartriangle \%  Q}{\vartriangle \% P} $$
+&nbsp; Reemplazamos con las respectivas variaciones y obtenemos:
+$$\vartriangle Q=\frac{673-752}{752} \cdot 100=-10,5\%$$
+$$\vartriangle P=\frac{300-279}{279} \cdot 100=7,5\%$$
+&nbsp; Ahora calculamos la elasticidad y obtenemos:
+$$\epsilon = \frac{\vartriangle \%  Q}{\vartriangle \% P} = \frac{-10,5\%}{7,5\%}=-1,4$$
+&nbsp; El valor absoluto de la elasticidad es mayor a 1, por lo que estamos frente a una demanda elástica. Este resultado significa que un aumento del 1\% en el precio, se traduce en una disminución del 1,4\% en la demanda.
+
+
 

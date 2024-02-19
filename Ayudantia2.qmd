@@ -1,0 +1,464 @@
+# Ayudantía II:
+
+## Ejercicio I :
+
+  Suponga que la siguiente tabla resume la economía de un país que produce únicamente dos bienes:
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+    <tr>
+        <th></th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+    </tr>
+    <tr>
+        <td><strong>Computadores</strong></td>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td><strong>Autos</strong></td>
+        <td>10</td>
+        <td>8</td>
+        <td>6</td>
+        <td>3</td>
+        <td>0</td>
+    </tr>
+</table>
+
+</body>
+
+</html>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+                      & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} \\ \hline
+\textbf{Computadores} & 0          & 1          & 2          & 3          & 4          \\ \hline
+\textbf{Autos}        & 10         & 8          & 6          & 3          & 0          \\ \hline
+\end{tabular}
+\end{table}
+```
+:::
+
+1)  Dibujar la FPP.
+
+2)  Si esta economía se encuentra produciendo 1 computador, ¿cuál es el costo de oportunidad de comenzar a producir 4 computadores?
+
+3)  Calcular el costo de oportunidad del punto C al punto D.
+
+4)  ¿El rendimiento es creciente, decreciente o constante?
+
+5)  ¿Cómo se vería reflejado en la FPP un mejor rendimiento? (mayor producción)
+
+
+
+## Ejercicio II:
+
+  Grafique las siguientes demandas:
+
+1)  $$
+    P(Q)=\$10 - 1Q
+    $$
+
+
+2)  $$
+    P(Q)=\$12 - 2Q
+    $$
+    
+3) $$P(Q)=\$50 - 2.5Q$$
+
+
+## Ejercicio III:
+
+1)  Calcule el precio Demandado ($P$) de un bien para una producción de 5 unidades ($Q=5$). Usted sabe que si no se producen unidades el precio demandado es de \$5000. Adicionalmente, usted sabe que la función de demanda es lineal de la forma: $$P(Q)=a-250Q$$
+
+
+
+2)  Calcule la función inversa de demanda para $P(Q)=a-bQ$
+
+3)  Asuma una función de demanda igual a $P(Q)=a-235Q$. Si Usted sabe que 10 unidades se valoran a un precio de 7650, ¿Cuál sería el precio de referencia si no se produce nada?
+
+
+## Ejercicio IV:
+
+Calcule la función demanda de los siguiente gráficos. 1)
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:25,samples=100] plot (\x,{5-0.2*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+
+
+2)  
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:6.6,samples=100] plot (\x,{20-3*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+
+3)  
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:5,samples=100] plot (\x,{10-2*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+
+
+
+
+
+
+
+  **RESPUESTAS**
+
+&nbsp; Ejercicio I:
+
+1)   Para graficar la frontera de posibilidades de producción, basta con realizar un gráfico de 2 dimensiones, un bien por eje. Luego completar incorporando los puntos de producción.
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    % Ejes
+    \draw[->] (0,0) -- (10,0) node[right] {$Computadores$};
+    \draw[->] (0,0) -- (0,10) node[above] {$Autos$};
+    
+    % Datos
+    \draw[blue, mark=square] plot[mark=*] coordinates {(0,10) (1,8) (2,6) (3,3) (4,0)};
+    
+    % Leyenda
+    \node[blue, right] at (10,9) {FPP};
+\end{tikzpicture}
+```
+
+2)    Al observar el gráfico o la tabla FPP, se observa si la economía produce 1 computador, esta también produce eficientemente 8 autos. Pero, si aumenta la producción de computadores a 4, no se podría producir autos. Por esto, se concluye que el costo de oportunidad de producir de 1 a 4 computadores significa un costo de oportunidad de 8 autos.
+
+3)    Al igual que el caso anterior, al observar la tabla se ditingue que el costo de oportunidad de pasar de producir 2 computadores a 3, significa una disminución de producción de 3 autos. Por lo que el costo de oportunidad en este caso es de 3 autos.
+
+4)    Para distinguir el rendimiento, se debe entender si el costo de oportunidad aumenta, disminuye o es constante durante los distintos puntos de la FPP.
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+                      & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} \\ \hline
+\textbf{Computadores} & 0          & 1          & 2          & 3          & 4          \\ \hline
+\textbf{Autos}        & 10         & 8          & 6          & 3          & 0          \\ \hline
+\textbf{Costo de Oportunidad}        & 0         & 2          & 2          & 3          & 3          \\ \hline
+\textbf{Bienes totales}        & 10         & 9          & 8          & 6          & 4          \\ \hline
+\end{tabular}
+\end{table}
+```
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+    <tr>
+        <th></th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+    </tr>
+    <tr>
+        <td><strong>Computadores</strong></td>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td><strong>Autos</strong></td>
+        <td>10</td>
+        <td>8</td>
+        <td>6</td>
+        <td>3</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td><strong>Costo de Oportunidad</strong></td>
+        <td>0</td>
+        <td>2</td>
+        <td>2</td>
+        <td>3</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td><strong>Bienes totales</strong></td>
+        <td>10</td>
+        <td>9</td>
+        <td>8</td>
+        <td>6</td>
+        <td>4</td>
+    </tr>
+</table>
+
+</body>
+
+</html>
+```
+:::
+
+Como se observa en la tabla, el valor de costos de oportunidad aumenta mientras que los bines totales disminuye. En conclusión, existe un rendimiento decreciente.
+
+5)  Se vería reflejado al existir una menor pendiente vertical.
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    % Ejes
+    \draw[->] (0,0) -- (10,0) node[right] {$Computadores$};
+    \draw[->] (0,0) -- (0,10) node[above] {$Autos$};
+    
+    % Datos FPP original
+    \draw[blue, mark=square] plot[mark=*] coordinates {(0,10) (1,8) (2,6) (3,3) (4,0)};
+    
+    % Datos FPP de mayor rendimiento
+    \draw[red, mark=square] plot[mark=*] coordinates {(0,10) (2,8) (4,6) (7,3) (10,0)};
+    
+    % Leyendas
+    \node[blue, right] at (10,9) {FPP original};
+    \node[red, right] at (10,8) {FPP de mayor rendimiento};
+\end{tikzpicture}
+```
+
+
+&nbsp; Ejercico II:
+
+1)
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:10,samples=100] plot (\x,{10-\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+2) 
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:6,samples=100] plot (\x,{12-2*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+3)
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:14.2,samples=100] plot (\x,{25-1.75*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+
+&nbsp; Ejercicio III:
+
+1) 
+
+  Tenemos que en el caso $Q=0$ el valor de $P(Q)=a=5000$, entonces con esto tenemos la función:
+
+$$
+P(Q)=5000-250Q
+$$
+
+  Ahora evaluamos $P(5)$ y esto nos da: $$
+P(5)=5000-250\cdot 5
+$$ $$
+P(5)=5000-1250
+$$ $$
+P(5)=3750
+$$
+
+2)
+
+  La función inversa de la demanda es la función inversa de $Q(P)$, por lo que la función inversa de $P(Q)=ab-bQ$ es esta misma.
+
+
+3)
+
+  El precio de referencia cuando no se produce nada es en este caso el valor de \`\`$a$'', para calcularlo tenemos que plantear la ecuación del enunciado:
+
+$$
+7650=a-235\cdot 10
+$$ $$
+7650=a-2350
+$$
+
+$$
+7650+2350=a
+$$ $$
+a=10000
+$$
+
+  Es decir el precio de referencia es equivalente a \$10.000.
+
+
+
+&nbsp; Ejercicio IV: 
+1)
+
+$$
+P(Q)=5-0.2Q
+$$
+
+2)
+
+$$
+P(Q)=20-3Q
+$$
+3)
+
+$$
+P(Q)=10-2Q
+$$
+

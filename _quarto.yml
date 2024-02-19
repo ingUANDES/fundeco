@@ -16,13 +16,14 @@ book:
     - 4sistimpo.qmd
     - 5varia.qmd
     - 6finan.qmd
-    - 7ej_propuestos.qmd
+    - 7,8titulo.qmd
     - 8ej_pauta1.qmd
     - 9ej_pauta2.qmd
     - 10ej_pauta3.qmd
     - 11ej_pauta4.qmd
     - 12ej_pauta5.qmd
     - 13ej_pauta6.qmd
+    - 14ejsinpauta.qmd
     - references.qmd
 
 bibliography: references.bib

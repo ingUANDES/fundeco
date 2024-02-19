@@ -2,214 +2,6 @@
 
 ### :
 
-1)  Calcule el precio Demandado ($P$) de un bien para una producción de 5 unidades ($Q=5$). Usted sabe que si no se producen unidades el precio demandado es de \$5000. Adicionalmente, usted sabe que la función de demanda es lineal de la forma: $$P(Q)=a-250Q$$
-
-  **RESPUESTA**
-
-  Tenemos que en el caso $Q=0$ el valor de $P(Q)=a=5000$, entonces con esto tenemos la función:
-
-$$
-P(Q)=5000-250Q
-$$
-
-  Ahora evaluamos $P(5)$ y esto nos da: $$
-P(5)=5000-250\cdot 5
-$$ $$
-P(5)=5000-1250
-$$ $$
-P(5)=3750
-$$
-
-2)  Calcule la función inversa de demanda para $P(Q)=a-bQ$
-
-  **RESPUESTA**
-
-  La función inversa de la demanda es la función inversa de $Q(P)$, por lo que la función inversa de $P(Q)=ab-bQ$ es esta misma.
-
-3)  Asuma una función de demanda igual a $P(Q)=a-235Q$. Si Usted sabe que 10 unidades se valoran a un precio de 7650, ¿Cuál sería el precio de referencia si no se produce nada?
-
-  **RESPUESTA**
-
-  El precio de referencia cuando no se produce nada es en este caso el valor de \`\`$a$'', para calcularlo tenemos que plantear la ecuación del enunciado:
-
-$$
-7650=a-235\cdot 10
-$$ $$
-7650=a-2350
-$$
-
-$$
-7650+2350=a
-$$ $$
-a=10000
-$$
-
-  Es decir el precio de referencia es equivalente a \$10.000.
-
-\newpage
-
-### :
-
-  Grafique las siguientes demandas:
-
-1)  $$
-    P(Q)=\$10 - 1Q
-    $$
-
-```{r, engine='tikz',echo=FALSE,out.width="60%"}
-#| fig-align: center
-\begin{tikzpicture}
-    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
-    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
-    
-    \foreach \x in {5,10,15,20,25}
-        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
-    
-    \foreach \y in {5,10,15,20,25}
-        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
-    
-    \draw[thick,domain=0:10,samples=100] plot (\x,{10-\x});
-    
-    % Agregar cuadrícula
-    \draw[gray!50] (0,0) grid (25,25);
-\end{tikzpicture}
-```
-
-\newpage
-
-2)  $$
-    P(Q)=\$12 - 2Q
-    $$
-
-```{r, engine='tikz',echo=FALSE,out.width="60%"}
-#| fig-align: center
-\begin{tikzpicture}
-    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
-    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
-    
-    \foreach \x in {5,10,15,20,25}
-        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
-    
-    \foreach \y in {5,10,15,20,25}
-        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
-    
-    \draw[thick,domain=0:6,samples=100] plot (\x,{12-2*\x});
-    
-    % Agregar cuadrícula
-    \draw[gray!50] (0,0) grid (25,25);
-\end{tikzpicture}
-```
-
-\newpage
-
-3)  $$
-    P(Q)=\$50 - 2.5Q
-    $$
-
-```{r, engine='tikz',echo=FALSE,out.width="60%"}
-#| fig-align: center
-\begin{tikzpicture}
-    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
-    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
-    
-    \foreach \x in {5,10,15,20,25}
-        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
-    
-    \foreach \y in {5,10,15,20,25}
-        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
-    
-    \draw[thick,domain=0:14.2,samples=100] plot (\x,{25-1.75*\x});
-    
-    % Agregar cuadrícula
-    \draw[gray!50] (0,0) grid (25,25);
-\end{tikzpicture}
-```
-
-\newpage
-
-### :
-
-Calcule la función demanda de los siguiente gráficos. 1)
-
-```{r, engine='tikz',echo=FALSE,out.width="60%"}
-#| fig-align: center
-\begin{tikzpicture}
-    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
-    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
-    
-    \foreach \x in {5,10,15,20,25}
-        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
-    
-    \foreach \y in {5,10,15,20,25}
-        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
-    
-    \draw[thick,domain=0:25,samples=100] plot (\x,{5-0.2*\x});
-    
-    % Agregar cuadrícula
-    \draw[gray!50] (0,0) grid (25,25);
-\end{tikzpicture}
-```
-
-$$
-P(Q)=5-0.2Q
-$$
-
-\newpage
-
-2)  
-
-```{r, engine='tikz',echo=FALSE,out.width="60%"}
-#| fig-align: center
-\begin{tikzpicture}
-    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
-    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
-    
-    \foreach \x in {5,10,15,20,25}
-        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
-    
-    \foreach \y in {5,10,15,20,25}
-        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
-    
-    \draw[thick,domain=0:6.6,samples=100] plot (\x,{20-3*\x});
-    
-    % Agregar cuadrícula
-    \draw[gray!50] (0,0) grid (25,25);
-\end{tikzpicture}
-```
-
-$$
-P(Q)=20-3Q
-$$
-
-\newpage
-
-3)  
-
-```{r, engine='tikz',echo=FALSE,out.width="60%"}
-#| fig-align: center
-\begin{tikzpicture}
-    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
-    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
-    
-    \foreach \x in {5,10,15,20,25}
-        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
-    
-    \foreach \y in {5,10,15,20,25}
-        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
-    
-    \draw[thick,domain=0:5,samples=100] plot (\x,{10-2*\x});
-    
-    % Agregar cuadrícula
-    \draw[gray!50] (0,0) grid (25,25);
-\end{tikzpicture}
-```
-
-$$
-P(Q)=10-2Q
-$$
-
-### :
-
   Tenemos una empresa forestal con las siguientes funciones de demanda y oferta: $$
 P_d(Q)=100-3Q
 $$ $$
@@ -300,3 +92,231 @@ $$
 
   De esto podemos decir que es elástica.
 
+### :
+
+  Sean Qo y Qd las ecuaciones de oferta y demanda de un bien X, respectivamente. $$Q_o = 50P-300$$ $$Q_d=150-10P$$   Calcule el precio y cantidad de equilibrio.
+
+  **RESPUESTA:**   Para obtener el equilibrio de mercado del bien X, es necesario entender que en el equilibrio $Q_o = Q_d=Q_{equilibrio}$ y $P_o = P_d=P_{equilibrio}$. Entonces: $$Q_o = 50P-300$$ $$Q_d=150-10P$$ $$\Rightarrow 150 -10P=50P-300$$ $$ \leftrightarrow 450=60P$$ $$ \leftrightarrow 7,5=P_{equilibrio}$$ $$\Rightarrow Q_o(P_{equilibrio})=Q_d(P_{equilibrio})=150 -10(7,5)=75$$
+
+### :
+
+a)  Calcule el precio oferido ($P$) de un bien para una producción de 7 unidades ($b=7$). Usted sabe que si no se producen unidades el precio oferido es de \$1000. Adicionalmente, usted sabe que la función de oferta es lineal de la forma: $$P(Q)=a+250Q$$
+
+b)  Calcule cuál es la pendiente de una oferta lineal de un bien que vale \$1.500 cuando se han producido 2 unidades y vale \$1.000 cuando han producido 12 unidades.
+
+c)  Asuma una función de oferta igual a $P(Q)=a+235Q$. Si Usted sabe que 17 unidades se valoran a un precio de 7820, ¿Cuál sería el precio de referencia si no se produce nada? %Diga cuánto vale un bien cuando su cantidad producida es 0, su pendiente es 235 y se han producido 17 unidades y actualmente vale 7820.
+
+  **RESPUESTAS:**
+
+a)  
+
+  Para $Q=0$ tenemos que $P(0)=a+250\cdot 0=1000$. Luego sabemos que $a=1000$. De esa forma, calculando $P(7)=1000+250\cdot7=2750.$
+
+b)  
+
+$$\begin{matrix}
+        1500 = a + b\cdot12  \\
+        1000 = a + b\cdot2 
+\end{matrix}$$
+
+$$500 = 10b$$ $$b=50$$   La pendiente es igual a 50.
+
+c)  
+
+$$7820=a+17\cdot235$$ $$7820=a+3995$$ $$a=3825$$   El precio cuando no hay producción es igual a 3825
+
+### :
+
+  Grafique las siguientes ofertas:
+
+```         
+$$P(Q)=\$3 +0,5Q$$
+$$P(Q)=\$12 +8Q$$
+$$P(Q)=\$50 +0,1Q$$
+```
+
+  **RESPUESTAS:**
+
+$$P(Q)=\$3 +0,5Q$$
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (10.5,0) node[below] {Cantidad};
+    \draw[thick,->] (0,0) -- (0,10.5) node[left] {Precio};
+    \foreach \x in {2,4,6,8,10}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {$\x$};
+    \foreach \y in {2,4,6,8,10}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {$\y$};
+    \draw[domain=0:10, samples=100, color=black] plot (\x,{3+0.5*\x});
+\end{tikzpicture}
+```
+
+$$P(Q)=\$12 +8Q$$
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (70.5,0) node[below] {Cantidad};
+    \draw[thick,->] (0,0) -- (0,70.5) node[left] {Precio};
+    \foreach \x in {14,28,42,56,70}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {$\x$};
+    \foreach \y in {14,28,42,56,70}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {$\y$};
+    \draw[domain=0:70, samples=100, color=black] plot (\x,{12+8*\x});
+\end{tikzpicture}
+```
+
+$$P(Q)=\$50 +0,1Q$$
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (100.5,0) node[below] {Cantidad};
+    \draw[thick,->] (0,0) -- (0,100.5) node[left] {Precio};
+    \foreach \x in {20,40,60,80,100}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {$\x$};
+    \foreach \y in {20,40,60,80,100}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {$\y$};
+    \draw[domain=0:100, samples=100, color=black] plot (\x,{50+0.1*\x});
+\end{tikzpicture}
+```
+
+### :
+
+  Calcule la función oferta del siguiente gráfico.
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    % Ejes
+    \draw[thick, ->] (0,0) -- (26,0) node[below] {Cantidad};
+    \draw[thick, ->] (0,0) -- (0,26) node[left] {Precio};
+    
+    % Curvas
+    \draw[domain=0:25, samples=100, color=black] plot (\x, {5+0.2*\x});
+    \draw[thick, dashed] (0,5) -- (25,10);
+\end{tikzpicture}
+```
+
+  **RESPUESTA:**
+
+  Paso I: Escribir ecuación.   Genéricamente tenemos: $$P(Q)=a+bQ$$
+
+  Paso II: Escoger coordenadas de la recta.   Escogeremos los puntos (0,5) y (25,10).
+
+  Paso III: Remplazar las distintas situaciones y solucionar.
+
+$$P(0)=5 \Leftrightarrow a=5$$ $$P(25)=10 \Leftrightarrow 10=5+b*25 \Leftrightarrow b=0.2$$
+
+  Finalmente, la ecuación resulta:
+
+$$P(Q)=5+0,2*Q$$
+
+### :
+
+a)  Defina el concepto de cantidad demandada y Ley de Demanda.
+
+b)  ¿Por qué la curva de demanda tiene pendiente negativa?
+
+c)  ¿Qué es un incremento en la demanda? De un ejemplo.
+
+d)  ¿Qué es un decremento de la demanda? De un ejemplo.
+
+e)  Imagine que el promedio de los ingresos de la población chilena aumenta en un 1%. Esto produce una disminución en la demanda de la cerveza Cristal y un aumento en la demanda de cerveza Austral. ¿Qué tipo de bien es cada uno?
+
+f)  En el mercado de bebidas existen dos compradores, Felipe y Catalina. Catalina tiene una curva de demanda $q = -p*(5/3) + 7$ y Felipe una curva de demanda de $p= -q*(1/4) + 3$. A un precio de \$2,5, ¿cuál es la cantidad demandada en el mercado?
+
+  **RESPUESTAS:**
+
+a)  
+
+  La cantidad demandada es la cantidad de un bien que los compradores están dispuestos y tienen la capacidad de comprar. La ley de Demanda: si todo lo demás se mantiene constante, la cantidad de un bien disminuye cuando el precio de un bien aumenta.
+
+b)  
+
+  Considerando que la curva de demanda se dibuja con la cantidad demandada en el eje x y el precio en el eje y. Esta tiene pendiente negativa ya que refleja el beneficio marginal del consumidor. El beneficio marginal, o ganas de pagar, del consumidor disminuye a medida que consumimos unidades adicionales ya que obtenemos menos satisfacción por cada producto adicional. Viéndolo por otro lado, si el precio de un bien disminuye, más personas están dispuestas a comprarlo.
+
+c)  
+
+  Un incremento de la demanda es que la curva de demanda se desplace a la derecha, reflejando que, para todo precio de mercado, existirá una mayor cantidad demandada. Por ejemplo, un incremento en los precios de las bencinas incrementa la demanda de los autos eléctricos de cualquier precio.
+
+d)  
+
+  Un decremento de la demanda es lo contrario el incremento, este es el desplazamiento a la izquierda de la curva de demanda, reflejando que, para todos los precios de mercado, la cantidad demandada disminuye. Por ejemplo, un aumento en las tasas de interés disminuye la cantidad demandada de las acciones.
+
+e)  
+
+  Cristal es un bien inferior mientras que Austral es un bien normal.
+
+f)  
+
+  Primero debemos tener ambas curvas de la misma forma: $$Catalina: q = -p \cdot (5/3) + 7$$ $$Felipe: q = 12 - 4p$$
+
+  La cantidad demandada en un mercado es la suma de las cantidades demandadas por todos los compradores en cada precio. $$Q = q1 + q2 + q3 …. +qn$$   Catalina: $$q= \frac{-2.5 \cdot 5}{3} + 7$$ $$q= 2.83$$   Felipe: $$q = 12 – 4 \cdot 2,5$$ $$Q =4.83$$
+
+### :
+
+  Suponga que las curvas de oferta y demanda del mercado de un bien X vienen dadas por $P(Q)=1.000+400Qo$ y $P(Q)=2000-100Qd$, respectivamente:
+
+\par
+
+a)  Calcule el equilibrio de mercado.
+
+b)  Ahora, Represéntelo gráficamente.
+
+c)  Suponga que, como consecuencia de un descenso de la renta, la curva de demanda de mercado de X pasa a ser $P=4.000-100Qd$. Calcule y represente en el gráfico el nuevo equilibrio del mercado.
+
+  **RESPUESTAS:**
+
+a)    Tenemos que, para calcular el punto de equilibrio} $Pd=Po=P^*$ $$1000 + 400Q^* = 2000 - 100Q^*$$ $$Q^*=2$$   Ahora podemos encontrar el precio de equilibrio $P^*$ despejando el precio en cualquiera de las dos funciones: $$P^* = 2000 - 100 \cdot 2 $$ $$P^*=1800$$   Entonces el punto de equilibrio es (Q\^*,P\^*)=(2,1800)
+
+b)  
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    % Ejes
+    \draw[thick, ->] (0,0) -- (6,0) node[below] {Cantidad};
+    \draw[thick, ->] (0,0) -- (0,6) node[left] {Precio en miles};
+    
+    % Curvas
+    \draw[domain=0:25, samples=100, color=black] plot (\x, {2-0.1*\x});
+    \draw[domain=0:25, samples=100, color=black] plot (\x, {1+0.4*\x});
+\end{tikzpicture}
+```
+
+c)  
+
+$$1.000 + 400Q^* = 4000 - 100Q^*$$ $$Q^*=6$$   Nuevamente, buscamos el precio de equilibrio reemplazando en alguna de las nuevas ecuaciones: $$4000 - 100 \cdot 6 =P^*$$ $$P^*= 3400$$   Entonces el punto de equilibrio es (6,3400)
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    % Ejes
+    \draw[thick, ->] (0,0) -- (9,0) node[below] {Cantidad};
+    \draw[thick, ->] (0,0) -- (0,9) node[left] {Precio en miles};
+    
+    % Curvas
+    \draw[domain=0:25, samples=100, color=black] plot (\x, {4-0.1*\x});
+    \draw[domain=0:25, samples=100, color=black] plot (\x, {1+0.4*\x});
+\end{tikzpicture}
+```
+
+  En ambos gráficos se puede identificar el punto de equilibrio como la intercepccion de las curvas de oferta y demanda.
+
+### :
+
+a)  Tenemos una empresa de chicles que gasta \$100 en materia prima, \$200 en insumos, \$150 en mano de obra, su beneficio es de \$400 y sus ingresos son el 120% de la suma de sus gastos. Calcule sus gastos generales.
+
+b)  Una fundación que esta atada legalmente a ser sin fines de lucro (no hay beneficios), aún así se sabe que hay gente que lucra con este organismo, ¿Cómo lo hacen?
+
+  **RESPUESTAS:**
+
+a)  
+
+  Para calcular esto hacemos reemplazamos en la ecuación: $B=I-f(P,P_R,G)$: $$400=1.2(100+200+150+G)-(100+200+150+G)$$ $$G=1550$$   Entonces los gastos generales equivalen a la suma de \$1550.
+
+b)  
+
+  De forma no ética es posible ponerse de acuerdo con uno de los proveedores de insumos, o alguno de los participantes del resto de los gastos para aumentar el precio de estos, para luego recibir una donación por parte del administrador de la institución, esta irregularidad es conocida como **soborno**

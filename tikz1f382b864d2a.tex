@@ -1,0 +1,21 @@
+\documentclass[
+%% TIKZ_CLASSOPTION %%
+tikz
+]{standalone}
+\usepackage{amsmath}
+\usetikzlibrary{matrix}
+%% EXTRA_TIKZ_PREAMBLE_CODE %%
+\begin{document}
+%% TIKZ_CODE %%
+\begin{tikzpicture}
+    % Ejes
+    \draw[->] (0,0) -- (130,0) node[right] {$Vinos$};
+    \draw[->] (0,0) -- (0,100) node[above] {$Cobre$};
+    
+    % Datos FPP Agregada
+    \draw[blue, mark=square] plot[mark=*] coordinates {(0,80) (120,0)};
+    
+    % Leyenda
+    \node[blue, right] at (130,40) {FPP Agregada};
+\end{tikzpicture}
+\end{document}
