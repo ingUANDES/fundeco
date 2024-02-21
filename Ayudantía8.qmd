@@ -1,0 +1,465 @@
+# Ayudantía VIII:
+
+
+## Ejercicio I:
+
+  Una empresa tiene la siguiente función de producción: $$
+Q(K,L)=K^3+2K^2+KL^2+L^3
+$$
+
+  En el mercado de la empresa, cada unidad producida es vendida por \$3 dólares.
+
+1)  Determine la función de la producción media de trabajo.
+
+2)  Determine la función del producto marginal del capital.
+
+3)  Asuma un $\bar{K}=1$ y una cantidad de trabajadores $\bar{L}=2$ ¿Cuánto es el retorno del trabajo?
+
+
+## Ejercicio II:
+
+  Tenemos la siguiente tabla que representa el porcentaje de población acumulado de la población según su ingreso porcentual acumulado:
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{25mm}|p{25mm}|}
+        \multicolumn{2}{c}{Tabla de demanda:} \\
+        \hline
+        decil: & Ingresos: \\ \hline
+        0.1 & 0.01 \\ \hline
+        0.2 & 0.02 \\ \hline
+        0.3 & 0.03 \\ \hline
+        0.4 & 0.06 \\ \hline
+        0.5 & 0.1 \\ \hline
+        0.6 & 0.15 \\ \hline
+        0.7 & 0.28 \\ \hline
+        0.8 & 0.39 \\ \hline
+        0.9 & 0.5 \\ \hline
+        1 & 1 \\ \hline
+        \end{tabular}
+\end{table}
+```
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Demanda</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+<caption>Tabla de demanda:</caption>
+<tr>
+<th>decil:</th>
+<th>Ingresos:</th>
+</tr>
+<tr>
+<td>0.1</td>
+<td>0.01</td>
+</tr>
+<tr>
+<td>0.2</td>
+<td>0.02</td>
+</tr>
+<tr>
+<td>0.3</td>
+<td>0.03</td>
+</tr>
+<tr>
+<td>0.4</td>
+<td>0.06</td>
+</tr>
+<tr>
+<td>0.5</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>0.6</td>
+<td>0.15</td>
+</tr>
+<tr>
+<td>0.7</td>
+<td>0.28</td>
+</tr>
+<tr>
+<td>0.8</td>
+<td>0.39</td>
+</tr>
+<tr>
+<td>0.9</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+</tr>
+</table>
+
+</body>
+</html>
+```
+:::
+
+1)  Calcule la desigualdad con el coeficiente de Gini.
+
+2)  Grafique la curva de Lorenz.
+
+
+## Ejercicio III:
+
+  Tenemos la siguiente función de producción: $$
+Q(K,L)=7K^2L^3-3K\^3L
+$$
+
+1)  Calcule las siguientes medidas de forma genérica y calcule según el tipo de media la utilidad si cada producción vale \$2 dolares o el tipo de retorno evaluándolas con $\bar{K}=1$ y un $\bar{L}=2$:
+
+2)  ¿Para qué valor de $L$, con $\bar{K}=2$ el retorno de capital es una constante a escala?
+
+
+## Ejercicio IV:
+
+  Tenemos un mercado que tiene como funciones de oferta y demanda $P(Q)=1+Q$ y $P(Q)=\frac{11-Q}{2}$.
+
+a)  Si se le agrega un precio máximo igual a 2, grafique la situación y calcule los excedentes del oferente y demandante.
+
+b)  Si se le agrega un precio máximo igual a $\frac{9}{2}$, grafique la situación y calcule la ineficiencia.
+
+
+
+  **RESPUESTAS**
+  
+  Ejercicio I:
+
+\
+
+a)  $\frac{Q(K,L)}{L}=\frac{K^3+2K^2}{L}+KL+L^2$
+
+b)  $Q'(K,L)=3K^2+4K+L^2$
+
+c)  El retorno es la segunda derivada de la producción, por lo que será:
+
+$$
+Q''(K,L) = 6L
+$$
+
+  Evaluamos:
+
+$$
+Q''(1,2)=6\cdot 1=6
+$$
+
+
+  Ejercicio II:
+
+1)    Usamos la formula:
+
+$$
+G=1-\left|\sum_{k=0}^{n-1}\left(X_{k+1}-X_k\right)\left(Y_{k+1}+Y_k\right)\right|
+$$
+
+  Las condiciones extremas que se pueden cumplir son:
+
+-   $G=0$: todos los ciudadanos tienen los mismos ingresos.
+
+-   $G=1$: todos los ingresos los tiene solo 1 ciudadano.
+
+  Y esto da: $$
+G=1-0.01+0.01+0.01+0.03+0.04+0.05+0.013+0.011+0.011+0.05
+$$
+
+$$
+G=1-0.235
+$$ $$
+G=0.765
+$$
+
+2)  
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+% Datos de la curva de Lorenz
+\draw[red] (0,0) -- (0.1,0.01) -- (0.2,0.02) -- (0.3,0.03) -- (0.4,0.06) -- (0.5,0.1) -- (0.6,0.15) -- (0.7,0.28) -- (0.8,0.39) -- (0.9,0.5) -- (1,1);
+
+% Recta de aproximación
+\draw[blue] (0,0) -- (1,1);
+
+% Etiquetas
+\node[anchor=east] at (0,1) {1};
+\node[anchor=east] at (0,0) {0};
+\node[anchor=north] at (1,0) {1};
+
+% Leyenda
+\draw[red] (1.5,0.8) -- (2,0.8) node[right] {Curva de Lorenz};
+\draw[blue] (1.5,0.6) -- (2,0.6) node[right] {Recta de Aproximación};
+\end{tikzpicture}
+```
+
+
+  Ejercicio III:
+
+1)  
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|p{40mm}|p{40mm}|p{40mm}|}
+        \hline
+        Medida: & Forma genérica: & Utilidad: \\\hline
+        Producto marginal del trabajo: & $$21K^2L^2-3K^3$$ & $$\$162$$ \\\hline
+        Producto marginal del capital: &  $$14L^3K-6K^2L$$ & $$\$200$$\\\hline
+        Productividad media del trabajo: & $$7K^2L^2-3K^3$$ & $$\$50$$ \\\hline
+        Productividad media del capital: & $$7L^3K-3K^2L$$ & $$\$100$$ \\\hline
+        Retornos de trabajo: & $$42K^2L$$ & $$42 \text{, es creciente.}$$ \\\hline 
+        Retornos de capital: & $$14K^3 - 3K^3L$$ & $$8 \text{, es creciente.}$$ \\\hline
+    \end{tabular}
+    \label{tab:my_label}
+\end{table}
+```
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Funciones</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+<tr>
+<th>Medida:</th>
+<th>Forma genérica:</th>
+<th>Utilidad:</th>
+</tr>
+<tr>
+<td>Producto marginal del trabajo:</td>
+<td>$$21K^2L^2-3K^3$$</td>
+<td>$$\$162$$</td>
+</tr>
+<tr>
+<td>Producto marginal del capital:</td>
+<td>$$14L^3K-6K^2L$$</td>
+<td>$$\$200$$</td>
+</tr>
+<tr>
+<td>Productividad media del trabajo:</td>
+<td>$$7K^2L^2-3K^3$$</td>
+<td>$$\$50$$</td>
+</tr>
+<tr>
+<td>Productividad media del capital:</td>
+<td>$$7L^3K-3K^2L$$</td>
+<td>$$\$100$$</td>
+</tr>
+<tr>
+<td>Retornos de trabajo:</td>
+<td>$$42K^2L$$</td>
+<td>$$42, \text{es creciente.}$$</td>
+</tr>
+<tr>
+<td>Retornos de capital:</td>
+<td>$$14K^3 - 3K^3L$$</td>
+<td>$$8, \text{es creciente.}$$</td>
+</tr>
+</table>
+
+</body>
+</html>
+```
+:::
+
+2)  
+
+$$
+\text{ret}(K,L)=14K^3 - 3K^3L
+$$ $$
+\text{ret}(4,L)=14\cdot 2^3 - 3\cdot 2^3L=1
+$$ $$
+14\cdot 8 - 3\cdot 8 L=1
+$$ $$
+112 - 24L=1
+$$ $$
+24L=111
+$$ $$
+L=\frac{111}{24}
+$$
+
+
+
+  Ejercicio IV:
+a)
+
+Gráfico:
+
+  Primero calculamos el punto de equilibrio (Q,P), esto es igual a:
+
+$$(\frac{11-2}{3}, 1+ \frac{11-2}{3})$$
+
+  O también:
+
+$$(\frac{11-2}{2+1}, \frac{11}{2}- \frac{11-2}{2+1})$$
+
+  Esto resulta:
+
+$$(3,4)$$
+
+  Hacemos el gráfico tomando en cuenta el precio máximo.
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+
+    % oferta = P(Q)=1+Q
+    % demanda = P(Q)=(11-Q)/2
+    
+    % Área excedente del consumidor
+    \fill[orange!60] (0,5.5) -- (0,2) -- (1,2) -- (1,5.5) -- cycle;
+    
+    % Área excedente del productor
+    \fill[blue!60] (0,1) -- (1,1) -- (1,2) -- (0,2) -- cycle;
+    
+    % Pérdida de eficiencia.
+    \fill[black!40] (1,2) -- (1,5.5) -- (3,4) -- cycle;
+    
+    % Demanda
+    \draw [blue, line width=1pt](0,5.5) -- (11,0); % P(Q)=5-Q
+
+    % Oferta
+    \draw [red, line width=1pt](0,1) -- (10,11); % P(Q)=1+Q
+
+    % Fijación de precio
+    \draw [dashed, line width=1pt](0,2) -- (11,2);
+    
+    % Eje x
+    \draw[black, line width=2pt] (0,0) -- (10.98,0) node[right] {Q};
+    \draw[black, line width=1pt] (10.86,-0.15) -- (11.01,0);
+    \draw[black, line width=1pt] (10.86,0.15) -- (11.01,0);
+
+    % Eje y
+    \draw[black, line width=2pt] (0,0) -- (0,10.98) node[right] {P};
+    \draw[black, line width=1pt] (-0.15,10.86) -- (0,11.01);
+    \draw[black, line width=1pt] (0.15,10.86) -- (0,11.01);
+
+    % Leyendas
+    \node[below left] at (1,2) {2};
+    \node[below left] at (1,1) {1};
+    \node[below left] at (1,0) {0};
+    
+\end{tikzpicture}
+```
+
+  Luego calculamos los excedentes:
+
+  Importante:
+
+$$P_s(Q)=1+Q \Leftrightarrow Q_s(P)=P-1$$ $$P_d(Q)=\frac{11-Q}{2} \Leftrightarrow Q_d(P)=11-2P$$
+
+$$\textrm{EC}=Q_s(2) \cdot (P_d(Q_s(2))-2)+\frac{P_d(0)-P_d(Q_s(2))}{2}$$
+
+$$\textrm{EC}=(2-1) \cdot (\frac{11-(2-1)}{2}-2)+\frac{11/2-(11-(2-1))/2}{2}$$
+
+$$\textrm{EC}=6$$
+
+b)  
+
+  Gráfico:
+
+  Teniendo ya el punto de equilibrio por la parte a, seguimos añadiéndole el precio mínimo y veremos su ineficiencia.
+
+```{=tex}
+\begin{tikzpicture}
+
+    % oferta = P(Q)=1+Q
+    % demanda = P(Q)=(11-Q)/2
+    
+    % Area excedente del consumidor
+    \fill[orange!60] (0,5.5) -- (0,4.5) -- (2,4.5) -- cycle;
+    
+    % Area excedente del productor
+    \fill[blue!60] (0,1) -- (0,4.5) -- (2,4.5) -- (2,3) -- cycle;
+    
+    % perdida de eficiencia.
+    \fill[black] (2,4.5) -- (2,3) -- (3,4) -- cycle;
+    
+    % demanda
+    \draw [blue, line width=1pt](0,5.5) -- (11,0); %P(Q)=5-Q
+
+    % oferta
+    \draw [red, line width=1pt](0,1) -- (10,11); %P(Q)=1+Q
+
+    %fijación de precio
+    \draw [line width=1pt](0,4.5) -- (11,4.5);
+    
+    % Eje x
+    \draw[black, line width=2pt] (0,0) -- (10.98,0) node[right] {Q};
+    \draw[black, line width=1pt] (10.86,-0.15) -- (11.01,0);
+    \draw[black, line width=1pt] (10.86,0.15) -- (11.01,0);
+
+    % eje y
+    \draw[black, line width=2pt] (0,0) -- (0,10.98) node[right] {P};
+    \draw[black, line width=1pt] (-0.15,10.86) -- (0,11.01);
+    \draw[black, line width=1pt] (0.15,10.86) -- (0,11.01);
+
+    %leyendas
+    \node[] at (-0.8,5.5) {11/2};
+    \node[] at (-0.8,1) {1};
+    \node[] at (-0.8,4.5) {9/2};
+    
+\end{tikzpicture}
+```
+  Luego calculamos la ineficiencia, para esto lo tomaremos como la suma de dos triángulos rectángulos y que tengan el mismo valor para el cateto que los une:
+
+$$\textrm{IE} = \frac{\textrm{cateto compartido} \cdot (\textrm{cateto triángulo 1}+\textrm{cateto triángulo 2})}{2}$$
+
+$$\textrm{IE} = \frac{1}{2}(3 - Q_d(4,5))((3-P_s(Q_d(4,5)))+(4,5-3))$$
+
+$$\textrm{IE} = \frac{1}{2}(3 - (11-2(4,5)))((3-(1+(11-2(4,5))))+(4,5-3))$$
+
+$$\textrm{IE} = 0.75$$
+

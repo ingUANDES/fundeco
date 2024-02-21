@@ -207,7 +207,6 @@
 ```
 :::
 
-
   Para la segunda parte tenemos que calcular la inflación acumulada en 4 años:
 
 $$
@@ -230,269 +229,23 @@ $$
 
 ### :
 
-  Con los datos del banco mundial y el SII, pudimos elaborar la siguiente tabla:
+  Como premio de un bingo ha recibido \$300.000, dado que valora más el dinero mañana, ha decidido invertir su capital por cuatro años con un interés anual del 5%. Además, el año en que inicio su inversión el UF estaba a \$25.000 y al finalizar la inversión el UF esta a \$30.000.
 
-::: {.content-visible when-format="pdf"}
-```{=tex}
-\begin{table}[h]
-    \centering
-    \begin{tabular}{|c|c|c|c|c|}
-        \hline
-        Año & Inflación anual & Conversión enero & Conversión enero & Conversión enero \\
-        & de Angola & 1UF a CLP & 1US a CLP & 1US a KZ \\\hline
-        $2018$ & $19,8\%$ & $\$26800$ & $\$640$ & $253$Kz. \\\hline
-        $2019$ & $17,1\%$ & $\$27565$ & $\$703$ & $365$Kz. \\\hline
-        $2020$ & $22,3\%$ & $\$28310$ & $\$793$ & $578$Kz. \\\hline
-        $2021$ & $25,8\%$ & $\$29070$ & $\$760$ & $631$Kz. \\\hline
-        $2022$ & No influye en el ejercicio & $\$31000$ & \$$873$ & $460$Kz. \\\hline
-    \end{tabular}
-    \label{tab:my_label}
-\end{table}
-```
-:::
+  **RESPUESTA:**
 
-::: {.content-visible when-format="html"}
-```{=html}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla de Datos</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 80%;
-            margin: 20px auto;
-        }
+1)  ¿Cuál fue la ganancia nominal que obtuvo?
 
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
-</head>
-<body>
-
-    <table>
-<tr>
-<th>Año</th>
-<th>Inflación anual de Angola</th>
-<th>Conversión enero 1UF a CLP</th>
-<th>Conversión enero 1US a CLP</th>
-<th>Conversión enero 1US a KZ</th>
-</tr>
-<tr>
-<td>2018</td>
-<td>$19,8\%$</td>
-<td>$\$26800$</td>
-<td>$\$640$</td>
-<td>$253$Kz.</td>
-</tr>
-<tr>
-<td>2019</td>
-<td>$17,1\%$</td>
-<td>$\$27565$</td>
-<td>$\$703$</td>
-<td>$365$Kz.</td>
-</tr>
-<tr>
-<td>2020</td>
-<td>$22,3\%$</td>
-<td>$\$28310$</td>
-<td>$\$793$</td>
-<td>$578$Kz.</td>
-</tr>
-<tr>
-<td>2021</td>
-<td>$25,8\%$</td>
-<td>$\$29070$</td>
-<td>$\$760$</td>
-<td>$631$Kz.</td>
-</tr>
-<tr>
-<td>2022</td>
-<td>No influye en el ejercicio</td>
-<td>$\$31000$</td>
-<td>$\$873$</td>
-<td>$460$Kz.</td>
-</tr>
-</table>
-
-</body>
-</html>
-```
-:::
-
-  Usted decide el 2018 poner a deposito a plazo por cuatro años un millón de Kwanzas angoleñas a un banco que da una tasa de interés del 20% anual.
-
-1)  ¿Cuántas kwansas tendrás al terminar los 4 años?
-
-2)  ¿Cuánto es la inflación acumulada en los 4 años?
-
-3)  Si antes del deposito a plazo tenias los kwansas en UF e indexamos a UF lo invertido al terminar los 4 años ¿Cuántos UF teníamos al principio y al final?
-
-4)  ¿De qué sirvió indexar a UF al principio y al final? ¿Por qué tomamos la referencia de la ganancia o perdida en UF y no en la inflación de Angola?
-
-  **RESPUESTA**
-
-1)  
-
-  Usamos la formula: $$
-C_f=C_i(1+i)^t
-$$
-
-  Reemplazando: $$
-C_f=10^6(1+0.2)^4
-$$
-
-  Desarrollando: $$
-C_f=\text{$2$.$073$.$600$}
-$$
-
-\
-
-2)  
-
-\
-
-  Explicación teórica de la pregunta:
-
-\
-
-  Cuando se mide la inflación anual, tomamos como base el 1 de enero del mismo año, todos los meses del año toman el mismo momento base por lo que al acumularlas se suman. Es decir: $$
-\text{Inflación acumulada por mes}_{t+1}=\text{Inflación acumulada}_{t}+\text{Inflación}_{t+1}
-$$
-
-  Donde $t\leq 11$ y se mide en meses.
-
-  Pero, como estamos viendo inflación acumulada de años, funciona de forma distinta porque todos toman como momento base el primer día de su año. Entonces, para sacar la inflación acumulada en $n$ años es: $$
-\text{Inflación acumulada por año}=\left[(1+\text{inflación}_t)\cdot(1+\text{inflación}_{t+1})\cdot ... \cdot (1+\text{inflación}_{t+n})-1\right]\cdot 100\%
-$$
-
-  Ya que, si tenemos un bien que en el año base vale 1, y la inflación anual de los siguientes $n$ años es $I_k$ con $k\in\mathbb{N}, k\leq n$. Entonces:
-
-$$
-\frac{1}{1+I_1}=\frac{1}{\text{Inflación acumulada 1° año}+1} \Leftrightarrow \text{Inflación acumulada 1° año}=I_1
-$$
-
-  Luego:
-
-$$
-\frac{1}{1+I_2}=\frac{1+I_1}{\text{Inflación acumulada 2° año}+1} \Leftrightarrow \text{Inflación acumulada 2° año}=I_1+I_2+I_1I_2
-$$
-
-  Ya al tercer año:
-
-$$
-\frac{1}{1+I_3}=\frac{1+I_1+I_2+I_1I_2}{\text{Inflación acumulada 3° año}+1} \Leftrightarrow \text{Inflación acumulada 3° año}=I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3
-$$
-
-  Ahora demostramos: $$
-(1+I_1)(1+I_2)(1+I_3)-1=I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3
-$$ $$
-(1+I_1+I_2+I_1I_2)(1+I_3)-1=I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3
-$$ $$
-1+I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3-1=I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3
-$$ $$
-I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3=I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3
-$$
-
-  Queda demostrado.
-
-\
-
-  Vuela al ejercicio:
-
-\
-
-  Aplicamos la primera formula dicha, además sabemos que la inflación de un año parte en el primer dia del año y termina en el último, por lo que del 2018 al 2021 cuentan como 4 años.
-
-$$
-1,198\cdot 1,171 \cdot 1,223 \cdot 1,258 - 1 = 115,8\% 
-$$
-
-  Entonces la inflación acumulada es un $115,8\%$
-
-\
-
-3)  
-
-\
-
-  Lo que haremos ahora será convertir a varios valores distintos hasta llegar a lo pedido para eso usaremos la formula:
-
-$$
-C_{df}=\frac{C_{di}\cdot V_{df}}{V_{di}}
-$$
-
-  Donde: $C_{di}$ es la cantidad numérica que tenemos de la divisa que tenemos al inicio, $C_{df}$ es la cantidad numérica que tenemos en la divisa que nos convertimos, $V_{di}$ es la proporción de divisa inicial que es igual al convertir en la divisa final con el valor $V_{df}$, es decir, $V_{di}=V_{df}$.
-
-  Como solo nos interesa saber al inicio es decir, enero de 2018 y enero del 2022, ya que ahí toma 4 años, haremos estas conversiones solo para dichos años.
-
-  **2018: capital es de** $10^6$
-
-  De Kz a US: $$
-C_{df}=\frac{10^6\cdot 1}{253}=\$3952.57
-$$
-
-  De US a CLP: $$
-C_{df}=\frac{3952.57\cdot 640}{1}=\$2529644
-$$
-
-  De CLP a UF: $$
-C_{df}=\frac{2529644\cdot 1}{26800}=94.39\text{UF}
-$$
-
-  Entonces partimos con $94.39$ UF
-
-  **2022: capital es de** $2073600$
-
-  De Kz a US: $$
-C_{df}=\frac{2073600\cdot 1}{460}=\$4507.83
-$$
-
-  De US a CLP: $$
-C_{df}=\frac{4507.83\cdot 873}{1}=\$3935336
-$$
-
-  De CLP a UF: $$
-C_{df}=\frac{3935336\cdot 1}{31000}=126.95\text{UF}
-$$
-
-  Entonces, empezamos con $94.39$ UF y terminamos con $126.95$ UF
-
-4)  
-
-  Como dice el enunciado "Usted", estamos hablando de ti, y tu resides en chile, no en Angola, por lo que indexar en UF te dará una referencia de la utilidad más precisa que la de la inflación de Angola.
-  
-
-### :
-&nbsp; Como premio de un bingo ha recibido \$300.000, dado que valora más el dinero mañana, ha decidido invertir su capital por cuatro años con un interés anual del 5\%. Además, el año en que inicio su inversión el UF estaba a \$25.000 y al finalizar la inversión el UF esta a \$30.000.
-
-&nbsp; **RESPUESTA:**
-
-1) ¿Cuál fue la ganancia nominal que obtuvo?
-
-&nbsp; Recordar que el valor futuro nominal se calcula así:
-$$
+  Recordar que el valor futuro nominal se calcula así: $$
 C_f=C_i(1+I)^t
 $$
 
-&nbsp; Entonces tenemos:
-$$
+  Entonces tenemos: $$
 300000\cdot(1+0.05)^4=364651
 $$
 
-2) ¿Cuál fue la ganancia real que obtuvo?
+2)  ¿Cuál fue la ganancia real que obtuvo?
 
-&nbsp; Para responder esto, en este caso lo resolvemos con regla de tres:
-$$
+  Para responder esto, en este caso lo resolvemos con regla de tres: $$
 \frac{30000}{25000}=\frac{364651}{x}
 $$
 
@@ -501,7 +254,8 @@ x=303875
 $$
 
 ### :
-&nbsp; En una economía, sólo se producen refrigeradores y microondas. En la cuál se produjo lo siguiente en los años 2016, 2017 y 2018:\\
+
+  En una economía, sólo se producen refrigeradores y microondas. En la cuál se produjo lo siguiente en los años 2016, 2017 y 2018:\\
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -545,152 +299,130 @@ Año & Precio refrigeradores & \begin{tabular}[c]{@{}l@{}}Cantidad Producida\\ r
 <body>
 
   <table>
-    <thead>
-      <tr>
-        <th>Año</th>
-        <th>Precio refrigeradores</th>
-        <th>Cantidad Producida refrigeradores</th>
-        <th>Precio microondas</th>
-        <th>Cantidad Producida microondas</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2016</td>
-        <td>50</td>
-        <td>100</td>
-        <td>10</td>
-        <td>40</td>
-      </tr>
-      <tr>
-        <td>2017</td>
-        <td>55</td>
-        <td>110</td>
-        <td>20</td>
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>2018</td>
-        <td>70</td>
-        <td>120</td>
-        <td>25</td>
-        <td>55</td>
-      </tr>
-    </tbody>
-  </table>
+  <thead>
+    <tr>
+      <th>Año</th>
+      <th>Precio refrigeradores</th>
+      <th>Cantidad Producida refrigeradores</th>
+      <th>Precio microondas</th>
+      <th>Cantidad Producida microondas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2016</td>
+      <td>50</td>
+      <td>100</td>
+      <td>10</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>55</td>
+      <td>110</td>
+      <td>20</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>70</td>
+      <td>120</td>
+      <td>25</td>
+      <td>55</td>
+    </tr>
+  </tbody>
+</table>
 
 </body>
 </html>
-
 ```
 :::
 
-&nbsp; **RESPUESTAS:**
+  **RESPUESTAS:**
 
+1)  Calcular el PIB nominal para los años 2016, 2017, 2018.
 
-1) Calcular el PIB nominal para los años 2016, 2017, 2018.
-
-&nbsp; Recordar que el PIB nominal se calcula con:
-$$
+  Recordar que el PIB nominal se calcula con: $$
 \sum q\cdot p
 $$
 
-&nbsp; Dado esto tenemos:
+  Dado esto tenemos:
 
-&nbsp; Para el año 2016:
-$$
+  Para el año 2016: $$
 50\cdot 100 + 10 \cdot 40 = 5400
 $$
 
-&nbsp; Para el año 2017:
-$$
+  Para el año 2017: $$
 55\cdot 110 + 20 \cdot 50 = 6150
 $$
 
-&nbsp; Para el año 2018:
-$$
+  Para el año 2018: $$
 70\cdot 120 + 25 \cdot 55 = 9775
 $$
 
-2) Calcular el PIB real para los mismos años utilizando como año base el 2016.
+2)  Calcular el PIB real para los mismos años utilizando como año base el 2016.
 
-&nbsp; Recordar que el PIB real se calcula con:
-$$
+  Recordar que el PIB real se calcula con: $$
 \sum q_t\cdot p_{\text{año base}}
 $$
 
-&nbsp; Dado esto tenemos:
+  Dado esto tenemos:
 
-&nbsp; Para el año 2016:
-$$
+  Para el año 2016: $$
 50\cdot 100 + 10 \cdot 40 = 5400
 $$
 
-&nbsp; Para el año 2017:
-$$
+  Para el año 2017: $$
 50\cdot 110 + 10 \cdot 50 = 6000
 $$
 
-&nbsp; Para el año 2018:
-$$
+  Para el año 2018: $$
 50\cdot 120 + 10 \cdot 55 = 6550
 $$
 
+3)  Calcular el deflactor del PIB para los tres años mencionados anteriormente.
 
-3) Calcular el deflactor del PIB para los tres años mencionados anteriormente.
-
-&nbsp; Recordar que el deflactor del PIB se calcula con:
-$$
+  Recordar que el deflactor del PIB se calcula con: $$
 \frac{\text{PIB nominal}}{\text{PIB real}}
 $$
 
-&nbsp; Para el año 2016:
-$$
+  Para el año 2016: $$
 \frac{5400}{5400}=1
 $$
 
-&nbsp; Para el año 2017:
-$$
+  Para el año 2017: $$
 \frac{6150}{6000}=1.02
 $$
 
-&nbsp; Para el año 2018:
-$$
+  Para el año 2018: $$
 \frac{9775}{6550}=1.49
 $$
 
+4)  Calcular la tasa de inflación del mercado, utilizando el año 2016 como base.
 
-4) Calcular la tasa de inflación del mercado, utilizando el año 2016 como base. 
-
-&nbsp; Recordar que la tasa de inflación anual en los distintos años se calula con:
-$$
+  Recordar que la tasa de inflación anual en los distintos años se calula con: $$
 \frac{Def_{t}}{Def_{t-1}}-1
 $$
 
-&nbsp; Para el año 2016:
-$$
+  Para el año 2016: $$
 0\%
 $$
 
-&nbsp; Para el año 2017:
+  Para el año 2017:
 
 $$
 \frac{1.02}{1}-1=2\%
-$$
-&nbsp; Para el año 2018:
-$$
+$$   Para el año 2018: $$
 \frac{1.49}{1.02}-1=46\%
 $$
 
 ### :
 
-&nbsp; Si usted tiene \$3000 y los pone a un deposito a plazo durante 3 años y obtiene al terminar el plazo \$3993, ¿Cuánto era su interés?
+  Si usted tiene \$3000 y los pone a un deposito a plazo durante 3 años y obtiene al terminar el plazo \$3993, ¿Cuánto era su interés?
 
+  **RESPUESTA:**
 
-&nbsp; **RESPUESTA:**
-
-&nbsp; Esto lo hacemos con valor futuro:
-$$
+  Esto lo hacemos con valor futuro: $$
 C_f=C_i(1+I)^t
 $$
 
@@ -710,210 +442,153 @@ $$
 I=0.1
 $$
 
-
 ### :
-&nbsp; Usted gana 100.000 pesos en una rifa. Tiene dos opciones, invertir el dinero en un activo que le proporcionará un interés de 5\% en un año más o gastar el dinero hoy en unas zapatillas exclusivas que no tendrán producción nuevamente. ¿ Considerando solo los valores monetarios, cuál es el costo de oportunidad de comprar las zapatillas? Si comprar las zapatillas significan para usted un beneficio sentimental llevado a valor monetario de 50.000, cuál es el costo de oportunidad de invertir el dinero?
 
-&nbsp; **RESPUESTA**
+  Usted gana 100.000 pesos en una rifa. Tiene dos opciones, invertir el dinero en un activo que le proporcionará un interés de 5% en un año más o gastar el dinero hoy en unas zapatillas exclusivas que no tendrán producción nuevamente. ¿ Considerando solo los valores monetarios, cuál es el costo de oportunidad de comprar las zapatillas? Si comprar las zapatillas significan para usted un beneficio sentimental llevado a valor monetario de 50.000, cuál es el costo de oportunidad de invertir el dinero?
 
-- 5\% de interés en la inversión del activo fijo:
-$$100.000\cdot0,05=5.000$$
-&nbsp; Costo de oportunidad de comprar las zapatillas es de \$5.000.
-- invertir = \$105.000 
-zapatillas \$150.000 
-&nbsp; C.O=105.000-150.000=\$-45.000
+  **RESPUESTA**
 
-### :
-&nbsp; Imagine que un amigo le pide prestado \$80.000 y le devuelve \$95.000 a final de año. Suponga que la
-inflación ese año fue de 10 \%.
-
-
-a) Calcule la tasa de interés nominal que su amigo le pagaría.
-
-b) Calcule la tasa de interés real que su amigo le pagaría.
-
-c) Si su amigo se demora dos años en pagarle y mantiene la tasa de interés, ¿Cuánto recibiría usted?
-
-&nbsp; **RESPUESTAS:**
-
-a)
-
-&nbsp; La tasa de interés nominal se mide en valor nominal. Entonces, se debe considerar el precio recibido para calcular la tasa.
-       $$Valor\quad Final = Valor\quad Presente \cdot (1+interés)^{periodos} $$
-       $$\rightarrow 95.000=80.000 \cdot (1+i)^1  $$
-       $$\leftrightarrow i = \frac{95.000}{80.000}-1$$
-       $$\leftrightarrow i=0.1875$$
-&nbsp; El préstamo tuvo un interés de 18,75\% en valores nominales. 
-
-b)
-
-&nbsp; Considerando que $\pi$ es la inflación:
-       $$i_{real} = i_{nominal} - \pi $$
-       $$i_{real} = 0.0875 = 8,75\% $$
-
-c)
-
-$$VF = 80.000(1+0.1875)^2 = \$ 112.470$$ 
-
-
+-   5% de interés en la inversión del activo fijo: $$100.000\cdot0,05=5.000$$   Costo de oportunidad de comprar las zapatillas es de \$5.000.
+-   invertir = \$105.000 zapatillas \$150.000   C.O=105.000-150.000=\$-45.000
 
 ### :
 
-&nbsp; Imagine que tiene \$1.000.000 para invertir. En su banco le ofrecen un interés mensual de 0,89\% para un depósito a plazo.
-a) Determine el valor futuro si decide depositar por 1 mes.
+  Imagine que un amigo le pide prestado \$80.000 y le devuelve \$95.000 a final de año. Suponga que la inflación ese año fue de 10 %.
 
-b) Determine el valor futuro si decide depositar por 1 año, cuanto será el interés compuesto? Si la inflación en ese año será de 11,2\%, cuanto es el interés real? Le conviene invertir o mantener el dinero bajo un colchón?
+a)  Calcule la tasa de interés nominal que su amigo le pagaría.
 
-c) Cuanto sería el valor futuro si el banco le dejara mantener ese interés nominal por 5, 10 y 15 años.
+b)  Calcule la tasa de interés real que su amigo le pagaría.
 
-&nbsp; **RESPUESTAS:**
-a)
+c)  Si su amigo se demora dos años en pagarle y mantiene la tasa de interés, ¿Cuánto recibiría usted?
 
-&nbsp; El Valor futuro es la cantidad de dinero en el futuro que producirá una cantidad de dinero hoy, dadas las tasas de interés prevalecientes.
+  **RESPUESTAS:**
 
-&nbsp; Con esto tenemos que en 1 mes el valor futuro es:
-$$VF = (1+0,0089)*1000000=1.008.900$$
+a)  
 
-b)
+  La tasa de interés nominal se mide en valor nominal. Entonces, se debe considerar el precio recibido para calcular la tasa. $$Valor\quad Final = Valor\quad Presente \cdot (1+interés)^{periodos} $$ $$\rightarrow 95.000=80.000 \cdot (1+i)^1  $$ $$\leftrightarrow i = \frac{95.000}{80.000}-1$$ $$\leftrightarrow i=0.1875$$   El préstamo tuvo un interés de 18,75% en valores nominales.
 
-&nbsp; Para encontrar el valor futuro a un año debo entender que ese deposito no puede ser retirado antes de ese año y no puedo depositar más al mismo fondo. También, que ese interés es aplicado cada mes que el dinero se mantiene en el depósito.
+b)  
 
-&nbsp; Por ejemplo, para el mes 2 tendríamos lo siguiente:
-$${VF}_2 = {VF}_1 * (1+r)$$
-$$<=> {VF}_2 = (1+r)*I* (1+r)=I*(1+r)^2$$
+  Considerando que $\pi$ es la inflación: $$i_{real} = i_{nominal} - \pi $$ $$i_{real} = 0.0875 = 8,75\% $$
 
-&nbsp; Con esto, podemos ver un ejemplo de la tasa de interés compuesto, la cual es la tasa en un periodo multiplica por si misma por cada periodo que esta se mantiene activa.
+c)  
 
-&nbsp; Obteniendo:
-$${VF}_n = I*(1+r)^n$$
-
-&nbsp; Para el mes 12, tenemos en nuestro caso:
-$${VF}_{12} = 1.000.000*(1+0,0089)^{12}$$
-$$tasa=11,22\%$$
-$${VF}_{12} = 1.000.000*1,1122=1.112.186$$
-
-&nbsp; Para encontrar el interés real, debemos restarle la inflación:
-$$i_{real} = i{nominal}-\pi = 11,22 - 11,2 = 0,02\% \sim 0$$
-
-&nbsp; A pesar de que no ganaré casi nada en mi inversión, mantener el dinero en mi cuenta o bajo mi colchón puede significar grandes perdidas en una economía con alta inflación.
-
-c) Cuanto sería el valor futuro si el banco le dejara mantener ese interés nominal por 5, 10 y 15 años.
-
-\\
-$$VF_{5años}=1.000.000*(1+0,0089)^{60}$$
-$$tasa=70,17\%$$
-$${VF}_{5años} = 1.000.000*1,7017=1.701.716$$
-
-\\
-$$VF_{10años}=1.000.000*(1+0,0089)^{120}$$
-$$tasa=189,58\%$$
-$${VF}_{10años} = 1.000.000*2,8958=2.895.840$$
-
-\\
-$$VF_{15años}=1.000.000*(1+0,0089)^{180}$$
-$$tasa=392,79\%$$
-$${VF}_{15años} = 1.000.000*0,7017=4.927.900$$
-
-###: 
-
-&nbsp; Suponga que durante el último período la inflación fue de 11\%, si le ofrecen pagar \$ 190.000 a cambio de devolverle \$160.000, calcule lo siguiente.
-
-a) ¿Que tasa de interés nominal le están pagando?
-
-b) ¿Cuál sería la tasa de interés real? Considerando la inflación del último período.
-
-c) ¿Cuánto le deben pagar si pasan dos años?
-
-
-&nbsp; **RESPUESTAS:**
-
-a)
-&nbsp; Dado los valores reemplazamos en la siguiente fórmula: $$VF=VP \cdot (1+i)^n$$ 
-$$\frac{190.000}{160.000} = (1+i)^1$$ 
-$$i=\frac{19}{16} - 1$$ $$i = 0.1875$$ La tasa de interés nominal sería 18.75\%.
-
-
-b)
-&nbsp; La tasa de interés real es la nominal menos la inflación, por lo que tendríamos $i_real = 18.75\% - 11\% = 7.75\%$ La tasa de interés real sería 7.75\%.
-
-
-c)
-&nbsp; Para saber cuanto nos deberían pagar por dos años manteniendo la tasa nominal, ocupamos la misma fórmula y reemplazamos con el nuevo 'n'
-$$VF=VP \cdot (1+i)^n$$
-$$VF = 160.000(1+0.1875)^2$$
-$$VF = 225.625$$
-&nbsp; Luego de dos períodos manteniendo la tasa nos deberían devolver \$225.625.
-
-
-
-### :
-&nbsp; Usted está en búsqueda de oportunidades de inversión para una cantidad de \$ 5.000.000 que logró ahorrar. Espera ganar en forma real un 5\% en el primer año.
-
-a) Teniendo en cuenta que el año pasado existió una inflación de 11\% en su país, se espera que esta tasa se mantenga durante el año siguiente, ¿cual debe ser la tasa de interés nominal de su inversión?
-
-b) ¿Cuanto será el valor de su inversión en 5 años? 
-
-c) ¿Cuánto más debo invertir, con la tasa de interés nominal calculada en la pregunta a), para lograr ganar la misma cantidad pero en 3 años.
-
-
-&nbsp; **RESPUETSAS:**
-
-a)
-
-&nbsp; Para lograr ganar un \%5 en forma real, debo encontrar la tasa nominal que debe tener la oportunidad de inversión.
-
-$$r_{real}=r_{nominal}-\pi$$
-$$0,05 = r_{nominal}-0,11$$
-$$r_{nominal}=0,05 + 0,11=0,16$$
-
-b)
-
-&nbsp; Considerando la tasa de interés nominal anual encontrada en la pregunta anterior:
-
-$${VF}_n = I*(1+r)^n$$
-$${VF}_5 = 5.000.000*(1+0,16)^5 = \$10.501.708$$
-
-
-c)
-
-&nbsp; Para solucionar la pregunta, debo encontrar el valor presente de una ganancia de \$ 10501708 a un interés nominal de 16\% anual.
-
-&nbsp; El valor presente se define como la cantidad de dinero que se necesitaría hoy, utilizando la tasa de interés prevaleciente, para producir una determinada cantidad futura de dinero.
-
-$${VP}_n = \frac{X}{(1+r)^n}$$
-$${VP}_3 = \frac{10501708}{(1+0,16)^5}$$
-$${VP}_3 = \$ 6.727.999$$
-
+$$VF = 80.000(1+0.1875)^2 = \$ 112.470$$
 
 ### :
 
-&nbsp; Suponga una economía en la que la mitad de la población tiene un ingreso igual a 100 y la otra mitad igual a 200.
+  Imagine que tiene \$1.000.000 para invertir. En su banco le ofrecen un interés mensual de 0,89% para un depósito a plazo. a) Determine el valor futuro si decide depositar por 1 mes.
 
-a) Suponga que a la población con ingreso igual a 100 se le ofrece invertir en un fondo de inversión ligado al sector inmobiliario, el cual renta un 10 \% por año. Por otro lado, a la población con ingreso igual a 200 se le ofrece invertir en un depósito a plazo que renta 5 \% al año. Calcule los ingresos de ambos grupos en esta economía luego de 2 años.
+b)  Determine el valor futuro si decide depositar por 1 año, cuanto será el interés compuesto? Si la inflación en ese año será de 11,2%, cuanto es el interés real? Le conviene invertir o mantener el dinero bajo un colchón?
 
-b) Comente sobre los riesgos específicos y de mercado de las opciones de inversión.
+c)  Cuanto sería el valor futuro si el banco le dejara mantener ese interés nominal por 5, 10 y 15 años.
 
+  **RESPUESTAS:** a)
 
-&nbsp; **RESPUESTAS:**
+  El Valor futuro es la cantidad de dinero en el futuro que producirá una cantidad de dinero hoy, dadas las tasas de interés prevalecientes.
 
-a) 
+  Con esto tenemos que en 1 mes el valor futuro es: $$VF = (1+0,0089)*1000000=1.008.900$$
 
-&nbsp; Para el grupo con ingresos iniciales iguales a 100, luego de 2 años tendrán:
+b)  
 
-$$100\cdot(1+0.1)^2=121$$
-&nbsp; Para el otro grupo, luego de 2 años sus ingresos serán:
+  Para encontrar el valor futuro a un año debo entender que ese deposito no puede ser retirado antes de ese año y no puedo depositar más al mismo fondo. También, que ese interés es aplicado cada mes que el dinero se mantiene en el depósito.
+
+  Por ejemplo, para el mes 2 tendríamos lo siguiente: $${VF}_2 = {VF}_1 * (1+r)$$ $$<=> {VF}_2 = (1+r)*I* (1+r)=I*(1+r)^2$$
+
+  Con esto, podemos ver un ejemplo de la tasa de interés compuesto, la cual es la tasa en un periodo multiplica por si misma por cada periodo que esta se mantiene activa.
+
+  Obteniendo: $${VF}_n = I*(1+r)^n$$
+
+  Para el mes 12, tenemos en nuestro caso: $${VF}_{12} = 1.000.000*(1+0,0089)^{12}$$ $$tasa=11,22\%$$ $${VF}_{12} = 1.000.000*1,1122=1.112.186$$
+
+  Para encontrar el interés real, debemos restarle la inflación: $$i_{real} = i{nominal}-\pi = 11,22 - 11,2 = 0,02\% \sim 0$$
+
+  A pesar de que no ganaré casi nada en mi inversión, mantener el dinero en mi cuenta o bajo mi colchón puede significar grandes perdidas en una economía con alta inflación.
+
+c)  Cuanto sería el valor futuro si el banco le dejara mantener ese interés nominal por 5, 10 y 15 años.
+
+\\ $$VF_{5años}=1.000.000*(1+0,0089)^{60}$$ $$tasa=70,17\%$$ $${VF}_{5años} = 1.000.000*1,7017=1.701.716$$
+
+\\ $$VF_{10años}=1.000.000*(1+0,0089)^{120}$$ $$tasa=189,58\%$$ $${VF}_{10años} = 1.000.000*2,8958=2.895.840$$
+
+\\ $$VF_{15años}=1.000.000*(1+0,0089)^{180}$$ $$tasa=392,79\%$$ $${VF}_{15años} = 1.000.000*0,7017=4.927.900$$
+
+###:
+
+  Suponga que durante el último período la inflación fue de 11%, si le ofrecen pagar \$ 190.000 a cambio de devolverle \$160.000, calcule lo siguiente.
+
+a)  ¿Que tasa de interés nominal le están pagando?
+
+b)  ¿Cuál sería la tasa de interés real? Considerando la inflación del último período.
+
+c)  ¿Cuánto le deben pagar si pasan dos años?
+
+  **RESPUESTAS:**
+
+a)    Dado los valores reemplazamos en la siguiente fórmula: $$VF=VP \cdot (1+i)^n$$ $$\frac{190.000}{160.000} = (1+i)^1$$ $$i=\frac{19}{16} - 1$$ $$i = 0.1875$$ La tasa de interés nominal sería 18.75%.
+
+b)    La tasa de interés real es la nominal menos la inflación, por lo que tendríamos $i_real = 18.75\% - 11\% = 7.75\%$ La tasa de interés real sería 7.75%.
+
+c)    Para saber cuanto nos deberían pagar por dos años manteniendo la tasa nominal, ocupamos la misma fórmula y reemplazamos con el nuevo 'n' $$VF=VP \cdot (1+i)^n$$ $$VF = 160.000(1+0.1875)^2$$ $$VF = 225.625$$   Luego de dos períodos manteniendo la tasa nos deberían devolver \$225.625.
+
+### :
+
+  Usted está en búsqueda de oportunidades de inversión para una cantidad de \$ 5.000.000 que logró ahorrar. Espera ganar en forma real un 5% en el primer año.
+
+a)  Teniendo en cuenta que el año pasado existió una inflación de 11% en su país, se espera que esta tasa se mantenga durante el año siguiente, ¿cual debe ser la tasa de interés nominal de su inversión?
+
+b)  ¿Cuanto será el valor de su inversión en 5 años?
+
+c)  ¿Cuánto más debo invertir, con la tasa de interés nominal calculada en la pregunta a), para lograr ganar la misma cantidad pero en 3 años.
+
+  **RESPUETSAS:**
+
+a)  
+
+  Para lograr ganar un %5 en forma real, debo encontrar la tasa nominal que debe tener la oportunidad de inversión.
+
+$$r_{real}=r_{nominal}-\pi$$ $$0,05 = r_{nominal}-0,11$$ $$r_{nominal}=0,05 + 0,11=0,16$$
+
+b)  
+
+  Considerando la tasa de interés nominal anual encontrada en la pregunta anterior:
+
+$${VF}_n = I*(1+r)^n$$ $${VF}_5 = 5.000.000*(1+0,16)^5 = \$10.501.708$$
+
+c)  
+
+  Para solucionar la pregunta, debo encontrar el valor presente de una ganancia de \$ 10501708 a un interés nominal de 16% anual.
+
+  El valor presente se define como la cantidad de dinero que se necesitaría hoy, utilizando la tasa de interés prevaleciente, para producir una determinada cantidad futura de dinero.
+
+$${VP}_n = \frac{X}{(1+r)^n}$$ $${VP}_3 = \frac{10501708}{(1+0,16)^5}$$ $${VP}_3 = \$ 6.727.999$$
+
+### :
+
+  Suponga una economía en la que la mitad de la población tiene un ingreso igual a 100 y la otra mitad igual a 200.
+
+a)  Suponga que a la población con ingreso igual a 100 se le ofrece invertir en un fondo de inversión ligado al sector inmobiliario, el cual renta un 10 % por año. Por otro lado, a la población con ingreso igual a 200 se le ofrece invertir en un depósito a plazo que renta 5 % al año. Calcule los ingresos de ambos grupos en esta economía luego de 2 años.
+
+b)  Comente sobre los riesgos específicos y de mercado de las opciones de inversión.
+
+  **RESPUESTAS:**
+
+a)  
+
+  Para el grupo con ingresos iniciales iguales a 100, luego de 2 años tendrán:
+
+$$100\cdot(1+0.1)^2=121$$   Para el otro grupo, luego de 2 años sus ingresos serán:
 
 $$200\cdot(1+0.05)^2=220.5$$
 
-b)
+b)  
 
-&nbsp; Un riesgo específico de la industria inmobiliaria es un cambio en las tasas de impuestos a las propiedades, mientras que un riesgo específico para un depósito a plazo puede ser que quiebre el banco en el cual se tiene el depósito. Un riesgo de mercado para ambas inversiones es una recesión económica.
-
+  Un riesgo específico de la industria inmobiliaria es un cambio en las tasas de impuestos a las propiedades, mientras que un riesgo específico para un depósito a plazo puede ser que quiebre el banco en el cual se tiene el depósito. Un riesgo de mercado para ambas inversiones es una recesión económica.
 
 ### :
 
-&nbsp; Con las alzas de la TPM se ha vuelto muy interesante invertir en depósitos a plazo. Si la tasa de interés en Chile está al 10\% anual y la alternativa de inversión es invertir en renta variable con una rentabiliad del 6\% anual. ¿Qué decisión de inversión tomaría si dispone de 100M para invertir? Explique si su decisión cambiaría en el caso de que se duplicara la rentabilidad variable a un 12\%.\\
+  Con las alzas de la TPM se ha vuelto muy interesante invertir en depósitos a plazo. Si la tasa de interés en Chile está al 10% anual y la alternativa de inversión es invertir en renta variable con una rentabiliad del 6% anual. ¿Qué decisión de inversión tomaría si dispone de 100M para invertir? Explique si su decisión cambiaría en el caso de que se duplicara la rentabilidad variable a un 12%.\\
 
-&nbsp; **RESPUESTA:**
+  **RESPUESTA:**
 
-&nbsp; Las alzas en las TPM son mecanismo de control de la inflación ya que aumentan el costo de oportunidad de dinero rentabilizando el ahorro y frenando el consumo. A igual nivel de riesgo, los depósitos a plazo son más rentables por lo que es más beneficioso invertir la totalidad de los recursos en depósitos a plazo. En el caso de duplicar la rentabilidad variable ya no es trivial la elección ya que si bien 12\% es mayor al 10\% esas inversiones son más riesgosas por lo que en el corto plazo la rentabilidad podría ser menor a 10\% e incluso negativa.
+  Las alzas en las TPM son mecanismo de control de la inflación ya que aumentan el costo de oportunidad de dinero rentabilizando el ahorro y frenando el consumo. A igual nivel de riesgo, los depósitos a plazo son más rentables por lo que es más beneficioso invertir la totalidad de los recursos en depósitos a plazo. En el caso de duplicar la rentabilidad variable ya no es trivial la elección ya que si bien 12% es mayor al 10% esas inversiones son más riesgosas por lo que en el corto plazo la rentabilidad podría ser menor a 10% e incluso negativa.

@@ -2,162 +2,6 @@
 
 ### :
 
-  Una empresa de dulces tiene como función de oferta: $P(Q)=1+Q$ Y como función de demanda: $P(Q)=5-Q$, se le agrega un impuesto al productor de \$1, calcule su peso muerto, el excedente al consumidor, lo recaudado por el gobierno y haga un gráfico de la situación.
-
-  **RESPUESTA**
-
-  Primero hacemos el gráfico:
-
-```{r, engine='tikz',echo=FALSE,out.width="60%"}
-#| fig-align: center
-\begin{tikzpicture}
-
-    % oferta = P(Q)=1+Q
-    % demanda libre = P(Q)=5-Q
-    % demanda con impuesto = 6-Q
-    
-    
-    % Etiquetas en el eje P
-    % Area excedente del consumidor
-    \fill[orange!60] (0,4) -- (2,4) -- (0,6) -- cycle;
-    \draw [line width=1pt](0,4) -- (2,4);
-    
-    % Area excedente del productor
-    \fill[blue!50] (0,3) -- (2,3) -- (0,1) -- cycle;
-    \draw [line width=1pt](0,3) -- (2,3);
-    
-    % Area de impuesto recuadado.
-    \fill[black!60] (0,4) -- (2,4) -- (2,3) -- (0,3)-- cycle;
-    
-    % perdida de eficiencia.
-    \fill[black] (2,3) -- (2,4) -- (2.5,3.5) -- cycle;
-    
-    % demanda sin impuesto
-    \draw [blue, line width=1pt](0,5) -- (5,0); %P(Q)=5-Q
-
-    %demanda con impuesto
-    \draw [blue, line width=1pt](0,6) -- (6,0);
-
-    % oferta
-    \draw [red, line width=1pt](0,1) -- (5,6); %P(Q)=1+Q
-       
-    % Eje x
-    \draw[black, line width=2pt] (0,0) -- (5.98,0) node[right] {Q};
-    \draw[black, line width=1pt] (5.86,-0.15) -- (6.01,0);
-    \draw[black, line width=1pt] (5.86,0.15) -- (6.01,0);
-
-    % eje y
-    \draw[black, line width=2pt] (0,0) -- (0,5.98) node[right] {P};
-    \draw[black, line width=1pt] (-0.15,5.86) -- (0,6.01);
-    \draw[black, line width=1pt] (0.15,5.86) -- (0,6.01);
-
-    %leyendas
-    \node at (0.8,2.6) {EP};
-    \node at (0.8,4.6) {EC};
-    \node at (0.8,3.6) {GOB};
-    \node at (4.8,2.6) {D con};
-    \node at (5.1,2) {impuesto};
-    \node at (2.33,1.6) {D mer};
-    \node at (-0.3,5) {5};
-    \node at (-0.3,6) {6};
-    \node at (2.4,3) {(2,3)};
-    \node at (3.4,3.5) {(2.5,3.5)};
-    \node at (-0.3,1) {1};
-    
-\end{tikzpicture}
-```
-
-  Calculamos las áreas y nos dará que el peso muerto es $0.5$, el excedente del consumidor es $2$ y que lo recaudado por el gobierno es $2$.
-
-### :
-
-  Tenemos una empresa de computadores con función de demanda $P_d(Q)=30-3Q$ y de oferta $P(Q)=5+2Q$, debido a la pandemia se hace un subsidio de \$6 a los estudiantes para que puedan conectarse a sus clases. Haga un gráfico de la situación y calcule el excedente del productor y del consumidor.
-
-  **RESPUESTA**
-
-```{r, engine='tikz',echo=FALSE,out.width="60%"}
-#| fig-align: center
-\begin{tikzpicture}
-
-    % oferta libre= P(Q)=1+0.4Q
-    % ofreta consubsidio = P(Q)=0.4Q
-    % demanda = 6-0.6Q
-    
-    %AREAS 
-    % Area de impuesto recuadado.
-    \fill[black!60] (0,2) -- (0,3) -- (1,3) -- (1,2)-- cycle;
-    
-    % Area excedente del consumidor
-    \fill[orange!60] (0,3) -- (1,3) -- (0,6) -- cycle;
-    \draw [line width=1pt](0,3) -- (1,3);
-    
-    % Area excedente del productor
-    \fill[blue!50] (0,0) -- (1,2) -- (0,2) -- cycle;
-    \draw [line width=1pt](0,2) -- (1,2);
-    
-    
-    % perdida de eficiencia.
-    \fill[black] (1,2) -- (1,3) -- (0.7,2.4) -- cycle;
-    
-    
-    %RECTAS
-    % oferta libre
-    \draw [red, line width=1pt](0,1) -- (2.5,6);
-
-    %oferta con subsidio
-    \draw [red, line width=1pt](0,0) -- (3,6);
-
-    % demanda
-    \draw [blue, line width=1pt](0,6) -- (2,0);
-
-    %LEYENDAS
-    \node at (4.5,6) {O con subsidio};
-    \node at (1.6,6) {O mer};
-
-
-    %BASES GRAFICO
-    % Eje x
-    \draw[black, line width=2pt] (0,0) -- (5.98,0) node[right] {Q};
-    \draw[black, line width=1pt] (5.86,-0.15) -- (6.01,0);
-    \draw[black, line width=1pt] (5.86,0.15) -- (6.01,0);
-
-    % eje y
-    \draw[black, line width=2pt] (0,0) -- (0,5.98) node[right] {P};
-    \draw[black, line width=1pt] (-0.15,5.86) -- (0,6.01);
-    \draw[black, line width=1pt] (0.15,5.86) -- (0,6.01);
-
-
-    %leyenda 0.
-    \node at (-0.25,-0.25) {0};
-    
-    % leyendas base eje y
-    \node at (-0.3,1) {5};
-    \node at (-0.3,2) {10};
-    \node at (-0.3,3) {15};
-    \node at (-0.3,4) {20};
-    \node at (-0.3,5) {25};
-    \node at (-0.3,6) {30};
-
-    % leyendas base eje x
-    
-    \node at (1,-0.3) {5};
-    \node at (2,-0.3) {10};
-    \node at (3,-0.3) {15};
-    \node at (4,-0.3) {20};
-    \node at (5,-0.3) {25};
-    \node at (6,-0.3) {30};
-    
-\end{tikzpicture}
-```
-
-  Como los exedentes son triangulares, calulamos el exedente a base de su forma: $$
-\frac{bh}{2}
-$$
-
-  El exedente del consumidor resulta $37.5$ y el del productor $25$.
-
-### :
-
   Argentina por razones populistas, antes de las elecciones decidido fijar los precios de algunos bienes. A base de esto en un pueblo imaginario tiene el mercado del queso como funciones de oferta y demanda respectivamente $P(Q)=1.5+0.5Q$ y $Q(P)=5-P$. La fijación al precio máximo de este bien es de \$2. ¿Qué fenómeno ocurrirá debido a esta intervención? Haga un gráfico de la situación.
 
   **RESPUESTA**
@@ -236,300 +80,60 @@ $$
 
 ### :
 
-  China tiene un mercado de chips con las siguientes funciones de oferta y demanda, con $P$ en dolares: $$
-P(Q)=120+6Q \, Q(P)=50-0.125P
-$$
-
-  Si el precio mundial es de \$300 y este país decide exportar ¿Cuanto es lo que tendrá de beneficio este país en dolares por la exportación. Grafíque la situación.
-
-**RESPUESTA:**
-
-  Primero, graficaremos:
-
-```{r, engine='tikz',echo=FALSE,out.width="60%"}
-#| fig-align: center
-\begin{tikzpicture}
-
-    % oferta libre= P(Q)=1+0.4Q
-    % ofreta consubsidio = P(Q)=0.4Q
-    % demanda = 6-0.6Q
-    
-    %AREAS 
-    
-    % Area excedente del consumidor
-    \fill[orange!60] (0.8,3.2) -- (1.2,4) -- (0.5,4) -- cycle;
-    
-    
-    %RECTAS
-    % oferta libre
-    \draw [black, line width=1pt](0,4) -- (6,4);
-
-    %oferta con subsidio
-    \draw [red, line width=1pt](0,1.6) -- (2.2,6);
-
-    % demanda
-    \draw [blue, line width=1pt](0,5.33) -- (2,0);
-
-    %LEYENDAS
-    \node at (1.8,3) {(20,240)};
-    \node at (0.8,3.7) {B};
-
-
-    %BASES GRAFICO
-    % Eje x
-    \draw[black, line width=2pt] (0,0) -- (5.98,0) node[right] {Q};
-    \draw[black, line width=1pt] (5.86,-0.15) -- (6.01,0);
-    \draw[black, line width=1pt] (5.86,0.15) -- (6.01,0);
-
-    % eje y
-    \draw[black, line width=2pt] (0,0) -- (0,5.98) node[right] {P};
-    \draw[black, line width=1pt] (-0.15,5.86) -- (0,6.01);
-    \draw[black, line width=1pt] (0.15,5.86) -- (0,6.01);
-
-
-    %leyenda 0.
-    \node at (-0.25,-0.25) {0};
-    
-    % leyendas base eje y
-    \node at (-0.3,1) {75};
-    \node at (-0.3,2) {150};
-    \node at (-0.3,3) {225};
-    \node at (-0.3,4) {300};
-    \node at (-0.3,5) {375};
-    \node at (-0.3,6) {450};
-
-    % leyendas base eje x
-    
-    \node at (1,-0.3) {25};
-    \node at (2,-0.3) {50};
-    \node at (3,-0.3) {75};
-    \node at (4,-0.3) {100};
-    \node at (5,-0.3) {125};
-    \node at (6,-0.3) {150};
-    
-\end{tikzpicture}
-```
-
-  Luego calculamos el beneficio que esta dado por un triangulo:
-
-$$
-\frac{60\cdot 140/3}{2}=\$1400
-$$
-
-### :
-
-  El merado se zapatos en chile esta dado por las funciones de oferta y demanda en dolares y unidades: $$
-\begin{array}{cc}P(Q)=5+1.5Q, & Q(P)=5.2-\frac{2}{5}P\\\end{array}
-$$
-
-  Además, el precio mundial de estos zapatos es de \$5 por unidad y se tiene un arancel de \$1.
-
-  Grafique la situación, calcule el excedente del productor local, el peso muerto y prediga que pasaría para los consumidores y productores locales si se quita este arancel.
-
-**RESPUESTA:**
-
-  Primero calulamos la demanda inversa:
-
-$$
-Q(P)=5.2-\frac{2}{5}P \longleftrightarrow P(Q)=13-2.5Q
-$$
-
-  Luego, hacemos el gráfico:
-
-```{r, engine='tikz',echo=FALSE,out.width="60%"}
-#| fig-align: center
-\begin{tikzpicture}[scale=0.4]
-        % Area beneficio de importación.
-        \fill[orange!60] (0.666,6) -- (2.8,6) -- (2,8) -- cycle;
-        
-        % Area de lo perdido por el arancel.
-        \fill[blue!60] (0.666,6) -- (2.8,6) -- (2.8,5) -- (0.666,5) -- cycle;
-        % Area de la perdida de eficiencia.
-        \fill[black] (0,5) -- (0.666,6) -- (0.666,5) -- cycle;
-        \fill[black] (2.8,6) -- (2.8,5) -- (3.2,5) -- cycle;
-        
-        % demanda
-        \draw [blue, line width=1pt](0,13) -- (5.2,0); %P(Q)=5-Q
-    
-        % oferta
-        \draw [red, line width=1pt](0,5) -- (6,14); %P(Q)=1+Q
-        
-        % Rectas del precio mundial.
-        \draw (0,5) -- (16,5);
-        %Recta del arancel. 
-        \draw (0,6) -- (16,6);
-        
-        % Eje x
-        \draw[black, line width=2pt] (0,0) -- (15.98,0) node[right] {Q};
-        \draw[black, line width=1pt] (15.66,-0.35) -- (16.01,0);
-        \draw[black, line width=1pt] (15.66,0.35) -- (16.01,0);
-    
-        % eje y
-        \draw[black, line width=2pt] (0,0) -- (0,15.98) node[right] {P};
-        \draw[black, line width=1pt] (-0.35,15.66) -- (0,16.01);
-        \draw[black, line width=1pt] (0.35,15.66) -- (0,16.01);
-    
-        %leyendas
-        \node at (-1,6) {6};
-        \node at (-1,5) {5};
-        \node at (18,6) {Arancel};
-        \node at (19.5,5) {Precio Mundial};
-        \node at (3.2,8) {(2,8)};
-        \node at (-1,13) {13};
-        \node at (5.2,-1) {5.2};
-        
-\end{tikzpicture}
-```
-
-  Donde el área negra es el peso muerto, la naranja es el beneficio del importador y el área azul es el arancel.
-
-  Si quitamos el arancel, los consumidores podrán comprar más barato, pero los productores quebraran por no tener ningún excedente.
-
-### :
-&nbsp; Se tienen las siguientes funciones de oferta y demanda de un mercado local $P(Q)=2.5+Q/2$ y $P(Q)=13-Q$, si el precio mundial es de \$2, y se le aplica un arancel de \$2.
-
-1) ¿Cuál es el equilibrio de mercado?
-2) ¿Cuál es el beneficio del importador?
-3) Si se le aplica un arancel del \$2, ¿cual será el valor del peso muerto?
-4) siguiendo la pregunta anterior, ¿Cuánto recaudará el gobierno?
-
-
-&nbsp; \textbf{RESPUESTAS:}
-
-1) (7,6)
-2) (25.75)
-3) 5.75
-4) 12
-
-
-### :
 El mercado local de diesel está representado por:
 
 $$Q = \frac{a-P}{12.5}  \hspace{1cm} \text{ y}   \hspace{1cm}   Q = \frac{P-b}{11}$$
 
-&nbsp; Donde $P$ se encuentra en pesos chilenos (\$) por litro de combustible y $Q$ muestra los litros de combustible (en millones) que se transan en este mercado. Actualmente se cobra un impuesto de \$130 por litro de diesel.
+  Donde $P$ se encuentra en pesos chilenos (\$) por litro de combustible y $Q$ muestra los litros de combustible (en millones) que se transan en este mercado. Actualmente se cobra un impuesto de \$130 por litro de diesel.
 
-a) Se le pide calcular la cantidad Q que se transa después de aplicado el impuesto. Exprese su resultado con dos decimales.
-
+a)  Se le pide calcular la cantidad Q que se transa después de aplicado el impuesto. Exprese su resultado con dos decimales.
 
 b)  Muestre detalladamente los cálculos del ejercicio anterior. ¿Hay diferencia entre el precio que observan oferentes y demandantes? Si es así, cuál es el precio que observa el productor y cuál es el precio que observa el consumidor? ¿A cuánto asciende la recaudación del gobierno? Si hay pérdida de eficiencia, ¿a cuánto asciende? Grafique.
 
+c)  En su cálculo, ¿aplicó el impuesto sobre el consumidor o sobre el productor? ¿Sería diferente el resultado si lo aplica al otro lado del mercado? ¿Por qué? Calcule la incidencia del impuesto y relaciónelo con la elasticidad precio propio de las curvas de oferta y demanda.
 
-c) En su cálculo, ¿aplicó el impuesto sobre el consumidor o sobre el productor? ¿Sería diferente el resultado si lo aplica al otro lado del mercado? ¿Por qué? Calcule la incidencia del impuesto y relaciónelo con la elasticidad precio propio de las curvas de oferta y demanda.
+d)  En la actualidad, hay argumentos a favor de aumentar el impuesto sobre el diésel y otros argumentos a favor de disminuir (al menos temporalmente) ese mismo impuesto. Mencione al menos un argumento que apoye el alza de este impuesto y uno que apoye la disminución del impuesto. Y finalmente, concluya a favor de qué argumento se encuentra usted.
 
+  **RESPUESTAS:**
 
-d) En la actualidad, hay argumentos a favor de aumentar el impuesto sobre el diésel y otros argumentos a favor de disminuir (al menos temporalmente) ese mismo impuesto. Mencione al menos un argumento que apoye el alza de este impuesto y uno que apoye la disminución del impuesto. Y finalmente, concluya a favor de qué argumento se encuentra usted.
+a)    Con un impuesto unitario $\tau=$\$130, el precio que observan compradores y vendedores será diferente, tal que $\tau=130=P_c - P_v$ donde $P_c$ es el precio que observan y pagan los consumidores y $P_v$ es el precio que observan y reciben los oferentes por cada litro de combustible. Si se aplica el impuesto sobre los compradores, se tiene $P_c= P_v+\tau$ y reemplazando en la ecuación de la demanda para obtener el nuevo equilibrio: $$ \frac{a-P_v-\tau}{12.5}=\frac{P_v-b}{11}$$ de donde $$P_v = \frac{11a+12.5b-11\tau}{11+12.5}$$ $$Q^\prime=\frac{a-b-\tau}{23.5}$$
 
-&nbsp; **RESPUESTAS:**
+b)  
 
-a)
-&nbsp; Con un impuesto unitario $\tau=$\$130, el precio que observan compradores y vendedores será diferente, tal que $\tau=130=P_c - P_v$ donde $P_c$ es el precio que observan y pagan los consumidores y $P_v$ es el precio que observan y reciben los oferentes por cada litro de combustible. Si se aplica el impuesto sobre los compradores, se tiene $P_c= P_v+\tau$ y reemplazando en la ecuación de la demanda para obtener el nuevo equilibrio:
-$$ \frac{a-P_v-\tau}{12.5}=\frac{P_v-b}{11}$$
-de donde $$P_v = \frac{11a+12.5b-11\tau}{11+12.5}$$
-$$Q^\prime=\frac{a-b-\tau}{23.5}$$
-
-b)
-
-&nbsp; Sí, hay diferencia entre el precio que observan oferentes y demandantes. Por ejemplo, con $a=900$, $b=300$ y $\tau=130$ antes del impuesto el equilibrio estaba dado por $Q_0=25.53$ millones de litros a un precio de $P_0=580.85$ por litro de diésel.  Con el impuesto, el precio que reciben los oferentes por litro es de \$520 ($P_v$), mientras que los consumidores pagan por litro  \$650 ($P_c$) y en el mercado se transa una menor cantidad que asciende a $Q^\prime = 20$ millones. En este caso, la recaudación del gobierno es de \$2.600 millones ($\tau Q^\prime$) y la pérdida de eficiencia es de \$719,1 millones ($\tau (Q_0-Q^\prime)$).
-
-c)
-
-&nbsp; El resultado es el mismo independientemente sobre quién se aplique el impuesto, puesto que finalmente la carga fiscal es compartida entre ambas partes del mercado (oferentes y demandantes). Sobre quién recae la mayor parte, depende de la sensibilidad ante los cambios en los precios del diésel (incidencia del impuesto), lo cual se calcula con la elasticidad precio propio de las curvas de oferta y demanda:
-$$|\varepsilon_D | =\frac{\partial Q}{\partial P} \frac{P}{Q}=|\frac{-1}{12.5} \frac{P}{Q}| < \frac{1}{11} \frac{P}{Q}=\frac{\partial Q}{\partial P} \frac{P}{Q}=\varepsilon_S$$
-&nbsp; En este caso, para cualquier par $(Q, P)$, la demanda es siempre más inelástica que la oferta. Es decir, es menos sensible a cambios en precios, lo cual hace que la incidencia fiscal recaiga en mayor medida sobre los consumidores. En este caso, del impuesto unitario de \$130, los consumidores pagan \$69,15 del impuesto por cada litro y los productores \$60,85 por litro.
-
-d)
-
-&nbsp; Argumentos para incrementar el impuesto: 
-- disminuir el efecto de la externalidad negativa de la contaminación que genera su uso, (ii) progresividad del impuesto considerando que las familias de mayores ingresos son las tienen automóvil y hacen uso de este combustible  y (iii) aumentar los ingresos del fisco considerando la necesidad de mayor gasto público por la pandemia. Argumentos para reducir el impuesto de forma temporal:
-- ayudar a las familias que han sufrido reducciones en el ingreso por la actual coyuntura de mayor desempleo, empresas con menores ingresos por medidas de confinamiento, etc.
-- incentivar la industria de transporte y el traslado en menores costos a otras empresas.
-
-
-### :
-
-¿Cuál es la incidencia fiscal? ¿A quién se le aplica el impuesto? ¿Cuál es el objetivo del impuesto?
-
-&nbsp; **RESPUESTA:**
-
-&nbsp; El capítulo 6 del Mankiew 6ta edición, define la incidencia fiscal como la forma en que los participantes de un mercado comparten la carga de un impuesto. El impuesto puede ser aplicado al vendedor, a los compradores o a ambos. Estos impuestos buscan recaudar dinero para gastos fiscales. Estos gastos fiscales tienen como objetivo generar un mayor o igual beneficio social que el costo social producido por el impuesto.
-
-### :
-Tenemos un mercado donde su función oferta y demanda iniciales son respectivamente:
-$$P(Q)=5+\frac{3}{2}Q, \quad \quad P(Q)=13-\frac{1}{2}Q$$
-Luego sus funciones de oferta y demanda cambian respectivamente:
-$$P(Q)=2+Q, \quad \quad P(Q)=15-aQ$$
-a) Calcule el punto de equilibrio inicial.  
-b) ¿Cuánto tendría que valer “a”, para que este mercado se absolutamente inelástico?  
-c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad sea unitaria?  
-
-&nbsp; **RESPUESTAS:**
-
-a) 
-&nbsp; Igualamos las funciones y calculamos “Q”:
-$$5+\frac{3}{2}Q=13-\frac{1}{2}Q$$
-$$2Q=8$$
-$$Q=4$$  
-&nbsp; A base de la cantidad, calculamos el precio.
-$$P(4)=13-\frac{1}{2}\cdot4$$
-$$P=11$$  
-&nbsp; Entonces el punto de equilibrio está en $(4,11)$.  
-b)
-&nbsp; Al ser absolutamente inelástica, “Q” debe tener el mismo valor en la situación final e inicial. Entonces:
-$$2+Q=15-aQ$$
-$$2+1\cdot 4 =15-a\cdot 4$$
-$$2+4-15=-4\cdot a$$
-$$9=4\cdot a$$
-$$a=2.25$$  
-&nbsp; Entonces para que a sea absolutamente inelástica, “a” tiene que valer 2,25.  
+  Sí, hay diferencia entre el precio que observan oferentes y demandantes. Por ejemplo, con $a=900$, $b=300$ y $\tau=130$ antes del impuesto el equilibrio estaba dado por $Q_0=25.53$ millones de litros a un precio de $P_0=580.85$ por litro de diésel. Con el impuesto, el precio que reciben los oferentes por litro es de \$520 ($P_v$), mientras que los consumidores pagan por litro \$650 ($P_c$) y en el mercado se transa una menor cantidad que asciende a $Q^\prime = 20$ millones. En este caso, la recaudación del gobierno es de \$2.600 millones ($\tau Q^\prime$) y la pérdida de eficiencia es de \$719,1 millones ($\tau (Q_0-Q^\prime)$).
 
 c)  
-&nbsp; Para que su elasticidad sea unitaria, esta tiene que ser igual a 1, entonces formularemos la situación así:
-$$1 =\left|\frac{\triangle\%Q}{\triangle\%P}\right|$$  
-&nbsp; Simplificamos los “\%”.
-$$1 =\left|\frac{\triangle Q}{\triangle P}\right|$$  
-&nbsp; Buscamos el valor de “Q”:
-$$2+Q=15-aQ$$
-$$Q+aQ=13$$
-$$Q=\frac{13}{1+a}$$  
-&nbsp; Y en relación con este, buscamos el valor de “P”:
-$$P=15-\frac{13a}{1+a}$$  
-&nbsp; Y finalmente formulamos:
-$$1 =\left|\frac{Q_i-Q_f}{P_i-P_f}\right|$$
-$$1 =\left|\frac{4-\frac{13}{1+a}}{11-15+\frac{13a}{1+a}}\right|$$
-$$1 =\left|\frac{4-\frac{13}{1+a}}{-4+\frac{13a}{1+a}}\right|$$
-$$1 =\left|\frac{\frac{4(1+a)-13}{1+a}}{\frac{13a-4(1+a)}{1+a}}\right|$$
-$$1 =\left|\frac{4+4a-13}{13a-4-4a}\right|$$
-$$1 =\left|\frac{4a-9}{9a-4}\right|$$  
-&nbsp; Como “a” está en la demanda expresada con un signo negativo, entonces $a>0$.  
-&nbsp; Caso I: 
-$$1 =\frac{4a-9}{9a-4}$$
-$$9a-4 =4a-9$$
-$$5a=-5$$  
-&nbsp; No se cumple por ser de valor negativo  
-&nbsp; Caso II:
-$$1 =-\frac{4a-9}{9a-4}$$
-$$9a-4 =-4a+9$$
-$$13a =13$$
-$$a =1$$  
-&nbsp; Se cumple.  
-&nbsp; Entonces a es igual a 1.
 
+  El resultado es el mismo independientemente sobre quién se aplique el impuesto, puesto que finalmente la carga fiscal es compartida entre ambas partes del mercado (oferentes y demandantes). Sobre quién recae la mayor parte, depende de la sensibilidad ante los cambios en los precios del diésel (incidencia del impuesto), lo cual se calcula con la elasticidad precio propio de las curvas de oferta y demanda: $$|\varepsilon_D | =\frac{\partial Q}{\partial P} \frac{P}{Q}=|\frac{-1}{12.5} \frac{P}{Q}| < \frac{1}{11} \frac{P}{Q}=\frac{\partial Q}{\partial P} \frac{P}{Q}=\varepsilon_S$$   En este caso, para cualquier par $(Q, P)$, la demanda es siempre más inelástica que la oferta. Es decir, es menos sensible a cambios en precios, lo cual hace que la incidencia fiscal recaiga en mayor medida sobre los consumidores. En este caso, del impuesto unitario de \$130, los consumidores pagan \$69,15 del impuesto por cada litro y los productores \$60,85 por litro.
+
+d)  
+
+  Argumentos para incrementar el impuesto: - disminuir el efecto de la externalidad negativa de la contaminación que genera su uso, (ii) progresividad del impuesto considerando que las familias de mayores ingresos son las tienen automóvil y hacen uso de este combustible y (iii) aumentar los ingresos del fisco considerando la necesidad de mayor gasto público por la pandemia. Argumentos para reducir el impuesto de forma temporal: - ayudar a las familias que han sufrido reducciones en el ingreso por la actual coyuntura de mayor desempleo, empresas con menores ingresos por medidas de confinamiento, etc. - incentivar la industria de transporte y el traslado en menores costos a otras empresas.
 
 ### :
-&nbsp; Una empresa dedicada a vender parrillas vende en su primer año 752 unidades, a un precio de \$279 cada una. El segundo año de operación venden 673 unidades a \$300 cada una. ¿Cuál es su elasticidad de la demanda?
 
-&nbsp; **RESPUESTAS:**
+Tenemos un mercado donde su función oferta y demanda iniciales son respectivamente: $$P(Q)=5+\frac{3}{2}Q, \quad \quad P(Q)=13-\frac{1}{2}Q$$ Luego sus funciones de oferta y demanda cambian respectivamente: $$P(Q)=2+Q, \quad \quad P(Q)=15-aQ$$ a) Calcule el punto de equilibrio inicial.\
+b) ¿Cuánto tendría que valer "a", para que este mercado se absolutamente inelástico?\
+c) Para el mismo caso, ¿Cuánto debería valer "a" para que su elasticidad sea unitaria?
 
+  **RESPUESTAS:**
 
-&nbsp; Para resolver este ejercicio recordemos que la elasticidad es el cambio porcentual en la cantidad demanda sobre el cambio porcentual en el precio.
-$$\epsilon = \frac{\vartriangle \%  Q}{\vartriangle \% P} $$
-&nbsp; Reemplazamos con las respectivas variaciones y obtenemos:
-$$\vartriangle Q=\frac{673-752}{752} \cdot 100=-10,5\%$$
-$$\vartriangle P=\frac{300-279}{279} \cdot 100=7,5\%$$
-&nbsp; Ahora calculamos la elasticidad y obtenemos:
-$$\epsilon = \frac{\vartriangle \%  Q}{\vartriangle \% P} = \frac{-10,5\%}{7,5\%}=-1,4$$
-&nbsp; El valor absoluto de la elasticidad es mayor a 1, por lo que estamos frente a una demanda elástica. Este resultado significa que un aumento del 1\% en el precio, se traduce en una disminución del 1,4\% en la demanda.
+a)    Igualamos las funciones y calculamos "Q": $$5+\frac{3}{2}Q=13-\frac{1}{2}Q$$ $$2Q=8$$ $$Q=4$$\
+      A base de la cantidad, calculamos el precio. $$P(4)=13-\frac{1}{2}\cdot4$$ $$P=11$$\
+      Entonces el punto de equilibrio está en $(4,11)$.\
 
+b)    Al ser absolutamente inelástica, "Q" debe tener el mismo valor en la situación final e inicial. Entonces: $$2+Q=15-aQ$$ $$2+1\cdot 4 =15-a\cdot 4$$ $$2+4-15=-4\cdot a$$ $$9=4\cdot a$$ $$a=2.25$$\
+      Entonces para que a sea absolutamente inelástica, "a" tiene que valer 2,25.
 
+c)    Para que su elasticidad sea unitaria, esta tiene que ser igual a 1, entonces formularemos la situación así: $$1 =\left|\frac{\triangle\%Q}{\triangle\%P}\right|$$\
+      Simplificamos los "%". $$1 =\left|\frac{\triangle Q}{\triangle P}\right|$$\
+      Buscamos el valor de "Q": $$2+Q=15-aQ$$ $$Q+aQ=13$$ $$Q=\frac{13}{1+a}$$\
+      Y en relación con este, buscamos el valor de "P": $$P=15-\frac{13a}{1+a}$$\
+      Y finalmente formulamos: $$1 =\left|\frac{Q_i-Q_f}{P_i-P_f}\right|$$ $$1 =\left|\frac{4-\frac{13}{1+a}}{11-15+\frac{13a}{1+a}}\right|$$ $$1 =\left|\frac{4-\frac{13}{1+a}}{-4+\frac{13a}{1+a}}\right|$$ $$1 =\left|\frac{\frac{4(1+a)-13}{1+a}}{\frac{13a-4(1+a)}{1+a}}\right|$$ $$1 =\left|\frac{4+4a-13}{13a-4-4a}\right|$$ $$1 =\left|\frac{4a-9}{9a-4}\right|$$\
+      Como "a" está en la demanda expresada con un signo negativo, entonces $a>0$.\
+      Caso I: $$1 =\frac{4a-9}{9a-4}$$ $$9a-4 =4a-9$$ $$5a=-5$$\
+      No se cumple por ser de valor negativo\
+      Caso II: $$1 =-\frac{4a-9}{9a-4}$$ $$9a-4 =-4a+9$$ $$13a =13$$ $$a =1$$\
+      Se cumple.\
+      Entonces a es igual a 1.
 

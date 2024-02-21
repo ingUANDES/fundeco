@@ -1,0 +1,805 @@
+# Ayudantía 10:
+
+
+## Ejercicio I:
+
+  En una economía, sólo se producen autos y computadores. En la cuál se produjo lo siguiente en los años 2017,2018 y 2019:\\
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Datos</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Año</th>
+        <th>Precio Computadores</th>
+        <th>Cantidad Producida Computadores</th>
+        <th>Precio Autos</th>
+        <th>Cantidad Producida Autos</th>
+    </tr>
+    <tr>
+        <td>2017</td>
+        <td>100</td>
+        <td>100</td>
+        <td>200</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>2018</td>
+        <td>200</td>
+        <td>150</td>
+        <td>300</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>2019</td>
+        <td>300</td>
+        <td>200</td>
+        <td>400</td>
+        <td>150</td>
+    </tr>
+</table>
+
+</body>
+</html>
+```
+:::
+
+::: {.content-visible when-format="pdf\""}
+```{=tex}
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Año & Precio Computadores & \begin{tabular}[c]{@{}l@{}}Cantidad Producida\\ Computadores\end{tabular} & Precio autos & \begin{tabular}[c]{@{}l@{}}Cantidad Producida\\ Autos\end{tabular} \\ \hline
+2017 & 100 & 100 & 200 & 50 \\ \hline
+2018 & 200 & 150 & 300 & 100 \\ \hline
+2019 & 300 & 200 & 400 & 150 \\ \hline
+\end{tabular}
+\end{table}
+```
+:::
+
+a)  Calcular el PIB nominal para los años 2017, 2018, 2019.
+
+b)  Calcular el PIB real para los mismos años utilizando como año base el 2017.
+
+c)  Calcular el deflactor del PIB para los tres años mencionados anteriormente.
+
+d)  Calcular la tasa de inflación del mercado, utilizando el año 2017 como base.
+
+
+## Ejercicio II:
+
+  Tenemos la siguiente tabla que representa el porcentaje de población acumulado de la población según su ingreso porcentual acumulado:
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{25mm}|p{25mm}|}
+        \multicolumn{2}{c}{Tabla de demanda:} \\
+        \hline
+        decil: & Ingresos: \\ \hline
+        0.1 & 0.01 \\ \hline
+        0.2 & 0.03 \\ \hline
+        0.3 & 0.07 \\ \hline
+        0.4 & 0.13 \\ \hline
+        0.5 & 0.23 \\ \hline
+        0.6 & 0.35 \\ \hline
+        0.7 & 0.48 \\ \hline
+        0.8 & 0.62 \\ \hline
+        0.9 & 0.80 \\ \hline
+        1 & 1 \\ \hline
+        \end{tabular}
+\end{table}
+```
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table {
+      width: 50%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <title>Tabla de Demanda</title>
+</head>
+<body>
+
+  <table>
+  <caption>Tabla de demanda:</caption>
+  <thead>
+    <tr>
+      <th>decil:</th>
+      <th>Ingresos:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.1</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>0.2</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>0.3</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>0.4</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>0.5</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>0.6</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td>0.7</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td>0.8</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td>0.9</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+```
+:::
+
+a)  Calcule la desigualdad con el coeficiente de Gini.
+
+b)  Grafique la curva de Lorenz.
+
+## Ejercicio III:
+
+  Ahora suponga que esta economía los datos del mercado laboral tienen el siguiente comportamiento: En 2018 el país tuvo 25.000.000 de habitantes. El 62.5 % estaba en edad de trabajar, la tasa de participación fue del 80 % y la tasa de paro (desempleo) del 20 %. Para el año 2018 Calcule:
+
+a)  La población económicamente activa.
+
+b)  La población económicamente inactiva.
+
+c)  La población desempleada.
+
+
+## Ejercicio IV:
+
+  En esta pregunta analizaremos la importancia que puede tener la elasticidad precio de la demanda sobre varios aspectos de la intervención en un mercado. Imagine que la oferta de mercado es $Q_S= P$. Considere 3 posibles demandas de mercado: (i) $Q_D = 300 - 2P$, (ii) $Q_D = 200 - P$ y (iii) $Q_D = 100$.
+
+  Para cada uno de los 3 escenarios de demanda:
+
+a)  Calcule y grafique el equilibrio de mercado.
+
+b)  Calcule la elasticidad precio de la demanda en el punto de equilibrio.
+
+c)  Calcule el excedente del consumidor.
+
+  Si el estado decide cobrar un impuesto de \$10 por unidad vendida (también para cada uno de los 3 escenarios de demanda):
+
+d)  ¿Cómo se reparte el impuesto entre consumidores y productores?
+
+e)  Calcule la recaudación que logra el estado.
+
+f)  Calcule el nuevo excedente del consumidor.
+
+g)  Calcule la pérdida de eficiencia que ocasiona el impuesto.
+
+h)  En base a todas sus respuestas a)-g), haga una interpretación económica del efecto que tiene la elasticidad precio de la demanda sobre: el bienestar de consumidores, la incidencia de un impuesto (cuánto paga cada uno), la recaudación del gobierno y la ineficiencia de la intervención.
+
+
+## Ejercicio V:
+
+  Con los datos del banco mundial y el SII, pudimos elaborar la siguiente tabla:
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        Año & Inflación anual & Conversión enero & Conversión enero & Conversión enero \\
+        & de Angola & 1UF a CLP & 1US a CLP & 1US a KZ \\\hline
+        $2018$ & $19,8\%$ & $\$26800$ & $\$640$ & $253$Kz. \\\hline
+        $2019$ & $17,1\%$ & $\$27565$ & $\$703$ & $365$Kz. \\\hline
+        $2020$ & $22,3\%$ & $\$28310$ & $\$793$ & $578$Kz. \\\hline
+        $2021$ & $25,8\%$ & $\$29070$ & $\$760$ & $631$Kz. \\\hline
+        $2022$ & No influye en el ejercicio & $\$31000$ & \$$873$ & $460$Kz. \\\hline
+    \end{tabular}
+    \label{tab:my_label}
+\end{table}
+```
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Datos</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+<tr>
+<th>Año</th>
+<th>Inflación anual de Angola</th>
+<th>Conversión enero 1UF a CLP</th>
+<th>Conversión enero 1US a CLP</th>
+<th>Conversión enero 1US a KZ</th>
+</tr>
+<tr>
+<td>2018</td>
+<td>$19,8\%$</td>
+<td>$\$26800$</td>
+<td>$\$640$</td>
+<td>$253$Kz.</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>$17,1\%$</td>
+<td>$\$27565$</td>
+<td>$\$703$</td>
+<td>$365$Kz.</td>
+</tr>
+<tr>
+<td>2020</td>
+<td>$22,3\%$</td>
+<td>$\$28310$</td>
+<td>$\$793$</td>
+<td>$578$Kz.</td>
+</tr>
+<tr>
+<td>2021</td>
+<td>$25,8\%$</td>
+<td>$\$29070$</td>
+<td>$\$760$</td>
+<td>$631$Kz.</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>No influye en el ejercicio</td>
+<td>$\$31000$</td>
+<td>$\$873$</td>
+<td>$460$Kz.</td>
+</tr>
+</table>
+
+</body>
+</html>
+```
+:::
+
+
+
+  Usted decide el 2018 poner a deposito a plazo por cuatro años un millón de Kwanzas angoleñas a un banco que da una tasa de interés del 20% anual.
+
+1)  ¿Cuántas kwansas tendrás al terminar los 4 años?
+
+2)  ¿Cuánto es la inflación acumulada en los 4 años?
+
+3)  Si antes del deposito a plazo tenias los kwansas en UF e indexamos a UF lo invertido al terminar los 4 años ¿Cuántos UF teníamos al principio y al final?
+
+4)  ¿De qué sirvió indexar a UF al principio y al final? ¿Por qué tomamos la referencia de la ganancia o perdida en UF y no en la inflación de Angola?
+
+
+&nbsp; **RESPUESTAS:**
+
+  Ejercicio I:
+
+a)  
+
+$$PIB\quad nominal = Precios\quad Actuales\quad \cdot \quad Cantidades\quad Actuales$$ **PIB 2017** $$\rightarrow PIB_{nominal2017}=100\cdot100 + 200\cdot50$$ $$\leftrightarrow PIB_{nominal2017}=\$ 20.000$$ **PIB 2018** $$\rightarrow PIB_{nominal2018}=200\cdot150 + 300\cdot100$$ $$\leftrightarrow PIB_{nominal2019}=\$ 60.000$$ **PIB 2019** $$\rightarrow PIB_{nominal2019}=300\cdot200 + 400\cdot150$$ $$\leftrightarrow PIB_{nominal2019}=\$ 120.000$$
+
+b)  
+
+$$PIB\quad real = Precios\quad Año\quad Base\quad \cdot \quad Cantidades\quad Actuales$$ **PIB 2017** $$\rightarrow PIB_{real2017}=100\cdot100 + 200\cdot50$$ $$\leftrightarrow PIB_{real2017}=\$ 20.000$$ **PIB 2018** $$\rightarrow PIB_{real2018}=100\cdot150 + 200\cdot100$$ $$\leftrightarrow PIB_{real2018}=\$ 35.000$$ **PIB 2019** $$\rightarrow PIB_{real2019}=100\cdot200 + 200\cdot150$$ $$\leftrightarrow PIB_{real2019}=\$ 50.000$$
+
+c)  
+
+$$Deflactor\quad del \quad PIB=\frac{PIB\quad nominal}{PIB\quad real}\cdot 100$$ **Deflactor PIB 2017** $$\rightarrow Deflactor\quad PIB_{2017}=\frac{20.000}{20.000}\cdot 100$$ $$\leftrightarrow Deflactor\quad PIB_{2017}=100\%$$ **Deflactor PIB 2018** $$\rightarrow Deflactor\quad PIB_{2018}=\frac{60.000}{35.000}\cdot 100$$ $$\leftrightarrow Deflactor\quad PIB_{2019}=171,42\%$$ **Deflactor PIB 2019** $$\rightarrow Deflactor\quad PIB_{2019}=\frac{120.000}{50.000}\cdot 100$$ $$\leftrightarrow Deflactor\quad PIB_{2019}=240\%$$
+
+d)  
+
+  A pesar de que se utiliza el IPC como principal medida de la inflación, el deflector del PIB puede ser utilizado con el mismo fin.
+
+**Tasa de inflación 2017** $$Tasa\quad de\quad inflación\quad 2017= \frac{100 -100}{100}\cdot 100=0\%$$
+
+**Tasa de inflación 2018** $$Tasa\quad de\quad inflación\quad 2018= \frac{171,42 -100}{100}\cdot 100=71,42\%$$
+
+**Tasa de inflación 2019** $$Tasa\quad de\quad inflación\quad 2019= \frac{240 -100}{100}\cdot 100=140\%$$
+
+
+  Ejercicio II:
+
+a)  
+
+  El coeficiente de Gini es un método utilizado para medir la desigualdad salarial.
+
+  Para calcular esto, se necesita la proporción acumulada de población ($X$) y la proporción acumulada de ingresos ($Y$). Con las cuales, el coeficiente de Gini se calcula de la siguiente manera:
+
+$$G=1-\left|\sum_{k=0}^{n-1}\left(X_{k+1}-X_k\right)\left(Y_{k+1}+Y_k\right)\right| $$
+
+Las condiciones extremas que se pueden cumplir son: - $G=0$: todos los ciudadanos tienen los mismos ingresos. - $G=1$: todos los ingresos los tiene solo 1 ciudadano.
+
+$$1-0.1(0.01+(0.01+0.03)+(0.03+0.07)+(0.07+0.13)+(0.13+0.23)+(0.23+0.35))+$$ $$0.1((0.35+0.48)+(0.48+0.62)+(0.62+0.8)+(0.8+1))$$ $$=$$ $$1-0.1\cdot 6.43$$ $$1-0.643$$ $$0.357$$
+
+b)  Grafique la curva de Lorenz.
+
+  "La curva de Lorenz es una representación gráfica de la desigualdad en el reparto de la renta existente en un determinado territorio (normalmente un país). En ella, se sitúa en el eje X los acumulados de población (P) expresados en tanto por ciento y en el eje Y los acumulados de renta (Q) expresados en tanto por ciento."
+
+  Aproximadamente, en nuestro ejemplo tenemos:
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (1.2,0) node[right] {Acumulado de población};
+    \draw[thick,->] (0,0) -- (0,1.2) node[above] {Acumulado de ingreso};
+    
+    \draw[domain=0:1, samples=100, color=black, thick] plot (\x, \x^2);
+    \draw[domain=0:1, samples=100, color=black, thick] plot (\x, \x);
+    
+    \foreach \x in {0,0.2,0.4,0.6,0.8,1} {
+        \draw (\x,2pt) -- (\x,-2pt) node[below] {\x};
+        \draw (2pt,\x) -- (-2pt,\x) node[left] {\x};
+    }
+\end{tikzpicture}
+
+```
+
+
+  Ejercicio III:
+
+a)  
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|cc|}
+        \hline
+        Población Total: & $PT = 25.000.000$ \\ \hline
+        Población en Edad de Trabajar: & $PET = 62,5\%$ \\ \hline
+        Tasa de Participación: & $TP = 80\%$ \\ \hline
+        Tasa de Desempleo: & $TD = 20\%$ y $PET = 62,5\% \times 25.000.000 = 15.625.000$\\ \hline
+        Población Economicamente Activa: & $ PEA = PET \times TP = 15.625.000 \times 80\%$\\ \hline
+        Población Economicamente Activa & $PEA= 12.500.000$\\ \hline
+    \end{tabular}
+\end{table}
+```
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table {
+      width: 50%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <title>Tabla de Población</title>
+</head>
+<body>
+
+  <table>
+  <tr>
+    <td>Población Total:</td>
+    <td>$PT = 25.000.000$</td>
+  </tr>
+  <tr>
+    <td>Población en Edad de Trabajar:</td>
+    <td>$PET = 62,5\%$</td>
+  </tr>
+  <tr>
+    <td>Tasa de Participación:</td>
+    <td>$TP = 80\%$</td>
+  </tr>
+  <tr>
+    <td>Tasa de Desempleo:</td>
+    <td>$TD = 20\%$ y $PET = 62,5\% \times 25.000.000 = 15.625.000$</td>
+  </tr>
+  <tr>
+    <td>Población Económicamente Activa:</td>
+    <td>$PEA = PET \times TP = 15.625.000 \times 80\%$</td>
+  </tr>
+  <tr>
+    <td>Población Económicamente Activa:</td>
+    <td>$PEA = 12.500.000$</td>
+  </tr>
+</table>
+
+</body>
+</html>
+```
+:::
+
+b)  
+
+  Población Economicamente Inactiva\
+$$PET - PEA = 15.650.000 - 12.500.000$$ Población Economicamente Inactiva = $3.125.000$
+
+c)  
+
+Población Desempleada $$PD = PEA \times TD = 12.500.000 \times 20\%$$ Población Desempleada = $2.500.000$
+
+
+
+  Ejercicio IV:
+
+a)  Calcule y grafique el equilibrio de mercado.
+
+```{=html}
+<!-- -->
+```
+(i) $300 - 2P = P \longrightarrow P = 100$ y \$Q = 100 \$
+(ii) $200 - P = P \longrightarrow P = 100$ y $Q = 100$
+(iii) $100 = P \longrightarrow P = 100$ y $Q = 100$.
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[->, thick] (0,0) -- (0,4) node[above] {Precio(P)};
+    \draw[->, thick] (0,0) -- (4,0) node[right] {Cantidad(Q)};
+    \node[below] at (3,0) {300};
+    \node[below] at (2.25,0) {225};
+    \node[below] at (1.5,0) {150};
+    \node[below] at (0.75,0) {75};
+    \node[below] at (0,0) {0};
+    \node[left] at (0,3) {200};
+    \node[left] at (0,2.5) {150};
+    \node[left] at (0,2) {100};
+    \node[left] at (0,1.5) {50};
+    \node[left] at (0,0) {0};
+    
+    \draw[color=blue, domain=0:2.5, samples=100] plot (\x, \x) node[right] {Oferta};
+    \draw[color=red, domain=0:3, samples=100] plot (\x, {1.5 - 0.5*\x}) node[right] {Demanda};
+    
+    \filldraw (1,1) circle (1pt) node[above right] {(100, 100)};
+\end{tikzpicture}
+```
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[->, thick] (0,0) -- (0,4) node[above] {Precio(P)};
+    \draw[->, thick] (0,0) -- (4,0) node[right] {Cantidad(Q)};
+    \node[below] at (3,0) {200};
+    \node[below] at (2.5,0) {150};
+    \node[below] at (2,0) {100};
+    \node[below] at (1.5,0) {50};
+    \node[below] at (0,0) {0};
+    \node[left] at (0,3) {200};
+    \node[left] at (0,2.5) {150};
+    \node[left] at (0,2) {100};
+    \node[left] at (0,1.5) {50};
+    \node[left] at (0,0) {0};
+    
+    \draw[color=blue, domain=0:2, samples=100] plot (\x, \x) node[right] {Oferta};
+    \draw[color=red, domain=0:2, samples=100] plot (\x, {2 - \x}) node[right] {Demanda};
+    
+    \filldraw (1,1) circle (1pt) node[above right] {(100, 100)};
+\end{tikzpicture}
+```
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[->, thick] (0,0) -- (0,4) node[above] {Precio(P)};
+    \draw[->, thick] (0,0) -- (4,0) node[right] {Cantidad(Q)};
+    \node[below] at (3,0) {200};
+    \node[below] at (2.5,0) {150};
+    \node[below] at (2,0) {100};
+    \node[below] at (1.5,0) {50};
+    \node[below] at (0,0) {0};
+    \node[left] at (0,3) {200};
+    \node[left] at (0,2.5) {150};
+    \node[left] at (0,2) {100};
+    \node[left] at (0,1.5) {50};
+    \node[left] at (0,0) {0};
+    
+    \draw[color=blue, domain=0:2, samples=100] plot (\x, \x) node[right] {Oferta};
+    \draw[color=red] (1,0) -- (1,2) node[right] {Demanda};
+    
+    \filldraw (1,1) circle (1pt) node[above right] {(100, 100)};
+\end{tikzpicture}
+```
+
+b)  Calcule la elasticidad precio de la demanda en el punto de equilibrio.
+
+```{=html}
+<!-- -->
+```
+(i) $e_{P,D} = (-2)(\frac{100}{100}) = -2$
+(ii) $e_{P,D} = (-1)(\frac{100}{100}) = -1$
+(iii) $e_{P,D} = (0)(\frac{100}{100}) = 0$
+
+```{=html}
+<!-- -->
+```
+c)  Calcule el excedente del consumidor.
+
+```{=html}
+<!-- -->
+```
+(i) $E_{C} = (100)(50)(\frac{1}{2}) = 2500$
+(ii) $E_{C} = (100)(100)(\frac{1}{2}) = 5000$
+(iii) $E_{C} = \infty$
+
+  Si el estado decide cobrar un impuesto de \$10 por unidad vendida (también para cada uno de los 3 escenarios de demanda):
+
+d)  ¿Cómo se reparte el impuesto entre consumidores y productores?
+
+```{=html}
+<!-- -->
+```
+(i) $300 - 2P = P - 10 \longrightarrow P = 103.\bar{3}$ $\Rrightarrow$ El consumidor paga \$$3.\bar{3}$ y el productor \$$6.\bar{6}$.
+(ii) $200 - P = P - 10 \longrightarrow P = 105$ $\Rrightarrow$ El consumidor paga \$5 y el productor \$5
+(iii) $100 = P - 10 \longrightarrow P = 110$ $\Rrightarrow$ El consumidor paga todo el impuesto.
+
+```{=html}
+<!-- -->
+```
+e)  Calcule la recaudación que logra el estado.
+
+```{=html}
+<!-- -->
+```
+(i) $R = (10)(93.\bar{3}) = 933.\bar{3}$
+(ii) $R = (10)(95) = 950$
+(iii) $R = (10)(100) = 1000$
+
+```{=html}
+<!-- -->
+```
+f)  Calcule el nuevo excedente del consumidor.
+
+```{=html}
+<!-- -->
+```
+(i) $$ Q = 300 - 2(103.\bar{3}) = 93.\bar{3} \longrightarrow $$ $$E_{C} = (93.\bar{3})(150 - 103.\bar{3})(\frac{1}{2}) = 2177.\bar{7}$$\
+(ii) $$Q = 200 - (105) = 95 \longrightarrow $$\
+     $$E_{C} = (95)(200 - 105)(\frac{1}{2}) = 4512.5$$
+(iii) $$Q = 100 \longrightarrow E_{C} = \infty$$
+
+```{=html}
+<!-- -->
+```
+g)  Calcule la pérdida de eficiencia que ocasiona el impuesto.
+
+```{=html}
+<!-- -->
+```
+(i) $P_{e} = (10)(100 - 93.\bar{3})(\frac{1}{2}) = 33.\bar{3}$
+(ii) $P_{e} = (10)(100 - 95)(\frac{1}{2}) = 25$
+(iii) \$P\_{e} = 0 \$
+
+```{=html}
+<!-- -->
+```
+h)  Mientras más inelástica (o menos elástica) es la demanda: más pagan del impuesto los consumidores, menos es la pérdida de eficiencia, menor es el cambio en bienestar y mayor la recaudación.
+
+
+  Ejercicio V:
+
+1)  
+
+  Usamos la formula: $$
+C_f=C_i(1+i)^t
+$$
+
+  Reemplazando: $$
+C_f=10^6(1+0.2)^4
+$$
+
+  Desarrollando: $$
+C_f=\text{$2$.$073$.$600$}
+$$
+
+\
+
+2)  
+
+\
+
+  Explicación teórica de la pregunta:
+
+\
+
+  Cuando se mide la inflación anual, tomamos como base el 1 de enero del mismo año, todos los meses del año toman el mismo momento base por lo que al acumularlas se suman. Es decir: $$
+\text{Inflación acumulada por mes}_{t+1}=\text{Inflación acumulada}_{t}+\text{Inflación}_{t+1}
+$$
+
+  Donde $t\leq 11$ y se mide en meses.
+
+  Pero, como estamos viendo inflación acumulada de años, funciona de forma distinta porque todos toman como momento base el primer día de su año. Entonces, para sacar la inflación acumulada en $n$ años es: $$
+\text{Inflación acumulada por año}=\left[(1+\text{inflación}_t)\cdot(1+\text{inflación}_{t+1})\cdot ... \cdot (1+\text{inflación}_{t+n})-1\right]\cdot 100\%
+$$
+
+  Ya que, si tenemos un bien que en el año base vale 1, y la inflación anual de los siguientes $n$ años es $I_k$ con $k\in\mathbb{N}, k\leq n$. Entonces:
+
+$$
+\frac{1}{1+I_1}=\frac{1}{\text{Inflación acumulada 1° año}+1} \Leftrightarrow \text{Inflación acumulada 1° año}=I_1
+$$
+
+  Luego:
+
+$$
+\frac{1}{1+I_2}=\frac{1+I_1}{\text{Inflación acumulada 2° año}+1} \Leftrightarrow \text{Inflación acumulada 2° año}=I_1+I_2+I_1I_2
+$$
+
+  Ya al tercer año:
+
+$$
+\frac{1}{1+I_3}=\frac{1+I_1+I_2+I_1I_2}{\text{Inflación acumulada 3° año}+1} \Leftrightarrow \text{Inflación acumulada 3° año}=I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3
+$$
+
+  Ahora demostramos: $$
+(1+I_1)(1+I_2)(1+I_3)-1=I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3
+$$ $$
+(1+I_1+I_2+I_1I_2)(1+I_3)-1=I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3
+$$ $$
+1+I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3-1=I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3
+$$ $$
+I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3=I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3
+$$
+
+  Queda demostrado.
+
+\
+
+  Vuela al ejercicio:
+
+\
+
+  Aplicamos la primera formula dicha, además sabemos que la inflación de un año parte en el primer dia del año y termina en el último, por lo que del 2018 al 2021 cuentan como 4 años.
+
+$$
+1,198\cdot 1,171 \cdot 1,223 \cdot 1,258 - 1 = 115,8\% 
+$$
+
+  Entonces la inflación acumulada es un $115,8\%$
+
+\
+
+3)  
+
+\
+
+  Lo que haremos ahora será convertir a varios valores distintos hasta llegar a lo pedido para eso usaremos la formula:
+
+$$
+C_{df}=\frac{C_{di}\cdot V_{df}}{V_{di}}
+$$
+
+  Donde: $C_{di}$ es la cantidad numérica que tenemos de la divisa que tenemos al inicio, $C_{df}$ es la cantidad numérica que tenemos en la divisa que nos convertimos, $V_{di}$ es la proporción de divisa inicial que es igual al convertir en la divisa final con el valor $V_{df}$, es decir, $V_{di}=V_{df}$.
+
+  Como solo nos interesa saber al inicio es decir, enero de 2018 y enero del 2022, ya que ahí toma 4 años, haremos estas conversiones solo para dichos años.
+
+  **2018: capital es de** $10^6$
+
+  De Kz a US: $$
+C_{df}=\frac{10^6\cdot 1}{253}=\$3952.57
+$$
+
+  De US a CLP: $$
+C_{df}=\frac{3952.57\cdot 640}{1}=\$2529644
+$$
+
+  De CLP a UF: $$
+C_{df}=\frac{2529644\cdot 1}{26800}=94.39\text{UF}
+$$
+
+  Entonces partimos con $94.39$ UF
+
+  **2022: capital es de** $2073600$
+
+  De Kz a US: $$
+C_{df}=\frac{2073600\cdot 1}{460}=\$4507.83
+$$
+
+  De US a CLP: $$
+C_{df}=\frac{4507.83\cdot 873}{1}=\$3935336
+$$
+
+  De CLP a UF: $$
+C_{df}=\frac{3935336\cdot 1}{31000}=126.95\text{UF}
+$$
+
+  Entonces, empezamos con $94.39$ UF y terminamos con $126.95$ UF
+
+4)  
+
+  Como dice el enunciado "Usted", estamos hablando de ti, y tu resides en chile, no en Angola, por lo que indexar en UF te dará una referencia de la utilidad más precisa que la de la inflación de Angola.  
+

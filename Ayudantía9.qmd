@@ -1,0 +1,553 @@
+# Ayudantía 9:
+
+
+## Ejercicio I:
+
+a)  Complete la siguiente tabla, que hace relación a los excedentes de los participantes de un mercado.
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <caption>Intervención I.</caption>
+    <tr>
+        <th>Intervención</th>
+        <th>Demandante</th>
+        <th>Oferente</th>
+    </tr>
+    <tr>
+        <td>Impuesto</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Subsidio</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Fijación precio máximo</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Fijación precio mínimo</td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+</body>
+</html>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{45mm}|p{30mm}|p{30mm}|}
+        \hline
+        Intervención & Demandante & Oferente \\
+        \hline
+        Impuesto & &  \\
+        \hline
+        Subsidio & &  \\
+        \hline
+        Fijación precio máximo & & \\
+        \hline
+        Fijación precio mínimo & &  \\
+        \hline
+    \end{tabular}
+    \caption{Intervención I.}
+    \label{tab:my_label}
+\end{table}
+```
+:::
+
+b)  Una empresa de motores de autos petroleros tenia un subsidio hacia el consumidor para el año 2018, luego por temas de legislación en el congreso, en el año 2019 decidieron que las empresas que incentivan el uso de petroleo no tendrán más subsidio. Y finalmente, para recaudar más dinero para financiar pymes con ideas ecológicas, decidieron poner un impuesto en el año 2023 a las empresas que no usen energía renovable. Haga tres gráficos de oferta y demanda, que represente los tres años de este mercado.
+
+
+## Ejercicio II:
+
+  La función de producción es la relación entre la cantidad de insumos utilizados para producir un bien y la cantidad producida de estos.
+
+  Una empresa tiene la siguiente función de producción: $$Q = 3KL + K^2 + 0.8L^2$$
+
+  En el mercado de la empresa, cada unidad producida es vendida por \$5 dólares.   con : - $Q$: cantidad producida. - $L$: unidades de trabajo usadas en la producción (pueden ser horas de trabajo trabajadores) . - $K$: unidades de capitalusadas en la producción.
+
+a)  Determine la producción media de trabajo.
+
+b)  Determine el Producto Marginal del trabajo.
+
+c)  Determine el Valor del producto marginal del trabajo.
+
+d)  Asuma un $K=10$ y un salario $S=20$ y complete la siguiente tabla.
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <title>Tabla de Trabajo</title>
+</head>
+<body>
+
+  <table>
+  <thead>
+    <tr>
+      <th>Trabajo</th>
+      <th>Produccion</th>
+      <th>Producto marginal del trabajo</th>
+      <th>Valor del producto marginal del trabajo</th>
+      <th>Beneficio marginal (VPMgt - S)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[H]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Trabajo & Produccion & Producto marginal del trabajo & Valor del producto marginal del trabajo & Beneficio marginal (VPMgt - S) \\ \hline
+0       &            &                               &                                         &                    \\ \hline
+1       &            &                               &                                         &                    \\ \hline
+2       &            &                               &                                         &                    \\ \hline
+3       &            &                               &                                         &                    \\ \hline
+4       &            &                               &                                         &                    \\ \hline
+5       &            &                               &                                         &                    \\ \hline
+\end{tabular}%
+}
+\end{table}
+```
+:::
+
+## Ejercicio III:
+
+  Suponga que existe un mercado perfectamente competitivo con las siguientes curvas de oferta y demanda $P = 8000 - 25Q_d$ y $P = 500 + 5Q_s$.
+
+a)  Calcule el equilibrio de mercado.
+
+b)  Suponga que se le aplica un impuesto directamente al productor de un 25%. ¿Cuál sería la nueva cantidad de equilibrio una vez aplicado ese impuesto?
+
+c)  ¿Que precio paga el consumidor y cuanto recibe el productor?
+
+d)  ¿Cuanto recauda el estado?
+
+
+## Ejercicio IV:
+
+  En un país hay 1000 campos ganaderos competitivos que producen carne y venden a 2 u.m el kg de carne. La función de producción de cada campos es: $$q = 100L - L^2$$ donde q son los kg de carne producidos diaramente y L el número de trabajadores en un campo.
+
+a)  Calcule la demanda de trabajo de cada campo en función del salario (w).
+
+b)  Calcule la demanda de trabajo del mercado.
+
+c)  Ahora considere que la oferta laboral del mercado está dada por $w = 25 + 0,003L$. Encuentre el equilibrio del mercado de trabajo, cuantos trabajadores contrata cada campo y cuantos kg de carne se producen.
+
+d)  Suponga que debido a la alta inmigración la nueva función de oferta laboral del mercado es $w = 10 + 0,003L$. Encontrar el nuevo equilibrio y explicar los efectos de la inmigración sobre el salario y el empleo.
+
+e)  Considere que el gobierno fija un salario mínimo de 95 u.m. ¿Que pasa en ese mercado?
+
+
+
+
+  **RESPUESTAS:**
+  Ejercicio I:
+
+a)  
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <caption>Intervención I.</caption>
+    <tr>
+        <th>Intervención</th>
+        <th>Demandante</th>
+        <th>Oferente</th>
+    </tr>
+    <tr>
+        <td>Impuesto</td>
+        <td>Pierde excedente</td>
+        <td>Pierde excedente</td>
+    </tr>
+    <tr>
+        <td>Subsidio</td>
+        <td>Gana excedente</td>
+        <td>Gana excedente</td>
+    </tr>
+    <tr>
+        <td>Fijación precio máximo</td>
+        <td>Pierde excedente</td>
+        <td>Gana excedente</td>
+    </tr>
+    <tr>
+        <td>Fijación precio mínimo</td>
+        <td>Gana excedente</td>
+        <td>Pierde excedente</td>
+    </tr>
+</table>
+
+</body>
+</html>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{45mm}|p{30mm}|p{30mm}|}
+        \hline
+        Intervención & Demandante & Oferente \\
+        \hline
+        Impuesto & Pierde excedente & Pierde excedente \\
+        \hline
+        Subsidio & Gana excedente & Gana excedente \\
+        \hline
+        Fijación precio máximo & Pierde excedente & Gana excedente \\
+        \hline
+        Fijación precio mínimo & Gana excedente & Pierde excedente \\
+        \hline
+    \end{tabular}
+    \caption{Intervención I.}
+    \label{tab:my_label}
+\end{table}
+```
+:::
+
+b)  
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+
+    
+    % demanda inicial
+    \draw [blue, line width=1pt](0,5) -- (5,0);
+    \node at (3.1,2.5) {2018};
+
+    % oferta inicial
+    \draw [red, line width=1pt](0,1) -- (4,5);
+    \node at (3.1,3.4) {2018};
+    
+    % Demanda 2019
+    
+    \draw [blue, line width=1pt](0,4) -- (4,0);
+    \node at (2.7,0.5) {2019};
+
+    % oferta 2023
+    \draw [red, line width=1pt](0,2) -- (3,5);
+    \node at (2.2,4.8) {2023};
+
+    %Grafico base
+    % Eje x
+    \draw[black, line width=2pt] (0,0) -- (5.98,0) node[right] {Q};
+    \draw[black, line width=1pt] (5.86,-0.15) -- (6.01,0);
+    \draw[black, line width=1pt] (5.86,0.15) -- (6.01,0);
+
+    % eje y
+    \draw[black, line width=2pt] (0,0) -- (0,5.98) node[right] {P};
+    \draw[black, line width=1pt] (-0.15,5.86) -- (0,6.01);
+    \draw[black, line width=1pt] (0.15,5.86) -- (0,6.01);
+
+    %leyendas
+    
+\end{tikzpicture}
+```
+
+
+
+
+  Ejercicio II:
+
+a)  
+
+  La producción media es la cantidad producida divida por las unidades de trabajo.
+
+$$PM = \frac{Q}{L}$$
+
+  Con esta función podemos obtener la producción media como:
+
+$$PM = \frac{3KL + K^2 + 0.8L^2}{L}$$ $$PM = 3K + \frac{K^2}{L} + 0,8L$$
+
+
+b)    Determine el Producto Marginal del trabajo.
+
+  El producto marginal del trabajo es el incremento en la cantidad producida por cada unidad de trabajo adicional. Con esta definición podemos entender al producto marginal como la cantidad producida por cada trabajador (o por cada hora de trabajo).
+
+  La ecuación vendría siendo la siguiente:
+
+$$PMgL = \frac{dQ}{dL}$$ $$PMgL = \frac{d(3KL + K^2 + 0.8L^2)}{dL}$$ $$PMgL=3K + 1.6L$$
+
+c)  
+
+  Determine el Valor del producto marginal del trabajo.
+
+  El valor del producto marginal del trabajo es el producto marginal de un insumo multiplicado por el precio del bien producido.
+
+$$VPMgL = P * PMgL$$ $$VPMgL= 5*(3K + 1.6L)= 15K + 8L $$
+
+d)  
+
+  Asuma un $K=10$ y un salario $S=20$ y complete la siguiente tabla.
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[H]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|r|r|r|r|}
+\hline
+Trabajo & \multicolumn{1}{l|}{Produccion} & \multicolumn{1}{l|}{Producto marginal del trabajo} & \multicolumn{1}{l|}{Valor del producto marginal del trabajo} & \multicolumn{1}{l|}{Beneficio marginal} \\ \hline
+0 & 100 & 30 & 150 & 130 \\ \hline
+1 & 130,8 & 31,6 & 158 & 138 \\ \hline
+2 & 163,2 & 33,2 & 166 & 146 \\ \hline
+3 & 197,2 & 34,8 & 174 & 154 \\ \hline
+4 & 232,8 & 36,4 & 182 & 162 \\ \hline
+5 & 270 & 38 & 190 & 170 \\ \hline
+\end{tabular}%
+}
+\end{table}
+```
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: right;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <title>Tabla de Trabajo</title>
+</head>
+<body>
+
+  <table>
+  <thead>
+    <tr>
+      <th>Trabajo</th>
+      <th>Produccion</th>
+      <th>Producto marginal del trabajo</th>
+      <th>Valor del producto marginal del trabajo</th>
+      <th>Beneficio marginal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>100</td>
+      <td>30</td>
+      <td>150</td>
+      <td>130</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>130.8</td>
+      <td>31.6</td>
+      <td>158</td>
+      <td>138</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>163.2</td>
+      <td>33.2</td>
+      <td>166</td>
+      <td>146</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>197.2</td>
+      <td>34.8</td>
+      <td>174</td>
+      <td>154</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>232.8</td>
+      <td>36.4</td>
+      <td>182</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>270</td>
+      <td>38</td>
+      <td>190</td>
+      <td>170</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+```
+:::
+
+
+  Ejercicio III:
+
+a)  El equilibrio de mercado se obtiene de la intersección de ambas funciones, resolviendo obtenemos $Q = 250$ y $P=1.750$.
+
+b)  Aplicando el impuesto la nueva función de oferta es: $$P=(500 + 5Q) \cdot (1 + 0,25)$$ Desarrollando queda $P=625+6,25Q$.
+
+  La nueva oferta la intersectamos con la demanda anterior, que no ha cambiado, y obtenemos un nuevo equilibrio donde $Q=236$.
+
+c)  Para ver el precio del consumidor y productor, reemplazamos la nueva cantidad de equilibrio en sus respectivas funciones de precio. Donde obtenemos: $$P_c= 8.000 - 25 \cdot 236 = 2.100$$ y $$P_p=500 + 5 \cdot 236 = 1.680$$.
+
+d)  La recaudación del estado en este caso es: $$R=(P_c - P_p) \cdot Q$$ $$R = (2.100 - 1.680) \cdot 236 = 99.120$$.
+
+
+  Ejercicio IV:
+
+a)  Para eso es necesario primero obtener el valor del producto marginal del trabajo, que será igual al salario (w). Derivando la función de producción de cada campo respecto al trabajo se obtiene $PMgL = 100 - 2L$. Luego tenemos $$VPMgL = P\cdot PMgL = 2 \cdot (100 - 2L) = 200 - 4L = w$$ Ahora despejamos en función de L y obtenemos la demanda de trabajo de cada campo $$L_d = 50 - \frac{1}{4}w$$
+
+b)  Ahora se pide la demanda del mercado, como son 1000 campos se debe multiplicar por ese número la demanda de trabajo de cada uno, se obtiene $$L_D = 1000 \cdot L_d$$
+
+c)  Sabemos que la oferta laboral del mercado es $w = 25 + 0,003L$ y la demanda $L_D = 50000 - 250w$. Dejando la demanda en función de w queda $w = 200 - \frac{L}{250}$. Para obtener el equilibrio debemos igualar la oferta a la demanda, y dejando todo con decimales en lugar de fracción obtenemos los siguiente $$200 - 0,004L = 25 + 0,003L$$ $$175 = 0,007L$$ $$L = 25000$$ $$w = 100$$ Una vez obtenido el equilibrio del mercado, dividimos el número de trabajadores del mercado por el número de campos y vemos que cada campo contrata 25 trabajadores. Volvemos a la función de producción y reemplazamos $$q = 100 \cdot (25) - 25^2 = 1875$$ Es decir, cada campo produce 1875 kg de carne con 25 trabajadores contratados.
+
+d)  La nueva función de oferta laboral del mercado es $w = 10 + 0,003L$. Igualamos como en el paso anterior $$200 - 0,004L = 10 + 0,003L$$ $$190 = 0,007L$$ $$L=27143$$ $$w=91,4$$ EL nuevo equilibrio tiene un mayor número de trabajadores total y un salario más bajo, debido a la inmigración existe más gente dispuesta a trabajar, y el aumento de esa oferta explica la disminución del salario.
+
+e)  Para ver que pasa en ese mercado luego de la fijación de precios reemplazamos el valor fijado en las funciones de oferta y demanda. Para poder hacerlo ambas ecuaciones deben estar en función de w, para eso hay que despejar L en la oferta, y así obtenemos lo siguiente $$L_D = 50000 - 250 \cdot (95) = 26250 $$ $$L_S = 333,3 \cdot (95) - 3333,33 = 28333$$ Como la oferta es mayor a la demanda de trabajo existe desempleo en ese mercado. $$Desempleo = L_s - L_D = 2083$$ Mientras más por encima del equilibrio se fije el salario mínimo, mayor será el desempleo.
+

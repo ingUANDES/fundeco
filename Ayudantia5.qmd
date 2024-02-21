@@ -1,0 +1,185 @@
+# Ayudantía V:
+
+
+## Ejercicio I :
+
+  Una empresa dedicada a vender parrillas vende en su primer año 752 unidades, a un precio de \$279 cada una. El segundo año de operación venden 673 unidades a \$300 cada una. ¿Cuál es su elasticidad de la demanda?
+
+
+## Ejercicio II :
+
+¿Cuál es la incidencia fiscal? ¿A quién se le aplica el impuesto? ¿Cuál es el objetivo del impuesto?
+
+
+
+## Ejercicio III:
+
+  Una empresa de dulces tiene como función de oferta: $P(Q)=1+Q$ Y como función de demanda: $P(Q)=5-Q$, se le agrega un impuesto al productor de \$1, calcule su peso muerto, el excedente al consumidor, lo recaudado por el gobierno y haga un gráfico de la situación.
+  
+
+## Ejercicio IV :
+
+  Tenemos una empresa de computadores con función de demanda $P_d(Q)=30-3Q$ y de oferta $P(Q)=5+2Q$, debido a la pandemia se hace un subsidio de \$6 a los estudiantes para que puedan conectarse a sus clases. Haga un gráfico de la situación y calcule el excedente del productor y del consumidor.
+
+
+  **RESPUESTAS:**
+  Ejercicio I:
+
+  Para resolver este ejercicio recordemos que la elasticidad es el cambio porcentual en la cantidad demanda sobre el cambio porcentual en el precio. $$\epsilon = \frac{\vartriangle \%  Q}{\vartriangle \% P} $$   Reemplazamos con las respectivas variaciones y obtenemos: $$\vartriangle Q=\frac{673-752}{752} \cdot 100=-10,5\%$$ $$\vartriangle P=\frac{300-279}{279} \cdot 100=7,5\%$$   Ahora calculamos la elasticidad y obtenemos: $$\epsilon = \frac{\vartriangle \%  Q}{\vartriangle \% P} = \frac{-10,5\%}{7,5\%}=-1,4$$   El valor absoluto de la elasticidad es mayor a 1, por lo que estamos frente a una demanda elástica. Este resultado significa que un aumento del 1% en el precio, se traduce en una disminución del 1,4% en la demanda.
+
+
+
+  Ejercicio II:
+
+  El capítulo 6 del Mankiew 6ta edición, define la incidencia fiscal como la forma en que los participantes de un mercado comparten la carga de un impuesto. El impuesto puede ser aplicado al vendedor, a los compradores o a ambos. Estos impuestos buscan recaudar dinero para gastos fiscales. Estos gastos fiscales tienen como objetivo generar un mayor o igual beneficio social que el costo social producido por el impuesto.
+
+
+  Ejercicio III:
+
+  Primero hacemos el gráfico:
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+
+    % oferta = P(Q)=1+Q
+    % demanda libre = P(Q)=5-Q
+    % demanda con impuesto = 6-Q
+    
+    
+    % Etiquetas en el eje P
+    % Area excedente del consumidor
+    \fill[orange!60] (0,4) -- (2,4) -- (0,6) -- cycle;
+    \draw [line width=1pt](0,4) -- (2,4);
+    
+    % Area excedente del productor
+    \fill[blue!50] (0,3) -- (2,3) -- (0,1) -- cycle;
+    \draw [line width=1pt](0,3) -- (2,3);
+    
+    % Area de impuesto recuadado.
+    \fill[black!60] (0,4) -- (2,4) -- (2,3) -- (0,3)-- cycle;
+    
+    % perdida de eficiencia.
+    \fill[black] (2,3) -- (2,4) -- (2.5,3.5) -- cycle;
+    
+    % demanda sin impuesto
+    \draw [blue, line width=1pt](0,5) -- (5,0); %P(Q)=5-Q
+
+    %demanda con impuesto
+    \draw [blue, line width=1pt](0,6) -- (6,0);
+
+    % oferta
+    \draw [red, line width=1pt](0,1) -- (5,6); %P(Q)=1+Q
+       
+    % Eje x
+    \draw[black, line width=2pt] (0,0) -- (5.98,0) node[right] {Q};
+    \draw[black, line width=1pt] (5.86,-0.15) -- (6.01,0);
+    \draw[black, line width=1pt] (5.86,0.15) -- (6.01,0);
+
+    % eje y
+    \draw[black, line width=2pt] (0,0) -- (0,5.98) node[right] {P};
+    \draw[black, line width=1pt] (-0.15,5.86) -- (0,6.01);
+    \draw[black, line width=1pt] (0.15,5.86) -- (0,6.01);
+
+    %leyendas
+    \node at (0.8,2.6) {EP};
+    \node at (0.8,4.6) {EC};
+    \node at (0.8,3.6) {GOB};
+    \node at (4.8,2.6) {D con};
+    \node at (5.1,2) {impuesto};
+    \node at (2.33,1.6) {D mer};
+    \node at (-0.3,5) {5};
+    \node at (-0.3,6) {6};
+    \node at (2.4,3) {(2,3)};
+    \node at (3.4,3.5) {(2.5,3.5)};
+    \node at (-0.3,1) {1};
+    
+\end{tikzpicture}
+```
+
+  Calculamos las áreas y nos dará que el peso muerto es $0.5$, el excedente del consumidor es $2$ y que lo recaudado por el gobierno es $2$.
+
+
+  Ejercicio IV:
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+
+    % oferta libre= P(Q)=1+0.4Q
+    % ofreta consubsidio = P(Q)=0.4Q
+    % demanda = 6-0.6Q
+    
+    %AREAS 
+    % Area de impuesto recuadado.
+    \fill[black!60] (0,2) -- (0,3) -- (1,3) -- (1,2)-- cycle;
+    
+    % Area excedente del consumidor
+    \fill[orange!60] (0,3) -- (1,3) -- (0,6) -- cycle;
+    \draw [line width=1pt](0,3) -- (1,3);
+    
+    % Area excedente del productor
+    \fill[blue!50] (0,0) -- (1,2) -- (0,2) -- cycle;
+    \draw [line width=1pt](0,2) -- (1,2);
+    
+    
+    % perdida de eficiencia.
+    \fill[black] (1,2) -- (1,3) -- (0.7,2.4) -- cycle;
+    
+    
+    %RECTAS
+    % oferta libre
+    \draw [red, line width=1pt](0,1) -- (2.5,6);
+
+    %oferta con subsidio
+    \draw [red, line width=1pt](0,0) -- (3,6);
+
+    % demanda
+    \draw [blue, line width=1pt](0,6) -- (2,0);
+
+    %LEYENDAS
+    \node at (4.5,6) {O con subsidio};
+    \node at (1.6,6) {O mer};
+
+
+    %BASES GRAFICO
+    % Eje x
+    \draw[black, line width=2pt] (0,0) -- (5.98,0) node[right] {Q};
+    \draw[black, line width=1pt] (5.86,-0.15) -- (6.01,0);
+    \draw[black, line width=1pt] (5.86,0.15) -- (6.01,0);
+
+    % eje y
+    \draw[black, line width=2pt] (0,0) -- (0,5.98) node[right] {P};
+    \draw[black, line width=1pt] (-0.15,5.86) -- (0,6.01);
+    \draw[black, line width=1pt] (0.15,5.86) -- (0,6.01);
+
+
+    %leyenda 0.
+    \node at (-0.25,-0.25) {0};
+    
+    % leyendas base eje y
+    \node at (-0.3,1) {5};
+    \node at (-0.3,2) {10};
+    \node at (-0.3,3) {15};
+    \node at (-0.3,4) {20};
+    \node at (-0.3,5) {25};
+    \node at (-0.3,6) {30};
+
+    % leyendas base eje x
+    
+    \node at (1,-0.3) {5};
+    \node at (2,-0.3) {10};
+    \node at (3,-0.3) {15};
+    \node at (4,-0.3) {20};
+    \node at (5,-0.3) {25};
+    \node at (6,-0.3) {30};
+    
+\end{tikzpicture}
+```
+
+  Como los exedentes son triangulares, calulamos el exedente a base de su forma: $$
+\frac{bh}{2}
+$$
+
+  El exedente del consumidor resulta $37.5$ y el del productor $25$.
+

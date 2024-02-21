@@ -42,32 +42,32 @@ Año & Precio Computadores & \begin{tabular}[c]{@{}l@{}}Cantidad Producida\\ Com
 
     <table>
 <tr>
-    <th>Año</th>
-    <th>Precio Computadores</th>
-    <th>Cantidad Producida Computadores</th>
-    <th>Precio celulares</th>
-    <th>Cantidad Producida celulares</th>
+<th>Año</th>
+<th>Precio Computadores</th>
+<th>Cantidad Producida Computadores</th>
+<th>Precio celulares</th>
+<th>Cantidad Producida celulares</th>
 </tr>
 <tr>
-    <td>2016</td>
-    <td>150</td>
-    <td>100</td>
-    <td>100</td>
-    <td>50</td>
+<td>2016</td>
+<td>150</td>
+<td>100</td>
+<td>100</td>
+<td>50</td>
 </tr>
 <tr>
-    <td>2017</td>
-    <td>200</td>
-    <td>200</td>
-    <td>120</td>
-    <td>70</td>
+<td>2017</td>
+<td>200</td>
+<td>200</td>
+<td>120</td>
+<td>70</td>
 </tr>
 <tr>
-    <td>2018</td>
-    <td>250</td>
-    <td>300</td>
-    <td>150</td>
-    <td>100</td>
+<td>2018</td>
+<td>250</td>
+<td>300</td>
+<td>150</td>
+<td>100</td>
 </tr>
 </table>
 
@@ -160,767 +160,34 @@ $$ Para el año 2018: $$
 $$
 
 ### :
+
 Preguntas de concepto:
 
-a) Si los precios no cambian durante un periodo dado, el PIB nominal y el PIB real deberían coincidir. ¿Verdadero o falso?
+a)  Si los precios no cambian durante un periodo dado, el PIB nominal y el PIB real deberían coincidir. ¿Verdadero o falso?
 
-b) Un aumento en la población total va a aumentar el PIB per cápita de un país. ¿Verdadero o falso?
+b)  Un aumento en la población total va a aumentar el PIB per cápita de un país. ¿Verdadero o falso?
 
-c) El PIB es una medida perfecta del bienestar de las personas. ¿Verdadero o falso?
+c)  El PIB es una medida perfecta del bienestar de las personas. ¿Verdadero o falso?
 
+  **RESPUESTAS:**
 
-&nbsp; **RESPUESTAS:**
+a)  
 
-a)
+  VERDADERO. Ambas medidas incluyen cantidad y precio, pero el PIB real toma el precio de un periodo determinado, y el PIB nominal toma en cuenta el precio corriente. Si los precios no cambian entre el periodo de referencia del PIB real y el periodo corriente, entonces ambos coinciden.
 
-&nbsp; VERDADERO. Ambas medidas incluyen cantidad y precio, pero el PIB real toma el precio de un periodo determinado, y el PIB nominal toma en cuenta el precio corriente. Si los precios no cambian entre el periodo de referencia del PIB real y el periodo corriente, entonces ambos coinciden.
+b)  
 
-b)
+  FALSO. No necesariamente. Considerando que el $PIB_{pc}=PIB/(Población Total)$ es posible afirmar que un aumento en la población total va a traer como consecuencia una disminución en el PIB pc de un país. Siempre y cuando el PIB se mantenga constante.
 
-&nbsp; FALSO.  No necesariamente.  Considerando que el $PIB_{pc}=PIB/(Población Total)$ es posible afirmar que un aumento en la población total va a traer como consecuencia una disminución en el PIB pc de un país. Siempre y cuando el PIB se mantenga constante.   
+c)  
 
-c)
-
-&nbsp; FALSO. EL excluye cosas importantes como los tiempos de ocio, los bienes y servicios del hogar y tampoco explica la distribución de riqueza en el país y como ese PIB per capita realmente se destribuye en un ciudadano promedio. Pero, igualmente el PIB es considerado como una buena medida del bienestar económico ya que existe una correlación fuerte entre aquellos países con PIB alto  y buena salud, educación, innovación, entre otros.
-
-
-### :
-&nbsp; En una economía, sólo se producen autos y computadores. En la cuál se produjo lo siguiente en los años 2017,2018 y 2019:\\
-
-::: {.content-visible when-format="html"}
-```{=html}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla de Datos</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-    </style>
-</head>
-<body>
-
-<table>
-    <tr>
-        <th>Año</th>
-        <th>Precio Computadores</th>
-        <th>Cantidad Producida Computadores</th>
-        <th>Precio Autos</th>
-        <th>Cantidad Producida Autos</th>
-    </tr>
-    <tr>
-        <td>2017</td>
-        <td>100</td>
-        <td>100</td>
-        <td>200</td>
-        <td>50</td>
-    </tr>
-    <tr>
-        <td>2018</td>
-        <td>200</td>
-        <td>150</td>
-        <td>300</td>
-        <td>100</td>
-    </tr>
-    <tr>
-        <td>2019</td>
-        <td>300</td>
-        <td>200</td>
-        <td>400</td>
-        <td>150</td>
-    </tr>
-</table>
-
-</body>
-</html>
-
-```
-:::
-
-::: {.content-visible when-format=pdf"}
-```{=tex}
-\begin{table}[H]
-\begin{tabular}{|l|l|l|l|l|}
-\hline
-Año & Precio Computadores & \begin{tabular}[c]{@{}l@{}}Cantidad Producida\\ Computadores\end{tabular} & Precio autos & \begin{tabular}[c]{@{}l@{}}Cantidad Producida\\ Autos\end{tabular} \\ \hline
-2017 & 100 & 100 & 200 & 50 \\ \hline
-2018 & 200 & 150 & 300 & 100 \\ \hline
-2019 & 300 & 200 & 400 & 150 \\ \hline
-\end{tabular}
-\end{table}
-```
-:::
-
-a) Calcular el PIB nominal para los años 2017, 2018, 2019.
-
-b) Calcular el PIB real para los mismos años utilizando como año base el 2017.
-
-c) Calcular el deflactor del PIB para los tres años mencionados anteriormente.
-
-d) Calcular la tasa de inflación del mercado, utilizando el año 2017 como base. 
-
-&nbsp; **RESPUESTAS:**
-
-a)
-
-$$PIB\quad nominal = Precios\quad Actuales\quad \cdot \quad Cantidades\quad Actuales$$
-**PIB 2017**
-$$\rightarrow PIB_{nominal2017}=100\cdot100 + 200\cdot50$$
-$$\leftrightarrow PIB_{nominal2017}=\$ 20.000$$
-**PIB 2018**
-$$\rightarrow PIB_{nominal2018}=200\cdot150 + 300\cdot100$$
-$$\leftrightarrow PIB_{nominal2019}=\$ 60.000$$
-**PIB 2019**
-$$\rightarrow PIB_{nominal2019}=300\cdot200 + 400\cdot150$$
-$$\leftrightarrow PIB_{nominal2019}=\$ 120.000$$
-
-b)
-
-$$PIB\quad real = Precios\quad Año\quad Base\quad \cdot \quad Cantidades\quad Actuales$$
-**PIB 2017**
-$$\rightarrow PIB_{real2017}=100\cdot100 + 200\cdot50$$
-$$\leftrightarrow PIB_{real2017}=\$ 20.000$$
-**PIB 2018**
-$$\rightarrow PIB_{real2018}=100\cdot150 + 200\cdot100$$
-$$\leftrightarrow PIB_{real2018}=\$ 35.000$$
-**PIB 2019**
-$$\rightarrow PIB_{real2019}=100\cdot200 + 200\cdot150$$
-$$\leftrightarrow PIB_{real2019}=\$ 50.000$$
-
-c)
-
-$$Deflactor\quad del \quad PIB=\frac{PIB\quad nominal}{PIB\quad real}\cdot 100$$
-**Deflactor PIB 2017**
-$$\rightarrow Deflactor\quad PIB_{2017}=\frac{20.000}{20.000}\cdot 100$$
-$$\leftrightarrow Deflactor\quad PIB_{2017}=100\%$$
-**Deflactor PIB 2018**
-$$\rightarrow Deflactor\quad PIB_{2018}=\frac{60.000}{35.000}\cdot 100$$
-$$\leftrightarrow Deflactor\quad PIB_{2019}=171,42\%$$
-**Deflactor PIB 2019**
-$$\rightarrow Deflactor\quad PIB_{2019}=\frac{120.000}{50.000}\cdot 100$$
-$$\leftrightarrow Deflactor\quad PIB_{2019}=240\%$$
-
-d)
-
-&nbsp; A pesar de que se utiliza el IPC como principal medida de la inflación, el deflector del PIB puede ser utilizado con el mismo fin.
-
-**Tasa de inflación 2017**
-$$Tasa\quad de\quad inflación\quad 2017= \frac{100 -100}{100}\cdot 100=0\%$$
-
-**Tasa de inflación 2018**
-$$Tasa\quad de\quad inflación\quad 2018= \frac{171,42 -100}{100}\cdot 100=71,42\%$$
-
-**Tasa de inflación 2019**
-$$Tasa\quad de\quad inflación\quad 2019= \frac{240 -100}{100}\cdot 100=140\%$$
-    
+  FALSO. EL excluye cosas importantes como los tiempos de ocio, los bienes y servicios del hogar y tampoco explica la distribución de riqueza en el país y como ese PIB per capita realmente se destribuye en un ciudadano promedio. Pero, igualmente el PIB es considerado como una buena medida del bienestar económico ya que existe una correlación fuerte entre aquellos países con PIB alto y buena salud, educación, innovación, entre otros.
 
 ### :
 
-&nbsp; La función de producción es la relación entre la cantidad de insumos utilizados para producir un bien y la cantidad producida de estos.
+  En un país imaginario, la canasta básica es considerada como 2 kilos de queso, 2 pares de jeans y 10 litros de bencina.
 
-&nbsp; Una empresa tiene la siguiente función de producción:
-$$Q = 3KL + K^2 + 0.8L^2$$ 
-
-&nbsp; En el mercado de la empresa, cada unidad producida es vendida por \$5 dólares.
-&nbsp; con :
-- $Q$: cantidad producida.
-- $L$: unidades de trabajo usadas en la producción (pueden ser horas de trabajo trabajadores) .
-- $K$: unidades de capitalusadas en la producción.
-
-a) Determine la producción media de trabajo.
-
-b) Determine el Producto Marginal del trabajo.
-
-c) Determine el Valor del producto marginal del trabajo.
-
-d) Asuma un $K=10$ y un salario $S=20$ y complete la siguiente tabla.
-
-::: {.content-visible when-format="html"}
-```{=html}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    table, th, td {
-      border: 1px solid black;
-    }
-
-    th, td {
-      padding: 10px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-  </style>
-  <title>Tabla de Trabajo</title>
-</head>
-<body>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Trabajo</th>
-        <th>Produccion</th>
-        <th>Producto marginal del trabajo</th>
-        <th>Valor del producto marginal del trabajo</th>
-        <th>Beneficio marginal (VPMgt - S)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>0</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-</body>
-</html>
-```
-:::
-
-
-
-::: {.content-visible when-format="pdf"}
-```{=tex}
-\begin{table}[H]
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{|l|l|l|l|l|}
-\hline
-Trabajo & Produccion & Producto marginal del trabajo & Valor del producto marginal del trabajo & Beneficio marginal (VPMgt - S) \\ \hline
-0       &            &                               &                                         &                    \\ \hline
-1       &            &                               &                                         &                    \\ \hline
-2       &            &                               &                                         &                    \\ \hline
-3       &            &                               &                                         &                    \\ \hline
-4       &            &                               &                                         &                    \\ \hline
-5       &            &                               &                                         &                    \\ \hline
-\end{tabular}%
-}
-\end{table}
-```
-:::
-
-
-&nbsp; **RESPUESTAS:**
-
-a)
-
-&nbsp; La producción media es la cantidad producida divida por las unidades de trabajo.
-
-$$PM = \frac{Q}{L}$$
-
-&nbsp; Con esta función podemos obtener la producción media como:
-
-$$PM = \frac{3KL + K^2 + 0.8L^2}{L}$$
-$$PM = 3K + \frac{K^2}{L} + 0,8L$$\par
-
-b)
-&nbsp; Determine el Producto Marginal del trabajo.
-
-&nbsp; El producto marginal del trabajo es el incremento en la cantidad producida por cada unidad de trabajo adicional. Con esta definición podemos entender al producto marginal como la cantidad producida por cada trabajador (o por cada hora de trabajo).
-
-&nbsp; La ecuación vendría siendo la siguiente:
-
-$$PMgL = \frac{dQ}{dL}$$
-$$PMgL = \frac{d(3KL + K^2 + 0.8L^2)}{dL}$$
-$$PMgL=3K + 1.6L$$
-
-c)
-
-&nbsp; Determine el Valor del producto marginal del trabajo.
-
-&nbsp; El valor del producto marginal del trabajo es el producto marginal de un insumo multiplicado por el precio del bien producido.
-
-$$VPMgL = P * PMgL$$
-$$VPMgL= 5*(3K + 1.6L)= 15K + 8L $$
-
-d)
-
-&nbsp; Asuma un $K=10$ y un salario $S=20$ y complete la siguiente tabla.
-
-
-
-
-
-
-::: {.content-visible when-format="pdf"}
-```{=tex}
-\begin{table}[H]
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{|l|r|r|r|r|}
-\hline
-Trabajo & \multicolumn{1}{l|}{Produccion} & \multicolumn{1}{l|}{Producto marginal del trabajo} & \multicolumn{1}{l|}{Valor del producto marginal del trabajo} & \multicolumn{1}{l|}{Beneficio marginal} \\ \hline
-0 & 100 & 30 & 150 & 130 \\ \hline
-1 & 130,8 & 31,6 & 158 & 138 \\ \hline
-2 & 163,2 & 33,2 & 166 & 146 \\ \hline
-3 & 197,2 & 34,8 & 174 & 154 \\ \hline
-4 & 232,8 & 36,4 & 182 & 162 \\ \hline
-5 & 270 & 38 & 190 & 170 \\ \hline
-\end{tabular}%
-}
-\end{table}
-```
-:::
-
-::: {.content-visible when-format="html"}
-```{=html}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    table, th, td {
-      border: 1px solid black;
-    }
-
-    th, td {
-      padding: 10px;
-      text-align: right;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-  </style>
-  <title>Tabla de Trabajo</title>
-</head>
-<body>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Trabajo</th>
-        <th>Produccion</th>
-        <th>Producto marginal del trabajo</th>
-        <th>Valor del producto marginal del trabajo</th>
-        <th>Beneficio marginal</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>0</td>
-        <td>100</td>
-        <td>30</td>
-        <td>150</td>
-        <td>130</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>130.8</td>
-        <td>31.6</td>
-        <td>158</td>
-        <td>138</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>163.2</td>
-        <td>33.2</td>
-        <td>166</td>
-        <td>146</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>197.2</td>
-        <td>34.8</td>
-        <td>174</td>
-        <td>154</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>232.8</td>
-        <td>36.4</td>
-        <td>182</td>
-        <td>162</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>270</td>
-        <td>38</td>
-        <td>190</td>
-        <td>170</td>
-      </tr>
-    </tbody>
-  </table>
-
-</body>
-</html>
-```
-:::
-
-
-### :
-&nbsp; En un país hay 1000 campos ganaderos competitivos que producen carne y venden a 2 u.m el kg de carne. La función de producción de cada campos es:
-$$q = 100L - L^2$$ donde q son los kg de carne producidos diaramente y L el número de trabajadores en un campo.
-
-a) Calcule la demanda de trabajo de cada campo en función del salario (w).
-
-b) Calcule la demanda de trabajo del mercado.
-
-c) Ahora considere que la oferta laboral del mercado está dada por $w = 25 + 0,003L$. Encuentre el equilibrio del mercado de trabajo, cuantos trabajadores contrata cada campo y cuantos kg de carne se producen.
-
-d) Suponga que debido a la alta inmigración la nueva función de oferta laboral del mercado es $w = 10 + 0,003L$. Encontrar el nuevo equilibrio y explicar los efectos de la inmigración sobre el salario y el empleo.
-
-e) Considere que el gobierno fija un salario mínimo de 95 u.m. ¿Que pasa en ese mercado?
-
-&nbsp; **RESPUESTAS:**
-
-
-a) Para eso es necesario primero obtener el valor del producto marginal del trabajo, que será igual al salario (w). Derivando la función de producción de cada campo respecto al trabajo se obtiene $PMgL = 100 - 2L$. Luego tenemos $$VPMgL = P\cdot PMgL = 2 \cdot (100 - 2L) = 200 - 4L = w$$ Ahora despejamos en función de L y obtenemos la demanda de trabajo de cada campo $$L_d = 50 - \frac{1}{4}w$$
-
-b) Ahora se pide la demanda del mercado, como son 1000 campos se debe multiplicar por ese número la demanda de trabajo de cada uno, se obtiene $$L_D = 1000 \cdot L_d$$
-
-c) Sabemos que la oferta laboral del mercado es $w = 25 + 0,003L$ y la demanda $L_D = 50000 - 250w$. Dejando la demanda en función de w queda $w = 200 - \frac{L}{250}$. Para obtener el equilibrio debemos igualar la oferta a la demanda, y dejando todo con decimales en lugar de fracción obtenemos los siguiente $$200 - 0,004L = 25 + 0,003L$$ $$175 = 0,007L$$ $$L = 25000$$  $$w = 100$$ Una vez obtenido el equilibrio del mercado, dividimos el número de trabajadores del mercado por el número de campos y vemos que cada campo contrata 25 trabajadores. Volvemos a la función de producción y reemplazamos $$q = 100 \cdot (25) - 25^2 = 1875$$ Es decir, cada campo produce 1875 kg de carne con 25 trabajadores contratados.
-
-d) La nueva función de oferta laboral del mercado es $w = 10 + 0,003L$. Igualamos como en el paso anterior $$200 - 0,004L = 10 + 0,003L$$ $$190 = 0,007L$$ $$L=27143$$ $$w=91,4$$ EL nuevo equilibrio tiene un mayor número de trabajadores total y un salario más bajo, debido a la inmigración existe más gente dispuesta a trabajar, y el aumento de esa oferta explica la disminución del salario.
-
-e) Para ver que pasa en ese mercado luego de la fijación de precios reemplazamos el valor fijado en las funciones de oferta y demanda. Para poder hacerlo ambas ecuaciones deben estar en función de w, para eso hay que despejar L en la oferta, y así obtenemos lo siguiente $$L_D = 50000 - 250 \cdot (95) = 26250 $$ $$L_S = 333,3 \cdot (95) - 3333,33 = 28333$$ Como la oferta es mayor a la demanda de trabajo existe desempleo en ese mercado. $$Desempleo = L_s - L_D = 2083$$ Mientras más por encima del equilibrio se fije el salario mínimo, mayor será el desempleo.
-
-
-
-### :
-
-&nbsp; Tenemos la siguiente tabla que representa el porcentaje de población acumulado de la población según su ingreso porcentual acumulado:
-
-::: {.content-visible when-format="pdf"}
-```{=tex}
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|p{25mm}|p{25mm}|}
-        \multicolumn{2}{c}{Tabla de demanda:} \\
-        \hline
-        decil: & Ingresos: \\ \hline
-        0.1 & 0.01 \\ \hline
-        0.2 & 0.03 \\ \hline
-        0.3 & 0.07 \\ \hline
-        0.4 & 0.13 \\ \hline
-        0.5 & 0.23 \\ \hline
-        0.6 & 0.35 \\ \hline
-        0.7 & 0.48 \\ \hline
-        0.8 & 0.62 \\ \hline
-        0.9 & 0.80 \\ \hline
-        1 & 1 \\ \hline
-        \end{tabular}
-\end{table}
-```
-:::
-
-::: {.content-visible when-format="html"}
-```{=html}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    table {
-      width: 50%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    table, th, td {
-      border: 1px solid black;
-    }
-
-    th, td {
-      padding: 10px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-  </style>
-  <title>Tabla de Demanda</title>
-</head>
-<body>
-
-  <table>
-    <caption>Tabla de demanda:</caption>
-    <thead>
-      <tr>
-        <th>decil:</th>
-        <th>Ingresos:</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>0.1</td>
-        <td>0.01</td>
-      </tr>
-      <tr>
-        <td>0.2</td>
-        <td>0.03</td>
-      </tr>
-      <tr>
-        <td>0.3</td>
-        <td>0.07</td>
-      </tr>
-      <tr>
-        <td>0.4</td>
-        <td>0.13</td>
-      </tr>
-      <tr>
-        <td>0.5</td>
-        <td>0.23</td>
-      </tr>
-      <tr>
-        <td>0.6</td>
-        <td>0.35</td>
-      </tr>
-      <tr>
-        <td>0.7</td>
-        <td>0.48</td>
-      </tr>
-      <tr>
-        <td>0.8</td>
-        <td>0.62</td>
-      </tr>
-      <tr>
-        <td>0.9</td>
-        <td>0.80</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>1</td>
-      </tr>
-    </tbody>
-  </table>
-
-</body>
-</html>
-```
-:::
-
-
-a) Calcule la desigualdad con el coeficiente de Gini.
-
-b) Grafique la curva de Lorenz.
-
-
-&nbsp; **RESPUESTAS:**
-
-a)
-
-&nbsp; El coeficiente de Gini es un método utilizado para medir la desigualdad salarial.
-
-&nbsp; Para calcular esto, se necesita la proporción acumulada de población ($X$) y la proporción acumulada de ingresos ($Y$). Con las cuales, el coeficiente de Gini se calcula de la siguiente manera:
-
-$$G=1-\left|\sum_{k=0}^{n-1}\left(X_{k+1}-X_k\right)\left(Y_{k+1}+Y_k\right)\right| $$
-
-Las condiciones extremas que se pueden cumplir son:
-- $G=0$: todos los ciudadanos tienen los mismos ingresos.
-- $G=1$: todos los ingresos los tiene solo 1 ciudadano.
-
-$$1-0.1(0.01+(0.01+0.03)+(0.03+0.07)+(0.07+0.13)+(0.13+0.23)+(0.23+0.35))+$$
-$$0.1((0.35+0.48)+(0.48+0.62)+(0.62+0.8)+(0.8+1))$$
-$$=$$
-$$1-0.1\cdot 6.43$$
-$$1-0.643$$
-$$0.357$$
-
-b) Grafique la curva de Lorenz.
-
-&nbsp; "La curva de Lorenz es una representación gráfica de la desigualdad en el reparto de la renta existente en un determinado territorio (normalmente un país). En ella, se sitúa en el eje X los acumulados de población (P) expresados en tanto por ciento y en el eje Y los acumulados de renta (Q) expresados en tanto por ciento."
-
-&nbsp; Aproximadamente, en nuestro ejemplo tenemos:
-
-
-```{r, engine='tikz',echo=FALSE,out.width="60%"}
-#| fig-align: center
-\begin{tikzpicture}
-    \draw[thick,->] (0,0) -- (1.2,0) node[right] {Acumulado de población};
-    \draw[thick,->] (0,0) -- (0,1.2) node[above] {Acumulado de ingreso};
-    
-    \draw[domain=0:1, samples=100, color=black, thick] plot (\x, \x^2);
-    \draw[domain=0:1, samples=100, color=black, thick] plot (\x, \x);
-    
-    \foreach \x in {0,0.2,0.4,0.6,0.8,1} {
-        \draw (\x,2pt) -- (\x,-2pt) node[below] {\x};
-        \draw (2pt,\x) -- (-2pt,\x) node[left] {\x};
-    }
-\end{tikzpicture}
-
-```
-
-### :
-
-&nbsp; Ahora suponga que esta economía los datos del mercado laboral tienen el siguiente comportamiento: En 2018 el país tuvo 25.000.000 de habitantes. El 62.5 \% estaba en edad de trabajar, la tasa de participación fue del 80 \% y la tasa de paro (desempleo) del 20 \%. Para el año 2018 Calcule:
-
-a) La población económicamente activa.
-
-b) La población económicamente inactiva.
-
-c) La población desempleada.
-
-&nbsp; **RESPUESTAS:**
-
-a)
-
-::: {.content-visible when-format="pdf"}
-```{=tex}
-\begin{table}[h]
-    \centering
-    \begin{tabular}{|cc|}
-        \hline
-        Población Total: & $PT = 25.000.000$ \\ \hline
-        Población en Edad de Trabajar: & $PET = 62,5\%$ \\ \hline
-        Tasa de Participación: & $TP = 80\%$ \\ \hline
-        Tasa de Desempleo: & $TD = 20\%$ y $PET = 62,5\% \times 25.000.000 = 15.625.000$\\ \hline
-        Población Economicamente Activa: & $ PEA = PET \times TP = 15.625.000 \times 80\%$\\ \hline
-        Población Economicamente Activa & $PEA= 12.500.000$\\ \hline
-    \end{tabular}
-\end{table}
-```
-:::
-
-::: {.content-visible when-format="html"}
-```{=html}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    table {
-      width: 50%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    table, th, td {
-      border: 1px solid black;
-    }
-
-    th, td {
-      padding: 10px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-  </style>
-  <title>Tabla de Población</title>
-</head>
-<body>
-
-  <table>
-    <tr>
-      <td>Población Total:</td>
-      <td>$PT = 25.000.000$</td>
-    </tr>
-    <tr>
-      <td>Población en Edad de Trabajar:</td>
-      <td>$PET = 62,5\%$</td>
-    </tr>
-    <tr>
-      <td>Tasa de Participación:</td>
-      <td>$TP = 80\%$</td>
-    </tr>
-    <tr>
-      <td>Tasa de Desempleo:</td>
-      <td>$TD = 20\%$ y $PET = 62,5\% \times 25.000.000 = 15.625.000$</td>
-    </tr>
-    <tr>
-      <td>Población Económicamente Activa:</td>
-      <td>$PEA = PET \times TP = 15.625.000 \times 80\%$</td>
-    </tr>
-    <tr>
-      <td>Población Económicamente Activa:</td>
-      <td>$PEA = 12.500.000$</td>
-    </tr>
-  </table>
-
-</body>
-</html>
-```
-:::
-
-        
-b)
-
-&nbsp; Población Economicamente Inactiva  
-$$PET - PEA = 15.650.000 - 12.500.000$$
-Población Economicamente Inactiva = $3.125.000$
-
-c) 
-
-Población Desempleada 
-$$PD = PEA \times TD = 12.500.000 \times 20\%$$
-Población Desempleada = $2.500.000$
-
-
-### :
-
-&nbsp; En un país imaginario, la canasta básica es considerada como 2 kilos de queso, 2 pares de jeans y 10 litros de bencina. 
-
-a) Con esa información complete la siguiente tabla:
+a)  Con esa información complete la siguiente tabla:
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -963,81 +230,78 @@ Costo Total &  & \multicolumn{1}{r|}{34,8} &  & \multicolumn{1}{r|}{154} &  & \m
 <body>
 
     <table>
-        <tr>
-            <th></th>
-            <th></th>
-            <th colspan="2">Año 1</th>
-            <th colspan="2">Año 2</th>
-            <th colspan="2">Año 3</th>
-        </tr>
-        <tr>
-            <th>Items Canasta</th>
-            <th>Unidades</th>
-            <th>$ unidad</th>
-            <th>$ Total</th>
-            <th>$ unidad</th>
-            <th>$ Total</th>
-            <th>$ unidad</th>
-            <th>$ total</th>
-        </tr>
-        <tr>
-            <td>Queso</td>
-            <td>2 kg</td>
-            <td>5000</td>
-            <td></td>
-            <td>5132</td>
-            <td></td>
-            <td>5500</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Jeans</td>
-            <td>2 pares</td>
-            <td>20000</td>
-            <td></td>
-            <td>25000</td>
-            <td></td>
-            <td>30000</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Bencina</td>
-            <td>10 litros</td>
-            <td>890</td>
-            <td></td>
-            <td>1100</td>
-            <td></td>
-            <td>1200</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Costo Total</td>
-            <td></td>
-            <td>34,8</td>
-            <td></td>
-            <td>154</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+    <tr>
+        <th></th>
+        <th></th>
+        <th colspan="2">Año 1</th>
+        <th colspan="2">Año 2</th>
+        <th colspan="2">Año 3</th>
+    </tr>
+    <tr>
+        <th>Items Canasta</th>
+        <th>Unidades</th>
+        <th>$ unidad</th>
+        <th>$ Total</th>
+        <th>$ unidad</th>
+        <th>$ Total</th>
+        <th>$ unidad</th>
+        <th>$ total</th>
+    </tr>
+    <tr>
+        <td>Queso</td>
+        <td>2 kg</td>
+        <td>5000</td>
+        <td></td>
+        <td>5132</td>
+        <td></td>
+        <td>5500</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Jeans</td>
+        <td>2 pares</td>
+        <td>20000</td>
+        <td></td>
+        <td>25000</td>
+        <td></td>
+        <td>30000</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Bencina</td>
+        <td>10 litros</td>
+        <td>890</td>
+        <td></td>
+        <td>1100</td>
+        <td></td>
+        <td>1200</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Costo Total</td>
+        <td></td>
+        <td>34,8</td>
+        <td></td>
+        <td>154</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
 
 </body>
 
 </html>
-
 ```
 :::
 
-b) Calcule el IPC para cada año, eligiendo el año 1 como base.
+b)  Calcule el IPC para cada año, eligiendo el año 1 como base.
 
-c) Utilizando el IPC calcule la tasa de inflación para cada año.
+c)  Utilizando el IPC calcule la tasa de inflación para cada año.
 
-&nbsp; **RESPUESTAS:**
+  **RESPUESTAS:**
 
-
-a) 
-
+a)  
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -1056,7 +320,6 @@ Costo Total &  & \multicolumn{1}{r|}{} & 58900 & \multicolumn{1}{r|}{} & 71264 &
 \end{table}
 ```
 :::
-
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -1081,102 +344,94 @@ Costo Total &  & \multicolumn{1}{r|}{} & 58900 & \multicolumn{1}{r|}{} & 71264 &
 <body>
 
     <table>
-        <tr>
-            <th></th>
-            <th></th>
-            <th colspan="2">Año 1</th>
-            <th colspan="2">Año 2</th>
-            <th colspan="2">Año 3</th>
-        </tr>
-        <tr>
-            <th>Items Canasta</th>
-            <th>Unidades</th>
-            <th>$ unidad</th>
-            <th>$ Total</th>
-            <th>$ unidad</th>
-            <th>$ Total</th>
-            <th>$ unidad</th>
-            <th>$ total</th>
-        </tr>
-        <tr>
-            <td>Queso</td>
-            <td>2 kg</td>
-            <td>5000</td>
-            <td>10000</td>
-            <td>5132</td>
-            <td>10264</td>
-            <td>5500</td>
-            <td>11000</td>
-        </tr>
-        <tr>
-            <td>Jeans</td>
-            <td>2 pares</td>
-            <td>20000</td>
-            <td>40000</td>
-            <td>25000</td>
-            <td>50000</td>
-            <td>30000</td>
-            <td>60000</td>
-        </tr>
-        <tr>
-            <td>Bencina</td>
-            <td>10 litros</td>
-            <td>890</td>
-            <td>8900</td>
-            <td>1100</td>
-            <td>11000</td>
-            <td>1200</td>
-            <td>12000</td>
-        </tr>
-        <tr>
-            <td>Costo Total</td>
-            <td></td>
-            <td></td>
-            <td>58900</td>
-            <td></td>
-            <td>71264</td>
-            <td></td>
-            <td>83000</td>
-        </tr>
-    </table>
+    <tr>
+        <th></th>
+        <th></th>
+        <th colspan="2">Año 1</th>
+        <th colspan="2">Año 2</th>
+        <th colspan="2">Año 3</th>
+    </tr>
+    <tr>
+        <th>Items Canasta</th>
+        <th>Unidades</th>
+        <th>$ unidad</th>
+        <th>$ Total</th>
+        <th>$ unidad</th>
+        <th>$ Total</th>
+        <th>$ unidad</th>
+        <th>$ total</th>
+    </tr>
+    <tr>
+        <td>Queso</td>
+        <td>2 kg</td>
+        <td>5000</td>
+        <td>10000</td>
+        <td>5132</td>
+        <td>10264</td>
+        <td>5500</td>
+        <td>11000</td>
+    </tr>
+    <tr>
+        <td>Jeans</td>
+        <td>2 pares</td>
+        <td>20000</td>
+        <td>40000</td>
+        <td>25000</td>
+        <td>50000</td>
+        <td>30000</td>
+        <td>60000</td>
+    </tr>
+    <tr>
+        <td>Bencina</td>
+        <td>10 litros</td>
+        <td>890</td>
+        <td>8900</td>
+        <td>1100</td>
+        <td>11000</td>
+        <td>1200</td>
+        <td>12000</td>
+    </tr>
+    <tr>
+        <td>Costo Total</td>
+        <td></td>
+        <td></td>
+        <td>58900</td>
+        <td></td>
+        <td>71264</td>
+        <td></td>
+        <td>83000</td>
+    </tr>
+</table>
 
 </body>
 
 </html>
-
 ```
 :::
 
-b)
+b)  
 
-&nbsp; El Índice Precio al Consumidor es una medida del costo total de los bienes y servicios comprados por un consumidor típico.
+  El Índice Precio al Consumidor es una medida del costo total de los bienes y servicios comprados por un consumidor típico.
 
-&nbsp; Año 1
-$$IPC = \frac{58900}{58900}*100= \%100$$
- 
-&nbsp; Año 2
-$$IPC = \frac{71264}{58900}*100=\%120.99$$
+  Año 1 $$IPC = \frac{58900}{58900}*100= \%100$$
 
-&nbsp; Año 3
-$$IPC = \frac{83000}{58900}*100=\%140.90$$
+  Año 2 $$IPC = \frac{71264}{58900}*100=\%120.99$$
 
-c) 
+  Año 3 $$IPC = \frac{83000}{58900}*100=\%140.90$$
 
-&nbsp; La tasa de inflación es el cambio porcentual en el índice de precios con respecto al periodo precedente.
+c)  
 
-&nbsp; Año 1
-$$IPC = \frac{100-100}{100}*100= \%0$$
- 
-&nbsp; Año 2
-$$IPC = \frac{120.99-100}{100}*100=\%20.99$$
+  La tasa de inflación es el cambio porcentual en el índice de precios con respecto al periodo precedente.
 
-&nbsp; Año 3
-$$IPC = \frac{140.90-120.99}{120.99}*100=\%16.45$$
+  Año 1 $$IPC = \frac{100-100}{100}*100= \%0$$
 
+  Año 2 $$IPC = \frac{120.99-100}{100}*100=\%20.99$$
+
+  Año 3 $$IPC = \frac{140.90-120.99}{120.99}*100=\%16.45$$
 
 ### :
 
-a) Un país tiene solo los mercados de la siguiente tabla:
+a)  Un país tiene solo los mercados de la siguiente tabla:
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -1218,32 +473,32 @@ a) Un país tiene solo los mercados de la siguiente tabla:
 <body>
 
     <table>
-        <tr>
-            <th>Rubro</th>
-            <th>Cantidad producida</th>
-            <th>Valor por unidad</th>
-        </tr>
-        <tr>
-            <td>Venta de autos importados</td>
-            <td>20</td>
-            <td>$120</td>
-        </tr>
-        <tr>
-            <td>Producción de harina para mercados nacionales</td>
-            <td>400</td>
-            <td>$10</td>
-        </tr>
-        <tr>
-            <td>Producción minera</td>
-            <td>1000</td>
-            <td>$80</td>
-        </tr>
-        <tr>
-            <td>Producción de harina para exportaciones</td>
-            <td>1200</td>
-            <td>$15</td>
-        </tr>
-    </table>
+    <tr>
+        <th>Rubro</th>
+        <th>Cantidad producida</th>
+        <th>Valor por unidad</th>
+    </tr>
+    <tr>
+        <td>Venta de autos importados</td>
+        <td>20</td>
+        <td>$120</td>
+    </tr>
+    <tr>
+        <td>Producción de harina para mercados nacionales</td>
+        <td>400</td>
+        <td>$10</td>
+    </tr>
+    <tr>
+        <td>Producción minera</td>
+        <td>1000</td>
+        <td>$80</td>
+    </tr>
+    <tr>
+        <td>Producción de harina para exportaciones</td>
+        <td>1200</td>
+        <td>$15</td>
+    </tr>
+</table>
 
 </body>
 
@@ -1251,10 +506,9 @@ a) Un país tiene solo los mercados de la siguiente tabla:
 ```
 :::
 
-&nbsp; Indique cuanto es la cantidad del PIB.
+  Indique cuanto es la cantidad del PIB.
 
-
-b) Sin tomar en cuenta la pregunta anterior, tenemos otro país con los siguientes datos:
+b)  Sin tomar en cuenta la pregunta anterior, tenemos otro país con los siguientes datos:
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -1293,72 +547,66 @@ b) Sin tomar en cuenta la pregunta anterior, tenemos otro país con los siguient
 <body>
 
     <table>
-        <tr>
-            <th>Año</th>
-            <th>PIB nominal</th>
-            <th>PIB real</th>
-        </tr>
-        <tr>
-            <td>Actual</td>
-            <td>$30</td>
-            <td>$31</td>
-        </tr>
-        <tr>
-            <td>Base</td>
-            <td>$25</td>
-            <td>$30</td>
-        </tr>
-    </table>
+    <tr>
+        <th>Año</th>
+        <th>PIB nominal</th>
+        <th>PIB real</th>
+    </tr>
+    <tr>
+        <td>Actual</td>
+        <td>$30</td>
+        <td>$31</td>
+    </tr>
+    <tr>
+        <td>Base</td>
+        <td>$25</td>
+        <td>$30</td>
+    </tr>
+</table>
 
 </body>
 
 </html>
-
 ```
 :::
 
-&nbsp; Calcule su Inflación por el deflactor del PIB.
+  Calcule su Inflación por el deflactor del PIB.
 
-&nbsp; **RESPUESTAS:**
+  **RESPUESTAS:**
 
+a)  
 
-a)
-
-&nbsp; De todos los rubros el unico que no pertenece a la categoría del PIB es la venta de autos importados. Por los demás, se multiplica la unidad por su valor y se suma con el resto.
+  De todos los rubros el unico que no pertenece a la categoría del PIB es la venta de autos importados. Por los demás, se multiplica la unidad por su valor y se suma con el resto.
 
 $$400\cdot10+1000\cdot80+1200\cdot15=102000$$
 
-b) 
+b)  
 
-&nbsp; Primero calculamos los deflactores:
+  Primero calculamos los deflactores:
 
-&nbsp; Para el actual: $30/31$.
+  Para el actual: $30/31$.
 
-&nbsp; Para el base: $5/6$
+  Para el base: $5/6$
 
-&nbsp; Luego calculamos la inflación:
+  Luego calculamos la inflación:
 
 $$Inflación:\frac{\frac{30}{31}-\frac{5}{6}}{\frac{5}{6}}=\frac{36}{31}-1=\frac{5}{31}=\%16.13$$
 
+### :
+
+  Suponga un mercado con las siguientes funciones de oferta y demanda laboral: $$L_s=10+10w$$ $$L_d=100-5w$$
+
+a)  Encuentre el nivel de equilibrio.
+
+b)  Suponga la fijación de un salario igual a 10 y determine que pasará en ese mercado.
+
+  **RESPUESTA:**
+
+  Para resolver esto primero debemos encontrar el equilibrio, lo cual nos da $L = 70$ y $w = 6$.   Si reemplazamos el salario mínimo impuesto en ambas funciones, vemos que la demanda de trabajo sería $L_d=50$ y la oferta $L_s=100$. Es decir, habrían 110 personas dispuestas a trabajar y sólo 50 puestos demandados. El desempleo sería: $$L_s - L_d = 110 - 50 = 60$$
 
 ### :
 
-&nbsp; Suponga un mercado con las siguientes funciones de oferta y demanda laboral:
-$$L_s=10+10w$$ $$L_d=100-5w$$
-
-a) Encuentre el nivel de equilibrio.
-
-b) Suponga la fijación de un salario igual a 10 y determine que pasará en ese mercado.
-
-&nbsp; **RESPUESTA:**
-
-&nbsp; Para resolver esto primero debemos encontrar el equilibrio, lo cual nos da $L = 70$ y $w = 6$.
-&nbsp; Si reemplazamos el salario mínimo impuesto en ambas funciones, vemos que la demanda de trabajo sería $L_d=50$ y la oferta $L_s=100$. Es decir, habrían 110 personas dispuestas a trabajar y sólo 50 puestos demandados. El desempleo sería:
-$$L_s - L_d = 110 - 50 = 60$$
-
-### :
-
-&nbsp; El 2014 es el año base para el cálculo del ́Índice de Precios al Consumidor. A partir de la siguiente tabla calcule:
+  El 2014 es el año base para el cálculo del ́Índice de Precios al Consumidor. A partir de la siguiente tabla calcule:
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -1401,115 +649,99 @@ $$L_s - L_d = 110 - 50 = 60$$
 <body>
 
     <table>
-        <tr>
-            <th></th>
-            <th>2014</th>
-            <th>2015</th>
-            <th>2016</th>
-        </tr>
-        <tr>
-            <td>Precio de celular</td>
-            <td>$800.000</td>
-            <td>$820.000</td>
-            <td>$850.000</td>
-        </tr>
-        <tr>
-            <td>Precio del tomate</td>
-            <td>$300</td>
-            <td>$450</td>
-            <td>$500</td>
-        </tr>
-        <tr>
-            <td>Precio de zapatos</td>
-            <td>$50.000</td>
-            <td>$45.000</td>
-            <td>$55.000</td>
-        </tr>
-        <tr>
-            <td>Cantidad de celular</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>Cantidad del tomate</td>
-            <td>200</td>
-            <td>200</td>
-            <td>200</td>
-        </tr>
-        <tr>
-            <td>Cantidad de zapatos</td>
-            <td>4</td>
-            <td>4</td>
-            <td>4</td>
-        </tr>
-    </table>
+    <tr>
+        <th></th>
+        <th>2014</th>
+        <th>2015</th>
+        <th>2016</th>
+    </tr>
+    <tr>
+        <td>Precio de celular</td>
+        <td>$800.000</td>
+        <td>$820.000</td>
+        <td>$850.000</td>
+    </tr>
+    <tr>
+        <td>Precio del tomate</td>
+        <td>$300</td>
+        <td>$450</td>
+        <td>$500</td>
+    </tr>
+    <tr>
+        <td>Precio de zapatos</td>
+        <td>$50.000</td>
+        <td>$45.000</td>
+        <td>$55.000</td>
+    </tr>
+    <tr>
+        <td>Cantidad de celular</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Cantidad del tomate</td>
+        <td>200</td>
+        <td>200</td>
+        <td>200</td>
+    </tr>
+    <tr>
+        <td>Cantidad de zapatos</td>
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>
+    </tr>
+</table>
 
 </body>
 
 </html>
-
 ```
 :::
 
+a)  El ́Índice de Precios al Consumidor para cada año (2014, 2015 y 2016).
 
+b)  Calcule la inflación (variación de precios) anual 2015-2016 y 2014-2015.
 
-a) El  ́Índice de Precios al Consumidor para cada año (2014, 2015 y 2016).
+c)  Ahora usted le presta $30.000$ a su amigo, quien se compromete a devolver $32.000$ al cabo de un año, en este caso el 31 de diciembre de 2016.
 
-b) Calcule la inflación (variación de precios) anual 2015-2016 y 2014-2015.
+-   ¿Cuál es la tasa de interés nominal que su amigo está dispuesto a pagarle?
 
-c) Ahora usted le presta $30.000$ a su amigo, quien se compromete a devolver $32.000$ al cabo de un año, en este caso el 31 de diciembre de 2016.
+-   ¿Cuál es la tasa de interés real? Nota: Tenga en cuenta la inflación anual 2015-2016
 
-- ¿Cuál es la tasa de interés nominal que su amigo está dispuesto a pagarle?
+d)  Ahora suponga que usted le presta a su amigo en UF. Cuando usted le prestó el dinero a su amigo, la UF era de $25.000$. Si su amigo se compromete a pagarle la misma tasa de interés nominal del ejercicio anterior y devolverle el dinero un año después, ¿cuánto dinero recibe usted al cabo de un año?
 
-- ¿Cuál es la tasa de interés real? Nota: Tenga en cuenta la inflación anual 2015-2016
+  **RESPUESTAS:**
 
+a)  
 
-d) Ahora suponga que usted le presta a su amigo en UF. Cuando usted le prestó el dinero a su amigo, la UF era de $25.000$. Si su amigo se compromete a pagarle la misma tasa de interés nominal del ejercicio anterior y devolverle el dinero un año después, ¿cuánto dinero recibe usted al cabo de un año?
+$$\textbf{Costo de vida 2014} = 800.000*1+300*200+50.000*4 = 1.060.000$$ $$\textbf{Costo de vida 2015} = 820.000*1+450*200+45.000*4 = 1.090.000$$ $$\textbf{Costo de vida 2016} = 850.000*1+500*200+55.000*4 = 1.170.000$$
 
-&nbsp; **RESPUESTAS:**
+$$IPC_{2014} = \frac{1.060.000}{(1.060.000)*100} = 100$$ $$IPC_{2015} = \frac{1.090.000}{(1.060.000)*100} = 102.8$$ $$IPC_{2016} = \frac{1.170.000}{(1.060.000)*100} = 110.4$$
 
-a)
+b)  
 
-$$\textbf{Costo de vida 2014} = 800.000*1+300*200+50.000*4 = 1.060.000$$
-$$\textbf{Costo de vida 2015} = 820.000*1+450*200+45.000*4 = 1.090.000$$
-$$\textbf{Costo de vida 2016} = 850.000*1+500*200+55.000*4 = 1.170.000$$
+$$\textbf{Variación Precios 2015/2014} = (\frac{ 102.8}{100}-1)*100 = 2,83 \%$$ $$\textbf{Variación Precios 2016/2015} = (\frac{110.4}{102.8}-1)*100 = 7.34 \%$$
 
-$$IPC_{2014} = \frac{1.060.000}{(1.060.000)*100} = 100$$
-$$IPC_{2015} = \frac{1.090.000}{(1.060.000)*100} = 102.8$$
-$$IPC_{2016} = \frac{1.170.000}{(1.060.000)*100} = 110.4$$
+c)  
 
+  La tasa de interés nominal que su amigo estará pagando será la relación entre lo prestado y lo que finalmente le pagará.
 
-b)
+  **Tasa de interés nominal** = $(\frac{32000}{30000}– 1)\cdot 100 = 6.66\%$
 
-$$\textbf{Variación Precios 2015/2014} = (\frac{ 102.8}{100}-1)*100 = 2,83 \%$$
-$$\textbf{Variación Precios 2016/2015} = (\frac{110.4}{102.8}-1)*100 = 7.34 \%$$
+  La tasa de interés real representa cuanto realmente estarás ganado al prestarle dinero a tu amigo. Ya que aunque la tasa de interés nominal es mayor a 0, si la tasa de inflación de ese año será mayor o igual a la nominal, no existe una ganacia real en ese préstamo.
 
+  **Tasa de interés real** = **tasa de interés nominal** -- **inflación**   **Tasa de interés real** = $6.66 – 7.34 = -0.68\%$
 
-c)
+  Debido a que la tasa de inflación es real a la nominal, al hacer este préstamo, el valor de tu dinero disminuye.
 
-&nbsp; La tasa de interés nominal que su amigo estará pagando será la relación entre lo prestado y lo que finalmente le pagará.
+d)  
 
-&nbsp; **Tasa de interés nominal** = $(\frac{32000}{30000}– 1)\cdot 100 = 6.66\%$
-
-&nbsp; La tasa de interés real representa cuanto realmente estarás ganado al prestarle dinero a tu amigo. Ya que aunque la tasa de interés nominal es mayor a 0, si la tasa de inflación de ese año será mayor o igual a la nominal, no existe una ganacia real en ese préstamo.
-
-&nbsp; **Tasa de interés real** = **tasa de interés nominal** –  **inflación**
-&nbsp; **Tasa de interés real** = $6.66 – 7.34 = -0.68\%$
-
-&nbsp; Debido a que la tasa de inflación es real a la nominal, al hacer este préstamo, el valor de tu dinero disminuye.
-
-d)
-
-**Prestamo en UF** = $\frac{30,000}{25,000} = 1.2 UF$
-**Pago en un año** = $1.2\times(1 + 6.66 \%) = 1.28$
-**En un año la UF** =  $25,000\times(1 + 7.34 \%) = 26,834.9$
-**Pago efectivo** = $1.28\times26,834.9 = 34,348.5$
-
+**Prestamo en UF** = $\frac{30,000}{25,000} = 1.2 UF$ **Pago en un año** = $1.2\times(1 + 6.66 \%) = 1.28$ **En un año la UF** = $25,000\times(1 + 7.34 \%) = 26,834.9$ **Pago efectivo** = $1.28\times26,834.9 = 34,348.5$
 
 ### :
 
-&nbsp; Tenemos la siguiente tabla que representa el porcentaje de población acumulado de la población según su ingreso porcentual acumulado:
+  Tenemos la siguiente tabla que representa el porcentaje de población acumulado de la población según su ingreso porcentual acumulado:
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -1562,160 +794,114 @@ d)
 </head>
 <body>
     <table>
-        <caption>Tabla de demanda:</caption>
-        <tr>
-            <th>decil:</th>
-            <th>Ingresos:</th>
-        </tr>
-        <tr>
-            <td>0.1</td>
-            <td>0.01</td>
-        </tr>
-        <tr>
-            <td>0.2</td>
-            <td>0.02</td>
-        </tr>
-        <tr>
-            <td>0.3</td>
-            <td>0.03</td>
-        </tr>
-        <tr>
-            <td>0.4</td>
-            <td>0.05</td>
-        </tr>
-        <tr>
-            <td>0.5</td>
-            <td>0.06</td>
-        </tr>
-        <tr>
-            <td>0.6</td>
-            <td>0.08</td>
-        </tr>
-        <tr>
-            <td>0.7</td>
-            <td>0.14</td>
-        </tr>
-        <tr>
-            <td>0.8</td>
-            <td>0.58</td>
-        </tr>
-        <tr>
-            <td>0.9</td>
-            <td>0.80</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-    </table>
+    <caption>Tabla de demanda:</caption>
+    <tr>
+        <th>decil:</th>
+        <th>Ingresos:</th>
+    </tr>
+    <tr>
+        <td>0.1</td>
+        <td>0.01</td>
+    </tr>
+    <tr>
+        <td>0.2</td>
+        <td>0.02</td>
+    </tr>
+    <tr>
+        <td>0.3</td>
+        <td>0.03</td>
+    </tr>
+    <tr>
+        <td>0.4</td>
+        <td>0.05</td>
+    </tr>
+    <tr>
+        <td>0.5</td>
+        <td>0.06</td>
+    </tr>
+    <tr>
+        <td>0.6</td>
+        <td>0.08</td>
+    </tr>
+    <tr>
+        <td>0.7</td>
+        <td>0.14</td>
+    </tr>
+    <tr>
+        <td>0.8</td>
+        <td>0.58</td>
+    </tr>
+    <tr>
+        <td>0.9</td>
+        <td>0.80</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+</table>
 </body>
 </html>
-
 ```
 :::
 
-&nbsp; Calcule el coeficiente de Ginni.
+  Calcule el coeficiente de Ginni.
 
-&nbsp; **RESPUESTA:**
-
+  **RESPUESTA:**
 
 $$G=1-\left|\sum_{k=0}^{n-1}\left(X_{k+1}-X_k\right)\left(Y_{k+1}+Y_k\right)\right| $$
 
-$$1-0.1(0.01+(0.01+0.02)+(0.02+0.03)+(0.03+0.05)+(0.05+0.06)+(0.06+0.08))+$$
-$$0.1((0.08+0.10)+(0.10+0.50)+(0.50+0.8)+(0.8+1))$$
-$$=$$
-$$1-0.1\cdot 4.3$$
-$$1-0.43$$
-$$0.57$$
-
+$$1-0.1(0.01+(0.01+0.02)+(0.02+0.03)+(0.03+0.05)+(0.05+0.06)+(0.06+0.08))+$$ $$0.1((0.08+0.10)+(0.10+0.50)+(0.50+0.8)+(0.8+1))$$ $$=$$ $$1-0.1\cdot 4.3$$ $$1-0.43$$ $$0.57$$
 
 ### :
 
-&nbsp; Suponga que tanto las papas fritas como el ketchup son mercados monopólicos. Las funciones de costo total son, respectivamente $CT_{PF}=10\cdot q_{PF}$ y  $CT_{K}=5\cdot q_{K}$
-&nbsp; Las demandas respectivas se pueden expresar como: $P_{PF}=100 - q_{PF}$ y $P_{K}= 80 - q_{K} + q_{PF}$. Si es que cada bien es producido por monopolistas separados, determine los precios y cantidades de cada uno.
+  Suponga que tanto las papas fritas como el ketchup son mercados monopólicos. Las funciones de costo total son, respectivamente $CT_{PF}=10\cdot q_{PF}$ y $CT_{K}=5\cdot q_{K}$   Las demandas respectivas se pueden expresar como: $P_{PF}=100 - q_{PF}$ y $P_{K}= 80 - q_{K} + q_{PF}$. Si es que cada bien es producido por monopolistas separados, determine los precios y cantidades de cada uno.
 
-&nbsp; **RESPUESTA:**
+  **RESPUESTA:**
 
+  El monopolista de papas fritas produce una cantidad de papas fritas tal que maximicen su utilidad:
 
-&nbsp; El monopolista de papas fritas produce una cantidad de papas fritas tal que maximicen su utilidad:
+$$\pi_{PF}= P_{PF}\cdot q_{PF} - CT_{PF}$$ $$\pi_{PF}= (100 - q_{PF})\cdot q_{PF} - 10\cdot q_{PF}$$ $$ pdv = \frac{\pi_{PF}}{q_{PF}}=0= 100-2\cdot q_{PF} - 10$$ $$q_{PF} = 45$$ $$P_{PF} = 55$$
 
-$$\pi_{PF}= P_{PF}\cdot q_{PF} - CT_{PF}$$
-$$\pi_{PF}= (100 - q_{PF})\cdot q_{PF} - 10\cdot q_{PF}$$
-$$ pdv = \frac{\pi_{PF}}{q_{PF}}=0= 100-2\cdot q_{PF} - 10$$
-$$q_{PF} = 45$$
-$$P_{PF} = 55$$
+  Con este resultado, podemos encontrar el óptimo del monopolista del ketchup\\
 
-&nbsp; Con este resultado, podemos encontrar el óptimo del monopolista del ketchup\\
-
-$$\pi_{K}= P_{K}\cdot q_{K} - CT_{K}$$
-$$\pi_{K}= (80 - q_{K} + q_{PF} )\cdot q_{K} - 5\cdot q_{K}$$
-$$\pi_{K}= 80\cdot q_{K} - q_{K}^2 + q_{PF}\cdot q_{K} - 5\cdot q_{K}$$
-$$\pi_{K}= 80\cdot q_{K} - q_{K}^2 + 45\cdot q_{K}  - 5\cdot q_{K}$$
-$$\pi_{K}= 120\cdot q_{K} - q_{K}^2$$
-$$pdv = \frac{\pi_{K}}{q_{K}}=0= 120-2\cdot q_{K}$$
-$$q_{K} = 60$$
-$$P_{K} = 65$$
-
+$$\pi_{K}= P_{K}\cdot q_{K} - CT_{K}$$ $$\pi_{K}= (80 - q_{K} + q_{PF} )\cdot q_{K} - 5\cdot q_{K}$$ $$\pi_{K}= 80\cdot q_{K} - q_{K}^2 + q_{PF}\cdot q_{K} - 5\cdot q_{K}$$ $$\pi_{K}= 80\cdot q_{K} - q_{K}^2 + 45\cdot q_{K}  - 5\cdot q_{K}$$ $$\pi_{K}= 120\cdot q_{K} - q_{K}^2$$ $$pdv = \frac{\pi_{K}}{q_{K}}=0= 120-2\cdot q_{K}$$ $$q_{K} = 60$$ $$P_{K} = 65$$
 
 ### :
 
-&nbsp; Suponga que tanto las papas fritas como el ketchup son mercados monopólicos. Las funciones de costo total son, respectivamente $CT_{PF}=10\cdot q_{PF}$ y  $CT_{K}=5\cdot q_{K}$\\
-Las demandas respectivas se pueden expresar como: $P_{PF}=100 - q_{PF}$ y $P_{K}= 80 - q_{K} + q_{PF}$
+  Suponga que tanto las papas fritas como el ketchup son mercados monopólicos. Las funciones de costo total son, respectivamente $CT_{PF}=10\cdot q_{PF}$ y $CT_{K}=5\cdot q_{K}$\\ Las demandas respectivas se pueden expresar como: $P_{PF}=100 - q_{PF}$ y $P_{K}= 80 - q_{K} + q_{PF}$
 
-a) Si es que cada bien es producido por monopolistas separados, determine los precios y cantidades de cada uno.
+a)  Si es que cada bien es producido por monopolistas separados, determine los precios y cantidades de cada uno.
 
-b) Asuma ahora que ambas empresas desean integrarse en una sola y monopólica, determine los precios y cantidades para cada bien.\\
+b)  Asuma ahora que ambas empresas desean integrarse en una sola y monopólica, determine los precios y cantidades para cada bien.\\
 
-c) ¿Cuál es mejor desde un punto de vista social? ¿Por qué?
+c)  ¿Cuál es mejor desde un punto de vista social? ¿Por qué?
 
-&nbsp; **RESPUESTAS:**
+  **RESPUESTAS:**
 
+a)  
 
-a)
+  El monopolista de papas fritas produce una cantidad de papas fritas tal que maximicen su utilidad:
 
-&nbsp; El monopolista de papas fritas produce una cantidad de papas fritas tal que maximicen su utilidad:
+$$\pi_{PF}= P_{PF}\cdot q_{PF} - CT_{PF}$$ $$\pi_{PF}= (100 - q_{PF})\cdot q_{PF} - 10\cdot q_{PF}$$ $$pdv {\pi_{PF}}{q_{PF}}=0= 100-2\cdot q_{PF} - 10$$ $$q_{PF} = 45$$ $$P_{PF} = 55$$
 
-$$\pi_{PF}= P_{PF}\cdot q_{PF} - CT_{PF}$$
-$$\pi_{PF}= (100 - q_{PF})\cdot q_{PF} - 10\cdot q_{PF}$$
-$$pdv {\pi_{PF}}{q_{PF}}=0= 100-2\cdot q_{PF} - 10$$
-$$q_{PF} = 45$$
-$$P_{PF} = 55$$
+  Con este resultado, podemos encontrar el óptimo del monopolista del ketchup.
 
-&nbsp; Con este resultado, podemos encontrar el óptimo del monopolista del ketchup.
+$$\pi_{K}= P_{K}\cdot q_{K} - CT_{K}$$ $$\pi_{K}= (80 - q_{K} + q_{PF} )\cdot q_{K} - 5\cdot q_{K}$$ $$\pi_{K}= 80\cdot q_{K} - q_{K}^2 + q_{PF}\cdot q_{K} - 5\cdot q_{K}$$ $$\pi_{K}= 80\cdot q_{K} - q_{K}^2 + 45\cdot q_{K}  - 5\cdot q_{K}$$ $$\pi_{K}= 120\cdot q_{K} - q_{K}^2$$ $$pdv {\pi_{K}}{q_{K}}=0= 120-2\cdot q_{K}$$ $$q_{K} = 60$$ $$P_{K} = 65$$
 
-$$\pi_{K}= P_{K}\cdot q_{K} - CT_{K}$$
-$$\pi_{K}= (80 - q_{K} + q_{PF} )\cdot q_{K} - 5\cdot q_{K}$$
-$$\pi_{K}= 80\cdot q_{K} - q_{K}^2 + q_{PF}\cdot q_{K} - 5\cdot q_{K}$$
-$$\pi_{K}= 80\cdot q_{K} - q_{K}^2 + 45\cdot q_{K}  - 5\cdot q_{K}$$
-$$\pi_{K}= 120\cdot q_{K} - q_{K}^2$$
-$$pdv {\pi_{K}}{q_{K}}=0= 120-2\cdot q_{K}$$
-$$q_{K} = 60$$
-$$P_{K} = 65$$
+b)  
 
-b)
+  Si ambos bienes se producen por sólo uno de los monopolistas, entonces el problema que enfrenta ahora es:
 
-&nbsp; Si ambos bienes se producen por sólo uno de los monopolistas, entonces el problema que enfrenta ahora es:
+$$\pi= P_{PF}\cdot q_{PF} + P_{K}\cdot q_{K} - CT_{K} - CT_{PF}$$ $$\pi= (100 - q_{PF})\cdot q_{PF} + (80 - q_{K} + q_{PF} )\cdot q_{K} - 10\cdot q_{PF} - 5\cdot q_{K}$$ $$\pi= 100\cdot q_{PF} - q_{PF}^2 + 80\cdot q_{K} - q_{K}^2  +q_{PF}\cdot q_{K} - 10\cdot q_{PF} - 5\cdot q_{K}$$ $$\pi= 90\cdot q_{PF} +  75\cdot q_{K} + q_{PF}\cdot q_{K} - q_{PF}^2 - q_{K}^2 $$
 
-$$\pi= P_{PF}\cdot q_{PF} + P_{K}\cdot q_{K} - CT_{K} - CT_{PF}$$
-$$\pi= (100 - q_{PF})\cdot q_{PF} + (80 - q_{K} + q_{PF} )\cdot q_{K} - 10\cdot q_{PF} - 5\cdot q_{K}$$
-$$\pi= 100\cdot q_{PF} - q_{PF}^2 + 80\cdot q_{K} - q_{K}^2  +q_{PF}\cdot q_{K} - 10\cdot q_{PF} - 5\cdot q_{K}$$
-$$\pi= 90\cdot q_{PF} +  75\cdot q_{K} + q_{PF}\cdot q_{K} - q_{PF}^2 - q_{K}^2 $$
+$$pdv {\pi}{q_{PF}}=0= 90 + q_{K} - 2\cdot q_{PF}$$ $$pdv {\pi}{q_{K}}=0= 75 + q_{PF} - 2\cdot q_{K}$$
 
-$$pdv {\pi}{q_{PF}}=0= 90 + q_{K} - 2\cdot q_{PF}$$
-$$pdv {\pi}{q_{K}}=0= 75 + q_{PF} - 2\cdot q_{K}$$
+$$q_{PF} = \frac{255}{3}= 85$$ $$q_{K} = 80$$ $$P_{PF} = 15$$ $$P_{K} = 65$$
 
-$$q_{PF} = \frac{255}{3}= 85$$
-$$q_{K} = 80$$
-$$P_{PF} = 15$$
-$$P_{K} = 65$$
+c)  ¿Cuál es mejor desde un punto de vista social? ¿Por qué?
 
-
-c) ¿Cuál es mejor desde un punto de vista social? ¿Por qué?
-
-$$BS_{Integrado}= EP_{Integrado} +EC_{Integrado}  $$
-$$EP_{Integrado}= 85\cdot 15 - 85\cdot 10 + 100\cdot 65 -100\cdot 5 = 6425   $$
-$$EC_{Integrado}= \frac{85\cdot 85}{2}  +\frac{100\cdot 100}{2}  = 8612.5$$
-$$BS_{Integrado}= 15037.5 $$
+$$BS_{Integrado}= EP_{Integrado} +EC_{Integrado}  $$ $$EP_{Integrado}= 85\cdot 15 - 85\cdot 10 + 100\cdot 65 -100\cdot 5 = 6425   $$ $$EC_{Integrado}= \frac{85\cdot 85}{2}  +\frac{100\cdot 100}{2}  = 8612.5$$ $$BS_{Integrado}= 15037.5 $$
 
 $$BS_{PF} = EP_{PF} + EC_{PF} =55\cdot45 -45\cdot10 +  \frac{45\cdot 45}{2} = 3037.5$$
 
@@ -1723,14 +909,11 @@ $$BS_{K} = EP_{K} + EC_{K} = 60\cdot65 -60\cdot5 +  \frac{60\cdot 60}{2} = 5400$
 
 $$BS_{Integrado}= 8437.5 $$
 
+  La integración de ambos monopolios es positiva desde el punto de vista social. Esto se debe a que ambos productos son complementarios
 
-&nbsp; La integración de ambos monopolios es positiva desde el punto de vista social. Esto se debe a que ambos productos son complementarios
+###:
 
-
-###: 
-
-&nbsp; Considere una economía en la cual se tiene el siguiente detalle de los bienes producidos o importados por sus habitantes.
-
+  Considere una economía en la cual se tiene el siguiente detalle de los bienes producidos o importados por sus habitantes.
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -1786,32 +969,29 @@ $$BS_{Integrado}= 8437.5 $$
 ```
 :::
 
+a)  ¿Cuáles son los bienes que se consideran para el cálculo del pib?\\
 
-a) ¿Cuáles son los bienes que se consideran para el cálculo del pib?\\
-
-b) ¿Cuáles son los bienes que se consideran para el cálculo del IPC?\\
+b)  ¿Cuáles son los bienes que se consideran para el cálculo del IPC?\\
 
 c)¿ Por qué la inflación difiere cuando se usa el Deflactor o el IPC ?\\
 
-&nbsp; **RESPUESTAS:**
+  **RESPUESTAS:**
 
-a)
+a)  
 
 Solo se consideran los bienes producidos: Pan,Vino y Cobre\\
 
-b)
+b)  
 
-&nbsp; Ahora se considera el bien “Autos” ya que es un bien dentro de la canasta de consumo, pero no se considera el bien “Cobre” puesto que no es consumido
+  Ahora se considera el bien "Autos" ya que es un bien dentro de la canasta de consumo, pero no se considera el bien "Cobre" puesto que no es consumido
 
-c)
+c)  
 
-&nbsp; La inflación difiere cuando se usa el Deflactor o el IPC porque ambos indicadores miden cosas distintas. El Deflactor considera todos los bienes producidos dentro de la economía, los cuales no todos son necesariamente consumidos por las personas. Por lo tanto, si se quiere analizar el costo de la vida, es mejor usar el IPC para medir la inflación dado que en el IPC se usa una canasta de consumo representativa. Con respecto a críticas de ambas formas para medir la inflación, se tiene que al medirla por el lado del Deflactor no se refleja de forma precisa variaciones en el costo de vida. Mientras que una crítica al usar el IPC para medir la inflación es el sesgo de sustitución: el IPC no incorpora el efecto sustitución por el lado de los consumidores cuando sube el precio de un bien dentro de la canasta de consumo.
-
+  La inflación difiere cuando se usa el Deflactor o el IPC porque ambos indicadores miden cosas distintas. El Deflactor considera todos los bienes producidos dentro de la economía, los cuales no todos son necesariamente consumidos por las personas. Por lo tanto, si se quiere analizar el costo de la vida, es mejor usar el IPC para medir la inflación dado que en el IPC se usa una canasta de consumo representativa. Con respecto a críticas de ambas formas para medir la inflación, se tiene que al medirla por el lado del Deflactor no se refleja de forma precisa variaciones en el costo de vida. Mientras que una crítica al usar el IPC para medir la inflación es el sesgo de sustitución: el IPC no incorpora el efecto sustitución por el lado de los consumidores cuando sube el precio de un bien dentro de la canasta de consumo.
 
 ### :
 
-&nbsp; En el país X se consumen solamente arroz, pantalones y celulares. El arroz y los pantalones son producidos y consumidos en X. Por otro lado, los celulares son importados desde el país Y.
-
+  En el país X se consumen solamente arroz, pantalones y celulares. El arroz y los pantalones son producidos y consumidos en X. Por otro lado, los celulares son importados desde el país Y.
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -1903,53 +1083,40 @@ Celulares & \multicolumn{1}{r|}{185} & 420 & \multicolumn{1}{r|}{420} & 140 & \m
 
 </body>
 </html>
-
 ```
 :::
 
+a)  Calcular el PIB Nominal.
 
-a) Calcular el PIB Nominal.
+b)  Calcular el PIB Real con el año 2 como base.
 
-b) Calcular el PIB Real con el año 2 como base.
+c)  Calcular la tasa de crecimiento del país.
 
-c) Calcular la tasa de crecimiento del país.
+d)  Calcular el deflactor del PIB para cada año y la tasa de inflación para cada año.
 
-d) Calcular el deflactor del PIB para cada año y la tasa de inflación para cada año.
+  **RESPUESTAS:**
 
-&nbsp; **RESPUESTAS:**
+a)  
 
+$$PIB_{1}= 160x480+320x158= 76800+ 50560= 127360$$ $$PIB_{2}= 180x435+410x160= 78300+65600= 143900$$ $$PIB_{3}= 185x420+420x140= 77700+58800= 136500$$
 
-a)
+b)  
 
-$$PIB_{1}= 160x480+320x158= 76800+ 50560= 127360$$
-$$PIB_{2}= 180x435+410x160= 78300+65600= 143900$$
-$$PIB_{3}= 185x420+420x140= 77700+58800= 136500$$
+$$PIBreal_{1}= 160x435+320x160= 69.600+51.200= 120800 $$ $$PIBreal_{2}= 180x435+410x160= 78300+65600= 143900 $$ $$PIBreal_{3}= 185x435+420x160= 80475+ 67200= 147675 $$
 
-b)
+c)  
 
-$$PIBreal_{1}= 160x435+320x160= 69.600+51.200= 120800 $$
-$$PIBreal_{2}= 180x435+410x160= 78300+65600= 143900 $$
-$$PIBreal_{3}= 185x435+420x160= 80475+ 67200= 147675 $$
+$$Tasa_{año1-2}=\frac{143900 − 120800}{120000}*100 = 19,25 \% $$ $$Tasa_{año2-3}=\frac{147675 − 143900}{143900}*100 = 2,62\% $$
 
-c)
+d)  
 
-$$Tasa_{año1-2}=\frac{143900 − 120800}{120000}*100 = 19,25 \% $$
-$$Tasa_{año2-3}=\frac{147675 − 143900}{143900}*100 = 2,62\% $$
+$$Deflactor_{año1} = \frac{127360}{120800}=1,05$$ $$Deflactor_{año2} = \frac{143900}{143900}=1$$ $$Deflactor_{año3} = \frac{136500}{147675}=0,92$$
 
-d)
-
-$$Deflactor_{año1} = \frac{127360}{120800}=1,05$$
-$$Deflactor_{año2} = \frac{143900}{143900}=1$$
-$$Deflactor_{año3} = \frac{136500}{147675}=0,92$$
-
-&nbsp; Inflación:
-$$\frac{1 - 1,05}{1,05}*100 = -47,61\%$$
-$$\frac{0,92 - 1}{1}*100 = -8 \%$$
-
+  Inflación: $$\frac{1 - 1,05}{1,05}*100 = -47,61\%$$ $$\frac{0,92 - 1}{1}*100 = -8 \%$$
 
 ### :
 
-&nbsp; Tenemos la siguiente tabla que representa el porcentaje de población acumulado de la población según su ingreso porcentual acumulado:
+  Tenemos la siguiente tabla que representa el porcentaje de población acumulado de la población según su ingreso porcentual acumulado:
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -1972,7 +1139,7 @@ $$\frac{0,92 - 1}{1}*100 = -8 \%$$
         \end{tabular}
 \end{table}
 ```
-::: 
+:::
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -2051,64 +1218,52 @@ $$\frac{0,92 - 1}{1}*100 = -8 \%$$
 
 </body>
 </html>
-
 ```
 :::
 
+  Calcule el coeficiente de Ginni.
 
-&nbsp; Calcule el coeficiente de Ginni.
+  **RESPUESTA:**
 
-&nbsp; **RESPUESTA:**
-
-$$G=1-\left|\sum_{k=0}^{n-1}\left(X_{k+1}-X_k\right)\left(Y_{k+1}+Y_k\right)\right| $$
-$$1-0.1(0.01+(0.01+0.02)+(0.02+0.03)+(0.03+0.04)+(0.04+0.05)+(0.05+0.06))+$$
-$$0.1((0.06+0.10)+(0.10+0.15)+(0.15+0.2)+(0.2+1))$$
-$$=$$
-$$1-0.1\cdot 2.32$$
-$$1-0.232$$
-$$0.768$$
-
+$$G=1-\left|\sum_{k=0}^{n-1}\left(X_{k+1}-X_k\right)\left(Y_{k+1}+Y_k\right)\right| $$ $$1-0.1(0.01+(0.01+0.02)+(0.02+0.03)+(0.03+0.04)+(0.04+0.05)+(0.05+0.06))+$$ $$0.1((0.06+0.10)+(0.10+0.15)+(0.15+0.2)+(0.2+1))$$ $$=$$ $$1-0.1\cdot 2.32$$ $$1-0.232$$ $$0.768$$
 
 ### :
-&nbsp; La función de producción es la relación entre la cantidad de insumos utilizados para producir un bien y la cantidad producida de estos.
 
-&nbsp; Una empresa ''A´´ tiene la siguiente función de producción de kilogramos de jamón:
+  La función de producción es la relación entre la cantidad de insumos utilizados para producir un bien y la cantidad producida de estos.
+
+  Una empresa ''A´´ tiene la siguiente función de producción de kilogramos de jamón:
 
 $$Q = 4KL + K^2 + 0.5L^2$$
 
-&nbsp; Y una empresa ''B´´ tiene esta otra función de producción la misma materia.
+  Y una empresa ''B´´ tiene esta otra función de producción la misma materia.
 
 $$Q = KL + 2K^2 + L^2$$
 
-&nbsp; En el mercado de la empresa, cada unidad producida es vendida por \$5 dólares. con :
+  En el mercado de la empresa, cada unidad producida es vendida por \$5 dólares. con :
 
-- $Q$: cantidad producida.
-- $L$: unidades de trabajo usadas en la producción (pueden ser horas de trabajo trabajadores) .
-- $K$: unidades de capital usadas en la producción.
+-   $Q$: cantidad producida.
+-   $L$: unidades de trabajo usadas en la producción (pueden ser horas de trabajo trabajadores) .
+-   $K$: unidades de capital usadas en la producción.
 
-&nbsp; Si los trabajadores de ambas empresas trabajan las mismas horas, y se gasta la misma cantidad en horas que en capital usado. ¿Que empresa gasta más en producir el bien?
+  Si los trabajadores de ambas empresas trabajan las mismas horas, y se gasta la misma cantidad en horas que en capital usado. ¿Que empresa gasta más en producir el bien?
 
-&nbsp; **RESPUESTA:**
-$$L=K=X$$
+  **RESPUESTA:** $$L=K=X$$
 
-&nbsp; Empresa B:
+  Empresa B:
 
-$$Q = X^2 + 2X^2 + X^2$$
-$$Q = 4X^2$$
+$$Q = X^2 + 2X^2 + X^2$$ $$Q = 4X^2$$
 
-&nbsp; Empresa A:
+  Empresa A:
 
-$$Q = 4X^2 + X^2 + 0.5X^2$$
-$$Q = 5.5X^2$$
+$$Q = 4X^2 + X^2 + 0.5X^2$$ $$Q = 5.5X^2$$
 
 $$5.5X^2 > 4X^2$$
 
-&nbsp; Entonces la empresa A, produce más caro que la empresa B 
-
+  Entonces la empresa A, produce más caro que la empresa B
 
 ### :
 
-&nbsp; A partir de la siguiente tabla calcule lo que se pide respecto al IPC considerando el año 2018 como base.
+  A partir de la siguiente tabla calcule lo que se pide respecto al IPC considerando el año 2018 como base.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -2189,77 +1344,52 @@ $$5.5X^2 > 4X^2$$
 ```
 :::
 
-&nbsp; Se sabe que se gasta el 20\% del presupuesto en el bien X, el 30\% en el bien Y y el resto en el bien Z. 
+  Se sabe que se gasta el 20% del presupuesto en el bien X, el 30% en el bien Y y el resto en el bien Z.
 
-a) Calcular la inflación anual.
+a)  Calcular la inflación anual.
 
-b) Si usted presta \$160.000 y le devuelven \$190.000. ¿Que tasa de interés nominal le están pagando?
+b)  Si usted presta \$160.000 y le devuelven \$190.000. ¿Que tasa de interés nominal le están pagando?
 
-c) ¿Cuál sería la tasa de interés real? Considerando la inflación 2019/2020.
+c)  ¿Cuál sería la tasa de interés real? Considerando la inflación 2019/2020.
 
-d) ¿Cuanto le deberían pagar si pasan dos años?
+d)  ¿Cuanto le deberían pagar si pasan dos años?
 
-&nbsp; **RESPUESTAS:**
+  **RESPUESTAS:**
 
-a)
+a)  
 
-&nbsp; Para realizar este ejercicio primero es necesario calcular el IPC. Los precios del año 2018 lo tomamos como base y calculamos el del año 2019 y 2020 de la siguiente manera:
-$$IPC_{2019} = (0,2\cdot \frac{12}{10} + 0,3\cdot \frac{7}{9} + 0,5 \cdot \frac{20}{14}) \cdot 100 = 118,76$$
-$$IPC_{2020} = (0,2\cdot \frac{13}{10} + 0,3\cdot \frac{5}{9} + 0,5 \cdot \frac{25}{14}) \cdot 100 = 131,95$$
-Con esos datos es posible calcular la inflación de ambos períodos, la inflación del año 2018 al 2019 sería así:
-$$inflación_{2018-2019}=(\frac{118,76}{100}-1)\cdot100=18,76\%$$
-&nbsp; Y la inflación del 2019 al 2020:
-$$inflación_{2019-2020}=(\frac{131,95}{118,76}-1)\cdot100=11,1\%$$
+  Para realizar este ejercicio primero es necesario calcular el IPC. Los precios del año 2018 lo tomamos como base y calculamos el del año 2019 y 2020 de la siguiente manera: $$IPC_{2019} = (0,2\cdot \frac{12}{10} + 0,3\cdot \frac{7}{9} + 0,5 \cdot \frac{20}{14}) \cdot 100 = 118,76$$ $$IPC_{2020} = (0,2\cdot \frac{13}{10} + 0,3\cdot \frac{5}{9} + 0,5 \cdot \frac{25}{14}) \cdot 100 = 131,95$$ Con esos datos es posible calcular la inflación de ambos períodos, la inflación del año 2018 al 2019 sería así: $$inflación_{2018-2019}=(\frac{118,76}{100}-1)\cdot100=18,76\%$$   Y la inflación del 2019 al 2020: $$inflación_{2019-2020}=(\frac{131,95}{118,76}-1)\cdot100=11,1\%$$
 
+b)    Ocuparemos la fórmula del valor futuro y reemplazamos los valores. $$VF =VP\cdot(1+i)^n$$ $$190.000=160.000(1+i)^1$$ $$\frac{190.000}{160.000}=1+i$$ $$i=\frac{19}{16}-1$$ $$i=0,1875=18,75\%$$   Esa sería la tasa de interés nominal que nos estarían pagando.
 
-b)
-&nbsp; Ocuparemos la fórmula del valor futuro y reemplazamos los valores.
-$$VF =VP\cdot(1+i)^n$$
-$$190.000=160.000(1+i)^1$$
-$$\frac{190.000}{160.000}=1+i$$
-$$i=\frac{19}{16}-1$$
-$$i=0,1875=18,75\%$$
-&nbsp; Esa sería la tasa de interés nominal que nos estarían pagando.
+c)  
 
-c)
+  Para calcular el interés real debemos tomar la tasa nominal y restarle la inflación del período solicitado, por lo que tendríamos: $$i_{real} = 18,75\% - 11,1\%=7,65\%$$
 
-&nbsp; Para calcular el interés real debemos tomar la tasa nominal y restarle la inflación del período solicitado, por lo que tendríamos:
-$$i_{real} = 18,75\% - 11,1\%=7,65\%$$
+d)  
 
-d)
-
-&nbsp; Si pasan dos años, debemos reemplazar en la fórmula n por 2, nos deberían pagar:
-$$VF=160.000(1´0,1875)^2=225.625$$
-&nbsp; Es decir, si pasan dos años y mantenemos la tasa nos deben pagas \$225.625.
-
+  Si pasan dos años, debemos reemplazar en la fórmula n por 2, nos deberían pagar: $$VF=160.000(1´0,1875)^2=225.625$$   Es decir, si pasan dos años y mantenemos la tasa nos deben pagas \$225.625.
 
 ### :
 
-&nbsp; Imagine un bien X que se transa en un mercado perfectamente competitivo con dos tipos de agente. La curva de oferta de ese mercado está dada por:
-$$Q_s = -4,3+0,3P_x$$
-&nbsp; La demanda de los consumidores A y B son respectivamente:
-$$Q_{d,A}=0,1I_A-2P_x$$
-$$Q_{d,B}=198,2 - 0,5P_y - 0,2P_x$$
+  Imagine un bien X que se transa en un mercado perfectamente competitivo con dos tipos de agente. La curva de oferta de ese mercado está dada por: $$Q_s = -4,3+0,3P_x$$   La demanda de los consumidores A y B son respectivamente: $$Q_{d,A}=0,1I_A-2P_x$$ $$Q_{d,B}=198,2 - 0,5P_y - 0,2P_x$$
 
-&nbsp; El bien Y tiene  un precio de \$200 y el consumidor A tiene un ingreso de \$6000.
+  El bien Y tiene un precio de \$200 y el consumidor A tiene un ingreso de \$6000.
 
-a) ¿Qué tipo de bien es X para el agente A respecto al ingreso?
+a)  ¿Qué tipo de bien es X para el agente A respecto al ingreso?
 
-b) ¿Qué tipo de bien es X para el agente B respecto al bien Y?
+b)  ¿Qué tipo de bien es X para el agente B respecto al bien Y?
 
-&nbsp; **RESPUESTAS:**
+  **RESPUESTAS:**
 
-a)
-&nbsp; Para saber que tipo de bien es X para el agente A respecto a su ingreso, debemos derivar la demanda de A respecto al ingreso, lo que da como resultado 0,1. Al ser un valor positivo, significa que es un bien normal, es decir, que al aumentar el ingreso de ese agente, aumenta su demanda.
+a)    Para saber que tipo de bien es X para el agente A respecto a su ingreso, debemos derivar la demanda de A respecto al ingreso, lo que da como resultado 0,1. Al ser un valor positivo, significa que es un bien normal, es decir, que al aumentar el ingreso de ese agente, aumenta su demanda.
 
-b)
-&nbsp; Para ver que tipo de bien es X respecto al bien Y para el consumidor B, tomamos la demanda del agente B y la derivamos respecto al precio de y. Da como resultado -0,5. Como el resultado es menor a cero, significa que son bienes complementarios.
-
+b)    Para ver que tipo de bien es X respecto al bien Y para el consumidor B, tomamos la demanda del agente B y la derivamos respecto al precio de y. Da como resultado -0,5. Como el resultado es menor a cero, significa que son bienes complementarios.
 
 ### :
 
-&nbsp; Complete la siguiente tabla que contiene los datos de un país con respecto al PIB.
-::: {.content-visible when-format="pdf"}
+  Complete la siguiente tabla que contiene los datos de un país con respecto al PIB. ::: {.content-visible when-format="pdf"}
+
 ```{=tex}
 \begin{table}[h]
     \centering
@@ -2273,7 +1403,6 @@ b)
 \end{table}
 ```
 :::
-
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -2338,9 +1467,7 @@ b)
 ```
 :::
 
-
-&nbsp; **RESPUESTA:**
-
+  **RESPUESTA:**
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -2417,7 +1544,5 @@ b)
 
 </body>
 </html>
-
 ```
 :::
-
