@@ -5,3 +5,11 @@ En las siguientes paginas tendrás ejercicios con sus resoluciones.
 {{< include _8ej_pauta1.qmd >}}
 
 {{< include _9ej_pauta2.qmd >}}
+
+{{< include _10ej_pauta3.qmd >}}
+
+{{< include _11ej_pauta4.qmd >}}
+
+{{< include _12ej_pauta5.qmd >}}
+
+{{< include _13ej_pauta6.qmd >}}
