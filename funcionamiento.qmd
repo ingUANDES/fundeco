@@ -426,7 +426,7 @@ $$   Para los valores $a=21$, $b=0.8$, que podría ser el mismo caso anterior, 
 ```
 :::
 
-  El punto de intersección es cuando el precio es de \$11 y hay 12,5 unidades de producción. Este es el punto de equilibrio de mercado, si el mercado está sobre ese punto es que hay un exceso de oferta, y su está más bajo, es que hay escasez.
+  El punto de intersección es cuando el precio es de \$11 y hay 12.5 unidades de producción. Este es el punto de equilibrio de mercado, si el mercado está sobre ese punto es que hay un exceso de oferta, y su está más bajo, es que hay escasez.
 
 ## Cambios de curvas:
 
