@@ -6,6 +6,7 @@ project:
 book:
   title: "Fundamentos de Economía"
   author: "Sebastián Cea, Joaquín Fernández, Reimundo Fuenzalida"
+  repo-url: https://github.com/ingUANDES/fundeco
   repo-actions: [edit]
   date: "2023-2024"
   language: es
