@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,6 +62,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -65,6 +72,33 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 </head>
 
 <body class="nav-sidebar floating">
@@ -73,12 +107,12 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./4sistimpo.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sistema impositivo y economía laboral.</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./4sistimpo.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sistema impositivo y economía laboral.</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -88,10 +122,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Fundamentos de Economía</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/ingUANDES/fundeco" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -164,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -180,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#mercados-de-trabajo" id="toc-mercados-de-trabajo" class="nav-link" data-scroll-target="#mercados-de-trabajo"><span class="header-section-number">4.7</span> Mercados de trabajo:</a></li>
   <li><a href="#índice-de-pobreza" id="toc-índice-de-pobreza" class="nav-link" data-scroll-target="#índice-de-pobreza"><span class="header-section-number">4.8</span> Índice de pobreza:</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ingUANDES/fundeco/edit/main/4sistimpo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -200,7 +237,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <section id="financiamiento-del-gobierno" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="financiamiento-del-gobierno"><span class="header-section-number">4.1</span> Financiamiento del gobierno:</h2>
@@ -228,7 +267,7 @@ ul.task-list li input[type="checkbox"] {
 <p>&nbsp; También pueden solucionar estos problemas los privados por el teorema de Coase: ``si las partes pueden negociar sin costo y si los derechos iniciales están bien definidos, entonces es posible una solución privada y además eficiente”.</p>
 <p>&nbsp; Los free-riders o parásitos son aquellos individuos que se benefician d algo y no pagan los costos de aquello. Por ejemplo, dentro de un grupo para las tareas del curso puede existir alguien que no hizo nada en el trabajo, pero como la nota es grupal se beneficia de ello sin haber hecho nada.</p>
 <p>&nbsp; Dentro de los bienes que están dentro de estas fallas de mercados se pueden clasificar de dos formas, <strong>excluyentes</strong> si se puede evitar que las personas usen ese bien y si es <strong>rival de consumo</strong>, dicho de otra forma, si son limitados y si alguien usa el bien reduce la capacidad para que otro lo use también.</p>
-
+<div>
 
 
 
@@ -291,6 +330,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+</div>
 <p>&nbsp; Cuando el parásito evade el costo de transacción influye en la eficiencia de las instituciones benéficas o de bien común, como son la defensa nacional, investigaciones y lucha contra la pobreza.</p>
 <p>&nbsp; A la parábola que muestra como los bienes comunes se usan más de lo que se debe, se llama <strong>tragedia de los comunes</strong>.</p>
 <p>&nbsp; Con respecto al poder de mercado, existen dos tipos de monopolio:</p>
@@ -299,21 +339,21 @@ ul.task-list li input[type="checkbox"] {
 <li>Monopolios naturales: Si una empresa puede vender un mismo bien más barato porque sus costos de producción son menores, entonces tendrá todo el poder de mercado.</li>
 </ul>
 <p>&nbsp; Al tener todo el poder de mercado, estos tienen el poder del precio de demanda, pero no de la oferta, pongamos el caso de un empresario benevolente que tenga todo el poder de mercado y luego, propongamos que se corrompe y que sube los precios de tal forma que su excedente sea mayor, para el primer caso, tendremos el siguiente gráfico de su mercado:</p>
-<div class="cell" data-layout-align="center" data-hash="4sistimpo_cache/html/unnamed-chunk-1_7a21cd7d32468caa05afb1e4c5a983f0">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="4sistimpo_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="4sistimpo_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>&nbsp; Luego, cuando se corrompe, se verá algo así:</p>
-<div class="cell" data-layout-align="center" data-hash="4sistimpo_cache/html/unnamed-chunk-2_e9a1cbc92c83c3a3c719eaddb8d9bd31">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="4sistimpo_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="4sistimpo_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
 </figure>
 </div>
 </div>
@@ -322,11 +362,11 @@ ul.task-list li input[type="checkbox"] {
 <section id="curva-de-laffer" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="curva-de-laffer"><span class="header-section-number">4.3</span> Curva de Laffer:</h2>
 <p>La curva de Laffer hace referencia a lo recaudado por el gobierno con relación a la cantidad de impuesto agregado. Podemos verla así:</p>
-<div class="cell" data-layout-align="center" data-hash="4sistimpo_cache/html/unnamed-chunk-3_a9f3ab14462c09ca49bf5ea2a1a394a7">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="4sistimpo_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="4sistimpo_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
 </figure>
 </div>
 </div>
@@ -353,7 +393,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="determinantes-de-los-salarios-de-equilibrio" class="level2" data-number="4.5">
 <h2 data-number="4.5" class="anchored" data-anchor-id="determinantes-de-los-salarios-de-equilibrio"><span class="header-section-number">4.5</span> Determinantes de los salarios de equilibrio:</h2>
 <p>&nbsp; Hay cuatro determinantes que definirán el salario de una persona:</p>
-
+<div>
 
 
 
@@ -413,12 +453,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+</div>
 <p>&nbsp; Podemos graficar la relación de producción y salario de la siguiente forma:</p>
-<div class="cell" data-layout-align="center" data-hash="4sistimpo_cache/html/unnamed-chunk-4_b617089a39d19c748602ca5ae1206f79">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="4sistimpo_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="4sistimpo_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
 </div>
@@ -434,6 +475,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="4.7" class="anchored" data-anchor-id="mercados-de-trabajo"><span class="header-section-number">4.7</span> Mercados de trabajo:</h2>
 <p>&nbsp; Antes de, definiremos un par de conceptos: - <span class="math inline">\(Q(K,L)\)</span> es producción. - <span class="math inline">\(K\)</span> es capital, puede referirse al capital de añadir una maquina de producción por ejemplo. - <span class="math inline">\(L\)</span> es la cantidad de trabajadores. - <span class="math inline">\(\bar{n}\)</span> la variable de n es fija, actúa como constante.</p>
 <p>&nbsp; Ahora, todos estos conceptos tienen otras definiciones, en la siguiente tabla se explicarán:</p>
+<div>
 
 
 
@@ -489,6 +531,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+</div>
 <p>&nbsp; Los retornos de producción serán: <span class="math display">\[
 \text{Retornos} =
 \begin{cases}
@@ -504,6 +547,7 @@ Q(K,L)=L^3+2KL^2+K^3
 \]</span></p>
 <p>&nbsp; Calcule todas las medidas de producción y la producción marginal del trabajo para <span class="math inline">\(\bar{K}=5\)</span>.</p>
 <p>&nbsp; <strong>Respuesta:</strong></p>
+<div>
 
 
 
@@ -552,6 +596,7 @@ Q(K,L)=L^3+2KL^2+K^3
 
 
 
+</div>
 <p>&nbsp; Para <span class="math inline">\(\bar{K}=5\)</span> la producción marginal del trabajo será: <span class="math display">\[
 P(L)3L^2+20L
 \]</span></p>
@@ -560,11 +605,11 @@ P(L)3L^2+20L
 <h2 data-number="4.8" class="anchored" data-anchor-id="índice-de-pobreza"><span class="header-section-number">4.8</span> Índice de pobreza:</h2>
 <p>&nbsp; El índice de pobreza es el porcentaje de la población que su sueldo familiar está por debajo de la <strong>línea de pobreza</strong>, y esta última es el nivel establecido por el gobierno que distingue desde que punto una familia tiene un sueldo bajo o normal.</p>
 <p>&nbsp; <strong>Curva de Lorenz</strong>, es un gráfico que representa en eje horizontal se sitúan la población en porcentaje que tiene como máximo un sueldo y en el eje vertical el sueldo en porcentaje, en el siguiente grafico se puede ver la curva de Lorenz.</p>
-<div class="cell" data-layout-align="center" data-hash="4sistimpo_cache/html/unnamed-chunk-5_46215b34059e90b286bddd24ee0a9445">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="4sistimpo_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="4sistimpo_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
 </div>
@@ -576,7 +621,7 @@ G=1-\left|\sum_{k=1}^{n-1}\left(X_{k+1}-X_k\right)\left(Y_{k+1}+Y_k\right)\right
 <p>&nbsp; Donde <span class="math inline">\(X\)</span> es la proporción acumulada de población e <span class="math inline">\(Y\)</span> es la proporción acumulada de ingresos.</p>
 <p>&nbsp; <u>Por ejemplo:</u></p>
 <p>&nbsp; Dividiremos la población en 10 deciles con sus sueldos promedio:</p>
-
+<div>
 
 
 
@@ -657,6 +702,7 @@ G=1-\left|\sum_{k=1}^{n-1}\left(X_{k+1}-X_k\right)\left(Y_{k+1}+Y_k\right)\right
 
 
 
+</div>
 <p>&nbsp; Entonces la sumatoria resolviendo el primer decil queda así:</p>
 <p><span class="math display">\[
 G=1-\left|\left(0,2-0,1\right)\left(0,3+0,2\right)+\sum_{k=2}^{n-1}\left(X_{k+1}-X_k\right)\left(Y_{k+1}+Y_k\right)\right|
@@ -752,10 +798,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -765,8 +810,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -779,6 +833,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -822,6 +995,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -847,6 +1021,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -908,12 +1108,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./3interverción.html" class="pagination-link">
+      <a href="./3interverción.html" class="pagination-link" aria-label="Intervenciones del mercado.">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Intervenciones del mercado.</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./5varia.html" class="pagination-link">
+      <a href="./5varia.html" class="pagination-link" aria-label="Variables macroeconómicas.">
         <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Variables macroeconómicas.</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -922,4 +1122,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ingUANDES/fundeco/edit/main/4sistimpo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -66,7 +67,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -75,6 +82,7 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -84,6 +92,33 @@ div.csl-indent {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 </head>
 
 <body class="nav-sidebar floating">
@@ -92,12 +127,12 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción a la economía.</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción a la economía.</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -107,10 +142,13 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Fundamentos de Economía</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/ingUANDES/fundeco" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -183,7 +221,7 @@ div.csl-indent {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -196,7 +234,7 @@ div.csl-indent {
   <li><a href="#fronteras-de-posibilidades-de-producción-o-fpp" id="toc-fronteras-de-posibilidades-de-producción-o-fpp" class="nav-link" data-scroll-target="#fronteras-de-posibilidades-de-producción-o-fpp"><span class="header-section-number">1.4</span> Fronteras de posibilidades de producción o FPP:</a></li>
   <li><a href="#especialización-y-comercio" id="toc-especialización-y-comercio" class="nav-link" data-scroll-target="#especialización-y-comercio"><span class="header-section-number">1.5</span> Especialización y comercio:</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ingUANDES/fundeco/edit/main/intro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -216,7 +254,9 @@ div.csl-indent {
   </div>
   
 
+
 </header>
+
 
 <section id="definición-y-clasificación-de-la-economía" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="definición-y-clasificación-de-la-economía"><span class="header-section-number">1.1</span> Definición y clasificación de la economía:</h2>
@@ -225,6 +265,7 @@ div.csl-indent {
 <!-- #El texto de arriba viene de clases de texto, 1.1 parte 1 linea 4. -->
 <p>&nbsp; Existen dos tipos de niveles de estudio de la economía, la microeconomía que estudia unidades económicas individuales y la macroeconomía que estudia variables económicas agregadas. Un sistema económico es la forma en que se asignan los recursos, existen los centralizados, es decir, los que un solo planificador asigna los recursos, los descentralizados, que la sociedad en general asigna los recursos y los mixtos, que asignan algunos bienes el estado y el otro la sociedad. La econometría es el estudio de estas cuestiones basado en técnicas estadísticas para testear postulados macroeconómicos y microeconómicos.</p>
 <p></p>
+<div>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -285,6 +326,7 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 <section id="los-diez-principios-de-la-economía" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="los-diez-principios-de-la-economía"><span class="header-section-number">1.2</span> Los Diez Principios de la economía:</h2>
@@ -295,6 +337,7 @@ div.csl-indent {
 <li>¿Cómo funciona la economía en su conjunto? (productividad, inflación y ciclo económico)</li>
 </ol>
 <p>&nbsp; En la siguiente tabla se explican estas proposiciones:</p>
+<div>
 <table data-quarto-postprocess="true" class="table">
 <caption>Principios de la economía (1-5)</caption>
 <colgroup>
@@ -377,6 +420,7 @@ Ambos tipos de disyuntiva son dependientes uno al otro.</td>
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 <section id="modelos-y-supuestos" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="modelos-y-supuestos"><span class="header-section-number">1.3</span> Modelos y supuestos:</h2>
@@ -415,7 +459,7 @@ Ejemplo
 <p>&nbsp; Hay tres términos que se relacionan cuando hablamos de posibilidades de producción:</p>
 <p>&nbsp; Tenemos los <u><strong>los factores productivos</strong></u>, es decir, el uso que se le da a el capital humano, los recursos naturales, el capital físico y las tecnologías para producir el bien.</p>
 <p>&nbsp; El <u><strong>conjunto de posibilidades de producción</strong></u> es el grupo que reúne los distintos resultados al decidir fabricar una combinación de bienes con factores productivos variables que sirven como insumo en todos los procesos productivos que se analizan. Así la <u><strong>frontera de posibilidades de producción (FPP)</strong></u> se representa por las combinaciones de producción (en la frontera del conjunto de posibilidades) que puede tener una economía teniendo en cuenta que sus factores productivos se utilizan de forma eficiente (es decir, no se puede producir más con otra asignación de recursos).</p>
-<p>&nbsp; Finalmente tenemos el <u><strong>costo de oportunidad</strong></u> que, en simples palabras, es cuanto de un producto (por ejemplo <span class="math inline">\(y_1\)</span> en la <a href="#fig-FPP">Figure&nbsp;<span>1.1</span></a> ) se pierde al aumentar la producción en una cierta cantidad de otro bien (por ejemplo <span class="math inline">\(y_2\)</span> en la <a href="#fig-FPP">Figure&nbsp;<span>1.1</span></a>).</p>
+<p>&nbsp; Finalmente tenemos el <u><strong>costo de oportunidad</strong></u> que, en simples palabras, es cuanto de un producto (por ejemplo <span class="math inline">\(y_1\)</span> en la <a href="#fig-FPP" class="quarto-xref">Figure&nbsp;<span>1.1</span></a> ) se pierde al aumentar la producción en una cierta cantidad de otro bien (por ejemplo <span class="math inline">\(y_2\)</span> en la <a href="#fig-FPP" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>).</p>
 <p>&nbsp; <u><strong>FPP de forma matemática y gráfica:</strong></u></p>
 <p>&nbsp; Digamos que tenemos un factor o insumo productivo limitado <span class="math inline">\(\bar x\)</span>. Si queremos crear una unidad del bien <span class="math inline">\(y_1\)</span> se gastarán <span class="math inline">\(a_1\)</span> unidades del factor, y al fabricar una unidad del bien <span class="math inline">\(y_2\)</span> se usaran <span class="math inline">\(a_2\)</span> unidades del factor. Si lo vemos matemáticamente tenemos una suerte de restricción presupuestaria que nos obliga a explicar el uso de recursos <span class="math inline">\(\bar x\)</span> como una decisión de producción <span class="math inline">\((y_1,y_2)\)</span>:</p>
 <p><span id="eq-FPP"><span class="math display">\[
@@ -423,13 +467,17 @@ Ejemplo
 \tag{1.1}\]</span></span> &nbsp; En consecuencia, la máxima cantidad de <span class="math inline">\(y_n\)</span> para <span class="math inline">\(n = 1\)</span> ó <span class="math inline">\(2\)</span>, se representa como: <span class="math display">\[
 \bar x=a_ny_n \Leftrightarrow y_n=\frac{\bar x}{a_n}
 \]</span></p>
-<p>&nbsp; Entonces gráficamente podemos representar tanto la frontera (con la ecuación <a href="#eq-FPP">Equation&nbsp;<span>1.1</span></a>) como la región bajo la misma que representa combinaciones de producción factibles que no maximizan la cantidad producida (ineficientes):</p>
-<div class="cell" data-layout-align="center" data-hash="intro_cache/html/fig-FPP_b786d4210fe07c0256f1918fa0f51741">
+<p>&nbsp; Entonces gráficamente podemos representar tanto la frontera (con la ecuación <a href="#eq-FPP" class="quarto-xref">Equation&nbsp;<span>1.1</span></a>) como la región bajo la misma que representa combinaciones de producción factibles que no maximizan la cantidad producida (ineficientes):</p>
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-FPP" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="intro_files/figure-html/fig-FPP-1.png" class="img-fluid figure-img" style="width:40.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;1.1: FPP entre los bienes <span class="math inline">\(y_1\)</span> e <span class="math inline">\(y_2\)</span>.</figcaption>
+<div id="fig-FPP" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FPP-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="intro_files/figure-html/fig-FPP-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FPP-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: FPP entre los bienes <span class="math inline">\(y_1\)</span> e <span class="math inline">\(y_2\)</span>.
+</figcaption>
 </figure>
 </div>
 </div>
@@ -449,7 +497,7 @@ Ejemplo
 <p><strong>Respuesta:</strong></p>
 <p>&nbsp; <u>Paso I: Interpretar.</u></p>
 <p>&nbsp; Diremos que <span class="math inline">\(y_1\)</span> es la cantidad de lechuga e <span class="math inline">\(y_2\)</span> la cantidad de maíz, ambos se miden en toneladas, el costo de oportunidad para la lechuga en base al maíz estará en función de <span class="math inline">\(a_1\)</span> y <span class="math inline">\(a_2\)</span>. La escasez estará dada por el factor limitante que es <span class="math inline">\(\bar h\)</span> y fijo en <span class="math inline">\(216\)</span> de acuerdo al enunciado.</p>
-<p>&nbsp; Si por hectárea se produce <span class="math inline">\(1/3\)</span> de tonelada de lechuga, entonces <span class="math inline">\(\frac{1}{a_1}=\frac{1}{3}\)</span>. Utilizando la ecuación <a href="#eq-FPP">Equation&nbsp;<span>1.1</span></a> para <span class="math inline">\(y_1=34\)</span> e <span class="math inline">\(y_2=57\)</span>, es decir asumiendo tecnologías con un solo insumo y lineales, tenemos lo siguiente si reemplazamos la información previa:</p>
+<p>&nbsp; Si por hectárea se produce <span class="math inline">\(1/3\)</span> de tonelada de lechuga, entonces <span class="math inline">\(\frac{1}{a_1}=\frac{1}{3}\)</span>. Utilizando la ecuación <a href="#eq-FPP" class="quarto-xref">Equation&nbsp;<span>1.1</span></a> para <span class="math inline">\(y_1=34\)</span> e <span class="math inline">\(y_2=57\)</span>, es decir asumiendo tecnologías con un solo insumo y lineales, tenemos lo siguiente si reemplazamos la información previa:</p>
 <p><span class="math display">\[\bar h=216=\underbrace{3}_{\frac{1}{a_1}=\frac{1}{3}}\cdot \underbrace{34}_{y_1}+a_2\cdot \underbrace{52}
 _{y_2}.\]</span></p>
 <p>&nbsp; <u>Paso II: Escribir las ecuaciones y resolver.</u></p>
@@ -475,11 +523,11 @@ a_2=2
 216h=2y_2 \Leftrightarrow y_2=108
 \]</span></p>
 <p>&nbsp; <u>Paso IV: Hacer el gráfico.</u></p>
-<div class="cell" data-layout-align="center" data-hash="intro_cache/html/unnamed-chunk-2_e0e8218307ff232e1abeb61e0dbc4ca1">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="intro_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="intro_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
@@ -527,7 +575,7 @@ E: x = a_3 b + a_4 c\\
 \]</span> <span class="math display">\[
 \textrm{B :} a = d\frac{15}{20}
 \]</span> &nbsp; Se compara, el que tenga menor coeficiente tiene la ventaja:</p>
-
+<div>
 
 
 
@@ -577,9 +625,10 @@ E: x = a_3 b + a_4 c\\
 
 
 
+</div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-mankiw2012" class="csl-entry" role="listitem">
 Mankiw, N. Gregory. 2012. <em>Principios de economía</em>. Madrid: Paraninfo.
 </div>
@@ -672,10 +721,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -685,8 +733,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -699,6 +756,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -742,6 +918,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -767,6 +944,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -828,12 +1031,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
+      <a href="./index.html" class="pagination-link" aria-label="Prefacio">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Prefacio</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./funcionamiento.html" class="pagination-link">
+      <a href="./funcionamiento.html" class="pagination-link" aria-label="Funcionamiento de los mercados.">
         <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Funcionamiento de los mercados.</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -842,4 +1045,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ingUANDES/fundeco/edit/main/intro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>

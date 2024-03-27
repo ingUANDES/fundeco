@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,6 +62,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -65,6 +72,33 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 </head>
 
 <body class="nav-sidebar floating">
@@ -73,12 +107,12 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./7,8titulo.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ejercicios Resueltos:</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./7,8titulo.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ejercicios Resueltos:</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -88,10 +122,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Fundamentos de Economía</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/ingUANDES/fundeco" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -164,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -233,7 +270,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#section-42" id="toc-section-42" class="nav-link" data-scroll-target="#section-42"><span class="header-section-number">7.6.10</span> :</a></li>
   </ul></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ingUANDES/fundeco/edit/main/7,8titulo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -253,7 +290,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <p>En las siguientes paginas tendrás ejercicios con sus resoluciones.</p>
 <section id="sobre-capítulo-i" class="level2" data-number="7.1">
@@ -278,11 +317,11 @@ ec+df=cy_1+dy_2
 <li>Haga el gráfico de esta ecuación.</li>
 </ol>
 <p><strong>RESPUESTA</strong></p>
-<div class="cell" data-layout-align="center" data-hash="7,8titulo_cache/html/unnamed-chunk-1_4a429791a9ebe1fee00e9a43e31cea6e">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="7,8titulo_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="7,8titulo_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
@@ -303,22 +342,22 @@ ec+df=cy_1+dy_2
 </ol>
 <p>&nbsp; Con FPP individual se hace referencia a graficar la función de 1 trabajador. Ausumiendo linealidad, para poder graficar se necesita encontrar la pendiente.</p>
 <p><span class="math display">\[m=\frac{4}{6}=\frac{2}{3}\]</span> <span class="math display">\[C: cobre ; V: Vino\]</span> <span class="math display">\[C=40-\frac{2}{3}\cdot V\]</span></p>
-<div class="cell" data-layout-align="center" data-hash="7,8titulo_cache/html/unnamed-chunk-2_a6821f73df039d14f3cf23f81948852e">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="7,8titulo_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="7,8titulo_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>&nbsp; Para la FPP agregada se incorporan todos los productores de la economía en el contexto. Asumiendo que ambos productores tienen la misma capacidad, se duplican las producciones:</p>
 <p><span class="math display">\[C=80-\frac{2}{3}V\]</span></p>
-<div class="cell" data-layout-align="center" data-hash="7,8titulo_cache/html/unnamed-chunk-3_711f16ddfbc6518f65fdd5b2748f72be">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="7,8titulo_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="7,8titulo_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
@@ -332,29 +371,29 @@ ec+df=cy_1+dy_2
 <ol start="3" type="a">
 <li></li>
 </ol>
-<div class="cell" data-layout-align="center" data-hash="7,8titulo_cache/html/unnamed-chunk-4_eaed3c059ac69b835df9758a4f52a028">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="7,8titulo_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="7,8titulo_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
 </div>
-<div class="cell" data-layout-align="center" data-hash="7,8titulo_cache/html/unnamed-chunk-5_9f976fa64257c7efc2594176c4563e0b">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="7,8titulo_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="7,8titulo_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
 </div>
-<div class="cell" data-layout-align="center" data-hash="7,8titulo_cache/html/unnamed-chunk-6_f7a05c98188c9eb29c823feccb133389">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="7,8titulo_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="7,8titulo_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
@@ -363,11 +402,11 @@ ec+df=cy_1+dy_2
 <li></li>
 </ol>
 <p>&nbsp; Al observar el último gráfico realizado en la pregunta anterior, se logra entender como se comporta una economía en la realidad. No todos los productores tienen las mismas capcacidades, produciendo curvatura en la FPP agregada. Entonces, si se agregan cada vez más productores, se obtendría una función similar a <span class="math inline">\(x^2+y^2 = 100\)</span>:</p>
-<div class="cell" data-layout-align="center" data-hash="7,8titulo_cache/html/unnamed-chunk-7_ea10fe2e99d94b34d3311e4511610b94">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="7,8titulo_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="7,8titulo_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
@@ -396,11 +435,11 @@ ec+df=cy_1+dy_2
 <li></li>
 </ol>
 <p>&nbsp; Asumiendo producción lineal:</p>
-<div class="cell" data-layout-align="center" data-hash="7,8titulo_cache/html/unnamed-chunk-8_44ff9e91fb28bb1ea81e7e9d4104bb8c">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="7,8titulo_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="7,8titulo_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
 </div>
@@ -444,11 +483,11 @@ ec+df=cy_1+dy_2
 <li></li>
 </ol>
 <p>&nbsp; Asumiendo linealidad en la producción:</p>
-<div class="cell" data-layout-align="center" data-hash="7,8titulo_cache/html/unnamed-chunk-9_2fcff2571f7b28804f2a7b69927428e5">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="7,8titulo_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="7,8titulo_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
@@ -472,11 +511,11 @@ ec+df=cy_1+dy_2
 <section id="section-5" class="level3" data-number="7.1.6">
 <h3 data-number="7.1.6" class="anchored" data-anchor-id="section-5"><span class="header-section-number">7.1.6</span> :</h3>
 <p>&nbsp; En el siguiente gráfico, podemos ver la cantidad de los bienes azúcar y tabaco que se pueden producir con el factor productivo limitado hectáreas.</p>
-<div class="cell" data-layout-align="center" data-hash="7,8titulo_cache/html/unnamed-chunk-10_6127054e253c6ec976ffe96b1f60b7eb">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="7,8titulo_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="7,8titulo_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
@@ -536,11 +575,11 @@ ec+df=cy_1+dy_2
 <p><span class="math display">\[\bar t=a_2y_2 \Leftrightarrow 1000=2y_2 \Leftrightarrow 20=y_2\]</span></p>
 <p>&nbsp; Entonces, se pueden producir máximo 500 unidades de camisas.</p>
 <p>&nbsp; Paso III: Hacer el gráfico.</p>
-<div class="cell" data-layout-align="center" data-hash="7,8titulo_cache/html/unnamed-chunk-11_7d96b204c75989947eec83244dec5de4">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="7,8titulo_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="7,8titulo_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
@@ -624,11 +663,11 @@ ec+df=cy_1+dy_2
 <p>&nbsp; Argentina por razones populistas, antes de las elecciones decidido fijar los precios de algunos bienes. A base de esto en un pueblo imaginario tiene el mercado del queso como funciones de oferta y demanda respectivamente <span class="math inline">\(P(Q)=1.5+0.5Q\)</span> y <span class="math inline">\(Q(P)=5-P\)</span>. La fijación al precio máximo de este bien es de $2. ¿Qué fenómeno ocurrirá debido a esta intervención? Haga un gráfico de la situación.</p>
 <p>&nbsp; <strong>RESPUESTA</strong></p>
 <p>&nbsp; La función de demanda inversa es <span class="math inline">\(P(Q)=5-Q\)</span>. Además, ocurrirá un escasez y el gráfico es el siguiente:</p>
-<div class="cell" data-layout-align="center" data-hash="7,8titulo_cache/html/unnamed-chunk-12_432e095b53ec17098906f535e8fd6b02">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="7,8titulo_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="7,8titulo_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
@@ -703,11 +742,11 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 <ol type="a">
 <li></li>
 </ol>
-<div class="cell" data-layout-align="center" data-hash="7,8titulo_cache/html/unnamed-chunk-13_c5adc0b8a2bd6b81b58b516ef8c58e6a">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="7,8titulo_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="7,8titulo_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
@@ -790,11 +829,11 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 <li></li>
 </ol>
 <p><span class="math display">\[C_{(q)}= a + bq^{2}-\frac{bq^{2}}{4}\]</span> <span class="math display">\[Cmg_{(q)}= 2bq-\frac{{bq}}{2}= \frac{{3bq}}{2}\]</span> &nbsp; y con la condición de competencia perfecta <span class="math display">\[P = Cmg\]</span> <span class="math display">\[a - cq = \frac{{3bq}}{2}\]</span> <span class="math display">\[{q*(\frac{{3b}}{2} + c)} = a \]</span></p>
-<div class="cell" data-layout-align="center" data-hash="7,8titulo_cache/html/unnamed-chunk-14_e6b99c39f773eaa2be4fa9ea62f31fe7">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="7,8titulo_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="7,8titulo_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
@@ -900,7 +939,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 <ol type="a">
 <li>Con esa información complete la siguiente tabla:</li>
 </ol>
-
+<div>
 
 
 
@@ -988,6 +1027,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 
 
 
+</div>
 <ol start="2" type="a">
 <li><p>Calcule el IPC para cada año, eligiendo el año 1 como base.</p></li>
 <li><p>Utilizando el IPC calcule la tasa de inflación para cada año.</p></li>
@@ -996,7 +1036,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 <ol type="a">
 <li></li>
 </ol>
-
+<div>
 
 
 
@@ -1084,6 +1124,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 
 
 
+</div>
 <ol start="2" type="a">
 <li></li>
 </ol>
@@ -1104,7 +1145,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 <ol type="a">
 <li>Un país tiene solo los mercados de la siguiente tabla:</li>
 </ol>
-
+<div>
 
 
 
@@ -1160,11 +1201,12 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 
 
 
+</div>
 <p>&nbsp; Indique cuanto es la cantidad del PIB.</p>
 <ol start="2" type="a">
 <li>Sin tomar en cuenta la pregunta anterior, tenemos otro país con los siguientes datos:</li>
 </ol>
-
+<div>
 
 
 
@@ -1210,6 +1252,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 
 
 
+</div>
 <p>&nbsp; Calcule su Inflación por el deflactor del PIB.</p>
 <p>&nbsp; <strong>RESPUESTAS:</strong></p>
 <ol type="a">
@@ -1239,7 +1282,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 <section id="section-23" class="level3" data-number="7.5.6">
 <h3 data-number="7.5.6" class="anchored" data-anchor-id="section-23"><span class="header-section-number">7.5.6</span> :</h3>
 <p>&nbsp; El 2014 es el año base para el cálculo del ́Índice de Precios al Consumidor. A partir de la siguiente tabla calcule:</p>
-
+<div>
 
 
 
@@ -1312,6 +1355,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 
 
 
+</div>
 <ol type="a">
 <li><p>El ́Índice de Precios al Consumidor para cada año (2014, 2015 y 2016).</p></li>
 <li><p>Calcule la inflación (variación de precios) anual 2015-2016 y 2014-2015.</p></li>
@@ -1350,7 +1394,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 <section id="section-24" class="level3" data-number="7.5.7">
 <h3 data-number="7.5.7" class="anchored" data-anchor-id="section-24"><span class="header-section-number">7.5.7</span> :</h3>
 <p>&nbsp; Tenemos la siguiente tabla que representa el porcentaje de población acumulado de la población según su ingreso porcentual acumulado:</p>
-
+<div>
 
 
 
@@ -1429,6 +1473,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 
 
 
+</div>
 <p>&nbsp; Calcule el coeficiente de Ginni.</p>
 <p>&nbsp; <strong>RESPUESTA:</strong></p>
 <p><span class="math display">\[G=1-\left|\sum_{k=0}^{n-1}\left(X_{k+1}-X_k\right)\left(Y_{k+1}+Y_k\right)\right| \]</span></p>
@@ -1476,6 +1521,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 <p>&nbsp; La integración de ambos monopolios es positiva desde el punto de vista social. Esto se debe a que ambos productos son complementarios</p>
 <p>###:</p>
 <p>&nbsp; Considere una economía en la cual se tiene el siguiente detalle de los bienes producidos o importados por sus habitantes.</p>
+<div>
 
 
 
@@ -1514,6 +1560,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 
 
 
+</div>
 <ol type="a">
 <li><p>¿Cuáles son los bienes que se consideran para el cálculo del pib?\</p></li>
 <li><p>¿Cuáles son los bienes que se consideran para el cálculo del IPC?\</p></li>
@@ -1536,7 +1583,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 <section id="section-27" class="level3" data-number="7.5.10">
 <h3 data-number="7.5.10" class="anchored" data-anchor-id="section-27"><span class="header-section-number">7.5.10</span> :</h3>
 <p>&nbsp; En el país X se consumen solamente arroz, pantalones y celulares. El arroz y los pantalones son producidos y consumidos en X. Por otro lado, los celulares son importados desde el país Y.</p>
-
+<div>
 
 
 
@@ -1612,6 +1659,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 
 
 
+</div>
 <ol type="a">
 <li><p>Calcular el PIB Nominal.</p></li>
 <li><p>Calcular el PIB Real con el año 2 como base.</p></li>
@@ -1640,7 +1688,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 <section id="section-28" class="level3" data-number="7.5.11">
 <h3 data-number="7.5.11" class="anchored" data-anchor-id="section-28"><span class="header-section-number">7.5.11</span> :</h3>
 <p>&nbsp; Tenemos la siguiente tabla que representa el porcentaje de población acumulado de la población según su ingreso porcentual acumulado:</p>
-
+<div>
 
 
 
@@ -1720,6 +1768,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 
 
 
+</div>
 <p>&nbsp; Calcule el coeficiente de Ginni.</p>
 <p>&nbsp; <strong>RESPUESTA:</strong></p>
 <p><span class="math display">\[G=1-\left|\sum_{k=0}^{n-1}\left(X_{k+1}-X_k\right)\left(Y_{k+1}+Y_k\right)\right| \]</span> <span class="math display">\[1-0.1(0.01+(0.01+0.02)+(0.02+0.03)+(0.03+0.04)+(0.04+0.05)+(0.05+0.06))+\]</span> <span class="math display">\[0.1((0.06+0.10)+(0.10+0.15)+(0.15+0.2)+(0.2+1))\]</span> <span class="math display">\[=\]</span> <span class="math display">\[1-0.1\cdot 2.32\]</span> <span class="math display">\[1-0.232\]</span> <span class="math display">\[0.768\]</span></p>
@@ -1749,7 +1798,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 <section id="section-30" class="level3" data-number="7.5.13">
 <h3 data-number="7.5.13" class="anchored" data-anchor-id="section-30"><span class="header-section-number">7.5.13</span> :</h3>
 <p>&nbsp; A partir de la siguiente tabla calcule lo que se pide respecto al IPC considerando el año 2018 como base.</p>
-
+<div>
 
 
 
@@ -1809,6 +1858,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 
 
 
+</div>
 <p>&nbsp; Se sabe que se gasta el 20% del presupuesto en el bien X, el 30% en el bien Y y el resto en el bien Z.</p>
 <ol type="a">
 <li><p>Calcular la inflación anual.</p></li>
@@ -1849,7 +1899,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 <h3 data-number="7.5.15" class="anchored" data-anchor-id="section-32"><span class="header-section-number">7.5.15</span> :</h3>
 <p>&nbsp; Complete la siguiente tabla que contiene los datos de un país con respecto al PIB. ::: {.content-visible when-format=“pdf”}</p>
 <p>:::</p>
-
+<div>
 
 
 
@@ -1912,8 +1962,9 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 
 
 
+</div>
 <p>&nbsp; <strong>RESPUESTA:</strong></p>
-
+<div>
 
 
 
@@ -1976,6 +2027,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 
 
 
+</div>
 </section>
 </section>
 <section id="sobre-capítulo-vi" class="level2" data-number="7.6">
@@ -1983,7 +2035,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 <section id="section-33" class="level3" data-number="7.6.1">
 <h3 data-number="7.6.1" class="anchored" data-anchor-id="section-33"><span class="header-section-number">7.6.1</span> :</h3>
 <p>&nbsp; En Loompalandia tienen las siguientes producciones totales de los distintos mercados en los distintos años, todo evaluados en su nueva moneda wonkas (<code>wk'') y su cantidad en unidades (</code>u’’), admeás su producción fue siempre la misma, es decir la misma cantidad:</p>
-
+<div>
 
 
 
@@ -2074,13 +2126,14 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 
 
 
+</div>
 <ol type="1">
 <li>Calcule le inflación anual, con año base 2016, de los años 2017, 2018 y 2019.</li>
 <li>Si un umpalumpa pone a deposito a plazo 100 wonkas con un interes del 20% en el año 2016 hasta el año 2019 e indexamos su valor al los wonkas del año 2016 ¿Cuántos wonkas tiene?</li>
 </ol>
 <p><strong>RESPUESTAS:</strong></p>
 <p>&nbsp; Para la primera parte primero calculemos los PIB nominales y reales y la inflacion según el PIB, para eso lo expresaremos en la siguinte tabla:</p>
-
+<div>
 
 
 
@@ -2150,6 +2203,7 @@ c) Para el mismo caso, ¿Cuánto debería valer “a” para que su elasticidad 
 
 
 
+</div>
 <p>&nbsp; Para la segunda parte tenemos que calcular la inflación acumulada en 4 años:</p>
 <p><span class="math display">\[
 \frac{1.302-1}{1}=30,2\%
@@ -2190,7 +2244,7 @@ x=303875
 <section id="section-35" class="level3" data-number="7.6.3">
 <h3 data-number="7.6.3" class="anchored" data-anchor-id="section-35"><span class="header-section-number">7.6.3</span> :</h3>
 <p>&nbsp; En una economía, sólo se producen refrigeradores y microondas. En la cuál se produjo lo siguiente en los años 2016, 2017 y 2018:\</p>
-
+<div>
 
 
 
@@ -2255,6 +2309,7 @@ x=303875
 
 
 
+</div>
 <p>&nbsp; <strong>RESPUESTAS:</strong></p>
 <ol type="1">
 <li>Calcular el PIB nominal para los años 2016, 2017, 2018.</li>
@@ -2545,10 +2600,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -2558,8 +2612,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -2572,6 +2635,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -2615,6 +2797,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -2640,6 +2823,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -2701,12 +2910,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./6finan.html" class="pagination-link">
+      <a href="./6finan.html" class="pagination-link" aria-label="Introducción a las finanzas.">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Introducción a las finanzas.</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./14ejsinpauta.html" class="pagination-link">
+      <a href="./14ejsinpauta.html" class="pagination-link" aria-label="Ejercicios sin resolución:">
         <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Ejercicios sin resolución:</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -2715,4 +2924,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ingUANDES/fundeco/edit/main/7,8titulo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>
