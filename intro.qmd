@@ -2,15 +2,17 @@
 
 ## Definición y clasificación de la economía:
 
+  En este capítulo, abordaremos el tema de la escasez. Primero, tenemos que restringir el campo de lo que vamos a caracterizar como algo escaso. Para esto, nos vamos a centrar en los bienes económicos, a diferencia de los bienes libres como el aire. Un bien económico será uno que es posible valorizar de alguna forma. Entonces, la escasez tendrá que ver con que los bienes económicos o recursos son limitados; por lo tanto, la sociedad no puede satisfacer todos los deseos de sus integrantes con los recursos disponibles.
+
+  De esta forma, esto nos obliga a seleccionar qué deseos satisfacer y qué deseos dejar insatisfechos, es decir, debemos tomar decisiones acerca de la utilización de los recursos que tenemos, tanto a nivel individual como colectivo. Finalmente, se identifica un problema económico cuando aquel surge porque deben utilizarse bienes escasos para satisfacer necesidades múltiples. La economía se encuentra íntimamente relacionada con la forma en que tomamos decisiones en la vida diaria. Este campo también explora cómo las personas y sociedades administran los recursos escasos que tienen usos alternativos, con el fin de satisfacer sus necesidades y deseos.
+
   La palabra economía significa literalmente "administración del hogar",\footnote{Del griego \emph{oikos} y \emph{nomos}.} pero su definición es "el estudio del modo en que la sociedad asigna recursos escasos a necesidades múltiples". Los recursos pueden ser o no escasos, para los que lo son se le llaman recursos económicos, y para los que no recursos libres. Los libres no tienen un valor económico, por lo tanto, tampoco tienen dueños. A ambos bienes las personas les otorgan un valor.\footnote{Se puede distinguir entre valor de uso y valor de intercambio de acuerdo a David Ricardo.} En particular, los recursos escasos generan un \emph{trade-off}, por lo que surge un problema para asignar su valor.
 
-  {\color{red}La economía estudia el modo en que la sociedad gestiona sus recursos escasos, es más, el problema fundamental de la economía es la \textbf{escasez de recursos.} Si no existiera este problema, la ciencia de la economía no existiría. Esta ciencia busca entender el modo en que se interrelacionan las personas a nivel económico, es decir, en el mercado. Para que exista este último termino, tiene que haber compradores y vendedores que realicen transacciones de entre ellos, ya sea de forma física o no.}
-
-<!-- #El texto de arriba viene de clases de texto, 1.1 parte 1 linea 4. -->
-
-\color{black}
+  La economía estudia el modo en que la sociedad gestiona sus recursos escasos, es más, el problema fundamental de la economía es la \textbf{escasez de recursos.} Si no existiera este problema, la ciencia de la economía no existiría. Esta ciencia social busca entender el modo en que se interrelacionan las personas a nivel económico, es decir, en el mercado. Para que exista este último termino, tiene que haber compradores y vendedores que realicen transacciones de entre ellos, ya sea de forma física o no.
 
   Existen dos tipos de niveles de estudio de la economía, la microeconomía que estudia unidades económicas individuales y la macroeconomía que estudia variables económicas agregadas. Un sistema económico es la forma en que se asignan los recursos, existen los centralizados, es decir, los que un solo planificador asigna los recursos, los descentralizados, que la sociedad en general asigna los recursos y los mixtos, que asignan algunos bienes el estado y el otro la sociedad. La econometría es el estudio de estas cuestiones basado en técnicas estadísticas para testear postulados macroeconómicos y microeconómicos.
+
+  El análisis económico explica el comportamiento humano como una respuesta a los incentivos que surgen de la relación entre fines y medios escasos de usos alternativos. A pesar de la concepción usual que tienen las personas, la economía no trata directamente de dinero; este es sólo un medio de cambio. Aun cuando no existiese el dinero, seguirían existiendo bienes escasos, necesidades y usos alternativos.
 
 \underline{\textbf{En resumen:}}
 
@@ -113,7 +115,9 @@
 2.  ¿Cómo interactúan los individuos? (derechos de propiedad, fallas del mercado y externalidades.)
 3.  ¿Cómo funciona la economía en su conjunto? (productividad, inflación y ciclo económico)
 
-  En la siguiente tabla se explican estas proposiciones:
+  Las respuestas a estas preguntas vienen de dos grandes mecanismos que la disputa por cuál es el más adecuado ha marcado la historia, a saber, los mecanismos competitivos o de mercado y los mecanismos centralizados. Obviamente, las soluciones no son blancas o negras, y en la realidad, es una combinación de ambos, lo que se conoce como sistema mixto. Esto, esta explicado en el cuadro anterior.
+
+  En la siguiente tabla se explican de frorma breve estas proposiciones:
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -232,9 +236,29 @@
 ```
 :::
 
+&nbsp; El primer principio vemos que esta muy relacionado con el segundo, ya que, en el primero, se analiza cómo las personas interactúan y toman decisiones. La manera en que las personas toman decisiones no es trivial. Las personas enfrentan disyuntivas, pese a que sabemos que una decisión debiera contemplar un análisis de los costos y beneficios. En la práctica, algunos costos no son fácilmente identificables. Un ejemplo de cálculo de costo de oportunidad es el de ir al cine; este es el valor de otras cosas que uno podría hacer en ese tiempo y con el mismo gasto. Otro ejemplo podría ser un gobierno que decide construir un puente; el costo económico es mayor que el costo de los materiales y de la mano de obra. Pero ¿cuánto es el costo económico? Por ejemplo, costo en materiales, mano de obra, estudios de ingeniería.
+
+&nbsp; En resumen, las diferencias entre costos monetarios o pecuniarios y el costo de oportunidad, lo valor alternativo, como en este caso, sería el valor de la plaza que se deja construir o la escuela que se deja de ampliar. Como ejercicio, pueden pensar en el costo económico de venir a la universidad. Se pueden preguntar si ese costo aumenta con la edad.
+
+&nbsp; El tercer principio tiene que ver con lo que llamamos análisis marginal. Al ponderar los costos y los beneficios de una decisión, es importante tener en cuenta únicamente los beneficios y los costos que proceden de esa decisión. Las decisiones que toma una persona rara vez son blancas o negras, sino que a menudo se toman en el margen. Cuando hablamos de algo marginal, nos referimos a pequeños ajustes incrementales a los planes de acción. Un ejemplo es el de una persona que está por salir del colegio y necesita consejo para decidir si va a seguir estudiando o si, en cambio, va a ponerse a trabajar. Otro ejemplo puede ser el de quien está pensando en cometer un delito; qué beneficios y riesgos se corren. Como ejercicio, pueden pensar en el de un aumento marginal en el salario que puede conllevar ciertos costos.
+
+&nbsp; Los cambios marginales en costos o beneficios generan incentivos que afectan la toma de decisiones. Dichos cambios marginales pueden venir de reglamentaciones o acuerdos a los que uno se somete; por ejemplo, el de un impuesto a algo que la sociedad ha determinado nocivo. Probablemente, el costo adicional que genera el impuesto afecta la decisión de hacer esa acción nociva. En efecto, puede que la plata ya no nos alcance para cubrir el costo. De esta forma, hay transacciones que se hacían y se dejan de hacer en función del valor neto entre costos y beneficios que las cosas tienen.
+
+&nbsp; El solo hecho de poder intercambiar y las valoraciones subjetivas de quienes hacen que el intercambio sea una posibilidad de mejora en el bienestar de una sociedad, así la dotación diversa de habilidades en una población junto con la libertad de acción genera muchos intercambios potenciales. Quien es bueno para hacer pan puede intercambiar con quien le gusta cultivar su huerta. Esto es extrapolable a los países.
+
+&nbsp; La segunda mitad de principios la podemos separar en dos partes: los principios 6 y 7, que son los comúnmente llamados teoremas del bienestar. El primero defendiendo la labor de los mercados, el segundo corrigiendo dicha labor con algún criterio adicional. La parte que constituyen los principios 8 al 10 son bastante específicos y constatan problemáticas específicas que son principalmente macroeconómicas.
+
+
 ## Modelos y supuestos:
 
-  El análisis de un modelo económico toma en cuenta supuestos, los modelos económicos analizan:
+&nbsp; Al ser una ciencia social, los economistas tratan de abordar su materia de estudio con objetividad científica, es decir, se usa el método científico. Sin embargo, no existen laboratorios ni telescopios para observar la realidad social de forma aislada dada la complejidad del estudio del comportamiento de los agentes. La labor de los economistas es la de encontrar la manera de simplificar problemas complejos y lograr entender relaciones entre los fenómenos estudiados. Algunos supuestos para llevar a cabo ese análisis son los siguientes: la importancia de identificar la información relevante para los propósitos bajo análisis, reducir el marco de análisis al mínimo posible, como puede ser útil suponer que la economía produce sólo dos bienes o que sólo existen dos países en el mundo. Ese es el caso de la teoría económica clásica en comercio internacional, teoría del consumidor y el productor.
+&nbsp; Una vez hechas las simplificaciones por medio de supuestos, se pueden construir sencillas estructuras lógicas para estudiar e interpretar la economía. Estas simplificaciones las llamamos modelos. Los modelos son instrumentos lógicos internamente coherentes que sirven para describir el funcionamiento de las economías. La descripción de ellos se basa en el uso de las matemáticas. Una de las ventajas de la utilización de las matemáticas es que minimiza errores lógicos. La economía está formada por millones de personas que realizan diferentes actividades como comprar, vender, trabajar, contratar y producir, etcétera. A fin de entender cómo funciona la economía, debemos encontrar algún modo de simplificar un esquema o modelo que represente estas actividades en conjunto. Por ejemplo, pensar en solo dos tipos de agentes, es decir, se omite la presencia del gobierno y del comercio internacional. Suponemos además que los hogares arriendan capital y trabajo a empresas. Luego, las empresas producen bienes con los factores arrendados y los venden a los hogares. Adicionalmente, por el lado de los flujos de dinero, los hogares reciben una renta por el alquiler de sus factores productivos, lo cual representa un costo para la empresa. Sin embargo, las empresas al vender el bien reciben ingresos derivados de la venta del producto. En definitiva, una serie de identidades o condiciones de cierre se dan en este modelo.
+
+&nbsp; ¿Cuáles son los recursos de los cuales dispone una sociedad? ¿Cómo podríamos clasificarlos por su origen natural? Tenemos tierra o materias primas, tierra para agricultura o para construir viviendas y fábricas. También recursos energéticos necesarios para poner en marcha autos, calentar hogares y recursos no energéticos como cobre, acero u otros. En cuanto a los recursos ligados al tiempo, tenemos el trabajo o tiempo que utiliza una persona en generar un determinado producto o servicio. Como capital físico o medios de producción que incluye bienes durables, en la economía tenemos medios para producir otros bienes; estos son máquinas, carreteras, computadores, camiones, edificios o martillos. La frontera de posibilidades limita una región de planes de producción factible dada la tecnología, la sociedad analizada y los recursos iniciales que se requiere para producir los bienes en cuestión.
+
+
+
+  En resuemn, el análisis de un modelo económico toma en cuenta supuestos, los modelos económicos analizan:
 
 1.  Un problema y su información relevante.
 2.  deducciones lógicas con ayuda de las matemáticas.
