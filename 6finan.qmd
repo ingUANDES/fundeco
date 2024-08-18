@@ -1,31 +1,37 @@
 # Introducción a las finanzas.
+
 ## Finanzas y riesgos:
-&nbsp; La **finanza** es el área de estudio que analiza como las personas toman decisiones en asignar valor a un recurso, comprarlo y venderlo a través del tiempo, con una medida de riesgo, ya que, los bienes pueden valorizarse o desvalorizarse.
 
-&nbsp; Para eso está el **valor presente** que es la cantidad de dinero del presente que se necesita para producir determinada cantidad de dinero en el futuro.
+  La **finanza** se ocupan de la asignación de recursos a lo largo del tiempo y bajo condiciones de incertidumbre. Es el área de estudio que analiza como las personas toman decisiones en asignar valor a un recurso, comprarlo y venderlo a través del tiempo, con una medida de riesgo, ya que, los bienes pueden valorizarse o desvalorizarse.
 
-&nbsp; El **valor futuro** que es la cantidad de dinero en el futuro que se necesitara para producir la cantidad de dinero hoy.
+- \*\*Valor Presente y Futuro:\*\* El concepto de valor presente, que permite comparar el valor de una cantidad de dinero hoy con su valor en el futuro, teniendo en cuenta una tasa de interés. Se presentó la fórmula del valor futuro y su inversa, la fórmula del valor presente, que se utilizan para evaluar inversiones y proyectos.
 
-&nbsp; Y por último está el **valor compuesto** que es la acumulación de dinero a través del tiempo, más la suma del interés agregado a través del tiempo. La fórmula del dinero acumulado es así:
+- \*\*Interés Compuesto:\*\* El profesor explicó el interés compuesto, que considera la acumulación de intereses sobre intereses a lo largo del tiempo. Este concepto es fundamental en la evaluación de proyectos y la planificación financiera.
+
+  Y por último está el **valor compuesto** que es la acumulación de dinero a través del tiempo, más la suma del interés agregado a través del tiempo. La fórmula del dinero acumulado es así:
 
 $$
 VF=\left(1+i\right)VP
 $$
 
+##:  técnicas de finanzas
+
 &nbsp; Para poder enfrentar un riesgo de forma más tranquila se tiende a comprar un seguro, donde se reparten las perdidas. Los seguros enfrentan ciertas dificultades como:
 
-1) **Selección adversa:** las personas que compran este seguro generalmente tienden ser los que más arriesgan.
+- \*\*Diversificación:\*\* La diversificación permite reducir el riesgo al invertir en una variedad de activos. Este enfoque se basa en la idea de que no todos los activos tendrán un desempeño negativo simultáneamente.
 
-2) **Riesgo moral:** las personas con este seguro tienen menos incentivos a ser cuidadosas con su dinero.
+- \*\*Selección Adversa y Riesgo Moral:\*\* Existen problemas de asimetría de información, como la selección adversa y el riesgo moral. La selección adversa ocurre cuando una parte del mercado tiene más información que la otra, lo que puede llevar a la contratación de riesgos más altos. El riesgo moral se refiere a la posibilidad de que las personas cambien su comportamiento al estar aseguradas, incrementando la probabilidad de que ocurra un siniestro.
 
-&nbsp; Otra forma de poder invertir de forma menos arriesgada es la diversificación, esto es invertir en distintos bienes o servicios. Esta puede eliminar el riesgo especifico de empresas que se tiene incertidumbre, pero no elimina el riesgo del mercado.
 
-&nbsp; Hay una relación entre riesgo y rendimiento, donde si arriesgo más puedo ganar más, pero también puedo perder más.
+
+  Otra forma de poder invertir de forma menos arriesgada es la diversificación, esto es invertir en distintos bienes o servicios. Esta puede eliminar el riesgo especifico de empresas que se tiene incertidumbre, pero no elimina el riesgo del mercado.
+
+  Hay una relación entre riesgo y rendimiento, donde si arriesgo más puedo ganar más, pero también puedo perder más.
 
 ## Valorización de las empresas:
-&nbsp; Para valorizar una empresa se le pide a un estudio de **análisis fundamental** que le de valor a su empresa y sus **acciones**, este último es una parte de la empresa, por lo que, si existen 100 acciones de una empresa, la persona que tenga una acción es dueña del $1\%$ de la empresa.
 
-&nbsp; El análisis que hace el estudio de análisis fundamental se llama portafolio de acciones, donde el sueño de la empresa puede aceptar su valor, hacer por sí solo el análisis o comprar un fondo de inversiones con un administrador donde el administrador lo analice y tome las decisiones.
+  Para valorizar una empresa se le pide a un estudio de **análisis fundamental** que le de valor a su empresa y sus **acciones**, este último es una parte de la empresa, por lo que, si existen 100 acciones de una empresa, la persona que tenga una acción es dueña del $1\%$ de la empresa.
 
-&nbsp; En un principio los valores de la oferta y demanda determinan el valor de estas acciones, pero a veces la gente puede creer que vale más haciendo que suban de precio creando una **burbuja de especulación** cuando revientan es cuando nadie más compra, al suceder eso se desvaloriza su valor.
+  El análisis que hace el estudio de análisis fundamental se llama portafolio de acciones, donde el sueño de la empresa puede aceptar su valor, hacer por sí solo el análisis o comprar un fondo de inversiones con un administrador donde el administrador lo analice y tome las decisiones.
 
+  En un principio los valores de la oferta y demanda determinan el valor de estas acciones, pero a veces la gente puede creer que vale más haciendo que suban de precio creando una **burbuja de especulación** cuando revientan es cuando nadie más compra, al suceder eso se desvaloriza su valor.
