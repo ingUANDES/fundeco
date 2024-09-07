@@ -1,12 +1,12 @@
 ## Sobre capítulo II:
 
-### :
+### Análisis de la curva de oferta en el mercado del trigo:
 
   Sean Qo y Qd las ecuaciones de oferta y demanda de un bien X, respectivamente. $$Q_o = 50P-300$$ $$Q_d=150-10P$$   Calcule el precio y cantidad de equilibrio.
 
   **RESPUESTA:**   Para obtener el equilibrio de mercado del bien X, es necesario entender que en el equilibrio $Q_o = Q_d=Q_{equilibrio}$ y $P_o = P_d=P_{equilibrio}$. Entonces: $$Q_o = 50P-300$$ $$Q_d=150-10P$$ $$\Rightarrow 150 -10P=50P-300$$ $$ \leftrightarrow 450=60P$$ $$ \leftrightarrow 7,5=P_{equilibrio}$$ $$\Rightarrow Q_o(P_{equilibrio})=Q_d(P_{equilibrio})=150 -10(7,5)=75$$
 
-### :
+### Cambios en la demanda de smartphones ante una variación de precios:
 
 a)  Calcule el precio oferido ($P$) de un bien para una producción de 7 unidades ($b=7$). Usted sabe que si no se producen unidades el precio oferido es de \$1000. Adicionalmente, usted sabe que la función de oferta es lineal de la forma: $$P(Q)=a+250Q$$
 
@@ -33,8 +33,7 @@ c)
 
 $$7820=a+17\cdot235$$ $$7820=a+3995$$ $$a=3825$$   El precio cuando no hay producción es igual a 3825
 
-
-### :
+### Determinación del equilibrio de mercado en la industria del acero:
 
 a)  Defina el concepto de cantidad demandada y Ley de Demanda.
 

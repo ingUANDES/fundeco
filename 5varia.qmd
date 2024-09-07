@@ -1,6 +1,6 @@
 # Variables macroeconómicas.
 
-&nbsp; En valores macroeconómicos el crecimiento se mide a través del PIB per cápita, con este indicador se utilizan gráficos logarítmicos para analizar las tasas de crecimiento, donde la pendiente de estos gráficos, ya que representan las tasas de crecimiento en distintos periodos. 
+  En valores macroeconómicos el crecimiento se mide a través del PIB per cápita, con este indicador se utilizan gráficos logarítmicos para analizar las tasas de crecimiento, donde la pendiente de estos gráficos, ya que representan las tasas de crecimiento en distintos periodos.
 
 ## Producto interno bruto:
 
@@ -52,19 +52,19 @@
 
     <table>
 <tr>
-    <th>PIB de corrientes o nominal:</th>
-    <th>PIB a precios constantes o real:</th>
-    <th>Deflactor del PIB:</th>
+<th>PIB de corrientes o nominal:</th>
+<th>PIB a precios constantes o real:</th>
+<th>Deflactor del PIB:</th>
 </tr>
 <tr>
-    <td>Mide la producción total de cada bien \(q_{i,t}\) por sus precios \(p_{i,t}\).</td>
-    <td>Mide el cambio de la producción de un bien \(q_{i,0}\) por su precio con respecto a un año base \(q_{i,0}\).</td>
-    <td>Calcula el nivel de precios con el PIB nominal partido el real.</td>
+<td>Mide la producción total de cada bien \(q_{i,t}\) por sus precios \(p_{i,t}\).</td>
+<td>Mide el cambio de la producción de un bien \(q_{i,0}\) por su precio con respecto a un año base \(q_{i,0}\).</td>
+<td>Calcula el nivel de precios con el PIB nominal partido el real.</td>
 </tr>
 <tr>
-    <td>\(Y=\sum{q_{i,t}p_{i,t}}\)</td>
-    <td>\(y=\sum{q_{i,0}p_{i,0}}\)</td>
-    <td>\(Def \, PIB =\frac{PIB\ nominal}{PIB\ real}\)</td>
+<td>\(Y=\sum{q_{i,t}p_{i,t}}\)</td>
+<td>\(y=\sum{q_{i,0}p_{i,0}}\)</td>
+<td>\(Def \, PIB =\frac{PIB\ nominal}{PIB\ real}\)</td>
 </tr>
 </table>
 
@@ -128,16 +128,16 @@
 
     <table>
 <tr>
-    <th>PIB real</th>
-    <th>PIB nominal</th>
+<th>PIB real</th>
+<th>PIB nominal</th>
 </tr>
 <tr>
-    <td>Considera cambio de precios y cantidades a través del tiempo \(t\).</td>
-    <td>Solo considera los cambios en cantidades a través del tiempo \(t\).</td>
+<td>Considera cambio de precios y cantidades a través del tiempo \(t\).</td>
+<td>Solo considera los cambios en cantidades a través del tiempo \(t\).</td>
 </tr>
 <tr>
-    <td>\(\Delta\%{PIB}_t=\frac{{PIB}_t-{PIB}_{t-1}}{{PIB}_{t-1}}\)</td>
-    <td>\(\textrm{inflación}_t=\frac{Deflactor_t-Deflactor_{t-1}}{Deflactor_{t-1}}\)</td>
+<td>\(\Delta\%{PIB}_t=\frac{{PIB}_t-{PIB}_{t-1}}{{PIB}_{t-1}}\)</td>
+<td>\(\textrm{inflación}_t=\frac{Deflactor_t-Deflactor_{t-1}}{Deflactor_{t-1}}\)</td>
 </tr>
 </table>
 
@@ -167,7 +167,54 @@ $$
 
 ## Desempleo:
 
-```{mermaid}
+::: {.content-visible when-format="pdf"}
+```{=tex}
+
+\begin{tikzpicture}
+
+% Nodes
+\node (A) at (0, 0) {Población total};
+\node (B) at (-2, -2) {Población en edad de trabajar};
+\node (E) at (6, -2) {Población sin edad de trabajar};
+\node (F) at (-4, -4) {Población inactiva};
+\node (C) at (0, -4) {Fuerza laboral};
+\node (G) at (-2, -6) {Ocupados};
+\node (D) at (2, -6) {Desocupados};
+\node (H) at (0, -8) {Cesantes};
+\node (I) at (4, -8) {Aspirantes};
+
+% Arrows
+\draw (A) -- (B);
+\draw (A) -- (E);
+\draw (B) -- (F);
+\draw (B) -- (C);
+\draw (C) -- (G);
+\draw (C) -- (D);
+\draw (D) -- (H);
+\draw (D) -- (I);
+
+
+\end{tikzpicture}
+
+```
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama de Población</title>
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+
+<div class="mermaid">
 graph TD
   A[Población total] --> B[Población en edad de trabajar]
   A --> E[Población sin edad de trabajar]
@@ -177,8 +224,12 @@ graph TD
   C --> D[Desocupados]
   D --> H[Cesantes]
   D --> I[Aspirantes]
+</div>
 
+</body>
+</html>
 ```
+:::
 
   Existen dos tipos de desempleo: - **Friccional:** la persona busca un trabajo que se adapte a sus gustos y necesidades. - **Estructural:** por pocos empleos disponibles es imposible darle empleo a todos los que necesiten uno.
 
@@ -186,12 +237,11 @@ graph TD
 
 ## Otros factores de la producción:
 
--  **Modelos de Crecimiento:** Dentro de los modelos, existe el modelo de crecimiento de Solow, que enfatiza la importancia del capital y la inversión en la acumulación de capital a largo plazo. El modelo considera cómo la tasa de ahorro, el crecimiento poblacional y el progreso tecnológico afectan la acumulación de capital y, por ende, el crecimiento económico.
+-   **Modelos de Crecimiento:** Dentro de los modelos, existe el modelo de crecimiento de Solow, que enfatiza la importancia del capital y la inversión en la acumulación de capital a largo plazo. El modelo considera cómo la tasa de ahorro, el crecimiento poblacional y el progreso tecnológico afectan la acumulación de capital y, por ende, el crecimiento económico.
 
--  **Función de Producción:** La función de producción, que muestra cómo los factores productivos (capital, trabajo y tecnología) contribuyen al PIB. La producción per cápita puede descomponerse en términos de capital per cápita y la población.
+-   **Función de Producción:** La función de producción, que muestra cómo los factores productivos (capital, trabajo y tecnología) contribuyen al PIB. La producción per cápita puede descomponerse en términos de capital per cápita y la población.
 
--  **Convergencia Económica:** La hipótesis de convergencia, sugiere que los países con niveles de PIB per cápita más bajos tienden a crecer más rápido que los países con niveles más altos, lo que lleva a una reducción de las diferencias en el ingreso per cápita a largo plazo. Sin embargo, se mencionó que esta hipótesis es objeto de debate y no siempre se observa en la práctica, especialmente cuando se excluyen ciertos países de la muestra.
-
+-   **Convergencia Económica:** La hipótesis de convergencia, sugiere que los países con niveles de PIB per cápita más bajos tienden a crecer más rápido que los países con niveles más altos, lo que lleva a una reducción de las diferencias en el ingreso per cápita a largo plazo. Sin embargo, se mencionó que esta hipótesis es objeto de debate y no siempre se observa en la práctica, especialmente cuando se excluyen ciertos países de la muestra.
 
   Para que una sociedad tenga una alta calidad de vida se necesitan producir bienes y servicios, dicho de otra forma, se necesita **productividad**. Y para tener productividad se necesita:
 
@@ -239,20 +289,20 @@ graph TD
 
     <table>
 <tr>
-    <th>Capital humano:</th>
-    <td>Capacidades de los trabajadores en hacer un trabajo gracias a su educación y especialización.</td>
+<th>Capital humano:</th>
+<td>Capacidades de los trabajadores en hacer un trabajo gracias a su educación y especialización.</td>
 </tr>
 <tr>
-    <th>Capital físico:</th>
-    <td>Conjunto de equipos y estructuras que se necesitan para producir.</td>
+<th>Capital físico:</th>
+<td>Conjunto de equipos y estructuras que se necesitan para producir.</td>
 </tr>
 <tr>
-    <th>Recursos naturales:</th>
-    <td>Los da la naturaleza, son cosas como minerales, ríos, tierra.</td>
+<th>Recursos naturales:</th>
+<td>Los da la naturaleza, son cosas como minerales, ríos, tierra.</td>
 </tr>
 <tr>
-    <th>Conocimiento tecnológico:</th>
-    <td>Comprensión de la mejor forma en que la sociedad puede producir un bien.</td>
+<th>Conocimiento tecnológico:</th>
+<td>Comprensión de la mejor forma en que la sociedad puede producir un bien.</td>
 </tr>
 </table>
 

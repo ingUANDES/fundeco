@@ -1,6 +1,6 @@
 ## Sobre capítulo IV:
 
-### :
+### Análisis del mercado nacional de novelas y el impacto del comercio internacional:
 
   Sea el mercado nacional de novelas formado por: los lectores locales $Q_D = 700 - 5P$ y los escritores locales $Q_S = 25P - 2000$, donde $P$ es el precio por libro y $Q$ es la cantidad de libros. Además, el mercado está abierto al comercio internacional y las novelas de autores extranjeros tienen un precio de \$70.   Con esta información responda a las siguientes preguntas:
 
@@ -58,7 +58,7 @@ c)
 
 d)    El arancel debe ser tal que nadie quiera importar, es decir $Q_D = Q_S: 700 - 5P = 25P - 2000$, de donde P = \$90 y arancel= \$20. Si nadie importa, la recaudación es nula. El excedente total es ahora $ET = 250(60)\div2 = 7,500$ y la pérdida de eficiencia es $PE = 12,250 - 7,500 = 4,750$.
 
-### :
+### Elasticidad precio-demanda y arancel en el mercado de bienes:
 
   Una empresa tiene costos totales dados por $CT = {Q}^2 + 5Q + 36$, sabiendo esto calcule lo siguiente:
 
@@ -84,7 +84,7 @@ e)  Para los costos variables medios obtenemos $CVMe = \frac{2{Q}^2 + 8Q}{Q} = 2
 
 f)  Para los costos totales medios obtenemos $CTMe = \frac{2{Q}^2 + 8Q + 200}{Q} = 2Q + 8 + \frac{200}{Q}$
 
-### :
+### Determinación de la elasticidad de la demanda en un mercado regulado:
 
   Imagine una empresa que vende parrillas. En su primer año vende 752 unidades, a un precio de \$279 cada una. Para conocer su elasticidad, el segundo año de operación venden las mismas parrillas a \$300 cada una, logrando vender 673 en total. ¿Cuál es su elasticidad de la demanda? ¿Qué puede decir sobre este bien?
 
@@ -92,7 +92,7 @@ f)  Para los costos totales medios obtenemos $CTMe = \frac{2{Q}^2 + 8Q + 200}{Q}
 
   Para calcular la elasticidad de la demanda, es necesario saber la variación de la cantidad demandada respecto al precio. P y Q se reemplazan por los precios y cantidades promedio de los dos años. $\epsilon = \frac{\vartriangle Q}{\vartriangle P} \cdot \frac{P}{Q}$. Reemplazando quedaría de la siguiente forma: \\ $$\epsilon = \frac{752 - 673}{300 - 279} \cdot \frac{289,5}{712,5} = \frac{79}{21} \cdot \frac{289,5}{712,5} = 1,5$$   Al obtener $\epsilon > 1$, sabemos que estamos frente a una demanda elástica, y como también $\epsilon > 0$, sabemos que es un bien normal.
 
-### :
+### Análisis del impacto de subsidios en un mercado laboral:
 
 Sean $Q_s = \frac{100.000}{3} P$ y $Q_d = 300.000 - \frac{100.000}{3} P$, las respectivas curvas de oferta y demanda de un bien. Considere que el gobierno quiere reducir su consumo en $\frac{1}{3}$. Para eso decide gravar la producción con un impuesto por unidad vendida.
 
@@ -114,7 +114,7 @@ a)
 
 b)    Si querían fijación de precios en lugar de impuestos debían haber fijado el precio mínimo del bien en 6, lo que no hubiera tenido mucho sentido ya que el equilibrio está por debajo de ese precio.
 
-### :
+### Problema de externalidades positivas y su efecto en la producción:
 
   Un grupo de pescadores de la X región se encuentra muy contento durantes estos últimos días. En los periódicos ha aparecido la noticia que el compuesto denominado "f" provoca un aceleramiento en el crecimiento de la anchoveta, un pez característico de la región. La buena noticia es que dicho compuesto es eliminado al mar por la compañía salmonera "Buen Salmón S.A." al momento de realizar sus procesos de elaboración de salmón enlatado, lo cual ha traído como consecuencia un aumento del número de anchovetas pescadas durante las últimas semanas. Se ha realizado un estudio el cual ha estimado que el impacto positivo de la producción de salmones enlatados sobre la pesca de anchovetas está dada por $f(q) = \frac{bq^2}{4}$ donde "q" es la cantidad de latas producidas por "Buen Salmón SA". La función de costos de la firma salmonera es $C(q) = a + bq^2$ y la demanda de mercado es $P(q) = a - cq$ Suponga competencia perfecta.
 

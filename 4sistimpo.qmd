@@ -18,7 +18,7 @@
 
 ## Fallas del mercado:
 
-&nbsp; Las fallas de mercado como situaciones en las cuales los mercados no logran alcanzar una solución eficiente. Estas fallas pueden surgir por diversas razones, como la existencia de externalidades, bienes públicos, información asimétrica, y monopolios naturales. Cada una de estas fallas presenta desafíos únicos que pueden justificar la intervención del gobierno.
+  Las fallas de mercado como situaciones en las cuales los mercados no logran alcanzar una solución eficiente. Estas fallas pueden surgir por diversas razones, como la existencia de externalidades, bienes públicos, información asimétrica, y monopolios naturales. Cada una de estas fallas presenta desafíos únicos que pueden justificar la intervención del gobierno.
 
   La economía de bienestar tiene una fuga al no tomar dos supuestos importantes:
 
@@ -26,11 +26,11 @@
 
 2.  **externalidades:** Las decisiones de los compradores y vendedores a veces afectan a algún tercero y no paga o compensa el daño a este último, un ejemplo típico es la contaminación.
 
-&nbsp; Una externalidad ocurre cuando la acción de una persona afecta el bienestar de otra sin que exista una compensación por dicho efecto. Las externalidades pueden ser positivas o negativas.
+  Una externalidad ocurre cuando la acción de una persona afecta el bienestar de otra sin que exista una compensación por dicho efecto. Las externalidades pueden ser positivas o negativas.
 
-- **Externalidades Negativas:** Un ejemplo clásico es la contaminación. La producción de bienes en una fábrica puede liberar contaminantes al aire o al agua, afectando negativamente la salud de las personas y el medio ambiente. Este costo no se refleja en el precio del producto, lo que lleva a una sobreproducción del bien y una asignación ineficiente de recursos.
+-   **Externalidades Negativas:** Un ejemplo clásico es la contaminación. La producción de bienes en una fábrica puede liberar contaminantes al aire o al agua, afectando negativamente la salud de las personas y el medio ambiente. Este costo no se refleja en el precio del producto, lo que lleva a una sobreproducción del bien y una asignación ineficiente de recursos.
 
-- **Externalidades Positivas:** La educación es un ejemplo de externalidad positiva. Cuando una persona recibe educación, no solo se beneficia a sí misma, sino que también beneficia a la sociedad en general al ser más productiva, innovadora y cívicamente comprometida. Sin embargo, el beneficio social de la educación suele ser mayor que el beneficio privado percibido, lo que puede llevar a una subinversión en educación.
+-   **Externalidades Positivas:** La educación es un ejemplo de externalidad positiva. Cuando una persona recibe educación, no solo se beneficia a sí misma, sino que también beneficia a la sociedad en general al ser más productiva, innovadora y cívicamente comprometida. Sin embargo, el beneficio social de la educación suele ser mayor que el beneficio privado percibido, lo que puede llevar a una subinversión en educación.
 
   [Por ejemplo:]{.underline}
 
@@ -217,26 +217,25 @@
 
 ### Métodos de Intervención:
 
-- **Impuestos y Subsidios:** Los impuestos pueden utilizarse para internalizar las externalidades negativas. Por ejemplo, un impuesto sobre el carbono puede reducir las emisiones de CO2 al hacer que las empresas paguen por los costos sociales de la contaminación. Los subsidios, por otro lado, pueden fomentar actividades con externalidades positivas, como la educación o la investigación y desarrollo.
+-   **Impuestos y Subsidios:** Los impuestos pueden utilizarse para internalizar las externalidades negativas. Por ejemplo, un impuesto sobre el carbono puede reducir las emisiones de CO2 al hacer que las empresas paguen por los costos sociales de la contaminación. Los subsidios, por otro lado, pueden fomentar actividades con externalidades positivas, como la educación o la investigación y desarrollo.
 
-- **Regulación Directa:** Esto incluye la imposición de normas y estándares, como límites a las emisiones contaminantes, que obligan a las empresas a adoptar tecnologías más limpias o procesos más eficientes.
+-   **Regulación Directa:** Esto incluye la imposición de normas y estándares, como límites a las emisiones contaminantes, que obligan a las empresas a adoptar tecnologías más limpias o procesos más eficientes.
 
-- **Mercados de Derechos:** Un ejemplo innovador discutido fue la creación de mercados de derechos de emisión. En estos mercados, el gobierno establece un límite a la cantidad total de emisiones permitidas y distribuye derechos de emisión que las empresas pueden comprar y vender. Este enfoque combina la eficiencia de mercado con la regulación para reducir las emisiones al costo más bajo posible.
+-   **Mercados de Derechos:** Un ejemplo innovador discutido fue la creación de mercados de derechos de emisión. En estos mercados, el gobierno establece un límite a la cantidad total de emisiones permitidas y distribuye derechos de emisión que las empresas pueden comprar y vender. Este enfoque combina la eficiencia de mercado con la regulación para reducir las emisiones al costo más bajo posible.
 
 ### Análisis Cuantitativo de Externalidades:
 
-- **Costo Social vs. Costo Privado:** En presencia de una externalidad negativa, el costo social de producir un bien es mayor que el costo privado. Esto se representa gráficamente como un desplazamiento de la curva de oferta hacia arriba, reflejando el costo adicional de la externalidad. La intervención adecuada puede mover el mercado hacia una cantidad de equilibrio más eficiente desde el punto de vista social.
+-   **Costo Social vs. Costo Privado:** En presencia de una externalidad negativa, el costo social de producir un bien es mayor que el costo privado. Esto se representa gráficamente como un desplazamiento de la curva de oferta hacia arriba, reflejando el costo adicional de la externalidad. La intervención adecuada puede mover el mercado hacia una cantidad de equilibrio más eficiente desde el punto de vista social.
 
-- **Beneficio Social vs. Beneficio Privado:** En el caso de una externalidad positiva, el beneficio social es mayor que el beneficio privado. Esto se representa como un desplazamiento de la curva de demanda hacia la derecha, indicando que el valor social del bien es superior al valor privado percibido. Los subsidios o incentivos pueden aumentar la demanda hasta el nivel socialmente óptimo.
+-   **Beneficio Social vs. Beneficio Privado:** En el caso de una externalidad positiva, el beneficio social es mayor que el beneficio privado. Esto se representa como un desplazamiento de la curva de demanda hacia la derecha, indicando que el valor social del bien es superior al valor privado percibido. Los subsidios o incentivos pueden aumentar la demanda hasta el nivel socialmente óptimo.
 
 ### Aplicaciones Prácticas:
 
-- **Contaminación Ambiental:** La regulación de las emisiones industriales mediante impuestos sobre el carbono o mercados de derechos de emisión puede reducir la contaminación y mejorar el bienestar social.
+-   **Contaminación Ambiental:** La regulación de las emisiones industriales mediante impuestos sobre el carbono o mercados de derechos de emisión puede reducir la contaminación y mejorar el bienestar social.
 
-- **Educación:** Subsidios a la educación pueden aumentar la inversión en capital humano, lo que tiene beneficios de largo plazo para la economía y la sociedad.
+-   **Educación:** Subsidios a la educación pueden aumentar la inversión en capital humano, lo que tiene beneficios de largo plazo para la economía y la sociedad.
 
-- **Salud Pública:** Impuestos sobre productos nocivos, como el tabaco y el alcohol, pueden reducir su consumo y mitigar los costos sociales asociados a problemas de salud.
-
+-   **Salud Pública:** Impuestos sobre productos nocivos, como el tabaco y el alcohol, pueden reducir su consumo y mitigar los costos sociales asociados a problemas de salud.
 
 ## Curva de Laffer:
 
@@ -277,10 +276,9 @@ $$
 
 ## Demanda y oferta de trabajo:
 
-&nbsp; La demanda de trabajo por parte de las empresas se deriva de su necesidad de maximizar beneficios. En términos económicos, esto implica contratar trabajadores hasta el punto en que el valor del producto marginal del trabajo iguala al salario.
+  La demanda de trabajo por parte de las empresas se deriva de su necesidad de maximizar beneficios. En términos económicos, esto implica contratar trabajadores hasta el punto en que el valor del producto marginal del trabajo iguala al salario.
 
-&nbsp; La oferta y la demanda de trabajo interactúan para determinar los salarios de equilibrio. Es importante los factores como la productividad marginal para que las empresas deciden contratar trabajadores adicionales basándose en el valor que estos aportan al proceso productivo.
-
+  La oferta y la demanda de trabajo interactúan para determinar los salarios de equilibrio. Es importante los factores como la productividad marginal para que las empresas deciden contratar trabajadores adicionales basándose en el valor que estos aportan al proceso productivo.
 
   Además de la oferta y demanda en función del precio, existen por insumos y servicios, donde la mayoría de los bienes producidos son insumos para otros bienes, como son los chips para los autos, computadores, sistemas de riego, etc.
 
@@ -298,16 +296,15 @@ $$
 
 ## Determinantes de los salarios de equilibrio:
 
+  **Preferencias, Oportunidades y Oferta de Trabajo:** Las preferencias individuales y las oportunidades laborales afectan la oferta de trabajo. Las personas deciden cuánto trabajar basándose en una disyuntiva entre el trabajo y el ocio, equilibrando su bienestar personal con las retribuciones económicas. Las preferencias personales pueden generar una **Elasticidad de la Oferta**.
 
-&nbsp; **Preferencias, Oportunidades y Oferta de Trabajo:** Las preferencias individuales y las oportunidades laborales afectan la oferta de trabajo. Las personas deciden cuánto trabajar basándose en una disyuntiva entre el trabajo y el ocio, equilibrando su bienestar personal con las retribuciones económicas. Las preferencias personales pueden generar una **Elasticidad de la Oferta**. 
+  **Diferenciales Salariales:** Un tema importante es el análisis de los diferenciales salariales. Los salarios pueden variar debido a múltiples factores, incluyendo las condiciones de trabajo, los riesgos asociados, las preferencias personales y la educación. Los diferenciales compensatorios, que ajustan los salarios para reflejar diferencias en las características y condiciones laborales.
 
-&nbsp; **Diferenciales Salariales:** Un tema importante es el análisis de los diferenciales salariales. Los salarios pueden variar debido a múltiples factores, incluyendo las condiciones de trabajo, los riesgos asociados, las preferencias personales y la educación. Los diferenciales compensatorios, que ajustan los salarios para reflejar diferencias en las características y condiciones laborales.
+-  **Capital Humano:** El capital humano, definido por la educación y las habilidades, afecta los salarios. Las personas con mayor nivel de educación y habilidades especializadas tienden a recibir salarios más altos debido a su mayor productividad y capacidad de generar valor.
 
--&nbsp; **Capital Humano:** El capital humano, definido por la educación y las habilidades, afecta los salarios. Las personas con mayor nivel de educación y habilidades especializadas tienden a recibir salarios más altos debido a su mayor productividad y capacidad de generar valor.
+  **Educación como señal:** Hay un concepto de asimetrías de información y teorías de señalización en el mercado laboral. Este, esta relacionado con que los diplomas y títulos académicos sirven como señales para los empleadores sobre las capacidades y el esfuerzo de los trabajadores, ayudando a reducir la incertidumbre en la contratación.
 
-&nbsp; **Educación como señal:** Hay un concepto de asimetrías de información y teorías de señalización en el mercado laboral. Este, esta relacionado con que los diplomas y títulos académicos sirven como señales para los empleadores sobre las capacidades y el esfuerzo de los trabajadores, ayudando a reducir la incertidumbre en la contratación.
-
-&nbsp; **Discriminación y Desigualdad:** Hay una cuestión social sobre la discriminación y la desigualdad en el mercado laboral. Los factores como el género, la raza y la ascendencia pueden influir en los salarios y las oportunidades laborales.
+  **Discriminación y Desigualdad:** Hay una cuestión social sobre la discriminación y la desigualdad en el mercado laboral. Los factores como el género, la raza y la ascendencia pueden influir en los salarios y las oportunidades laborales.
 
   Hay cuatro determinantes que definirán el salario de una persona:
 
@@ -589,19 +586,15 @@ $$
 
   Para $\bar{K}=5$ la producción marginal del trabajo será: $$
 P(L)3L^2+20L
-$$
-&nbsp; **Ejemplo Práctico: Demanda de Trabajo:**
+$$   **Ejemplo Práctico: Demanda de Trabajo:**
 
-&nbsp; Cada huerto contrata trabajadores para maximizar su producción, y la demanda de trabajo se determina en función de la productividad marginal del trabajo. Al analizar la función de producción y los costos asociados, se deriva la demanda de trabajo y se calculan los salarios de equilibrio en diferentes escenarios, incluyendo cambios en el precio de los productos.
-
-
+  Cada huerto contrata trabajadores para maximizar su producción, y la demanda de trabajo se determina en función de la productividad marginal del trabajo. Al analizar la función de producción y los costos asociados, se deriva la demanda de trabajo y se calculan los salarios de equilibrio en diferentes escenarios, incluyendo cambios en el precio de los productos.
 
 ## Índice de pobreza:
 
-&nbsp; La percepción de desigualdad no siempre está directamente relacionada con el bienestar monetario. Existen otros factores, como las oportunidades y las capacidades individuales, influyen en la percepción y realidad de la desigualdad. Según el trabajo de Amartya Sen y Joseph Stiglitz, existe desigualdad al evaluar el bienestar a través de múltiples dimensiones, como la salud, la educación y las condiciones de vida. Este enfoque reconoce que la pobreza no se puede entender completamente solo a través de los ingresos, sino que debe considerar una variedad de factores que afectan la calidad de vida de las personas.
+  La percepción de desigualdad no siempre está directamente relacionada con el bienestar monetario. Existen otros factores, como las oportunidades y las capacidades individuales, influyen en la percepción y realidad de la desigualdad. Según el trabajo de Amartya Sen y Joseph Stiglitz, existe desigualdad al evaluar el bienestar a través de múltiples dimensiones, como la salud, la educación y las condiciones de vida. Este enfoque reconoce que la pobreza no se puede entender completamente solo a través de los ingresos, sino que debe considerar una variedad de factores que afectan la calidad de vida de las personas.
 
-&nbsp;  Existen, indicadores clave como el Ratio Palma, que compara los ingresos del decil más rico con la suma de los ingresos de los cuatro deciles más pobres. Este índice, propuesto por el economista chileno Gabriel Palma, es una herramienta útil para analizar la desigualdad de manera más precisa. Pero para efectos prácticos y conceso se usa el coeficiente de Gini, una medida estándar de desigualdad que representa la desviación de la distribución de ingresos respecto a una distribución perfectamente equitativa. Este coeficiente se calcula como la relación entre el área debajo de la curva de Lorenz y el área total debajo de la línea de igualdad perfecta. Un coeficiente de Gini más alto indica una mayor desigualdad.
-
+  Existen, indicadores clave como el Ratio Palma, que compara los ingresos del decil más rico con la suma de los ingresos de los cuatro deciles más pobres. Este índice, propuesto por el economista chileno Gabriel Palma, es una herramienta útil para analizar la desigualdad de manera más precisa. Pero para efectos prácticos y conceso se usa el coeficiente de Gini, una medida estándar de desigualdad que representa la desviación de la distribución de ingresos respecto a una distribución perfectamente equitativa. Este coeficiente se calcula como la relación entre el área debajo de la curva de Lorenz y el área total debajo de la línea de igualdad perfecta. Un coeficiente de Gini más alto indica una mayor desigualdad.
 
   El índice de pobreza es el porcentaje de la población que su sueldo familiar está por debajo de la **línea de pobreza**, y esta última es el nivel establecido por el gobierno que distingue desde que punto una familia tiene un sueldo bajo o normal.
 

@@ -1,6 +1,6 @@
 ## Sobre el capítulo III:
 
-### :
+### Evaluación de los efectos de un impuesto sobre el mercado de cigarrillos:
 
   Argentina por razones populistas, antes de las elecciones decidido fijar los precios de algunos bienes. A base de esto en un pueblo imaginario tiene el mercado del queso como funciones de oferta y demanda respectivamente $P(Q)=1.5+0.5Q$ y $Q(P)=5-P$. La fijación al precio máximo de este bien es de \$2. ¿Qué fenómeno ocurrirá debido a esta intervención? Haga un gráfico de la situación.
 
@@ -78,7 +78,7 @@
 
   Donde el área negra es la escasez.
 
-### :
+### Análisis del comercio internacional de automóviles:
 
 El mercado local de diesel está representado por:
 
@@ -110,7 +110,7 @@ d)
 
   Argumentos para incrementar el impuesto: - disminuir el efecto de la externalidad negativa de la contaminación que genera su uso, (ii) progresividad del impuesto considerando que las familias de mayores ingresos son las tienen automóvil y hacen uso de este combustible y (iii) aumentar los ingresos del fisco considerando la necesidad de mayor gasto público por la pandemia. Argumentos para reducir el impuesto de forma temporal: - ayudar a las familias que han sufrido reducciones en el ingreso por la actual coyuntura de mayor desempleo, empresas con menores ingresos por medidas de confinamiento, etc. - incentivar la industria de transporte y el traslado en menores costos a otras empresas.
 
-### :
+### Consecuencias de la intervención gubernamental en el mercado del arroz:
 
 Tenemos un mercado donde su función oferta y demanda iniciales son respectivamente: $$P(Q)=5+\frac{3}{2}Q, \quad \quad P(Q)=13-\frac{1}{2}Q$$ Luego sus funciones de oferta y demanda cambian respectivamente: $$P(Q)=2+Q, \quad \quad P(Q)=15-aQ$$ a) Calcule el punto de equilibrio inicial.\
 b) ¿Cuánto tendría que valer "a", para que este mercado se absolutamente inelástico?\
@@ -136,4 +136,3 @@ c)    Para que su elasticidad sea unitaria, esta tiene que ser igual a 1, enton
       Caso II: $$1 =-\frac{4a-9}{9a-4}$$ $$9a-4 =-4a+9$$ $$13a =13$$ $$a =1$$\
       Se cumple.\
       Entonces a es igual a 1.
-

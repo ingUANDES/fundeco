@@ -1,6 +1,6 @@
 ## Sobre capítulo V:
 
-### :
+### Análisis de la productividad y precios en la economía de celulares y computadores:
 
   En una economía, sólo se producen celulares y computadores. En la cuál se produjo lo siguiente en los años 2016, 2017 y 2018:
 
@@ -18,7 +18,7 @@ Año & Precio Computadores & \begin{tabular}[c]{@{}l@{}}Cantidad Producida\\ Com
 ```
 :::
 
-::: {.content-visible when-format="pdf"}
+::: {.content-visible when-format="html"}
 ```{=tex}
 <!DOCTYPE html>
 <html>
@@ -159,7 +159,7 @@ $$ Para el año 2018: $$
 \frac{1.63}{1.3}-1=25\%
 $$
 
-### :
+### Análisis de la función de costos de una empresa en un mercado perfectamente competitivo:
 
 Preguntas de concepto:
 
@@ -183,7 +183,7 @@ c)
 
   FALSO. EL excluye cosas importantes como los tiempos de ocio, los bienes y servicios del hogar y tampoco explica la distribución de riqueza en el país y como ese PIB per capita realmente se destribuye en un ciudadano promedio. Pero, igualmente el PIB es considerado como una buena medida del bienestar económico ya que existe una correlación fuerte entre aquellos países con PIB alto y buena salud, educación, innovación, entre otros.
 
-### :
+### Cálculo del PIB nominal y real para una economía:
 
   En un país imaginario, la canasta básica es considerada como 2 kilos de queso, 2 pares de jeans y 10 litros de bencina.
 
@@ -230,63 +230,63 @@ Costo Total &  & \multicolumn{1}{r|}{34,8} &  & \multicolumn{1}{r|}{154} &  & \m
 <body>
 
     <table>
-    <tr>
-        <th></th>
-        <th></th>
-        <th colspan="2">Año 1</th>
-        <th colspan="2">Año 2</th>
-        <th colspan="2">Año 3</th>
-    </tr>
-    <tr>
-        <th>Items Canasta</th>
-        <th>Unidades</th>
-        <th>$ unidad</th>
-        <th>$ Total</th>
-        <th>$ unidad</th>
-        <th>$ Total</th>
-        <th>$ unidad</th>
-        <th>$ total</th>
-    </tr>
-    <tr>
-        <td>Queso</td>
-        <td>2 kg</td>
-        <td>5000</td>
-        <td></td>
-        <td>5132</td>
-        <td></td>
-        <td>5500</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Jeans</td>
-        <td>2 pares</td>
-        <td>20000</td>
-        <td></td>
-        <td>25000</td>
-        <td></td>
-        <td>30000</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Bencina</td>
-        <td>10 litros</td>
-        <td>890</td>
-        <td></td>
-        <td>1100</td>
-        <td></td>
-        <td>1200</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Costo Total</td>
-        <td></td>
-        <td>34,8</td>
-        <td></td>
-        <td>154</td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
+<tr>
+    <th></th>
+    <th></th>
+    <th colspan="2">Año 1</th>
+    <th colspan="2">Año 2</th>
+    <th colspan="2">Año 3</th>
+</tr>
+<tr>
+    <th>Items Canasta</th>
+    <th>Unidades</th>
+    <th>$ unidad</th>
+    <th>$ Total</th>
+    <th>$ unidad</th>
+    <th>$ Total</th>
+    <th>$ unidad</th>
+    <th>$ total</th>
+</tr>
+<tr>
+    <td>Queso</td>
+    <td>2 kg</td>
+    <td>5000</td>
+    <td></td>
+    <td>5132</td>
+    <td></td>
+    <td>5500</td>
+    <td></td>
+</tr>
+<tr>
+    <td>Jeans</td>
+    <td>2 pares</td>
+    <td>20000</td>
+    <td></td>
+    <td>25000</td>
+    <td></td>
+    <td>30000</td>
+    <td></td>
+</tr>
+<tr>
+    <td>Bencina</td>
+    <td>10 litros</td>
+    <td>890</td>
+    <td></td>
+    <td>1100</td>
+    <td></td>
+    <td>1200</td>
+    <td></td>
+</tr>
+<tr>
+    <td>Costo Total</td>
+    <td></td>
+    <td>34,8</td>
+    <td></td>
+    <td>154</td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
 </table>
 
 </body>
@@ -344,63 +344,63 @@ Costo Total &  & \multicolumn{1}{r|}{} & 58900 & \multicolumn{1}{r|}{} & 71264 &
 <body>
 
     <table>
-    <tr>
-        <th></th>
-        <th></th>
-        <th colspan="2">Año 1</th>
-        <th colspan="2">Año 2</th>
-        <th colspan="2">Año 3</th>
-    </tr>
-    <tr>
-        <th>Items Canasta</th>
-        <th>Unidades</th>
-        <th>$ unidad</th>
-        <th>$ Total</th>
-        <th>$ unidad</th>
-        <th>$ Total</th>
-        <th>$ unidad</th>
-        <th>$ total</th>
-    </tr>
-    <tr>
-        <td>Queso</td>
-        <td>2 kg</td>
-        <td>5000</td>
-        <td>10000</td>
-        <td>5132</td>
-        <td>10264</td>
-        <td>5500</td>
-        <td>11000</td>
-    </tr>
-    <tr>
-        <td>Jeans</td>
-        <td>2 pares</td>
-        <td>20000</td>
-        <td>40000</td>
-        <td>25000</td>
-        <td>50000</td>
-        <td>30000</td>
-        <td>60000</td>
-    </tr>
-    <tr>
-        <td>Bencina</td>
-        <td>10 litros</td>
-        <td>890</td>
-        <td>8900</td>
-        <td>1100</td>
-        <td>11000</td>
-        <td>1200</td>
-        <td>12000</td>
-    </tr>
-    <tr>
-        <td>Costo Total</td>
-        <td></td>
-        <td></td>
-        <td>58900</td>
-        <td></td>
-        <td>71264</td>
-        <td></td>
-        <td>83000</td>
-    </tr>
+<tr>
+    <th></th>
+    <th></th>
+    <th colspan="2">Año 1</th>
+    <th colspan="2">Año 2</th>
+    <th colspan="2">Año 3</th>
+</tr>
+<tr>
+    <th>Items Canasta</th>
+    <th>Unidades</th>
+    <th>$ unidad</th>
+    <th>$ Total</th>
+    <th>$ unidad</th>
+    <th>$ Total</th>
+    <th>$ unidad</th>
+    <th>$ total</th>
+</tr>
+<tr>
+    <td>Queso</td>
+    <td>2 kg</td>
+    <td>5000</td>
+    <td>10000</td>
+    <td>5132</td>
+    <td>10264</td>
+    <td>5500</td>
+    <td>11000</td>
+</tr>
+<tr>
+    <td>Jeans</td>
+    <td>2 pares</td>
+    <td>20000</td>
+    <td>40000</td>
+    <td>25000</td>
+    <td>50000</td>
+    <td>30000</td>
+    <td>60000</td>
+</tr>
+<tr>
+    <td>Bencina</td>
+    <td>10 litros</td>
+    <td>890</td>
+    <td>8900</td>
+    <td>1100</td>
+    <td>11000</td>
+    <td>1200</td>
+    <td>12000</td>
+</tr>
+<tr>
+    <td>Costo Total</td>
+    <td></td>
+    <td></td>
+    <td>58900</td>
+    <td></td>
+    <td>71264</td>
+    <td></td>
+    <td>83000</td>
+</tr>
 </table>
 
 </body>
@@ -429,7 +429,7 @@ c)
 
   Año 3 $$IPC = \frac{140.90-120.99}{120.99}*100=\%16.45$$
 
-### :
+### Análisis de inflación y PIB:
 
 a)  Un país tiene solo los mercados de la siguiente tabla:
 
@@ -473,31 +473,31 @@ a)  Un país tiene solo los mercados de la siguiente tabla:
 <body>
 
     <table>
-    <tr>
-        <th>Rubro</th>
-        <th>Cantidad producida</th>
-        <th>Valor por unidad</th>
-    </tr>
-    <tr>
-        <td>Venta de autos importados</td>
-        <td>20</td>
-        <td>$120</td>
-    </tr>
-    <tr>
-        <td>Producción de harina para mercados nacionales</td>
-        <td>400</td>
-        <td>$10</td>
-    </tr>
-    <tr>
-        <td>Producción minera</td>
-        <td>1000</td>
-        <td>$80</td>
-    </tr>
-    <tr>
-        <td>Producción de harina para exportaciones</td>
-        <td>1200</td>
-        <td>$15</td>
-    </tr>
+<tr>
+    <th>Rubro</th>
+    <th>Cantidad producida</th>
+    <th>Valor por unidad</th>
+</tr>
+<tr>
+    <td>Venta de autos importados</td>
+    <td>20</td>
+    <td>$120</td>
+</tr>
+<tr>
+    <td>Producción de harina para mercados nacionales</td>
+    <td>400</td>
+    <td>$10</td>
+</tr>
+<tr>
+    <td>Producción minera</td>
+    <td>1000</td>
+    <td>$80</td>
+</tr>
+<tr>
+    <td>Producción de harina para exportaciones</td>
+    <td>1200</td>
+    <td>$15</td>
+</tr>
 </table>
 
 </body>
@@ -547,21 +547,21 @@ b)  Sin tomar en cuenta la pregunta anterior, tenemos otro país con los siguien
 <body>
 
     <table>
-    <tr>
-        <th>Año</th>
-        <th>PIB nominal</th>
-        <th>PIB real</th>
-    </tr>
-    <tr>
-        <td>Actual</td>
-        <td>$30</td>
-        <td>$31</td>
-    </tr>
-    <tr>
-        <td>Base</td>
-        <td>$25</td>
-        <td>$30</td>
-    </tr>
+<tr>
+    <th>Año</th>
+    <th>PIB nominal</th>
+    <th>PIB real</th>
+</tr>
+<tr>
+    <td>Actual</td>
+    <td>$30</td>
+    <td>$31</td>
+</tr>
+<tr>
+    <td>Base</td>
+    <td>$25</td>
+    <td>$30</td>
+</tr>
 </table>
 
 </body>
@@ -592,7 +592,7 @@ b)
 
 $$Inflación:\frac{\frac{30}{31}-\frac{5}{6}}{\frac{5}{6}}=\frac{36}{31}-1=\frac{5}{31}=\%16.13$$
 
-### :
+### Evaluación del equilibrio en un mercado laboral con salario mínimo:
 
   Suponga un mercado con las siguientes funciones de oferta y demanda laboral: $$L_s=10+10w$$ $$L_d=100-5w$$
 
@@ -604,7 +604,7 @@ b)  Suponga la fijación de un salario igual a 10 y determine que pasará en ese
 
   Para resolver esto primero debemos encontrar el equilibrio, lo cual nos da $L = 70$ y $w = 6$.   Si reemplazamos el salario mínimo impuesto en ambas funciones, vemos que la demanda de trabajo sería $L_d=50$ y la oferta $L_s=100$. Es decir, habrían 110 personas dispuestas a trabajar y sólo 50 puestos demandados. El desempleo sería: $$L_s - L_d = 110 - 50 = 60$$
 
-### :
+### Cálculo del Índice de Precios al Consumidor (IPC) y tasa de inflación en diferentes períodos:
 
   El 2014 es el año base para el cálculo del ́Índice de Precios al Consumidor. A partir de la siguiente tabla calcule:
 
@@ -649,48 +649,48 @@ b)  Suponga la fijación de un salario igual a 10 y determine que pasará en ese
 <body>
 
     <table>
-    <tr>
-        <th></th>
-        <th>2014</th>
-        <th>2015</th>
-        <th>2016</th>
-    </tr>
-    <tr>
-        <td>Precio de celular</td>
-        <td>$800.000</td>
-        <td>$820.000</td>
-        <td>$850.000</td>
-    </tr>
-    <tr>
-        <td>Precio del tomate</td>
-        <td>$300</td>
-        <td>$450</td>
-        <td>$500</td>
-    </tr>
-    <tr>
-        <td>Precio de zapatos</td>
-        <td>$50.000</td>
-        <td>$45.000</td>
-        <td>$55.000</td>
-    </tr>
-    <tr>
-        <td>Cantidad de celular</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>Cantidad del tomate</td>
-        <td>200</td>
-        <td>200</td>
-        <td>200</td>
-    </tr>
-    <tr>
-        <td>Cantidad de zapatos</td>
-        <td>4</td>
-        <td>4</td>
-        <td>4</td>
-    </tr>
+<tr>
+    <th></th>
+    <th>2014</th>
+    <th>2015</th>
+    <th>2016</th>
+</tr>
+<tr>
+    <td>Precio de celular</td>
+    <td>$800.000</td>
+    <td>$820.000</td>
+    <td>$850.000</td>
+</tr>
+<tr>
+    <td>Precio del tomate</td>
+    <td>$300</td>
+    <td>$450</td>
+    <td>$500</td>
+</tr>
+<tr>
+    <td>Precio de zapatos</td>
+    <td>$50.000</td>
+    <td>$45.000</td>
+    <td>$55.000</td>
+</tr>
+<tr>
+    <td>Cantidad de celular</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+</tr>
+<tr>
+    <td>Cantidad del tomate</td>
+    <td>200</td>
+    <td>200</td>
+    <td>200</td>
+</tr>
+<tr>
+    <td>Cantidad de zapatos</td>
+    <td>4</td>
+    <td>4</td>
+    <td>4</td>
+</tr>
 </table>
 
 </body>
@@ -739,7 +739,7 @@ d)
 
 **Prestamo en UF** = $\frac{30,000}{25,000} = 1.2 UF$ **Pago en un año** = $1.2\times(1 + 6.66 \%) = 1.28$ **En un año la UF** = $25,000\times(1 + 7.34 \%) = 26,834.9$ **Pago efectivo** = $1.28\times26,834.9 = 34,348.5$
 
-### :
+### Cálculo del coeficiente de Gini en una economía con diferentes niveles de ingreso:
 
   Tenemos la siguiente tabla que representa el porcentaje de población acumulado de la población según su ingreso porcentual acumulado:
 
@@ -794,51 +794,51 @@ d)
 </head>
 <body>
     <table>
-    <caption>Tabla de demanda:</caption>
-    <tr>
-        <th>decil:</th>
-        <th>Ingresos:</th>
-    </tr>
-    <tr>
-        <td>0.1</td>
-        <td>0.01</td>
-    </tr>
-    <tr>
-        <td>0.2</td>
-        <td>0.02</td>
-    </tr>
-    <tr>
-        <td>0.3</td>
-        <td>0.03</td>
-    </tr>
-    <tr>
-        <td>0.4</td>
-        <td>0.05</td>
-    </tr>
-    <tr>
-        <td>0.5</td>
-        <td>0.06</td>
-    </tr>
-    <tr>
-        <td>0.6</td>
-        <td>0.08</td>
-    </tr>
-    <tr>
-        <td>0.7</td>
-        <td>0.14</td>
-    </tr>
-    <tr>
-        <td>0.8</td>
-        <td>0.58</td>
-    </tr>
-    <tr>
-        <td>0.9</td>
-        <td>0.80</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>1</td>
-    </tr>
+<caption>Tabla de demanda:</caption>
+<tr>
+    <th>decil:</th>
+    <th>Ingresos:</th>
+</tr>
+<tr>
+    <td>0.1</td>
+    <td>0.01</td>
+</tr>
+<tr>
+    <td>0.2</td>
+    <td>0.02</td>
+</tr>
+<tr>
+    <td>0.3</td>
+    <td>0.03</td>
+</tr>
+<tr>
+    <td>0.4</td>
+    <td>0.05</td>
+</tr>
+<tr>
+    <td>0.5</td>
+    <td>0.06</td>
+</tr>
+<tr>
+    <td>0.6</td>
+    <td>0.08</td>
+</tr>
+<tr>
+    <td>0.7</td>
+    <td>0.14</td>
+</tr>
+<tr>
+    <td>0.8</td>
+    <td>0.58</td>
+</tr>
+<tr>
+    <td>0.9</td>
+    <td>0.80</td>
+</tr>
+<tr>
+    <td>1</td>
+    <td>1</td>
+</tr>
 </table>
 </body>
 </html>
@@ -853,21 +853,8 @@ $$G=1-\left|\sum_{k=0}^{n-1}\left(X_{k+1}-X_k\right)\left(Y_{k+1}+Y_k\right)\rig
 
 $$1-0.1(0.01+(0.01+0.02)+(0.02+0.03)+(0.03+0.05)+(0.05+0.06)+(0.06+0.08))+$$ $$0.1((0.08+0.10)+(0.10+0.50)+(0.50+0.8)+(0.8+1))$$ $$=$$ $$1-0.1\cdot 4.3$$ $$1-0.43$$ $$0.57$$
 
-### :
 
-  Suponga que tanto las papas fritas como el ketchup son mercados monopólicos. Las funciones de costo total son, respectivamente $CT_{PF}=10\cdot q_{PF}$ y $CT_{K}=5\cdot q_{K}$   Las demandas respectivas se pueden expresar como: $P_{PF}=100 - q_{PF}$ y $P_{K}= 80 - q_{K} + q_{PF}$. Si es que cada bien es producido por monopolistas separados, determine los precios y cantidades de cada uno.
-
-  **RESPUESTA:**
-
-  El monopolista de papas fritas produce una cantidad de papas fritas tal que maximicen su utilidad:
-
-$$\pi_{PF}= P_{PF}\cdot q_{PF} - CT_{PF}$$ $$\pi_{PF}= (100 - q_{PF})\cdot q_{PF} - 10\cdot q_{PF}$$ $$ pdv = \frac{\pi_{PF}}{q_{PF}}=0= 100-2\cdot q_{PF} - 10$$ $$q_{PF} = 45$$ $$P_{PF} = 55$$
-
-  Con este resultado, podemos encontrar el óptimo del monopolista del ketchup\\
-
-$$\pi_{K}= P_{K}\cdot q_{K} - CT_{K}$$ $$\pi_{K}= (80 - q_{K} + q_{PF} )\cdot q_{K} - 5\cdot q_{K}$$ $$\pi_{K}= 80\cdot q_{K} - q_{K}^2 + q_{PF}\cdot q_{K} - 5\cdot q_{K}$$ $$\pi_{K}= 80\cdot q_{K} - q_{K}^2 + 45\cdot q_{K}  - 5\cdot q_{K}$$ $$\pi_{K}= 120\cdot q_{K} - q_{K}^2$$ $$pdv = \frac{\pi_{K}}{q_{K}}=0= 120-2\cdot q_{K}$$ $$q_{K} = 60$$ $$P_{K} = 65$$
-
-### :
+### Análisis del mercado monopolístico de papas fritas y ketchup:
 
   Suponga que tanto las papas fritas como el ketchup son mercados monopólicos. Las funciones de costo total son, respectivamente $CT_{PF}=10\cdot q_{PF}$ y $CT_{K}=5\cdot q_{K}$\\ Las demandas respectivas se pueden expresar como: $P_{PF}=100 - q_{PF}$ y $P_{K}= 80 - q_{K} + q_{PF}$
 
@@ -911,7 +898,7 @@ $$BS_{Integrado}= 8437.5 $$
 
   La integración de ambos monopolios es positiva desde el punto de vista social. Esto se debe a que ambos productos son complementarios
 
-###:
+### Análisis del impacto de la inflación utilizando el deflactor del PIB e IPC:
 
   Considere una economía en la cual se tiene el siguiente detalle de los bienes producidos o importados por sus habitantes.
 
@@ -989,7 +976,7 @@ c)
 
   La inflación difiere cuando se usa el Deflactor o el IPC porque ambos indicadores miden cosas distintas. El Deflactor considera todos los bienes producidos dentro de la economía, los cuales no todos son necesariamente consumidos por las personas. Por lo tanto, si se quiere analizar el costo de la vida, es mejor usar el IPC para medir la inflación dado que en el IPC se usa una canasta de consumo representativa. Con respecto a críticas de ambas formas para medir la inflación, se tiene que al medirla por el lado del Deflactor no se refleja de forma precisa variaciones en el costo de vida. Mientras que una crítica al usar el IPC para medir la inflación es el sesgo de sustitución: el IPC no incorpora el efecto sustitución por el lado de los consumidores cuando sube el precio de un bien dentro de la canasta de consumo.
 
-### :
+### Análisis del PIB nominal, PIB real y deflactor en una economía con múltiples bienes:
 
   En el país X se consumen solamente arroz, pantalones y celulares. El arroz y los pantalones son producidos y consumidos en X. Por otro lado, los celulares son importados desde el país Y.
 
@@ -1114,7 +1101,7 @@ $$Deflactor_{año1} = \frac{127360}{120800}=1,05$$ $$Deflactor_{año2} = \frac{1
 
   Inflación: $$\frac{1 - 1,05}{1,05}*100 = -47,61\%$$ $$\frac{0,92 - 1}{1}*100 = -8 \%$$
 
-### :
+### Cálculo del coeficiente de Gini utilizando la distribución de ingresos:
 
   Tenemos la siguiente tabla que representa el porcentaje de población acumulado de la población según su ingreso porcentual acumulado:
 
@@ -1227,7 +1214,7 @@ $$Deflactor_{año1} = \frac{127360}{120800}=1,05$$ $$Deflactor_{año2} = \frac{1
 
 $$G=1-\left|\sum_{k=0}^{n-1}\left(X_{k+1}-X_k\right)\left(Y_{k+1}+Y_k\right)\right| $$ $$1-0.1(0.01+(0.01+0.02)+(0.02+0.03)+(0.03+0.04)+(0.04+0.05)+(0.05+0.06))+$$ $$0.1((0.06+0.10)+(0.10+0.15)+(0.15+0.2)+(0.2+1))$$ $$=$$ $$1-0.1\cdot 2.32$$ $$1-0.232$$ $$0.768$$
 
-### :
+### Comparación de las funciones de producción de dos empresas competidoras:
 
   La función de producción es la relación entre la cantidad de insumos utilizados para producir un bien y la cantidad producida de estos.
 
@@ -1261,7 +1248,7 @@ $$5.5X^2 > 4X^2$$
 
   Entonces la empresa A, produce más caro que la empresa B
 
-### :
+### Cálculo de la inflación y tasas de interés en una economía con IPC variable:
 
   A partir de la siguiente tabla calcule lo que se pide respecto al IPC considerando el año 2018 como base.
 
@@ -1370,7 +1357,7 @@ d)
 
   Si pasan dos años, debemos reemplazar en la fórmula n por 2, nos deberían pagar: $$VF=160.000(1´0,1875)^2=225.625$$   Es decir, si pasan dos años y mantenemos la tasa nos deben pagas \$225.625.
 
-### :
+### Análisis de los tipos de bienes y elasticidades en un mercado competitivo:
 
   Imagine un bien X que se transa en un mercado perfectamente competitivo con dos tipos de agente. La curva de oferta de ese mercado está dada por: $$Q_s = -4,3+0,3P_x$$   La demanda de los consumidores A y B son respectivamente: $$Q_{d,A}=0,1I_A-2P_x$$ $$Q_{d,B}=198,2 - 0,5P_y - 0,2P_x$$
 
@@ -1386,9 +1373,12 @@ a)    Para saber que tipo de bien es X para el agente A respecto a su ingreso, 
 
 b)    Para ver que tipo de bien es X respecto al bien Y para el consumidor B, tomamos la demanda del agente B y la derivamos respecto al precio de y. Da como resultado -0,5. Como el resultado es menor a cero, significa que son bienes complementarios.
 
-### :
+### Cálculo de indicadores macroeconómicos: PIB, deflactor e inflación:
 
-  Complete la siguiente tabla que contiene los datos de un país con respecto al PIB. ::: {.content-visible when-format="pdf"}
+  Complete la siguiente tabla que contiene los datos de un país con respecto al PIB.
+
+
+::: {.content-visible when-format="pdf"}
 
 ```{=tex}
 \begin{table}[h]

@@ -2,7 +2,7 @@
 
 ## Finanzas y riesgos:
 
-  La **finanza** se ocupan de la asignación de recursos a lo largo del tiempo y bajo condiciones de incertidumbre. Es el área de estudio que analiza como las personas toman decisiones en asignar valor a un recurso, comprarlo y venderlo a través del tiempo, con una medida de riesgo, ya que, los bienes pueden valorizarse o desvalorizarse.
+  Las **finanzas** se ocupan de la asignación de recursos a lo largo del tiempo y bajo condiciones de incertidumbre. Es el área de estudio que analiza como las personas toman decisiones en asignar valor a un recurso, comprarlo y venderlo a través del tiempo, con una medida de riesgo, ya que, los bienes pueden valorizarse o desvalorizarse.
 
 - \*\*Valor Presente y Futuro:\*\* El concepto de valor presente, que permite comparar el valor de una cantidad de dinero hoy con su valor en el futuro, teniendo en cuenta una tasa de interés. Se presentó la fórmula del valor futuro y su inversa, la fórmula del valor presente, que se utilizan para evaluar inversiones y proyectos.
 
