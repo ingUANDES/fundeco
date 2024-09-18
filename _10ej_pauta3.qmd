@@ -136,3 +136,16 @@ c)    Para que su elasticidad sea unitaria, esta tiene que ser igual a 1, enton
       Caso II: $$1 =-\frac{4a-9}{9a-4}$$ $$9a-4 =-4a+9$$ $$13a =13$$ $$a =1$$\
       Se cumple.\
       Entonces a es igual a 1.
+      
+
+
+### Incidencia Fiscal y Objetivo del Impuesto:
+
+¿Qué es la incidencia fiscal? ¿A quién se le aplica el impuesto? ¿Cuál es el objetivo del impuesto?
+
+&nbsp; **RESPUESTA:**
+
+&nbsp; El capítulo 6 del Mankiew 6ta edición, define la incidencia fiscal como la forma en que los participantes de un mercado comparten la carga de un impuesto. El impuesto puede ser aplicado al vendedor, a los compradores o a ambos. Estos impuestos buscan recaudar dinero para gastos fiscales. Estos gastos fiscales tienen como objetivo generar un mayor o igual beneficio social que el costo social producido por el impuesto.
+
+
+

@@ -74,3 +74,517 @@ f)
   Primero debemos tener ambas curvas de la misma forma: $$Catalina: q = -p \cdot (5/3) + 7$$ $$Felipe: q = 12 - 4p$$
 
   La cantidad demandada en un mercado es la suma de las cantidades demandadas por todos los compradores en cada precio. $$Q = q1 + q2 + q3 …. +qn$$   Catalina: $$q= \frac{-2.5 \cdot 5}{3} + 7$$ $$q= 2.83$$   Felipe: $$q = 12 – 4 \cdot 2,5$$ $$Q =4.83$$
+  
+
+
+### Gráficas de Demanda:
+
+&nbsp;  Grafique las siguientes demandas:
+
+1)  $$
+    P(Q)=\$10 - 1Q
+    $$
+
+
+2)  $$
+    P(Q)=\$12 - 2Q
+    $$
+    
+3) $$P(Q)=\$50 - 2.5Q$$
+
+
+
+&nbsp; **RESPUESTA:**
+
+
+1)
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:10,samples=100] plot (\x,{10-\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+2) 
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:6,samples=100] plot (\x,{12-2*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+3)
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:14.2,samples=100] plot (\x,{25-1.75*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+
+
+
+
+
+### Cálculo de la Demanda para Diferentes Funciones:
+
+1)  Calcule el precio Demandado ($P$) de un bien para una producción de 5 unidades ($Q=5$). Usted sabe que si no se producen unidades el precio demandado es de \$5000. Adicionalmente, usted sabe que la función de demanda es lineal de la forma: $$P(Q)=a-250Q$$
+
+2)  Calcule la función inversa de demanda para $P(Q)=a-bQ$
+
+3)  Asuma una función de demanda igual a $P(Q)=a-235Q$. Si Usted sabe que 10 unidades se valoran a un precio de 7650, ¿Cuál sería el precio de referencia si no se produce nada?
+
+
+&nbsp; **RESPUESTA:**
+
+
+1) 
+
+&nbsp; Tenemos que en el caso $Q=0$ el valor de $P(Q)=a=5000$, entonces con esto tenemos la función:
+
+$$
+P(Q)=5000-250Q
+$$
+
+  Ahora evaluamos $P(5)$ y esto nos da: $$
+P(5)=5000-250\cdot 5
+$$ $$
+P(5)=5000-1250
+$$ $$
+P(5)=3750
+$$
+
+2)
+
+&nbsp; La función inversa de la demanda es la función inversa de $Q(P)$, por lo que la función inversa de $P(Q)=ab-bQ$ es esta misma.
+
+
+3)
+
+&nbsp; El precio de referencia cuando no se produce nada es en este caso el valor de \`\`$a$'', para calcularlo tenemos que plantear la ecuación del enunciado:
+
+$$
+7650=a-235\cdot 10
+$$ $$
+7650=a-2350
+$$
+
+$$
+7650+2350=a
+$$ $$
+a=10000
+$$
+
+&nbsp; Es decir el precio de referencia es equivalente a \$10.000.
+
+
+
+
+
+### Cálculo de la Demanda para Diferentes Gráficos:
+
+&nbsp; Calcule la función demanda de los siguiente gráficos.
+
+1)
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:25,samples=100] plot (\x,{5-0.2*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+
+
+2)  
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:6.6,samples=100] plot (\x,{20-3*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+
+3)  
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (25,0) node[below] {\Huge Cantidad};
+    \draw[thick,->] (0,0) -- (0,25) node[left] {\Huge Precio};
+    
+    \foreach \x in {5,10,15,20,25}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {\x};
+    
+    \foreach \y in {5,10,15,20,25}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {\y};
+    
+    \draw[thick,domain=0:5,samples=100] plot (\x,{10-2*\x});
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (25,25);
+\end{tikzpicture}
+```
+
+
+&nbsp; **RESPUESTA:**
+
+
+1)
+
+$$
+P(Q)=5-0.2Q
+$$
+
+2)
+
+$$
+P(Q)=20-3Q
+$$
+3)
+
+$$
+P(Q)=10-2Q
+$$
+
+
+
+
+### Equilibrio de Mercado y Cambios en la Demanda:
+
+&nbsp; Suponga que las curvas de oferta y demanda del mercado de un bien X vienen dadas por $P(Q)=1.000+400Qo$ y $P(Q)=2000-100Qd$, respectivamente:
+
+a)  Calcule el equilibrio de mercado.
+
+b)  Ahora, Represéntelo gráficamente.
+
+c)  Suponga que, como consecuencia de un descenso de la renta, la curva de demanda de mercado de X pasa a ser $P=4.000-100Qd$. Calcule y represente en el gráfico el nuevo equilibrio del mercado.
+
+
+&nbsp; **RESPUESTA:**
+
+
+
+a) Tenemos que, para calcular el punto de equilibrio} $Pd=Po=P^*$ $$1000 + 400Q^* = 2000 - 100Q^*$$ $$Q^*=2$$   Ahora podemos encontrar el precio de equilibrio $P^*$ despejando el precio en cualquiera de las dos funciones: $$P^* = 2000 - 100 \cdot 2 $$ $$P^*=1800$$   Entonces el punto de equilibrio es (Q\^*,P\^*)=(2,1800)
+
+b)  
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    % Ejes
+    \draw[thick, ->] (0,0) -- (6,0) node[below] {Cantidad};
+    \draw[thick, ->] (0,0) -- (0,6) node[left] {Precio en miles};
+    
+    % Curvas
+    \draw[domain=0:25, samples=100, color=black] plot (\x, {2-0.1*\x});
+    \draw[domain=0:25, samples=100, color=black] plot (\x, {1+0.4*\x});
+\end{tikzpicture}
+```
+
+c)  
+
+$$1.000 + 400Q^* = 4000 - 100Q^*$$ $$Q^*=6$$   Nuevamente, buscamos el precio de equilibrio reemplazando en alguna de las nuevas ecuaciones: $$4000 - 100 \cdot 6 =P^*$$ $$P^*= 3400$$   Entonces el punto de equilibrio es (6,3400)
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    % Ejes
+    \draw[thick, ->] (0,0) -- (9,0) node[below] {Cantidad};
+    \draw[thick, ->] (0,0) -- (0,9) node[left] {Precio en miles};
+    
+    % Curvas
+    \draw[domain=0:25, samples=100, color=black] plot (\x, {4-0.1*\x});
+    \draw[domain=0:25, samples=100, color=black] plot (\x, {1+0.4*\x});
+\end{tikzpicture}
+```
+
+&nbsp; En ambos gráficos se puede identificar el punto de equilibrio como la intercepccion de las curvas de oferta y demanda.
+ 
+
+
+
+
+### Impacto de un Impuesto sobre la Oferta de Chicles y Temas Éticos:
+
+a)  Tenemos una empresa de chicles que gasta \$100 en materia prima, \$200 en insumos, \$150 en mano de obra, su beneficio es de \$400 y sus ingresos son el 120% de la suma de sus gastos. Calcule sus gastos generales.
+
+b)  Una fundación que esta atada legalmente a ser sin fines de lucro (no hay beneficios), aún así se sabe que hay gente que lucra con este organismo, ¿Cómo lo hacen?
+
+
+
+&nbsp; **RESPUESTA:**
+
+
+
+a) Para calcular esto hacemos reemplazamos en la ecuación: $B=I-f(P,P_R,G)$: $$400=1.2(100+200+150+G)-(100+200+150+G)$$ $$G=1550$$   Entonces los gastos generales equivalen a la suma de \$1550.
+
+b) De forma no ética es posible ponerse de acuerdo con uno de los proveedores de insumos, o alguno de los participantes del resto de los gastos para aumentar el precio de estos, para luego recibir una donación por parte del administrador de la institución, esta irregularidad es conocida como **soborno**
+  
+
+
+
+
+### Gráficas de Oferta para Diferentes Funciones:
+
+&nbsp; Grafique las siguientes ofertas:
+
+```         
+$$P(Q)=\$3 +0,5Q$$
+$$P(Q)=\$12 +8Q$$
+$$P(Q)=\$50 +0,1Q$$
+```
+
+
+&nbsp; **RESPUESTA:**
+
+
+$$P(Q)=\$3 +0,5Q$$
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (10.5,0) node[below] {Cantidad};
+    \draw[thick,->] (0,0) -- (0,10.5) node[left] {Precio};
+    \foreach \x in {2,4,6,8,10}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {$\x$};
+    \foreach \y in {2,4,6,8,10}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {$\y$};
+    \draw[domain=0:10, samples=100, color=black] plot (\x,{3+0.5*\x});
+\end{tikzpicture}
+```
+
+$$P(Q)=\$12 +8Q$$
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (70.5,0) node[below] {Cantidad};
+    \draw[thick,->] (0,0) -- (0,70.5) node[left] {Precio};
+    \foreach \x in {14,28,42,56,70}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {$\x$};
+    \foreach \y in {14,28,42,56,70}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {$\y$};
+    \draw[domain=0:70, samples=100, color=black] plot (\x,{12+8*\x});
+\end{tikzpicture}
+```
+
+$$P(Q)=\$50 +0,1Q$$
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (100.5,0) node[below] {Cantidad};
+    \draw[thick,->] (0,0) -- (0,100.5) node[left] {Precio};
+    \foreach \x in {20,40,60,80,100}
+        \draw (\x,1pt) -- (\x,-1pt) node[below] {$\x$};
+    \foreach \y in {20,40,60,80,100}
+        \draw (1pt,\y) -- (-1pt,\y) node[left] {$\y$};
+    \draw[domain=0:100, samples=100, color=black] plot (\x,{50+0.1*\x});
+\end{tikzpicture}
+```
+
+
+
+### Calculo de la Función de Oferta por un Gráfico:
+
+&nbsp; Calcule la función oferta del siguiente gráfico.
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    % Ejes
+    \draw[thick, ->] (0,0) -- (26,0) node[below] {Cantidad};
+    \draw[thick, ->] (0,0) -- (0,26) node[left] {Precio};
+    
+    % Curvas
+    \draw[domain=0:25, samples=100, color=black] plot (\x, {5+0.2*\x});
+    \draw[thick, dashed] (0,5) -- (25,10);
+\end{tikzpicture}
+```
+
+
+&nbsp; **RESPUESTA:**
+
+ 
+
+&nbsp; Paso I: Escribir ecuación.   Genéricamente tenemos: $$P(Q)=a+bQ$$
+
+&nbsp; Paso II: Escoger coordenadas de la recta.   Escogeremos los puntos (0,5) y (25,10).
+
+&nbsp; Paso III: Remplazar las distintas situaciones y solucionar.
+
+$$P(0)=5 \Leftrightarrow a=5$$ $$P(25)=10 \Leftrightarrow 10=5+b*25 \Leftrightarrow b=0.2$$
+
+&nbsp; Finalmente, la ecuación resulta:
+
+$$P(Q)=5+0,2*Q$$
+
+
+
+### Elasticidad y Cambio en el Equilibrio de una Empresa Forestal:
+
+&nbsp; Tenemos una empresa forestal con las siguientes funciones de demanda y oferta: $$
+P_d(Q)=100-3Q
+$$ $$
+P_o(Q)=60+2Q
+$$
+
+&nbsp; Por causas naturales una de los cultivos se incendiaron, dejando como nuevo punto de equilibrio $(4,88)$. Haga un gráfico del caso luego del evento y calcule la elasticidad.
+
+
+&nbsp; **RESPUESTA:**
+
+&nbsp; Primero calculamos el punto de equilibrio inicial:
+
+$$
+100-3Q=60+2Q
+$$ $$
+`r 100-60`=`r 3+2`Q
+$$ $$
+`r (100-60)/(3+2)`
+$$
+
+&nbsp; Reemplazamos en $P(Q)$: $$
+P(`r (100-60)/(3+2)`)=100-3\cdot `r (100-60)/(3+2)`
+$$
+
+$$
+P = `r 100-3*(100-60)/(3+2)`
+$$
+
+&nbsp; Entonces el punto inicial es $(8,76)$. Además, al ser un evento que le afecta a la oferta, ya que, los que demandan demandan lo mismo, pero los que ofrecen, ofrecen menos, tendremos un cambio en la curva de demanda.
+
+&nbsp; Ahora calcularemos la nueva oferta:
+
+$$
+88=a+2\cdot 4
+$$
+
+$$
+88=a+8 \Leftrightarrow a=80
+$$
+
+$$
+P_o(Q)=80+2Q
+$$
+
+&nbsp; Finalmente hacemos el gráfico:
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    \draw[thick,->] (0,0) -- (10,0) node[below] {Cantidad};
+    \draw[thick,->] (0,0) -- (0,10) node[left] {Precio};
+    
+    \node at (-0.5,-0.5) {0};
+    \node at (-0.5,2) {20};
+    \node at (-0.5,4) {40};
+    \node at (-0.5,6) {60};
+    \node at (-0.5,8) {80};
+    \node at (-0.5,10) {100};
+    \node at (2,-0.5) {20};
+    \node at (4,-0.5) {40};
+    \node at (6,-0.5) {60};
+    \node at (8,-0.5) {80};
+    \node at (10,-0.5) {100};
+    
+    \draw[thick] (0,10) -- (3.33,0);
+    \draw[thick] (0,8) -- (1,10);
+    
+    % Agregar cuadrícula
+    \draw[gray!50] (0,0) grid (10,10);
+\end{tikzpicture}
+```
+
+&nbsp; Ahora calcularemos la elasticidad:
+
+&nbsp; Recordemos que la elasticidad es:
+
+$$
+\in =\left|\dfrac{\triangle\%Q}{\triangle\%P} \right|
+$$
+
+&nbsp; Entonces tenemos: $$
+\in=\left|\frac{88-76}{8-4} \right|
+$$ $$
+\in=\left|\frac{12}{4} \right|
+$$ $$
+\in=3
+$$
+
+&nbsp; De esto podemos decir que es elástica.
+
+
+### Elasticidad de la Demanda de Parrillas:
+
+&nbsp; Una empresa dedicada a vender parrillas vende en su primer año 752 unidades, a un precio de \$279 cada una. El segundo año de operación venden 673 unidades a \$300 cada una. ¿Cuál es su elasticidad de la demanda?
+
+&nbsp; **RESPUESTA:**
+
+&nbsp; Para resolver este ejercicio recordemos que la elasticidad es el cambio porcentual en la cantidad demanda sobre el cambio porcentual en el precio. $$\epsilon = \frac{\vartriangle \%  Q}{\vartriangle \% P} $$   Reemplazamos con las respectivas variaciones y obtenemos: $$\vartriangle Q=\frac{673-752}{752} \cdot 100=-10,5\%$$ $$\vartriangle P=\frac{300-279}{279} \cdot 100=7,5\%$$   Ahora calculamos la elasticidad y obtenemos: $$\epsilon = \frac{\vartriangle \%  Q}{\vartriangle \% P} = \frac{-10,5\%}{7,5\%}=-1,4$$   El valor absoluto de la elasticidad es mayor a 1, por lo que estamos frente a una demanda elástica. Este resultado significa que un aumento del 1% en el precio, se traduce en una disminución del 1,4% en la demanda.
+

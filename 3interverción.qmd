@@ -78,7 +78,7 @@ $$
 
 ## Intervención del gobierno:
 
-&nbsp; La intervención gubernamental, es un tema central en la economía pública y del sector público. La intervención del gobierno puede justificarse por diversas razones, como corregir fallas del mercado, redistribuir ingresos o mejorar la eficiencia económica.
+  La intervención gubernamental, es un tema central en la economía pública y del sector público. La intervención del gobierno puede justificarse por diversas razones, como corregir fallas del mercado, redistribuir ingresos o mejorar la eficiencia económica.
 
   Las intervenciones estatales son cambios forzados que hace el gobierno a un mercado, estos generan una pérdida de eficiencia, también llamada **peso muerto**, esto hace que cambien las decisiones de las personas.
 
@@ -93,8 +93,7 @@ $$
   Los siguientes gráficos son posibles ejemplos de ambas situaciones. Donde, `O mer'' es oferta sin impuesto o subsidio,`D mer'' es demanda sin impuesto o subsidio, el área negra es la perdida de eficiencia o peso muerto, \`\`GOB'' es lo que recibe o financia el gobierno, dependiendo si es impuesto o subsidio respectivamente y EC y EP son los excedentes del consumidor y productor respectivamente.
 
 ::: {.content-visible when-format="pdf"}
-
-&nbsp; **Impuestos:** Dependiendo de si los impuestos son impuestos a los vendedores o a los compradores, sus efectos pueden variar. Un impuesto sobre los vendedores puede contraer la oferta, ya que estos deben pagar una parte de sus ingresos al gobierno, lo que puede reducir su incentivo para producir. Por otro lado, un impuesto sobre los compradores puede reducir la demanda, ya que el bien se vuelve más caro para los consumidores.
+  **Impuestos:** Dependiendo de si los impuestos son impuestos a los vendedores o a los compradores, sus efectos pueden variar. Un impuesto sobre los vendedores puede contraer la oferta, ya que estos deben pagar una parte de sus ingresos al gobierno, lo que puede reducir su incentivo para producir. Por otro lado, un impuesto sobre los compradores puede reducir la demanda, ya que el bien se vuelve más caro para los consumidores.
 
 ```{=tex}
 \begin{multicols}{2}
@@ -207,9 +206,7 @@ $$
 
 \end{multicols}
 ```
-
-&nbsp; **Subsidios:** Los subsidios pueden ser utilizados para incentivar tanto la producción como el consumo. Un subsidio a los productores reduce sus costos de producción, lo que puede aumentar la oferta. Un subsidio a los consumidores reduce el precio efectivo que pagan, aumentando la demanda. Sin embargo, los subsidios también deben ser cuidadosamente diseñados para evitar distorsiones excesivas en el mercado.
-
+  **Subsidios:** Los subsidios pueden ser utilizados para incentivar tanto la producción como el consumo. Un subsidio a los productores reduce sus costos de producción, lo que puede aumentar la oferta. Un subsidio a los consumidores reduce el precio efectivo que pagan, aumentando la demanda. Sin embargo, los subsidios también deben ser cuidadosamente diseñados para evitar distorsiones excesivas en el mercado.
 
 ```{=tex}
 \begin{multicols}{2}
@@ -325,14 +322,11 @@ $$
 
 \end{multicols}
 ```
+  **Controles de Precios:**
 
-&nbsp; **Controles de Precios:**
+-   **Precios Máximos:** Un precio máximo establecido por debajo del precio de equilibrio del mercado puede causar escasez. Esto ocurre porque a un precio más bajo, la cantidad demandada aumenta mientras que la cantidad ofrecida disminuye. Los consumidores encuentran el bien más accesible, incrementando su demanda, pero los productores no están dispuestos a vender tanto debido al menor incentivo económico, lo que reduce la oferta.
 
-- **Precios Máximos:** Un precio máximo establecido por debajo del precio de equilibrio del mercado puede causar escasez. Esto ocurre porque a un precio más bajo, la cantidad demandada aumenta mientras que la cantidad ofrecida disminuye. Los consumidores encuentran el bien más accesible, incrementando su demanda, pero los productores no están dispuestos a vender tanto debido al menor incentivo económico, lo que reduce la oferta.
-
-- **Precios Mínimos:** Un precio mínimo por encima del precio de equilibrio del mercado genera un exceso de oferta. A este precio más alto, los productores están dispuestos a ofrecer más del bien o servicio, pero los consumidores no están dispuestos a comprar tanto, reduciendo la cantidad demandada.
-
-
+-   **Precios Mínimos:** Un precio mínimo por encima del precio de equilibrio del mercado genera un exceso de oferta. A este precio más alto, los productores están dispuestos a ofrecer más del bien o servicio, pero los consumidores no están dispuestos a comprar tanto, reduciendo la cantidad demandada.
 
 ```{=tex}
 
@@ -428,11 +422,8 @@ $$
 ```
 :::
 
-
-
 ::: {.content-visible when-format="html"}
-
-&nbsp; **Impuestos:** Dependiendo de si los impuestos son impuestos a los vendedores o a los compradores, sus efectos pueden variar. Un impuesto sobre los vendedores puede contraer la oferta, ya que estos deben pagar una parte de sus ingresos al gobierno, lo que puede reducir su incentivo para producir. Por otro lado, un impuesto sobre los compradores puede reducir la demanda, ya que el bien se vuelve más caro para los consumidores.
+  **Impuestos:** Dependiendo de si los impuestos son impuestos a los vendedores o a los compradores, sus efectos pueden variar. Un impuesto sobre los vendedores puede contraer la oferta, ya que estos deben pagar una parte de sus ingresos al gobierno, lo que puede reducir su incentivo para producir. Por otro lado, un impuesto sobre los compradores puede reducir la demanda, ya que el bien se vuelve más caro para los consumidores.
 
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
@@ -548,7 +539,7 @@ $$
 
 ```
 
-&nbsp; **Subsidios:** Los subsidios pueden ser utilizados para incentivar tanto la producción como el consumo. Un subsidio a los productores reduce sus costos de producción, lo que puede aumentar la oferta. Un subsidio a los consumidores reduce el precio efectivo que pagan, aumentando la demanda. Sin embargo, los subsidios también deben ser cuidadosamente diseñados para evitar distorsiones excesivas en el mercado.
+  **Subsidios:** Los subsidios pueden ser utilizados para incentivar tanto la producción como el consumo. Un subsidio a los productores reduce sus costos de producción, lo que puede aumentar la oferta. Un subsidio a los consumidores reduce el precio efectivo que pagan, aumentando la demanda. Sin embargo, los subsidios también deben ser cuidadosamente diseñados para evitar distorsiones excesivas en el mercado.
 
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
@@ -665,13 +656,11 @@ $$
 
 ```
 
-&nbsp; **Controles de Precios:**
+  **Controles de Precios:**
 
-- **Precios Máximos:** Un precio máximo establecido por debajo del precio de equilibrio del mercado puede causar escasez. Esto ocurre porque a un precio más bajo, la cantidad demandada aumenta mientras que la cantidad ofrecida disminuye. Los consumidores encuentran el bien más accesible, incrementando su demanda, pero los productores no están dispuestos a vender tanto debido al menor incentivo económico, lo que reduce la oferta.
+-   **Precios Máximos:** Un precio máximo establecido por debajo del precio de equilibrio del mercado puede causar escasez. Esto ocurre porque a un precio más bajo, la cantidad demandada aumenta mientras que la cantidad ofrecida disminuye. Los consumidores encuentran el bien más accesible, incrementando su demanda, pero los productores no están dispuestos a vender tanto debido al menor incentivo económico, lo que reduce la oferta.
 
-- **Precios Mínimos:** Un precio mínimo por encima del precio de equilibrio del mercado genera un exceso de oferta. A este precio más alto, los productores están dispuestos a ofrecer más del bien o servicio, pero los consumidores no están dispuestos a comprar tanto, reduciendo la cantidad demandada.
-
-
+-   **Precios Mínimos:** Un precio mínimo por encima del precio de equilibrio del mercado genera un exceso de oferta. A este precio más alto, los productores están dispuestos a ofrecer más del bien o servicio, pero los consumidores no están dispuestos a comprar tanto, reduciendo la cantidad demandada.
 
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
@@ -765,14 +754,13 @@ $$
 ```
 :::
 
-&nbsp; **Ejemplos Prácticos:**
+  **Ejemplos Prácticos:**
 
-- **Mercados de Alquiler:** En ciudades con altos precios de alquiler, un control de precios puede mejorar la accesibilidad, pero también puede reducir la oferta de viviendas si los propietarios no encuentran rentable alquilar a precios controlados.
+-   **Mercados de Alquiler:** En ciudades con altos precios de alquiler, un control de precios puede mejorar la accesibilidad, pero también puede reducir la oferta de viviendas si los propietarios no encuentran rentable alquilar a precios controlados.
 
-- **Mercado Laboral:** El ejemplo del salario mínimo mostró cómo la intervención en el mercado laboral puede tener efectos mixtos. Mientras que un salario mínimo más alto puede aumentar los ingresos de los trabajadores, también puede reducir las oportunidades de empleo.
+-   **Mercado Laboral:** El ejemplo del salario mínimo mostró cómo la intervención en el mercado laboral puede tener efectos mixtos. Mientras que un salario mínimo más alto puede aumentar los ingresos de los trabajadores, también puede reducir las oportunidades de empleo.
 
-- **Impuestos al Tabaco:** Un impuesto al tabaco puede reducir el consumo debido al aumento del precio, lo que puede ser deseable desde una perspectiva de salud pública. Sin embargo, este impuesto también puede tener efectos regresivos si afecta desproporcionadamente a los consumidores de bajos ingresos.
-
+-   **Impuestos al Tabaco:** Un impuesto al tabaco puede reducir el consumo debido al aumento del precio, lo que puede ser deseable desde una perspectiva de salud pública. Sin embargo, este impuesto también puede tener efectos regresivos si afecta desproporcionadamente a los consumidores de bajos ingresos.
 
 ## Comercio internacional:
 
@@ -780,10 +768,9 @@ $$
 
   Para saber si conviene importar o exportar se hace un diagrama agregando el precio mundial y el excedente al exportar o importar un bien.
 
-&nbsp; **Exportaciones.**
+  **Exportaciones.**
 
   En el caso de una economía local, que tenga un precio en el equilibrio menor que el del precio mundial y decida exportar, tendrá un gráfico, donde `BE'' es el beneficio de exportación y`PM'' es el precio mundial, de la siguiente manera:
-
 
 ```{r, engine='tikz',echo=FALSE,out.width="50%"}
 #| fig-align: center

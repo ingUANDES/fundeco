@@ -438,3 +438,525 @@ $$\bar t=a_2y_2 \Leftrightarrow 1000=2y_2 \Leftrightarrow 20=y_2$$
     
 \end{tikzpicture}
 ```
+
+### Aumento del Impuesto al Tabaco y Externalidades:
+
+1)  A causa de las constantes enfermedades pulmonares y riesgos para la salud, el gobierno decide aumentar el impuesto al tabaco. Como consecuencia de esto, un 37% de los fumadores deja este vicio y hay un 45% menos de enfermedades relacionadas al uso de esta ¿Qué principio esta relacionado con este cambio económico?
+2)  Dado que bajaron las enfermedades y que el estado logró recaudar más dinero por el aumento del impuesto anterior, el gobierno decide aumentar más aún el impuesto a este bien de consumo. Esta vez, aumento el mercado negro de este servicio y junto a esto, el estado recaudó menos y por la mala calidad del tabaco traficado aumento un %15 las enfermedades relacionadas a este habito. ¿Qué principio es el que esta relacionado con este nuevo cambió?
+3)  Ahora, un comprador cualquiera de cigarrillos al ver que subieron los impuestos, tiene que decidir entre comprar una cajetilla o comprar la revista que compra todos los domingos ¿Que principio es el que se relaciona a esta situación?
+
+
+&nbsp; **RESPUESTA:**
+
+
+1)  "En ocasiones, el gobierno puede mejorar los resultados del mercado." Ya que, al eliminar una externalidad negativa (un efecto negativo del mercado hacia la sociedad) está dando buenos resultados en el mercado. Dicho de otra forma, está mejorando la distribución de los bienes.
+2)  "Normalmente, los mercados son un buen mecanismo de asignación de recursos." Al empeorar la situación sanitaria de la sociedad, a a través, de la intervención estatal, podemos concluir que en este caso, era mejor que el mercado no se intrevenga más.
+3)  En este caso, los principios 1,2 hacen efecto en este evento, y dependiendo del caso, el 4 también hace efecto. Para el primer principio el comprador tiene que decidir entre una cosas o otra, para el segundo tendrá que renunciar a una de las dos y para el cuarto en el caso que escoja la revista, el impuesto dado es un incentivo que afecta el mercado.
+
+
+
+### Modelo Circular:
+
+&nbsp; Con respecto al modelo de economía circular.
+1) ¿Qué demandan los hogares?
+2) ¿Qué demandan las empresas?
+3) ¿Qué ofrecen los hogares?
+4) ¿Qué ofrecen las empresas?
+
+
+&nbsp; **RESPUESTA:**
+
+&nbsp; Al demandar, decimos que este agente es el que quiere el bien o servicio. Por otro lado, al ofrecer, decimos que el agente es el dueño de este y que lo esta ofreciendo a cambio de algo.
+
+1)  Los hogares demandan bienes y servicios.
+2)  La empresa demanda factores de producción, es decir, trabajo, capital, tierra y tecnología.
+3)  los hogares ofrecen factores de producción.
+4)  las empresas ofrecen bienes y servicios.
+
+### Decisión Laboral de un Lechero:
+
+&nbsp; Un lechero tiene como salario diario 15 dólares, trabaja desde las 6 de la mañana, hasta las 7 de la tarde, luego se junta con sus amigos, que tienen el mismo horario laboral, a cazar conejos hasta las 10 de la noche, finalmente se reúne con su familia, que solo están en la casa desde las 10 de la noche hasta las 6 de la mañana, para hacer conejo al escabeche hasta las 12 de la madrugada, si le ofrecen duplicar su sueldo, pero ahora tendrá que trabajar como guardia desde las 7 de la tarde hasta las 6 de la mañana.\
+
+a)  ¿le es conveniente?
+
+b)  ¿Bajo qué principio objetivo podría actuar este lechero?
+
+
+&nbsp; **RESPUESTA:**
+
+
+a)  
+
+Depende de muchos factores. Luego es una pregunta subjetiva, cuyas respuestas intuitivas podrían ser:
+
+-   Si, porque con el sueldo puede comprar comida para la familia.
+
+-   Si, porque le hará bien un cambio de rutina.
+
+-   No, porque el cambio de horario le puede enfermar y gastar más.
+
+-   No, porque deja su vida social.
+
+b)  
+
+"El costo de algo es aquello a lo que se renuncia por obtenerlo."
+
+
+### Frontera de Posibilidades de Producción para autos y computadores:
+
+&nbsp; Suponga que la siguiente tabla resume la economía de un país que produce únicamente dos bienes:
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+    <tr>
+        <th></th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+    </tr>
+    <tr>
+        <td><strong>Computadores</strong></td>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td><strong>Autos</strong></td>
+        <td>10</td>
+        <td>8</td>
+        <td>6</td>
+        <td>3</td>
+        <td>0</td>
+    </tr>
+</table>
+
+</body>
+
+</html>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+                      & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} \\ \hline
+\textbf{Computadores} & 0          & 1          & 2          & 3          & 4          \\ \hline
+\textbf{Autos}        & 10         & 8          & 6          & 3          & 0          \\ \hline
+\end{tabular}
+\end{table}
+```
+:::
+
+1)  Dibujar la FPP.
+
+2)  Si esta economía se encuentra produciendo 1 computador, ¿cuál es el costo de oportunidad de comenzar a producir 4 computadores?
+
+3)  Calcular el costo de oportunidad del punto C al punto D.
+
+4)  ¿El rendimiento es creciente, decreciente o constante?
+
+5)  ¿Cómo se vería reflejado en la FPP un mejor rendimiento? (mayor producción)
+
+
+&nbsp; **RESPUESTA:**
+
+
+1)   Para graficar la frontera de posibilidades de producción, basta con realizar un gráfico de 2 dimensiones, un bien por eje. Luego completar incorporando los puntos de producción.
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    % Ejes
+    \draw[->] (0,0) -- (10,0) node[right] {$Computadores$};
+    \draw[->] (0,0) -- (0,10) node[above] {$Autos$};
+    
+    % Datos
+    \draw[blue, mark=square] plot[mark=*] coordinates {(0,10) (1,8) (2,6) (3,3) (4,0)};
+    
+    % Leyenda
+    \node[blue, right] at (10,9) {FPP};
+\end{tikzpicture}
+```
+
+2)    Al observar el gráfico o la tabla FPP, se observa si la economía produce 1 computador, esta también produce eficientemente 8 autos. Pero, si aumenta la producción de computadores a 4, no se podría producir autos. Por esto, se concluye que el costo de oportunidad de producir de 1 a 4 computadores significa un costo de oportunidad de 8 autos.
+
+3)    Al igual que el caso anterior, al observar la tabla se ditingue que el costo de oportunidad de pasar de producir 2 computadores a 3, significa una disminución de producción de 3 autos. Por lo que el costo de oportunidad en este caso es de 3 autos.
+
+4)    Para distinguir el rendimiento, se debe entender si el costo de oportunidad aumenta, disminuye o es constante durante los distintos puntos de la FPP.
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+                      & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} \\ \hline
+\textbf{Computadores} & 0          & 1          & 2          & 3          & 4          \\ \hline
+\textbf{Autos}        & 10         & 8          & 6          & 3          & 0          \\ \hline
+\textbf{Costo de Oportunidad}        & 0         & 2          & 2          & 3          & 3          \\ \hline
+\textbf{Bienes totales}        & 10         & 9          & 8          & 6          & 4          \\ \hline
+\end{tabular}
+\end{table}
+```
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+    <tr>
+        <th></th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+    </tr>
+    <tr>
+        <td><strong>Computadores</strong></td>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td><strong>Autos</strong></td>
+        <td>10</td>
+        <td>8</td>
+        <td>6</td>
+        <td>3</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td><strong>Costo de Oportunidad</strong></td>
+        <td>0</td>
+        <td>2</td>
+        <td>2</td>
+        <td>3</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td><strong>Bienes totales</strong></td>
+        <td>10</td>
+        <td>9</td>
+        <td>8</td>
+        <td>6</td>
+        <td>4</td>
+    </tr>
+</table>
+
+</body>
+
+</html>
+```
+:::
+
+&nbsp; Como se observa en la tabla, el valor de costos de oportunidad aumenta mientras que los bines totales disminuye. En conclusión, existe un rendimiento decreciente.
+
+5)  Se vería reflejado al existir una menor pendiente vertical.
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    % Ejes
+    \draw[->] (0,0) -- (10,0) node[right] {$Computadores$};
+    \draw[->] (0,0) -- (0,10) node[above] {$Autos$};
+    
+    % Datos FPP original
+    \draw[blue, mark=square] plot[mark=*] coordinates {(0,10) (1,8) (2,6) (3,3) (4,0)};
+    
+    % Datos FPP de mayor rendimiento
+    \draw[red, mark=square] plot[mark=*] coordinates {(0,10) (2,8) (4,6) (7,3) (10,0)};
+    
+    % Leyendas
+    \node[blue, right] at (10,9) {FPP original};
+    \node[red, right] at (10,8) {FPP de mayor rendimiento};
+\end{tikzpicture}
+```
+
+
+
+### Maximización de Producción en una Panadería:
+
+&nbsp; Tenemos que un pastelero tiene como insumo limitante 100 huevos, para hacer un pie de limón gasta 10 huevos, mientras que para hacer un kg de pan gasta 5 huevos.
+1) si quiere hacer 3 pie de limón, cuanto es la máxima cantidad de pan que puede hacer.
+2) exprese la situación en la forma matemática $\bar x=a_1y_1+a_2y_2$.
+3) Haga un gráfico de la situación.
+4) Ahora, digamos que le llegaron más huevos y le alcanzó para hacer 15 pie de limón y 15 kg de pan, cuantos huevos más tiene.
+
+
+
+&nbsp; **RESPUESTA:**
+
+1)  Podemos expresar esto como:
+
+$$
+100=3\cdot 10 +5 \cdot x
+$$
+
+&nbsp; Donde "$x$" será la cantidad de pan.   Resolviendo:
+
+$$
+100-`r 3*10`= 5 \cdot x
+$$
+$$
+`r 100-3*10`/5= x
+$$
+$$
+`r (100-3*10)/5`= x
+$$
+
+&nbsp; Se podrán hacer 14Kg de pan.
+
+2) Esto lo podemos expresar como:
+
+$$
+100=10\cdot y_1+ 5\cdot y_2
+$$
+
+&nbsp; Donde "$y_1$" son la cantidad de pie de limón y "$y_2$" la cantidad de huevo.
+
+3) Calculando la máxima cantidad de pan y pies que se pueden hacer podemos decir que el máximo de pan es $20$ y de pies son $10$. El gráfico resulta:
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    % Eje x
+    \draw (-1,0) -- (3,0) node[right] {Pies de limón};
+    \draw (0,-0.1) -- (0,0.1);
+    \draw (3,-0.1) -- (3,0.1);
+    
+    % Etiquetas en el eje x
+    \node[below] at (1.5,-0.1) {$10$};
+    
+    % Eje y
+    \draw (0,-1) -- (0,3) node[above] {Kg de pan};
+    \draw (-0.1,0) -- (0.1,0);
+    \draw (-0.1,3) -- (0.1,3);
+    
+    % Etiquetas en el eje y
+    \node[left] at (-0.1,3) {$20$};
+    
+    % Recta
+    \draw[dashed] (0,3) -- (1.5,0);
+    
+    % Triángulo
+    \fill[gray!30] (0,0) -- (0,3) -- (1.5,0) -- cycle;
+
+
+    
+\end{tikzpicture}
+```
+
+4)  Modelamos la ecuación, recuerde que dice cuantos huevos más tenemos, por lo que el resultado de la cantidad de huevos totales habrá que restarle los 100 iniciales. $$
+    \bar x=10\cdot 15+ 5\cdot 15
+    $$ $$
+    \bar x=`r 10*15`+ 75
+    $$ $$
+    \bar x=`r 10*15+5*15`
+    $$
+
+&nbsp; Ahora, a este resultado le restaremos los $100$ huevos iniciales.
+
+$$
+\text{huevos agregados}=`r 10*15+5*15`-100
+$$
+$$
+\text{huevos agregados}=`r 10*15+5*15-100`
+$$
+
+
+
+
+### Ventajas Comparativas en la Producción de Papas y Carne:
+
+&nbsp; En una economía Pablo y Felipe ambos se dedican a la producción de bienes y lo hacen por separado. Ellos cosechan papas y producen carne de ganado. Sus producciones mensuales están dadas por la siguiente tabla:
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+<tr>
+    <th></th>
+    <th>Producción máxima posible de papas</th>
+    <th>Producción máxima posible de carne</th>
+</tr>
+<tr>
+    <td><strong>Pablo</strong></td>
+    <td>30 kg</td>
+    <td>10 kg</td>
+</tr>
+<tr>
+    <td><strong>Felipe</strong></td>
+    <td>10 kg</td>
+    <td>20 kg</td>
+</tr>
+</table>
+
+</body>
+
+</html>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[h!]
+\begin{tabular}{|l|l|l|}
+\hline
+ & \textbf{Producción máxima posible de papas} & \textbf{Producción máxima posible de carne} \\ \hline
+\textbf{Pablo} & 30 kg & 10 kg \\ \hline
+\textbf{Felipe} & 10 kg & 20 kg \\ \hline
+\end{tabular}
+\end{table}
+```
+:::
+
+a)  ¿Quién tiene ventajas comparativas de producción?¿En qué? Demuestre con costos de oportunidad.
+
+b)Grafique ambas FPP.
+
+  Asuma que ahora Pablo decide especializarse en la producción de papas,
+
+c)  ¿Cuántas papas puede producir ahora de forma mensual?
+
+d)  Debido a que ahora Pablo no tiene carne para comer, decide proponerle a Felipe comenzar un comercio de intercambio de productos. Proponga un escenario donde ambos salen beneficiados mejor que en su estado inicial.
+
+
+
+&nbsp; **RESPUESTA:**
+
+
+
+a)  
+
+&nbsp; Para encontrar la ventaja comparativa se deben encontrar los costos de oportunidad de ambos productos para ambos productores:\\
+
+-   Pablo   1 mes = 10kg de carne o 30 kg de papas   10kg de carne = 30 kg de papas   1 C = 3 P   Por cada kg de carne producida el costo de oportunidad es de 3kg de papas   Por cada kg de papas se tiene un costo de oportunidad de 0,33 kg de carne
+
+-   Felipe   1 mes = 20kg de carne o 10 kg de papas   20kg de carne = 10 kg de papas   2 C = 1 P   Por cada kg de carne producida el costo de oportunidad es de 0,5 kg de papas   Por cada kg de papas se tiene un costo de oportunidad de 2 kg de carne
+
+&nbsp; Entonces Felipe tiene una ventaja comparativa con Pablo en la producción de carne y Pablo tiene una ventaja comparativa en la producción de papas.
+
+b)  
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    % Ejes
+    \draw[->] (0,0) -- (30,0) node[right] {$kg Carne$};
+    \draw[->] (0,0) -- (0,40) node[above] {$kg Papas$};
+    
+    % Datos FPP Pablo
+    \draw[red, mark=square] plot[mark=*] coordinates {(0,30) (10,0)};
+    
+    % Leyenda
+    \node[red, right] at (30,15) {FPP Pablo};
+\end{tikzpicture}
+```
+
+```{r, engine='tikz',echo=FALSE,out.width="60%"}
+#| fig-align: center
+\begin{tikzpicture}
+    % Ejes
+    \draw[->] (0,0) -- (30,0) node[right] {$kg Carne$};
+    \draw[->] (0,0) -- (0,40) node[above] {$kg Papas$};
+    
+    % Datos FPP Felipe
+    \draw[green, mark=square] plot[mark=*] coordinates {(0,10) (20,0)};
+    
+    % Leyenda
+    \node[green, right] at (30,5) {FPP Felipe};
+\end{tikzpicture}
+```
+
+c)
+&nbsp; La FPP de Pablo sería la siguiente: $$P=-3C + 30$$ $$P(C=0)=30kg de papas$$
+
+d)  
+
+&nbsp; Cualquier escenario donde Pablo le ofresca más kilogramos de papas que el costo de oportunidad de Felipe de producir las papas singificarán mejores escenarios.
+
+
