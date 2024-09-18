@@ -300,36 +300,36 @@ Año & Precio refrigeradores & \begin{tabular}[c]{@{}l@{}}Cantidad Producida\\ r
 
   <table>
 <thead>
-  <tr>
-    <th>Año</th>
-    <th>Precio refrigeradores</th>
-    <th>Cantidad Producida refrigeradores</th>
-    <th>Precio microondas</th>
-    <th>Cantidad Producida microondas</th>
-  </tr>
+<tr>
+  <th>Año</th>
+  <th>Precio refrigeradores</th>
+  <th>Cantidad Producida refrigeradores</th>
+  <th>Precio microondas</th>
+  <th>Cantidad Producida microondas</th>
+</tr>
 </thead>
 <tbody>
-  <tr>
-    <td>2016</td>
-    <td>50</td>
-    <td>100</td>
-    <td>10</td>
-    <td>40</td>
-  </tr>
-  <tr>
-    <td>2017</td>
-    <td>55</td>
-    <td>110</td>
-    <td>20</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>2018</td>
-    <td>70</td>
-    <td>120</td>
-    <td>25</td>
-    <td>55</td>
-  </tr>
+<tr>
+  <td>2016</td>
+  <td>50</td>
+  <td>100</td>
+  <td>10</td>
+  <td>40</td>
+</tr>
+<tr>
+  <td>2017</td>
+  <td>55</td>
+  <td>110</td>
+  <td>20</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>2018</td>
+  <td>70</td>
+  <td>120</td>
+  <td>25</td>
+  <td>55</td>
+</tr>
 </tbody>
 </table>
 
@@ -592,3 +592,262 @@ b)
   **RESPUESTA:**
 
   Las alzas en las TPM son mecanismo de control de la inflación ya que aumentan el costo de oportunidad de dinero rentabilizando el ahorro y frenando el consumo. A igual nivel de riesgo, los depósitos a plazo son más rentables por lo que es más beneficioso invertir la totalidad de los recursos en depósitos a plazo. En el caso de duplicar la rentabilidad variable ya no es trivial la elección ya que si bien 12% es mayor al 10% esas inversiones son más riesgosas por lo que en el corto plazo la rentabilidad podría ser menor a 10% e incluso negativa.
+  
+
+
+
+### Depósito en un Banco de Angola e Impacto de la Inflación:
+
+&nbsp; Con los datos del banco mundial y el SII, pudimos elaborar la siguiente tabla:
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        Año & Inflación anual & Conversión enero & Conversión enero & Conversión enero \\
+        & de Angola & 1UF a CLP & 1US a CLP & 1US a KZ \\\hline
+        $2018$ & $19,8\%$ & $\$26800$ & $\$640$ & $253$Kz. \\\hline
+        $2019$ & $17,1\%$ & $\$27565$ & $\$703$ & $365$Kz. \\\hline
+        $2020$ & $22,3\%$ & $\$28310$ & $\$793$ & $578$Kz. \\\hline
+        $2021$ & $25,8\%$ & $\$29070$ & $\$760$ & $631$Kz. \\\hline
+        $2022$ & No influye en el ejercicio & $\$31000$ & \$$873$ & $460$Kz. \\\hline
+    \end{tabular}
+    \label{tab:my_label}
+\end{table}
+```
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Datos</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+<tr>
+<th>Año</th>
+<th>Inflación anual de Angola</th>
+<th>Conversión enero 1UF a CLP</th>
+<th>Conversión enero 1US a CLP</th>
+<th>Conversión enero 1US a KZ</th>
+</tr>
+<tr>
+<td>2018</td>
+<td>$19,8\%$</td>
+<td>$\$26800$</td>
+<td>$\$640$</td>
+<td>$253$Kz.</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>$17,1\%$</td>
+<td>$\$27565$</td>
+<td>$\$703$</td>
+<td>$365$Kz.</td>
+</tr>
+<tr>
+<td>2020</td>
+<td>$22,3\%$</td>
+<td>$\$28310$</td>
+<td>$\$793$</td>
+<td>$578$Kz.</td>
+</tr>
+<tr>
+<td>2021</td>
+<td>$25,8\%$</td>
+<td>$\$29070$</td>
+<td>$\$760$</td>
+<td>$631$Kz.</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>No influye en el ejercicio</td>
+<td>$\$31000$</td>
+<td>$\$873$</td>
+<td>$460$Kz.</td>
+</tr>
+</table>
+
+</body>
+</html>
+```
+:::
+
+
+
+&nbsp; Usted decide el 2018 poner a deposito a plazo por cuatro años un millón de Kwanzas angoleñas a un banco que da una tasa de interés del 20% anual.
+
+1)  ¿Cuántas kwansas tendrás al terminar los 4 años?
+
+2)  ¿Cuánto es la inflación acumulada en los 4 años?
+
+3)  Si antes del deposito a plazo tenias los kwansas en UF e indexamos a UF lo invertido al terminar los 4 años ¿Cuántos UF teníamos al principio y al final?
+
+4)  ¿De qué sirvió indexar a UF al principio y al final? ¿Por qué tomamos la referencia de la ganancia o perdida en UF y no en la inflación de Angola?
+
+
+&nbsp; **RESPUESTA:**
+
+
+1)  
+
+&nbsp; Usamos la formula:
+
+$$
+C_f=C_i(1+i)^t
+$$
+
+&nbsp; Reemplazando:
+
+$$
+C_f=10^6(1+0.2)^4
+$$
+
+&nbsp; Desarrollando: 
+
+$$
+C_f=\text{$2$.$073$.$600$}
+$$
+
+\
+
+2)  
+
+\
+
+&nbsp; Explicación teórica de la pregunta:
+
+\
+
+&nbsp; Cuando se mide la inflación anual, tomamos como base el 1 de enero del mismo año, todos los meses del año toman el mismo momento base por lo que al acumularlas se suman. Es decir:
+
+$$
+\text{Inflación acumulada por mes}_{t+1}=\text{Inflación acumulada}_{t}+\text{Inflación}_{t+1}
+$$
+
+&nbsp; Donde $t\leq 11$ y se mide en meses.
+
+&nbsp; Pero, como estamos viendo inflación acumulada de años, funciona de forma distinta porque todos toman como momento base el primer día de su año. Entonces, para sacar la inflación acumulada en $n$ años es: $$
+\text{Inflación acumulada por año}=\left[(1+\text{inflación}_t)\cdot(1+\text{inflación}_{t+1})\cdot ... \cdot (1+\text{inflación}_{t+n})-1\right]\cdot 100\%
+$$
+
+&nbsp; Ya que, si tenemos un bien que en el año base vale 1, y la inflación anual de los siguientes $n$ años es $I_k$ con $k\in\mathbb{N}, k\leq n$. Entonces:
+
+$$
+\frac{1}{1+I_1}=\frac{1}{\text{Inflación acumulada 1° año}+1} \Leftrightarrow \text{Inflación acumulada 1° año}=I_1
+$$
+
+&nbsp; Luego:
+
+$$
+\frac{1}{1+I_2}=\frac{1+I_1}{\text{Inflación acumulada 2° año}+1} \Leftrightarrow \text{Inflación acumulada 2° año}=I_1+I_2+I_1I_2
+$$
+
+&nbsp; Ya al tercer año:
+
+$$
+\frac{1}{1+I_3}=\frac{1+I_1+I_2+I_1I_2}{\text{Inflación acumulada 3° año}+1} \Leftrightarrow \text{Inflación acumulada 3° año}=I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3
+$$
+
+&nbsp; Ahora demostramos: $$
+(1+I_1)(1+I_2)(1+I_3)-1=I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3
+$$ $$
+(1+I_1+I_2+I_1I_2)(1+I_3)-1=I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3
+$$ $$
+1+I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3-1=I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3
+$$ $$
+I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3=I_1+I_2+I_1I_2+I_1I_3+I_2I_3+I_1I_2I_3
+$$
+
+&nbsp; Queda demostrado.
+
+\
+
+&nbsp; Vuela al ejercicio:
+
+\
+
+&nbsp; Aplicamos la primera formula dicha, además sabemos que la inflación de un año parte en el primer dia del año y termina en el último, por lo que del 2018 al 2021 cuentan como 4 años.
+
+$$
+1,198\cdot 1,171 \cdot 1,223 \cdot 1,258 - 1 = 115,8\% 
+$$
+
+&nbsp; Entonces la inflación acumulada es un $115,8\%$
+
+\
+
+3)  
+
+\
+
+&nbsp; Lo que haremos ahora será convertir a varios valores distintos hasta llegar a lo pedido para eso usaremos la formula:
+
+$$
+C_{df}=\frac{C_{di}\cdot V_{df}}{V_{di}}
+$$
+
+&nbsp; Donde: $C_{di}$ es la cantidad numérica que tenemos de la divisa que tenemos al inicio, $C_{df}$ es la cantidad numérica que tenemos en la divisa que nos convertimos, $V_{di}$ es la proporción de divisa inicial que es igual al convertir en la divisa final con el valor $V_{df}$, es decir, $V_{di}=V_{df}$.
+
+&nbsp; Como solo nos interesa saber al inicio es decir, enero de 2018 y enero del 2022, ya que ahí toma 4 años, haremos estas conversiones solo para dichos años.
+
+  **2018: capital es de** $10^6$
+
+&nbsp; De Kz a US: $$
+C_{df}=\frac{10^6\cdot 1}{253}=\$3952.57
+$$
+
+&nbsp; De US a CLP: $$
+C_{df}=\frac{3952.57\cdot 640}{1}=\$2529644
+$$
+
+&nbsp; De CLP a UF: $$
+C_{df}=\frac{2529644\cdot 1}{26800}=94.39\text{UF}
+$$
+
+&nbsp; Entonces partimos con $94.39$ UF
+
+&nbsp; **2022: capital es de** $2073600$
+
+&nbsp; De Kz a US: $$
+C_{df}=\frac{2073600\cdot 1}{460}=\$4507.83
+$$
+
+&nbsp; De US a CLP: $$
+C_{df}=\frac{4507.83\cdot 873}{1}=\$3935336
+$$
+
+&nbsp; De CLP a UF: $$
+C_{df}=\frac{3935336\cdot 1}{31000}=126.95\text{UF}
+$$
+
+&nbsp; Entonces, empezamos con $94.39$ UF y terminamos con $126.95$ UF
+
+4)  
+
+&nbsp; Como dice el enunciado "Usted", estamos hablando de ti, y tu resides en chile, no en Angola, por lo que indexar en UF te dará una referencia de la utilidad más precisa que la de la inflación de Angola.  
+

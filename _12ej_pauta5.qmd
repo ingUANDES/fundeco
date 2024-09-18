@@ -1533,3 +1533,222 @@ b)    Para ver que tipo de bien es X respecto al bien Y para el consumidor B, t
 </html>
 ```
 :::
+
+
+
+### Cálculo del PIB Nominal, Real, Deflactor del PIB e Inflación:
+
+&nbsp; En una economía, sólo se producen autos y computadores. En la cuál se produjo lo siguiente en los años 2017,2018 y 2019:\\
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Datos</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Año</th>
+        <th>Precio Computadores</th>
+        <th>Cantidad Producida Computadores</th>
+        <th>Precio Autos</th>
+        <th>Cantidad Producida Autos</th>
+    </tr>
+    <tr>
+        <td>2017</td>
+        <td>100</td>
+        <td>100</td>
+        <td>200</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>2018</td>
+        <td>200</td>
+        <td>150</td>
+        <td>300</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>2019</td>
+        <td>300</td>
+        <td>200</td>
+        <td>400</td>
+        <td>150</td>
+    </tr>
+</table>
+
+</body>
+</html>
+```
+:::
+
+::: {.content-visible when-format="pdf\""}
+```{=tex}
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Año & Precio Computadores & \begin{tabular}[c]{@{}l@{}}Cantidad Producida\\ Computadores\end{tabular} & Precio autos & \begin{tabular}[c]{@{}l@{}}Cantidad Producida\\ Autos\end{tabular} \\ \hline
+2017 & 100 & 100 & 200 & 50 \\ \hline
+2018 & 200 & 150 & 300 & 100 \\ \hline
+2019 & 300 & 200 & 400 & 150 \\ \hline
+\end{tabular}
+\end{table}
+```
+:::
+
+a)  Calcular el PIB nominal para los años 2017, 2018, 2019.
+
+b)  Calcular el PIB real para los mismos años utilizando como año base el 2017.
+
+c)  Calcular el deflactor del PIB para los tres años mencionados anteriormente.
+
+d)  Calcular la tasa de inflación del mercado, utilizando el año 2017 como base.
+
+&nbsp; **RESPUESTA:**
+
+
+a)  
+
+$$PIB\quad nominal = Precios\quad Actuales\quad \cdot \quad Cantidades\quad Actuales$$ **PIB 2017** $$\rightarrow PIB_{nominal2017}=100\cdot100 + 200\cdot50$$ $$\leftrightarrow PIB_{nominal2017}=\$ 20.000$$ **PIB 2018** $$\rightarrow PIB_{nominal2018}=200\cdot150 + 300\cdot100$$ $$\leftrightarrow PIB_{nominal2019}=\$ 60.000$$ **PIB 2019** $$\rightarrow PIB_{nominal2019}=300\cdot200 + 400\cdot150$$ $$\leftrightarrow PIB_{nominal2019}=\$ 120.000$$
+
+b)  
+
+$$PIB\quad real = Precios\quad Año\quad Base\quad \cdot \quad Cantidades\quad Actuales$$ **PIB 2017** $$\rightarrow PIB_{real2017}=100\cdot100 + 200\cdot50$$ $$\leftrightarrow PIB_{real2017}=\$ 20.000$$ **PIB 2018** $$\rightarrow PIB_{real2018}=100\cdot150 + 200\cdot100$$ $$\leftrightarrow PIB_{real2018}=\$ 35.000$$ **PIB 2019** $$\rightarrow PIB_{real2019}=100\cdot200 + 200\cdot150$$ $$\leftrightarrow PIB_{real2019}=\$ 50.000$$
+
+c)  
+
+$$Deflactor\quad del \quad PIB=\frac{PIB\quad nominal}{PIB\quad real}\cdot 100$$ **Deflactor PIB 2017** $$\rightarrow Deflactor\quad PIB_{2017}=\frac{20.000}{20.000}\cdot 100$$ $$\leftrightarrow Deflactor\quad PIB_{2017}=100\%$$ **Deflactor PIB 2018** $$\rightarrow Deflactor\quad PIB_{2018}=\frac{60.000}{35.000}\cdot 100$$ $$\leftrightarrow Deflactor\quad PIB_{2019}=171,42\%$$ **Deflactor PIB 2019** $$\rightarrow Deflactor\quad PIB_{2019}=\frac{120.000}{50.000}\cdot 100$$ $$\leftrightarrow Deflactor\quad PIB_{2019}=240\%$$
+
+d)  
+
+&nbsp; A pesar de que se utiliza el IPC como principal medida de la inflación, el deflector del PIB puede ser utilizado con el mismo fin.
+
+**Tasa de inflación 2017** $$Tasa\quad de\quad inflación\quad 2017= \frac{100 -100}{100}\cdot 100=0\%$$
+
+**Tasa de inflación 2018** $$Tasa\quad de\quad inflación\quad 2018= \frac{171,42 -100}{100}\cdot 100=71,42\%$$
+
+**Tasa de inflación 2019** $$Tasa\quad de\quad inflación\quad 2019= \frac{240 -100}{100}\cdot 100=140\%$$
+
+
+
+### Cálculo de Indicadores del Mercado Laboral:
+
+&nbsp; Ahora suponga que esta economía los datos del mercado laboral tienen el siguiente comportamiento: En 2018 el país tuvo 25.000.000 de habitantes. El 62.5 % estaba en edad de trabajar, la tasa de participación fue del 80 % y la tasa de paro (desempleo) del 20 %. Para el año 2018 Calcule:
+
+a)  La población económicamente activa.
+
+b)  La población económicamente inactiva.
+
+c)  La población desempleada.
+
+&nbsp; **RESPUESTA:**
+
+
+a)  
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|cc|}
+        \hline
+        Población Total: & $PT = 25.000.000$ \\ \hline
+        Población en Edad de Trabajar: & $PET = 62,5\%$ \\ \hline
+        Tasa de Participación: & $TP = 80\%$ \\ \hline
+        Tasa de Desempleo: & $TD = 20\%$ y $PET = 62,5\% \times 25.000.000 = 15.625.000$\\ \hline
+        Población Economicamente Activa: & $ PEA = PET \times TP = 15.625.000 \times 80\%$\\ \hline
+        Población Economicamente Activa & $PEA= 12.500.000$\\ \hline
+    \end{tabular}
+\end{table}
+```
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table {
+      width: 50%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <title>Tabla de Población</title>
+</head>
+<body>
+
+  <table>
+  <tr>
+    <td>Población Total:</td>
+    <td>$PT = 25.000.000$</td>
+  </tr>
+  <tr>
+    <td>Población en Edad de Trabajar:</td>
+    <td>$PET = 62,5\%$</td>
+  </tr>
+  <tr>
+    <td>Tasa de Participación:</td>
+    <td>$TP = 80\%$</td>
+  </tr>
+  <tr>
+    <td>Tasa de Desempleo:</td>
+    <td>$TD = 20\%$ y $PET = 62,5\% \times 25.000.000 = 15.625.000$</td>
+  </tr>
+  <tr>
+    <td>Población Económicamente Activa:</td>
+    <td>$PEA = PET \times TP = 15.625.000 \times 80\%$</td>
+  </tr>
+  <tr>
+    <td>Población Económicamente Activa:</td>
+    <td>$PEA = 12.500.000$</td>
+  </tr>
+</table>
+
+</body>
+</html>
+```
+:::
+
+b)  
+
+&nbsp; Población Economicamente Inactiva\
+$$PET - PEA = 15.650.000 - 12.500.000$$ Población Economicamente Inactiva = $3.125.000$
+
+c)  
+
+&nbsp; Población Desempleada $$PD = PEA \times TD = 12.500.000 \times 20\%$$ Población Desempleada = $2.500.000$
+
