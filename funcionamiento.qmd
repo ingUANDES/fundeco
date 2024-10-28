@@ -452,7 +452,9 @@ $$   Para los valores $a=21$, $b=0.8$, que podría ser el mismo caso anterior, 
 
   El punto de intersección es cuando el precio es de \$11 y hay 12.5 unidades de producción. Este es el punto de equilibrio de mercado, si el mercado está sobre ese punto es que hay un exceso de oferta, y su está más bajo, es que hay escasez.
 
-## Cambios de curvas:
+\newpage
+
+## Estática comparativa:
 
   Podemos analizar que sucediera si hay un cambio en la curva de oferta y demanda, los cambios se relacionan de la siguiente forma:
 
@@ -530,6 +532,7 @@ $$   Para los valores $a=21$, $b=0.8$, que podría ser el mismo caso anterior, 
 </html>
 ```
 :::
+
 
   Por lo general, lo que hace que las curvas cambien de posición son eventos bruscos, por ejemplo, en el mercado de las lecherías, si se contamina con un antibiótico la central de "colun" la curva de oferta aumentaría, ya que, es menos lo que se podría ofrecer.
 
@@ -676,7 +679,6 @@ $$   Para los valores $a=21$, $b=0.8$, que podría ser el mismo caso anterior, 
 
 \end{multicols}
 
-\newpage
 
 \begin{multicols}{2}
 
@@ -775,7 +777,7 @@ $$   Para los valores $a=21$, $b=0.8$, que podría ser el mismo caso anterior, 
 \end{tikzpicture}
 ```
 
-  Curva de demanda e desplaza hacia la derecha:
+  Curva de demanda se desplaza hacia la derecha:
 
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
@@ -800,7 +802,7 @@ $$   Para los valores $a=21$, $b=0.8$, que podría ser el mismo caso anterior, 
 \end{tikzpicture}
 ```
 
-  Curva de oferta e desplaza hacia la derecha:
+  Curva de oferta se desplaza hacia la derecha:
 
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
@@ -824,7 +826,7 @@ $$   Para los valores $a=21$, $b=0.8$, que podría ser el mismo caso anterior, 
 \end{tikzpicture}
 ```
 
-  Curva de demanda e desplaza hacia la izquierda:
+  Curva de demanda se desplaza hacia la izquierda:
 
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
@@ -867,18 +869,18 @@ $$   Para los valores $a=21$, $b=0.8$, que podría ser el mismo caso anterior, 
 
   La elasticidad nos ayuda a entender mejor la asignación de recursos en mercados competitivos y las estrategias de precios que pueden adoptarse para optimizar ingresos y satisfacer la demanda.
 
-&nbsp; La elasticidad mide cómo la cantidad demandada u ofrecida responde a cambios en el precio. En mercados con alta elasticidad, pequeños cambios en el precio pueden llevar a grandes cambios en la cantidad demandada u ofrecida. En mercados con baja elasticidad, los cambios en el precio tienen un efecto menor.
+  La elasticidad mide cómo la cantidad demandada u ofrecida responde a cambios en el precio. En mercados con alta elasticidad, pequeños cambios en el precio pueden llevar a grandes cambios en la cantidad demandada u ofrecida. En mercados con baja elasticidad, los cambios en el precio tienen un efecto menor.
 
   La elasticidad de la oferta y la demanda se calcula con esta fórmula: $$
-\in =\left|\frac{\triangle\%Q}{\triangle\%P} \right|
+\epsilon =\left|\frac{\triangle\%Q}{\triangle\%P} \right|
 $$   Donde $\in$ es la elasticidad, $\triangle\%$ el cambio porcentual, Q es la demanda y P el precio.
 
 $$
 f(x)= \left\{ \begin{array}{lcc}
-     \text{Inelástica} &   \text{si}  & \in < 1 \\
-     \\ \text{Absolutamente inelástica} &  \text{si} & \in = 0 \\
-     \\ \text{Elasticidad unitaria} &  \text{si}  & \in = 1 \\
-     \\ \text{Elástica} &  \text{si}  & \in > 1
+     \text{Inelástica} &   \text{si}  & \epsilon < 1 \\
+     \\ \text{Absolutamente inelástica} &  \text{si} & \epsilon = 0 \\
+     \\ \text{Elasticidad unitaria} &  \text{si}  & \epsilon = 1 \\
+     \\ \text{Elástica} &  \text{si}  & \epsilon > 1
      \end{array}
 \right.
 $$
@@ -929,19 +931,19 @@ $$
   [Paso II: Calcular la elasticidad y clasificarla.]{.underline}
 
 $$
-\in =\left|\dfrac{1-\frac{17}{30}}{1-\frac{98}{130}} \right|
+\epsilon =\left|\dfrac{1-\frac{17}{30}}{1-\frac{98}{130}} \right|
 $$
 
 $$
-\in =\dfrac{\frac{13}{30}}{\frac{32}{130}}
+\epsilon =\dfrac{\frac{13}{30}}{\frac{32}{130}}
 $$
 
 $$
-\in =\dfrac{1690}{960}
+\epsilon =\dfrac{1690}{960}
 $$
 
 $$
-\in =1,7604
+\epsilon =1,7604
 $$
 
   Es elástica.

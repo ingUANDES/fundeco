@@ -4,9 +4,9 @@
 
   Las **finanzas** se ocupan de la asignación de recursos a lo largo del tiempo y bajo condiciones de incertidumbre. Es el área de estudio que analiza como las personas toman decisiones en asignar valor a un recurso, comprarlo y venderlo a través del tiempo, con una medida de riesgo, ya que, los bienes pueden valorizarse o desvalorizarse.
 
-- \*\*Valor Presente y Futuro:\*\* El concepto de valor presente, que permite comparar el valor de una cantidad de dinero hoy con su valor en el futuro, teniendo en cuenta una tasa de interés. Se presentó la fórmula del valor futuro y su inversa, la fórmula del valor presente, que se utilizan para evaluar inversiones y proyectos.
+-   \*\*Valor Presente y Futuro:\*\* El concepto de valor presente, que permite comparar el valor de una cantidad de dinero hoy con su valor en el futuro, teniendo en cuenta una tasa de interés. Se presentó la fórmula del valor futuro y su inversa, la fórmula del valor presente, que se utilizan para evaluar inversiones y proyectos.
 
-- \*\*Interés Compuesto:\*\* El profesor explicó el interés compuesto, que considera la acumulación de intereses sobre intereses a lo largo del tiempo. Este concepto es fundamental en la evaluación de proyectos y la planificación financiera.
+-   \*\*Interés Compuesto:\*\* El profesor explicó el interés compuesto, que considera la acumulación de intereses sobre intereses a lo largo del tiempo. Este concepto es fundamental en la evaluación de proyectos y la planificación financiera.
 
   Y por último está el **valor compuesto** que es la acumulación de dinero a través del tiempo, más la suma del interés agregado a través del tiempo. La fórmula del dinero acumulado es así:
 
@@ -14,15 +14,13 @@ $$
 VF=\left(1+i\right)VP
 $$
 
-##:  técnicas de finanzas
+## técnicas de finanzas:
 
-&nbsp; Para poder enfrentar un riesgo de forma más tranquila se tiende a comprar un seguro, donde se reparten las perdidas. Los seguros enfrentan ciertas dificultades como:
+  Para poder enfrentar un riesgo de forma más tranquila se tiende a comprar un seguro, donde se reparten las perdidas. Los seguros enfrentan ciertas dificultades como:
 
-- \*\*Diversificación:\*\* La diversificación permite reducir el riesgo al invertir en una variedad de activos. Este enfoque se basa en la idea de que no todos los activos tendrán un desempeño negativo simultáneamente.
+-   \*\*Diversificación:\*\* La diversificación permite reducir el riesgo al invertir en una variedad de activos. Este enfoque se basa en la idea de que no todos los activos tendrán un desempeño negativo simultáneamente.
 
-- \*\*Selección Adversa y Riesgo Moral:\*\* Existen problemas de asimetría de información, como la selección adversa y el riesgo moral. La selección adversa ocurre cuando una parte del mercado tiene más información que la otra, lo que puede llevar a la contratación de riesgos más altos. El riesgo moral se refiere a la posibilidad de que las personas cambien su comportamiento al estar aseguradas, incrementando la probabilidad de que ocurra un siniestro.
-
-
+-   \*\*Selección Adversa y Riesgo Moral:\*\* Existen problemas de asimetría de información, como la selección adversa y el riesgo moral. La selección adversa ocurre cuando una parte del mercado tiene más información que la otra, lo que puede llevar a la contratación de riesgos más altos. El riesgo moral se refiere a la posibilidad de que las personas cambien su comportamiento al estar aseguradas, incrementando la probabilidad de que ocurra un siniestro.
 
   Otra forma de poder invertir de forma menos arriesgada es la diversificación, esto es invertir en distintos bienes o servicios. Esta puede eliminar el riesgo especifico de empresas que se tiene incertidumbre, pero no elimina el riesgo del mercado.
 
