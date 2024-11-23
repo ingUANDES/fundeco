@@ -462,74 +462,111 @@ $$   Para los valores $a=21$, $b=0.8$, que podría ser el mismo caso anterior, 
 ```{=tex}
 \begin{table}[H]
     \centering
-    \begin{tabular}{|p{25mm}|p{25mm}|p{25mm}|p{25mm}|p{25mm}|}
+    \begin{tabular}{|p{35mm}|p{35mm}|p{35mm}|p{35mm}|}
         \hline
-         & Sin cambio en la oferta & Un incremento de la oferta & Un decremento de la oferta  \\ \hline
-        Sin cambio en la oferta & P igual \par Q igual & P disminuye \par Q aumenta & P aumenta \par Q disminuye \\ \hline
-        Un incremento de la oferta & P aumenta \par Q aumenta & P ambiguo \par Q aumenta & P aumenta \par Q ambiguo\\ \hline
-        Un decremento de la oferta & P disminuye \par Q disminuye & P disminuye \par Q ambiguo & P ambiguo \par Q disminuye \\ \hline
+        & \textbf{Sin cambio en la demanda} & \textbf{Incremento en la demanda} & \textbf{Decremento en la demanda} \\ \hline
+        \textbf{Sin cambio en la oferta} & 
+        $P$ igual \newline $Q$ igual & 
+        $P$ aumenta \newline $Q$ aumenta & 
+        $P$ disminuye \newline $Q$ disminuye \\ \hline
+        \textbf{Incremento en la oferta} & 
+        $P$ aumenta \newline $Q$ disminuye & 
+        $P$ aumenta \newline $Q$ ambiguo & 
+        $P$ ambiguo \newline $Q$ disminuye \\ \hline
+        \textbf{Decremento en la oferta} & 
+        $P$ disminuye \newline $Q$ aumenta & 
+        $P$ ambiguo \newline $Q$ aumenta & 
+        $P$ disminuye \newline $Q$ ambiguo \\ \hline
     \end{tabular}
+    \caption{Comparación entre cambios en la oferta y la demanda.}
+    \label{tab:comparativa_oferta_demanda}
 \end{table}
+
+
 ```
 :::
 
 ::: {.content-visible when-format="html"}
 ```{=html}
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Oferta y Demanda</title>
     <style>
         table {
             border-collapse: collapse;
             width: 100%;
-            margin-top: 20px;
         }
-
         th, td {
             border: 1px solid black;
-            padding: 8px;
             text-align: center;
+            padding: 8px;
         }
-
         th {
             background-color: #f2f2f2;
         }
     </style>
-    <title>Tabla de Oferta y Demanda</title>
 </head>
 <body>
-
     <table>
-<tr>
-<th></th>
-<th>Sin cambio en la oferta</th>
-<th>Un incremento de la oferta</th>
-<th>Un decremento de la oferta</th>
-</tr>
-<tr>
-<th>Sin cambio en la oferta</th>
-<td>P igual <br> Q igual</td>
-<td>P disminuye <br> Q aumenta</td>
-<td>P aumenta <br> Q disminuye</td>
-</tr>
-<tr>
-<th>Un incremento de la oferta</th>
-<td>P aumenta <br> Q aumenta</td>
-<td>P ambiguo <br> Q aumenta</td>
-<td>P aumenta <br> Q ambiguo</td>
-</tr>
-<tr>
-<th>Un decremento de la oferta</th>
-<td>P disminuye <br> Q disminuye</td>
-<td>P disminuye <br> Q ambiguo</td>
-<td>P ambiguo <br> Q disminuye</td>
-</tr>
-</table>
-
+        <caption><strong>Comparación entre cambios en la oferta y la demanda</strong></caption>
+        <tr>
+            <th></th>
+            <th>Sin cambio en la demanda</th>
+            <th>Incremento en la demanda</th>
+            <th>Decremento en la demanda</th>
+        </tr>
+        <tr>
+            <th>Sin cambio en la oferta</th>
+            <td>
+                <p>P igual</p>
+                <p>Q igual</p>
+            </td>
+            <td>
+                <p>P aumenta</p>
+                <p>Q aumenta</p>
+            </td>
+            <td>
+                <p>P disminuye</p>
+                <p>Q disminuye</p>
+            </td>
+        </tr>
+        <tr>
+            <th>Incremento en la oferta</th>
+            <td>
+                <p>P aumenta</p>
+                <p>Q disminuye</p>
+            </td>
+            <td>
+                <p>P aumenta</p>
+                <p>Q ambiguo</p>
+            </td>
+            <td>
+                <p>P ambiguo</p>
+                <p>Q disminuye</p>
+            </td>
+        </tr>
+        <tr>
+            <th>Decremento en la oferta</th>
+            <td>
+                <p>P disminuye</p>
+                <p>Q aumenta</p>
+            </td>
+            <td>
+                <p>P ambiguo</p>
+                <p>Q aumenta</p>
+            </td>
+            <td>
+                <p>P disminuye</p>
+                <p>Q ambiguo</p>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
+
 ```
 :::
 
