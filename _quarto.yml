@@ -14,10 +14,10 @@ book:
     - index.qmd
     - intro.qmd
     - funcionamiento.qmd
-    - 3interverción.qmd
-    - 4sistimpo.qmd
-    - 5varia.qmd
-    - 6finan.qmd
+    - intervencion.qmd
+    - sistimpo.qmd
+    - macro.qmd
+    - finan.qmd
     # - 7,8titulo.qmd
     # - 14ejsinpauta.qmd
     - references.qmd
