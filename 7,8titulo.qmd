@@ -1,6 +1,6 @@
 # Ejercicios Resueltos:
 
-En las siguientes paginas tendrás ejercicios con sus resoluciones.
+En las siguientes páginas tendrás ejercicios con sus resoluciones.
 
 {{< include _8ej_pauta1.qmd >}}
 

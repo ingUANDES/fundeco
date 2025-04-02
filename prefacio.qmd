@@ -1,0 +1,5 @@
+# Prefacio {.unnumbered}
+
+ Este apunte nace de las notas tomadas por Reimundo Fuenzalida el primer semestre del 2022. A través de los semestres sucesivos se han ido integrando revisiones, ejercicios y las ayudantías que se han hecho a través de los años.
+
+El material puede contener errores, por lo que se pide reportar toda inconsistencia que se encuentre para ir corrigiendo y mejorando el texto.

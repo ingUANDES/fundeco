@@ -87,7 +87,6 @@
 :::
 
 ::: {.content-visible when-format="pdf"}
-```{=tex}
 \begin{table}[htb]
     \centering
     \begin{tabular}{|p{20mm}|p{30mm}|p{45mm}|p{45mm}|}
@@ -104,7 +103,6 @@
     \caption{Clasificación de la economía.}
     \label{tabla:final}
 \end{table}
-```
 :::
 
 ## Los Diez Principios de la economía:
@@ -120,7 +118,6 @@
   En la siguiente tabla se explican de frorma breve estas proposiciones:
 
 ::: {.content-visible when-format="pdf"}
-```{=tex}
 \begin{table}[H]
     \centering
     \scalebox{0.95}{\begin{tabular}{|p{20mm}|p{30mm}|p{37mm}|p{53mm}|}
@@ -135,8 +132,6 @@
     \caption{Principios de la economía (1-5).}
     \label{tabla:final}
 \end{table}
-```
-```{=tex}
 \begin{table}[H]
     \centering
     \begin{tabular}{|p{16mm}|p{30mm}|p{59mm}|p{40mm}|}
@@ -151,7 +146,6 @@
     \caption{Principios de la economía (6-10).}
     \label{tabla:final}
 \end{table}
-```
 :::
 
 ::: {.content-visible when-format="html"}
@@ -472,12 +466,11 @@ $$
 
   hay que tener en cuenta que, al estar comparando ventajas comparativas, no se usan signos negativos.
 
-```{=tex}
 \begin{center}
         E : $10d = 12a$ \\
         B : $15d = 20a$
 \end{center}
-```
+
   Luego:
 
 $$
@@ -493,7 +486,6 @@ $$ $$
 $$   Se compara, el que tenga menor coeficiente tiene la ventaja:
 
 ::: {.content-visible when-format="pdf"}
-```{=tex}
 \begin{table}[H]
     \centering
     \begin{tabular}{|p{10mm}|p{10mm}|p{10mm}|p{25mm}|}
@@ -503,7 +495,6 @@ $$   Se compara, el que tenga menor coeficiente tiene la ventaja:
         a = \par & $d\dfrac{10}{12}$ & $d\dfrac{9}{12}$ & B \\ \hline
     \end{tabular}
 \end{table}
-```
 :::
 
 ::: {.content-visible when-format="html"}

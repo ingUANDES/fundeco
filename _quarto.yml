@@ -7,19 +7,19 @@ book:
   title: "Fundamentos de Economía"
   author: "Sebastián Cea, Joaquín Fernández, Reimundo Fuenzalida"
   repo-url: https://github.com/ingUANDES/fundeco
-  repo-actions: [edit]
-  date: "2023-2024"
+  # repo-actions: [edit]
+  date: today
   language: es
   chapters:
-    - index.qmd
+    - prefacio.qmd
     - intro.qmd
     - funcionamiento.qmd
     - 3interverción.qmd
     - 4sistimpo.qmd
     - 5varia.qmd
     - 6finan.qmd
-    - 7,8titulo.qmd
-    - 14ejsinpauta.qmd
+    # - 7,8titulo.qmd
+    # - 14ejsinpauta.qmd
     - references.qmd
 
 bibliography: references.bib
