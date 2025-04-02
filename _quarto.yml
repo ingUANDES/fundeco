@@ -11,7 +11,7 @@ book:
   date: today
   language: es
   chapters:
-    - prefacio.qmd
+    - index.qmd
     - intro.qmd
     - funcionamiento.qmd
     - 3interverción.qmd
@@ -40,5 +40,5 @@ format:
 
 editor: visual
 
-execute:
-  cache: true
+# execute:
+#   cache: true

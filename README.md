@@ -13,4 +13,4 @@ Este repositorio tiene el material del apunte dividido en los siguientes capítu
 - 5varia.qmd
 - 6finan.qmd
 
-El archivo de configuración con la información de compilación es `quarto.yml`
+El archivo de configuración con la información de compilación es `quarto.yml` al compilar se generan versiones html y pdf en la carpeta docs
