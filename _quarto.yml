@@ -18,8 +18,8 @@ book:
     - sistimpo.qmd
     - macro.qmd
     - finan.qmd
-    # - 7,8titulo.qmd
-    # - 14ejsinpauta.qmd
+    - 7,8titulo.qmd
+    - 14ejsinpauta.qmd
     - references.qmd
 
 bibliography: references.bib
@@ -40,5 +40,5 @@ format:
 
 editor: visual
 
-# execute:
-#   cache: true
+execute:
+  cache: true
