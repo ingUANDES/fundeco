@@ -24,6 +24,63 @@ $$
 
 **RESPUESTA**
 
+::: {.content-visible when-format="html"}
+```{=html}
+<div style="text-align: center;">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="60%" viewBox="-1.5 -3.5 5 5" font-family="Arial, sans-serif" font-size="0.3"> <style>
+      /* Estilos básicos para líneas y texto */
+      line, polygon {
+        stroke: black;          /* Color de línea */
+        stroke-width: 0.05;     /* Grosor de línea relativo al viewBox */
+        fill: none;             /* Sin relleno por defecto */
+      }
+      text {
+        fill: black;            /* Color de texto */
+        stroke: none;           /* Texto sin borde */
+        text-anchor: middle;    /* Alineación de texto (puede sobreescribirse) */
+        dominant-baseline: middle; /* Alineación vertical (puede sobreescribirse) */
+      }
+      .axis-label {
+        font-style: italic;     /* Letras y1, y2 en itálica */
+      }
+      .math-label {
+         /* Estilo específico si se necesita para las etiquetas matemáticas */
+         /* Nota: Las fórmulas se muestran como texto plano */
+      }
+      .dashed-line {
+        stroke-dasharray: 0.2 0.1; /* Patrón de línea discontinua (ajustar valores) */
+      }
+      .filled-triangle {
+        fill: #d3d3d3;        /* Relleno gris claro (similar a gray!30) */
+        stroke: none;         /* Sin borde para el área rellena */
+      }
+    </style>
+
+    <line x1="-1" y1="0" x2="3" y2="0" />
+    <line x1="0" y1="-0.1" x2="0" y2="0.1" /> <line x1="3" y1="-0.1" x2="3" y2="0.1" /> <text x="3.2" y="0" class="axis-label">y₁</text>
+
+    <line x1="0" y1="1" x2="0" y2="-3" />
+    <line x1="-0.1" y1="0" x2="0.1" y2="0" /> <line x1="-0.1" y1="-3" x2="0.1" y2="-3" /> <text x="0" y="-3.2" class="axis-label">y₂</text>
+
+    <text x="2.5" y="0.2" class="math-label" dominant-baseline="hanging">(ec+df)/c</text>
+    <text x="-0.2" y="-2" class="math-label" text-anchor="end">(ec+df)/d</text>
+
+    <line x1="0" y1="-2" x2="2.5" y2="0" class="dashed-line"/>
+
+    <polygon points="0,0 0,-2 2.5,0" class="filled-triangle"/>
+
+  </svg>
+  <p style="font-size: small; color: grey; margin-top: 5px;">
+    <strong>Nota:</strong> Esta es una aproximación visual usando SVG/HTML. La generación precisa requiere compilar el código TikZ con LaTeX y convertirlo (ej. con `dvisvgm`), proceso que Quarto puede automatizar. Las fórmulas matemáticas se muestran aquí como texto plano.
+  </p>
+
+</div>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -50,6 +107,7 @@ $$
         \fill[gray!30] (0,0) -- (0,2) -- (2.5,0) -- cycle;
 \end{tikzpicture}
 ```
+:::
 
 ### FPP para la producción de cobre y vino:
 
@@ -71,6 +129,75 @@ a)
 
 $$m=\frac{4}{6}=\frac{2}{3}$$ $$C: cobre ; V: Vino$$ $$C=40-\frac{2}{3}\cdot V$$
 
+::: {.content-visible when-format="html"}
+```{=html}
+<div style="text-align: center;">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="60%" viewBox="-5 -75 85 85" font-family="Arial, sans-serif"
+       font-size="2.5"> <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7"
+              refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+        <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+      </marker>
+    </defs>
+
+    <style>
+      /* Estilos generales */
+      line, polygon, circle {
+        stroke: black;          /* Color de borde por defecto */
+        stroke-width: 0.5;      /* Grosor de línea base (ajustar) */
+        fill: none;             /* Sin relleno por defecto */
+      }
+      text {
+        fill: black;
+        stroke: none;
+        text-anchor: middle;    /* Centrado horizontal por defecto */
+        dominant-baseline: middle; /* Centrado vertical por defecto */
+        font-size: 2.5px;       /* Tamaño de fuente base (ajustar) */
+      }
+      /* Ejes con punta de flecha */
+      .axis {
+        marker-end: url(#arrowhead);
+      }
+      /* Línea de la FPP */
+      .fpp-line {
+        stroke: blue;           /* Color azul para la línea */
+      }
+      /* Marcadores en la FPP */
+      .fpp-marker {
+        fill: blue;             /* Relleno azul para los marcadores */
+        stroke: none;           /* Sin borde para los marcadores */
+      }
+      /* Texto de la leyenda */
+      .legend-text {
+        fill: blue;             /* Color azul para el texto */
+        text-anchor: start;     /* Alineado al inicio (izquierda) del punto x */
+      }
+    </style>
+
+    <line class="axis" x1="0" y1="0" x2="70" y2="0" />
+    <text x="73" y="0" text-anchor="start">Vinos</text>
+
+    <line class="axis" x1="0" y1="0" x2="0" y2="-70" />
+    <text x="0" y="-73">Cobre</text>
+
+    <line class="fpp-line" x1="0" y1="-40" x2="60" y2="0"/>
+
+    <circle class="fpp-marker" cx="0" cy="-40" r="0.8"/> <circle class="fpp-marker" cx="60" cy="0" r="0.8"/>
+
+    <text class="legend-text" x="72" y="-30">FPP Individual</text>
+
+  </svg>
+  <p style="font-size: small; color: grey; margin-top: 5px;">
+    <strong>Nota:</strong> Esta es una aproximación visual usando SVG/HTML del gráfico TikZ. La generación precisa requiere la compilación y conversión automática de Quarto/LaTeX/dvisvgm.
+  </p>
+
+</div>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -85,11 +212,84 @@ $$m=\frac{4}{6}=\frac{2}{3}$$ $$C: cobre ; V: Vino$$ $$C=40-\frac{2}{3}\cdot V$$
     \node[blue, right] at (70,30) {FPP Individual};
 \end{tikzpicture}
 ```
+:::
+
 
   Para la FPP agregada se incorporan todos los productores de la economía en el contexto. Asumiendo que ambos productores tienen la misma capacidad, se duplican las producciones:
 
 $$C=80-\frac{2}{3}V$$
 
+
+::: {.content-visible when-format="html"}
+```{=html}
+<div style="text-align: center;">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="60%" viewBox="-5 -105 145 115" font-family="Arial, sans-serif"
+       font-size="3"> <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7"
+              refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+        <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+      </marker>
+    </defs>
+
+    <style>
+      /* Estilos generales (similares al anterior, ajustar grosor si es necesario) */
+      line, polygon, circle {
+        stroke: black;
+        stroke-width: 0.7;      /* Grosor de línea base (ajustar para nuevo viewBox) */
+        fill: none;
+      }
+      text {
+        fill: black;
+        stroke: none;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        font-size: 3px;         /* Tamaño de fuente base (ajustar) */
+      }
+      /* Ejes */
+      .axis {
+        marker-end: url(#arrowhead);
+      }
+      /* Línea FPP */
+      .fpp-line {
+        stroke: blue;
+      }
+      /* Marcadores FPP */
+      .fpp-marker {
+        fill: blue;
+        stroke: none;
+      }
+      /* Leyenda */
+      .legend-text {
+        fill: blue;
+        text-anchor: start;     /* Alineado a la izquierda del punto x */
+      }
+    </style>
+
+    <line class="axis" x1="0" y1="0" x2="130" y2="0" />
+    <text x="133" y="0" text-anchor="start">Vinos</text>
+
+    <line class="axis" x1="0" y1="0" x2="0" y2="-100" />
+    <text x="0" y="-103">Cobre</text>
+
+    <line class="fpp-line" x1="0" y1="-80" x2="120" y2="0"/>
+
+    <circle class="fpp-marker" cx="0" cy="-80" r="1"/> <circle class="fpp-marker" cx="120" cy="0" r="1"/>
+
+    <text class="legend-text" x="133" y="-40">FPP Agregada</text>
+
+  </svg>
+  <p style="font-size: small; color: grey; margin-top: 5px;">
+    <strong>Nota:</strong> Esta es una aproximación visual usando SVG/HTML del gráfico TikZ. La generación precisa requiere la compilación y conversión automática de Quarto/LaTeX/dvisvgm.
+  </p>
+
+</div>
+```
+:::
+
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -104,6 +304,7 @@ $$C=80-\frac{2}{3}V$$
     \node[blue, right] at (130,40) {FPP Agregada};
 \end{tikzpicture}
 ```
+:::
 
 b)  
 
@@ -115,6 +316,76 @@ $$C=80-\frac{2}{3}\cdot50 = 46,67 \Rightarrow 46,67 > 30$$   Debido a que el pu
 
 c)  
 
+
+::: {.content-visible when-format="html"}
+```{=html}
+<div style="text-align: center;">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="60%" viewBox="-5 -65 95 75" font-family="Arial, sans-serif"
+       font-size="2.5"> <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7"
+              refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+        <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+      </marker>
+    </defs>
+
+    <style>
+      /* Estilos generales (similares a los anteriores) */
+      line, polygon, circle {
+        stroke: black;
+        stroke-width: 0.6;      /* Grosor de línea base (ajustar si es necesario) */
+        fill: none;
+      }
+      text {
+        fill: black;
+        stroke: none;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        font-size: 2.5px;       /* Tamaño de fuente base (ajustar) */
+      }
+      /* Ejes */
+      .axis {
+        marker-end: url(#arrowhead);
+      }
+      /* Línea FPP */
+      .fpp-line {
+        stroke: blue;
+      }
+      /* Marcadores FPP */
+      .fpp-marker {
+        fill: blue;
+        stroke: none;
+      }
+      /* Leyenda */
+      .legend-text {
+        fill: blue;
+        text-anchor: start;     /* Alineado a la izquierda del punto x */
+      }
+    </style>
+
+    <line class="axis" x1="0" y1="0" x2="80" y2="0" />
+    <text x="83" y="0" text-anchor="start">Vinos</text>
+
+    <line class="axis" x1="0" y1="0" x2="0" y2="-60" />
+    <text x="0" y="-63">Cobre</text>
+
+    <line class="fpp-line" x1="0" y1="-30" x2="70" y2="0"/>
+
+    <circle class="fpp-marker" cx="0" cy="-30" r="1"/> <circle class="fpp-marker" cx="70" cy="0" r="1"/>
+
+    <text class="legend-text" x="83" y="-15">FPP 3C o 7V</text>
+
+  </svg>
+  <p style="font-size: small; color: grey; margin-top: 5px;">
+    <strong>Nota:</strong> Esta es una aproximación visual usando SVG/HTML del gráfico TikZ. La generación precisa requiere la compilación y conversión automática de Quarto/LaTeX/dvisvgm.
+  </p>
+
+</div>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -129,7 +400,77 @@ c)
     \node[blue, right] at (80,15) {FPP 3C o 7V};
 \end{tikzpicture}
 ```
+:::
 
+
+::: {.content-visible when-format="html"}
+```{=html}
+<div style="text-align: center;">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="60%" viewBox="-5 -65 95 75" font-family="Arial, sans-serif"
+       font-size="2.5"> <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7"
+              refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+        <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+      </marker>
+    </defs>
+
+    <style>
+      /* Estilos generales (similares a los anteriores) */
+      line, polygon, circle {
+        stroke: black;
+        stroke-width: 0.6;      /* Grosor de línea base */
+        fill: none;
+      }
+      text {
+        fill: black;
+        stroke: none;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        font-size: 2.5px;       /* Tamaño de fuente base */
+      }
+      /* Ejes */
+      .axis {
+        marker-end: url(#arrowhead);
+      }
+      /* --- Estilos específicos para la FPP ROJA --- */
+      .fpp-line-red {
+        stroke: red;            /* Color de línea ROJO */
+      }
+      .fpp-marker-red {
+        fill: red;              /* Relleno ROJO */
+        stroke: none;           /* Sin borde para marcadores */
+      }
+      .legend-text-red {
+        fill: red;              /* Color de texto ROJO */
+        text-anchor: start;     /* Alineado a la izquierda del punto x */
+      }
+       /* --- Fin estilos FPP ROJA --- */
+    </style>
+
+    <line class="axis" x1="0" y1="0" x2="80" y2="0" />
+    <text x="83" y="0" text-anchor="start">Vinos</text>
+
+    <line class="axis" x1="0" y1="0" x2="0" y2="-60" />
+    <text x="0" y="-63">Cobre</text>
+
+    <line class="fpp-line-red" x1="0" y1="-50" x2="40" y2="0"/>
+
+    <circle class="fpp-marker-red" cx="0" cy="-50" r="1"/> <circle class="fpp-marker-red" cx="40" cy="0" r="1"/>
+
+    <text class="legend-text-red" x="83" y="-30">FPP 5C o 4V</text>
+
+  </svg>
+  <p style="font-size: small; color: grey; margin-top: 5px;">
+    <strong>Nota:</strong> Esta es una aproximación visual usando SVG/HTML del gráfico TikZ. La generación precisa requiere la compilación y conversión automática de Quarto/LaTeX/dvisvgm.
+  </p>
+
+</div>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -144,7 +485,78 @@ c)
     \node[red, right] at (80,30) {FPP 5C o 4V};
 \end{tikzpicture}
 ```
+:::
 
+
+::: {.content-visible when-format="html"}
+```{=html}
+<div style="text-align: center;">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="60%" viewBox="-5 -105 135 115" font-family="Arial, sans-serif"
+       font-size="3"> <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7"
+              refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+        <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+      </marker>
+    </defs>
+
+    <style>
+      /* Estilos generales */
+      line, polyline, circle { /* Añadido polyline */
+        stroke: black;
+        stroke-width: 0.7;      /* Grosor de línea base (ajustar) */
+        fill: none;
+      }
+      text {
+        fill: black;
+        stroke: none;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        font-size: 3px;         /* Tamaño de fuente base (ajustar) */
+      }
+      /* Ejes */
+      .axis {
+        marker-end: url(#arrowhead);
+      }
+      /* --- Estilos específicos para la FPP PÚRPURA --- */
+      .fpp-line-purple {
+        stroke: purple;         /* Color de línea PÚRPURA */
+      }
+      .fpp-marker-purple {
+        fill: purple;           /* Relleno PÚRPURA */
+        stroke: none;           /* Sin borde para marcadores */
+      }
+      .legend-text-purple {
+        fill: purple;           /* Color de texto PÚRPURA */
+        text-anchor: start;     /* Alineado a la izquierda del punto x */
+      }
+       /* --- Fin estilos FPP PÚRPURA --- */
+    </style>
+
+    <line class="axis" x1="0" y1="0" x2="120" y2="0" />
+    <text x="123" y="0" text-anchor="start">Vinos</text>
+
+    <line class="axis" x1="0" y1="0" x2="0" y2="-100" />
+    <text x="0" y="-103">Cobre</text>
+
+    <polyline class="fpp-line-purple" points="0,-80 70,-50 110,0"/>
+
+    <circle class="fpp-marker-purple" cx="0" cy="-80" r="1.2"/> <circle class="fpp-marker-purple" cx="70" cy="-50" r="1.2"/>
+    <circle class="fpp-marker-purple" cx="110" cy="0" r="1.2"/>
+
+    <text class="legend-text-purple" x="123" y="-40">FPP Agregada</text>
+
+  </svg>
+  <p style="font-size: small; color: grey; margin-top: 5px;">
+    <strong>Nota:</strong> Esta es una aproximación visual usando SVG/HTML del gráfico TikZ. La generación precisa requiere la compilación y conversión automática de Quarto/LaTeX/dvisvgm.
+  </p>
+
+</div>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -159,11 +571,75 @@ c)
     \node[purple, right] at (120,40) {FPP Agregada};
 \end{tikzpicture}
 ```
+:::
 
 d)  
 
   Al observar el último gráfico realizado en la pregunta anterior, se logra entender como se comporta una economía en la realidad. No todos los productores tienen las mismas capcacidades, produciendo curvatura en la FPP agregada. Entonces, si se agregan cada vez más productores, se obtendría una función similar a $x^2+y^2 = 100$:
 
+
+::: {.content-visible when-format="html"}
+```{=html}
+<div style="text-align: center;">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="60%" viewBox="-1 -11 12 12" font-family="Arial, sans-serif"
+       font-size="0.4"> <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7"
+              refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+        <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+      </marker>
+    </defs>
+
+    <style>
+      /* Estilos generales */
+      line, path { /* Añadido path para la curva */
+        stroke: black;
+        stroke-width: 0.1;      /* Grosor de línea base (ajustar) */
+        fill: none;
+      }
+      text {
+        fill: black;
+        stroke: none;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        font-size: 0.4px;       /* Tamaño de fuente base (ajustar) */
+      }
+      /* Ejes */
+      .axis {
+        marker-end: url(#arrowhead);
+      }
+      /* --- Estilos específicos para la curva ROJA --- */
+      .curve-red {
+        stroke: red;            /* Color de línea ROJO */
+      }
+      .legend-text-red {
+        fill: red;              /* Color de texto ROJO */
+        text-anchor: start;     /* Alineado a la izquierda del punto x */
+       /* font-family: monospace; /* Opcional para fórmulas */
+      }
+       /* --- Fin estilos curva ROJA --- */
+    </style>
+
+    <line class="axis" x1="0" y1="0" x2="10" y2="0" />
+    <text x="10.5" y="0" text-anchor="start">Vinos</text>
+
+    <line class="axis" x1="0" y1="0" x2="0" y2="-10" />
+    <text x="0" y="-10.5">Cobre</text>
+
+    <path class="curve-red" d="M 0 -10 A 10 10 0 0 0 10 0" />
+    <text class="legend-text-red" x="10.5" y="-4">(100-x^2)^0.5</text>
+
+  </svg>
+  <p style="font-size: small; color: grey; margin-top: 5px;">
+    <strong>Nota:</strong> Esta es una aproximación visual usando SVG/HTML del gráfico TikZ. La curva se dibujó con un arco SVG, adecuado para este caso. Funciones más complejas serían muy difíciles de replicar manualmente. La fórmula se muestra como texto plano. La generación precisa requiere la compilación y conversión automática de Quarto/LaTeX/dvisvgm.
+  </p>
+
+</div>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -178,6 +654,7 @@ d)
     \node[red, right] at (10,4) {\((100-x^2)^{0.5}\)};
 \end{tikzpicture}
 ```
+:::
 
 ### Intervención estatal en el mercado del queso:
 
@@ -203,6 +680,75 @@ c)
 
   Asumiendo producción lineal:
 
+
+::: {.content-visible when-format="html"}
+```{=html}
+<div style="text-align: center;">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="70%" viewBox="-1 -2.5 23 4" font-family="Arial, sans-serif"
+       font-size="0.2"> <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7"
+              refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+        <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+      </marker>
+    </defs>
+
+    <style>
+      /* Estilos generales (ajustados para escala diferente) */
+      line, polygon, circle {
+        stroke: black;
+        stroke-width: 0.05;     /* Grosor de línea muy fino por escala Y */
+        fill: none;
+      }
+      text {
+        fill: black;
+        stroke: none;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        font-size: 0.2px;       /* Tamaño de fuente muy pequeño */
+      }
+      /* Ejes */
+      .axis {
+        marker-end: url(#arrowhead);
+      }
+      /* --- Estilos específicos para la FPP AZUL --- */
+      .fpp-line-blue {
+        stroke: blue;
+      }
+      .fpp-marker-blue {
+        fill: blue;
+        stroke: none;
+      }
+      .legend-text-blue {
+        fill: blue;
+        text-anchor: start;     /* Alineado a la izquierda del punto x */
+      }
+       /* --- Fin estilos FPP AZUL --- */
+    </style>
+
+    <line class="axis" x1="0" y1="0" x2="21" y2="0" />
+    <text x="21.5" y="0" text-anchor="start">Limpieza</text>
+
+    <line class="axis" x1="0" y1="0" x2="0" y2="-2.1" />
+    <text x="0" y="-2.3">Corbatas</text>
+
+    <line class="fpp-line-blue" x1="0" y1="-2" x2="20" y2="0"/>
+
+    <circle class="fpp-marker-blue" cx="0" cy="-2" r="0.1"/> <circle class="fpp-marker-blue" cx="20" cy="0" r="0.1"/>
+
+    <text class="legend-text-blue" x="21.5" y="-1">FPP</text>
+
+  </svg>
+  <p style="font-size: small; color: grey; margin-top: 5px;">
+    <strong>Nota:</strong> Esta es una aproximación visual usando SVG/HTML del gráfico TikZ. La generación precisa requiere la compilación y conversión automática de Quarto/LaTeX/dvisvgm. Nótese la diferencia de escala entre los ejes X (Limpieza) e Y (Corbatas), lo que afecta las proporciones visuales.
+  </p>
+
+</div>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="70%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -217,6 +763,7 @@ c)
     \node[blue, right] at (21,1) {FPP};
 \end{tikzpicture}
 ```
+:::
 
 d)    La pendiente de una FPP significa el costo de oportunidad.
 
@@ -268,6 +815,75 @@ a)
 
   Asumiendo linealidad en la producción:
 
+
+::: {.content-visible when-format="html"}
+```{=html}
+<div style="text-align: center;">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="60%" viewBox="-1 -17 8 19" font-family="Arial, sans-serif"
+       font-size="0.4"> <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7"
+              refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+        <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+      </marker>
+    </defs>
+
+    <style>
+      /* Estilos generales (ajustados para escala Y mayor) */
+      line, polygon, circle {
+        stroke: black;
+        stroke-width: 0.1;      /* Grosor de línea base (ajustar) */
+        fill: none;
+      }
+      text {
+        fill: black;
+        stroke: none;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        font-size: 0.4px;       /* Tamaño de fuente base (ajustar) */
+      }
+      /* Ejes */
+      .axis {
+        marker-end: url(#arrowhead);
+      }
+      /* --- Estilos específicos para la FPP ROJA --- */
+      .fpp-line-red {
+        stroke: red;
+      }
+      .fpp-marker-red {
+        fill: red;
+        stroke: none;
+      }
+      .legend-text-red {
+        fill: red;
+        text-anchor: start;     /* Alineado a la izquierda del punto x */
+      }
+       /* --- Fin estilos FPP ROJA --- */
+    </style>
+
+    <line class="axis" x1="0" y1="0" x2="6" y2="0" />
+    <text x="6.5" y="0" text-anchor="start">Mediocampistas</text>
+
+    <line class="axis" x1="0" y1="0" x2="0" y2="-16" />
+    <text x="0" y="-16.5">Defensas</text>
+
+    <line class="fpp-line-red" x1="0" y1="-15" x2="5" y2="0"/>
+
+    <circle class="fpp-marker-red" cx="0" cy="-15" r="0.2"/> <circle class="fpp-marker-red" cx="5" cy="0" r="0.2"/>
+
+    <text class="legend-text-red" x="6.5" y="-7.5">FPP</text>
+
+  </svg>
+  <p style="font-size: small; color: grey; margin-top: 5px;">
+    <strong>Nota:</strong> Esta es una aproximación visual usando SVG/HTML del gráfico TikZ. La generación precisa requiere la compilación y conversión automática de Quarto/LaTeX/dvisvgm. Nótese la diferencia de escala entre los ejes.
+  </p>
+
+</div>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -282,6 +898,7 @@ a)
     \node[red, right] at (6,7.5) {FPP};
 \end{tikzpicture}
 ```
+:::
 
   Entonces, la FPP de Carlos sigue la siguiente función: $$D=-3M+15$$
 
@@ -305,6 +922,76 @@ $$D(M=0)=-3(0)+15=15$$ $$D(M=1)=-3(1)+15=12$$ $$C.O=15-12=3$$   El costo de opo
 
   En el siguiente gráfico, podemos ver la cantidad de los bienes azúcar y tabaco que se pueden producir con el factor productivo limitado hectáreas.
 
+
+::: {.content-visible when-format="html"}
+```{=html}
+<div style="text-align: center;">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="60%" viewBox="-1.5 -3.5 5 5" font-family="Arial, sans-serif"
+       font-size="0.3"> <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7"
+              refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+        <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+      </marker>
+    </defs>
+
+    <style>
+      /* Estilos generales */
+      line, path, polygon, circle { /* Aseguramos que polygon esté incluido */
+        stroke: black;
+        stroke-width: 0.05;     /* Grosor de línea base (ajustar) */
+        fill: none;
+      }
+      text {
+        fill: black;
+        stroke: none;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        font-size: 0.3px;       /* Tamaño de fuente base (ajustar) */
+      }
+      /* Ejes */
+      .axis {
+        marker-end: url(#arrowhead);
+      }
+      /* Línea discontinua */
+      .dashed-line {
+        stroke-dasharray: 0.2 0.1; /* Patrón de línea discontinua (ajustar) */
+      }
+      /* Triángulo relleno */
+      .filled-triangle {
+        fill: #d3d3d3;        /* lightgray */
+        stroke: none;         /* Sin borde para el área rellena */
+      }
+      /* Etiquetas matemáticas */
+      .math-label {
+         /* Estilo específico si se necesita */
+      }
+    </style>
+
+    <line class="axis" x1="-1" y1="0" x2="3" y2="0" />
+    <text x="3.2" y="0" text-anchor="start">azucar</text>
+
+    <line class="axis" x1="0" y1="1" x2="0" y2="-3" />
+    <text x="0" y="-3.2">tabaco</text>
+
+    <line x1="0" y1="-0.1" x2="0" y2="0.1" /> <line x1="3" y1="-0.1" x2="3" y2="0.1" /> <line x1="-0.1" y1="0" x2="0.1" y2="0" /> <line x1="-0.1" y1="-3" x2="0.1" y2="-3" /> <text class="math-label" x="2.5" y="0.2" dominant-baseline="hanging">h&#773;/a₁</text>
+    <text class="math-label" x="-0.2" y="-2" text-anchor="end">h&#773;/a₂</text>
+
+    <line class="dashed-line" x1="0" y1="-2" x2="2.5" y2="0"/>
+
+    <polygon class="filled-triangle" points="0,0 0,-2 2.5,0"/>
+
+  </svg>
+  <p style="font-size: small; color: grey; margin-top: 5px;">
+    <strong>Nota:</strong> Esta es una aproximación visual usando SVG/HTML del gráfico TikZ. La generación precisa requiere la compilación y conversión automática de Quarto/LaTeX/dvisvgm. Las fórmulas matemáticas se representan usando caracteres Unicode.
+  </p>
+
+</div>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -332,6 +1019,7 @@ $$D(M=0)=-3(0)+15=15$$ $$D(M=1)=-3(1)+15=12$$ $$C.O=15-12=3$$   El costo de opo
     
 \end{tikzpicture}
 ```
+:::
 
   Si la cantidad de hectáreas que se necesitan para producir una unidad de tabaco es $a_2$ y de azúcar es $a_1$, encuentre:
 
@@ -411,6 +1099,76 @@ $$\bar t=a_2y_2 \Leftrightarrow 1000=2y_2 \Leftrightarrow 20=y_2$$
 
   Paso III: Hacer el gráfico.
 
+
+::: {.content-visible when-format="html"}
+```{=html}
+<div style="text-align: center;">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="60%" viewBox="-1.5 -3.5 5 5" font-family="Arial, sans-serif"
+       font-size="0.3"> <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7"
+              refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+        <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+      </marker>
+    </defs>
+
+    <style>
+      /* Estilos generales (similares al anterior) */
+      line, polygon { /* Aseguramos que polygon esté incluido */
+        stroke: black;
+        stroke-width: 0.05;     /* Grosor de línea base (ajustar) */
+        fill: none;
+      }
+      text {
+        fill: black;
+        stroke: none;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        font-size: 0.3px;       /* Tamaño de fuente base (ajustar) */
+      }
+      /* Ejes */
+      .axis {
+        marker-end: url(#arrowhead);
+      }
+      /* Línea discontinua */
+      .dashed-line {
+        stroke-dasharray: 0.2 0.1; /* Patrón de línea discontinua (ajustar) */
+      }
+      /* Triángulo relleno */
+      .filled-triangle {
+        fill: #d3d3d3;        /* lightgray */
+        stroke: none;         /* Sin borde para el área rellena */
+      }
+      /* Etiquetas numéricas (opcional, si necesita estilo diferente) */
+      .number-label {
+         /* font-weight: bold; */ /* Ejemplo */
+      }
+    </style>
+
+    <line class="axis" x1="-1" y1="0" x2="3" y2="0" />
+    <text x="3.2" y="0" text-anchor="start">Camisas</text>
+
+    <line class="axis" x1="0" y1="1" x2="0" y2="-3" />
+    <text x="0" y="-3.2">Fundas</text>
+
+    <line x1="0" y1="-0.1" x2="0" y2="0.1" /> <line x1="3" y1="-0.1" x2="3" y2="0.1" /> <line x1="-0.1" y1="0" x2="0.1" y2="0" /> <line x1="-0.1" y1="-3" x2="0.1" y2="-3" /> <text class="number-label" x="2.5" y="0.2" dominant-baseline="hanging">500</text>
+    <text class="number-label" x="-0.2" y="-1" text-anchor="end">200</text>
+
+    <line class="dashed-line" x1="0" y1="-1" x2="2.5" y2="0"/>
+
+    <polygon class="filled-triangle" points="0,0 0,-1 2.5,0"/>
+
+  </svg>
+  <p style="font-size: small; color: grey; margin-top: 5px;">
+    <strong>Nota:</strong> Esta es una aproximación visual usando SVG/HTML del gráfico TikZ. La generación precisa requiere la compilación y conversión automática de Quarto/LaTeX/dvisvgm.
+  </p>
+
+</div>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -438,6 +1196,7 @@ $$\bar t=a_2y_2 \Leftrightarrow 1000=2y_2 \Leftrightarrow 20=y_2$$
     
 \end{tikzpicture}
 ```
+:::
 
 ### Aumento del Impuesto al Tabaco y Externalidades:
 
@@ -445,28 +1204,19 @@ $$\bar t=a_2y_2 \Leftrightarrow 1000=2y_2 \Leftrightarrow 20=y_2$$
 2)  Dado que bajaron las enfermedades y que el estado logró recaudar más dinero por el aumento del impuesto anterior, el gobierno decide aumentar más aún el impuesto a este bien de consumo. Esta vez, aumento el mercado negro de este servicio y junto a esto, el estado recaudó menos y por la mala calidad del tabaco traficado aumento un %15 las enfermedades relacionadas a este habito. ¿Qué principio es el que esta relacionado con este nuevo cambió?
 3)  Ahora, un comprador cualquiera de cigarrillos al ver que subieron los impuestos, tiene que decidir entre comprar una cajetilla o comprar la revista que compra todos los domingos ¿Que principio es el que se relaciona a esta situación?
 
-
-&nbsp; **RESPUESTA:**
-
+  **RESPUESTA:**
 
 1)  "En ocasiones, el gobierno puede mejorar los resultados del mercado." Ya que, al eliminar una externalidad negativa (un efecto negativo del mercado hacia la sociedad) está dando buenos resultados en el mercado. Dicho de otra forma, está mejorando la distribución de los bienes.
 2)  "Normalmente, los mercados son un buen mecanismo de asignación de recursos." Al empeorar la situación sanitaria de la sociedad, a a través, de la intervención estatal, podemos concluir que en este caso, era mejor que el mercado no se intrevenga más.
 3)  En este caso, los principios 1,2 hacen efecto en este evento, y dependiendo del caso, el 4 también hace efecto. Para el primer principio el comprador tiene que decidir entre una cosas o otra, para el segundo tendrá que renunciar a una de las dos y para el cuarto en el caso que escoja la revista, el impuesto dado es un incentivo que afecta el mercado.
 
-
-
 ### Modelo Circular:
 
-&nbsp; Con respecto al modelo de economía circular.
-1) ¿Qué demandan los hogares?
-2) ¿Qué demandan las empresas?
-3) ¿Qué ofrecen los hogares?
-4) ¿Qué ofrecen las empresas?
+  Con respecto al modelo de economía circular. 1) ¿Qué demandan los hogares? 2) ¿Qué demandan las empresas? 3) ¿Qué ofrecen los hogares? 4) ¿Qué ofrecen las empresas?
 
+  **RESPUESTA:**
 
-&nbsp; **RESPUESTA:**
-
-&nbsp; Al demandar, decimos que este agente es el que quiere el bien o servicio. Por otro lado, al ofrecer, decimos que el agente es el dueño de este y que lo esta ofreciendo a cambio de algo.
+  Al demandar, decimos que este agente es el que quiere el bien o servicio. Por otro lado, al ofrecer, decimos que el agente es el dueño de este y que lo esta ofreciendo a cambio de algo.
 
 1)  Los hogares demandan bienes y servicios.
 2)  La empresa demanda factores de producción, es decir, trabajo, capital, tierra y tecnología.
@@ -475,15 +1225,13 @@ $$\bar t=a_2y_2 \Leftrightarrow 1000=2y_2 \Leftrightarrow 20=y_2$$
 
 ### Decisión Laboral de un Lechero:
 
-&nbsp; Un lechero tiene como salario diario 15 dólares, trabaja desde las 6 de la mañana, hasta las 7 de la tarde, luego se junta con sus amigos, que tienen el mismo horario laboral, a cazar conejos hasta las 10 de la noche, finalmente se reúne con su familia, que solo están en la casa desde las 10 de la noche hasta las 6 de la mañana, para hacer conejo al escabeche hasta las 12 de la madrugada, si le ofrecen duplicar su sueldo, pero ahora tendrá que trabajar como guardia desde las 7 de la tarde hasta las 6 de la mañana.\
+  Un lechero tiene como salario diario 15 dólares, trabaja desde las 6 de la mañana, hasta las 7 de la tarde, luego se junta con sus amigos, que tienen el mismo horario laboral, a cazar conejos hasta las 10 de la noche, finalmente se reúne con su familia, que solo están en la casa desde las 10 de la noche hasta las 6 de la mañana, para hacer conejo al escabeche hasta las 12 de la madrugada, si le ofrecen duplicar su sueldo, pero ahora tendrá que trabajar como guardia desde las 7 de la tarde hasta las 6 de la mañana.\
 
 a)  ¿le es conveniente?
 
 b)  ¿Bajo qué principio objetivo podría actuar este lechero?
 
-
-&nbsp; **RESPUESTA:**
-
+  **RESPUESTA:**
 
 a)  
 
@@ -501,10 +1249,9 @@ b)
 
 "El costo de algo es aquello a lo que se renuncia por obtenerlo."
 
-
 ### Frontera de Posibilidades de Producción para autos y computadores:
 
-&nbsp; Suponga que la siguiente tabla resume la economía de un país que produce únicamente dos bienes:
+  Suponga que la siguiente tabla resume la economía de un país que produce únicamente dos bienes:
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -534,30 +1281,30 @@ b)
 <body>
 
     <table>
-    <tr>
-        <th></th>
-        <th>A</th>
-        <th>B</th>
-        <th>C</th>
-        <th>D</th>
-        <th>E</th>
-    </tr>
-    <tr>
-        <td><strong>Computadores</strong></td>
-        <td>0</td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td><strong>Autos</strong></td>
-        <td>10</td>
-        <td>8</td>
-        <td>6</td>
-        <td>3</td>
-        <td>0</td>
-    </tr>
+<tr>
+    <th></th>
+    <th>A</th>
+    <th>B</th>
+    <th>C</th>
+    <th>D</th>
+    <th>E</th>
+</tr>
+<tr>
+    <td><strong>Computadores</strong></td>
+    <td>0</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+</tr>
+<tr>
+    <td><strong>Autos</strong></td>
+    <td>10</td>
+    <td>8</td>
+    <td>6</td>
+    <td>3</td>
+    <td>0</td>
+</tr>
 </table>
 
 </body>
@@ -590,12 +1337,82 @@ b)
 
 5)  ¿Cómo se vería reflejado en la FPP un mejor rendimiento? (mayor producción)
 
+  **RESPUESTA:**
 
-&nbsp; **RESPUESTA:**
+1)    Para graficar la frontera de posibilidades de producción, basta con realizar un gráfico de 2 dimensiones, un bien por eje. Luego completar incorporando los puntos de producción.
 
 
-1)   Para graficar la frontera de posibilidades de producción, basta con realizar un gráfico de 2 dimensiones, un bien por eje. Luego completar incorporando los puntos de producción.
+::: {.content-visible when-format="html"}
+```{=html}
+<div style="text-align: center;">
 
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="60%" viewBox="-1 -11 12 12" font-family="Arial, sans-serif"
+       font-size="0.4"> <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7"
+              refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+        <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+      </marker>
+    </defs>
+
+    <style>
+      /* Estilos generales */
+      line, polyline, circle { /* Añadido polyline */
+        stroke: black;
+        stroke-width: 0.1;      /* Grosor de línea base (ajustar) */
+        fill: none;
+      }
+      text {
+        fill: black;
+        stroke: none;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        font-size: 0.4px;       /* Tamaño de fuente base (ajustar) */
+      }
+      /* Ejes */
+      .axis {
+        marker-end: url(#arrowhead);
+      }
+      /* --- Estilos específicos para la FPP AZUL --- */
+      .fpp-line-blue {
+        stroke: blue;
+      }
+      .fpp-marker-blue {
+        fill: blue;
+        stroke: none;
+      }
+      .legend-text-blue {
+        fill: blue;
+        text-anchor: start;     /* Alineado a la izquierda del punto x */
+      }
+       /* --- Fin estilos FPP AZUL --- */
+    </style>
+
+    <line class="axis" x1="0" y1="0" x2="10" y2="0" />
+    <text x="10.5" y="0" text-anchor="start">Computadores</text>
+
+    <line class="axis" x1="0" y1="0" x2="0" y2="-10" />
+    <text x="0" y="-10.5">Autos</text>
+
+    <polyline class="fpp-line-blue" points="0,-10 1,-8 2,-6 3,-3 4,0"/>
+
+    <circle class="fpp-marker-blue" cx="0" cy="-10" r="0.15"/> <circle class="fpp-marker-blue" cx="1" cy="-8" r="0.15"/>
+    <circle class="fpp-marker-blue" cx="2" cy="-6" r="0.15"/>
+    <circle class="fpp-marker-blue" cx="3" cy="-3" r="0.15"/>
+    <circle class="fpp-marker-blue" cx="4" cy="0" r="0.15"/>
+
+    <text class="legend-text-blue" x="10.5" y="-9">FPP</text>
+
+  </svg>
+  <p style="font-size: small; color: grey; margin-top: 5px;">
+    <strong>Nota:</strong> Esta es una aproximación visual usando SVG/HTML del gráfico TikZ. La generación precisa requiere la compilación y conversión automática de Quarto/LaTeX/dvisvgm. La curva FPP se representa como una polilínea conectando los puntos dados.
+  </p>
+
+</div>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -610,12 +1427,15 @@ b)
     \node[blue, right] at (10,9) {FPP};
 \end{tikzpicture}
 ```
+:::
 
 2)    Al observar el gráfico o la tabla FPP, se observa si la economía produce 1 computador, esta también produce eficientemente 8 autos. Pero, si aumenta la producción de computadores a 4, no se podría producir autos. Por esto, se concluye que el costo de oportunidad de producir de 1 a 4 computadores significa un costo de oportunidad de 8 autos.
 
 3)    Al igual que el caso anterior, al observar la tabla se ditingue que el costo de oportunidad de pasar de producir 2 computadores a 3, significa una disminución de producción de 3 autos. Por lo que el costo de oportunidad en este caso es de 3 autos.
 
 4)    Para distinguir el rendimiento, se debe entender si el costo de oportunidad aumenta, disminuye o es constante durante los distintos puntos de la FPP.
+
+
 
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
@@ -661,46 +1481,46 @@ b)
 <body>
 
     <table>
-    <tr>
-        <th></th>
-        <th>A</th>
-        <th>B</th>
-        <th>C</th>
-        <th>D</th>
-        <th>E</th>
-    </tr>
-    <tr>
-        <td><strong>Computadores</strong></td>
-        <td>0</td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td><strong>Autos</strong></td>
-        <td>10</td>
-        <td>8</td>
-        <td>6</td>
-        <td>3</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td><strong>Costo de Oportunidad</strong></td>
-        <td>0</td>
-        <td>2</td>
-        <td>2</td>
-        <td>3</td>
-        <td>3</td>
-    </tr>
-    <tr>
-        <td><strong>Bienes totales</strong></td>
-        <td>10</td>
-        <td>9</td>
-        <td>8</td>
-        <td>6</td>
-        <td>4</td>
-    </tr>
+<tr>
+    <th></th>
+    <th>A</th>
+    <th>B</th>
+    <th>C</th>
+    <th>D</th>
+    <th>E</th>
+</tr>
+<tr>
+    <td><strong>Computadores</strong></td>
+    <td>0</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+</tr>
+<tr>
+    <td><strong>Autos</strong></td>
+    <td>10</td>
+    <td>8</td>
+    <td>6</td>
+    <td>3</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td><strong>Costo de Oportunidad</strong></td>
+    <td>0</td>
+    <td>2</td>
+    <td>2</td>
+    <td>3</td>
+    <td>3</td>
+</tr>
+<tr>
+    <td><strong>Bienes totales</strong></td>
+    <td>10</td>
+    <td>9</td>
+    <td>8</td>
+    <td>6</td>
+    <td>4</td>
+</tr>
 </table>
 
 </body>
@@ -709,10 +1529,85 @@ b)
 ```
 :::
 
-&nbsp; Como se observa en la tabla, el valor de costos de oportunidad aumenta mientras que los bines totales disminuye. En conclusión, existe un rendimiento decreciente.
+  Como se observa en la tabla, el valor de costos de oportunidad aumenta mientras que los bines totales disminuye. En conclusión, existe un rendimiento decreciente.
 
 5)  Se vería reflejado al existir una menor pendiente vertical.
 
+
+::: {.content-visible when-format="html"}
+```{=html}
+<div style="text-align: center;">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="60%" viewBox="-1 -11 12 12" font-family="Arial, sans-serif"
+       font-size="0.4"> <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7"
+              refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+        <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+      </marker>
+    </defs>
+
+    <style>
+      /* Estilos generales */
+      line, polyline, circle { /* Aseguramos polyline */
+        stroke: black;
+        stroke-width: 0.1;      /* Grosor de línea base (ajustar) */
+        fill: none;
+      }
+      text {
+        fill: black;
+        stroke: none;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        font-size: 0.4px;       /* Tamaño de fuente base (ajustar) */
+      }
+      /* Ejes */
+      .axis {
+        marker-end: url(#arrowhead);
+      }
+      /* --- Estilos para FPP AZUL --- */
+      .fpp-line-blue { stroke: blue; }
+      .fpp-marker-blue { fill: blue; stroke: none; }
+      .legend-text-blue { fill: blue; text-anchor: start; }
+      /* --- Estilos para FPP ROJA --- */
+      .fpp-line-red { stroke: red; }
+      .fpp-marker-red { fill: red; stroke: none; }
+      .legend-text-red { fill: red; text-anchor: start; }
+    </style>
+
+    <line class="axis" x1="0" y1="0" x2="10" y2="0" />
+    <text x="10.5" y="0" text-anchor="start">Computadores</text>
+
+    <line class="axis" x1="0" y1="0" x2="0" y2="-10" />
+    <text x="0" y="-10.5">Autos</text>
+
+    <polyline class="fpp-line-blue" points="0,-10 1,-8 2,-6 3,-3 4,0"/>
+    <circle class="fpp-marker-blue" cx="0" cy="-10" r="0.15"/>
+    <circle class="fpp-marker-blue" cx="1" cy="-8" r="0.15"/>
+    <circle class="fpp-marker-blue" cx="2" cy="-6" r="0.15"/>
+    <circle class="fpp-marker-blue" cx="3" cy="-3" r="0.15"/>
+    <circle class="fpp-marker-blue" cx="4" cy="0" r="0.15"/>
+
+    <polyline class="fpp-line-red" points="0,-10 2,-8 4,-6 7,-3 10,0"/>
+    <circle class="fpp-marker-red" cx="0" cy="-10" r="0.15"/>
+    <circle class="fpp-marker-red" cx="2" cy="-8" r="0.15"/>
+    <circle class="fpp-marker-red" cx="4" cy="-6" r="0.15"/>
+    <circle class="fpp-marker-red" cx="7" cy="-3" r="0.15"/>
+    <circle class="fpp-marker-red" cx="10" cy="0" r="0.15"/>
+
+    <text class="legend-text-blue" x="10.5" y="-9">FPP original</text>
+    <text class="legend-text-red" x="10.5" y="-8">FPP de mayor rendimiento</text>
+
+  </svg>
+  <p style="font-size: small; color: grey; margin-top: 5px;">
+    <strong>Nota:</strong> Esta es una aproximación visual usando SVG/HTML del gráfico TikZ. La generación precisa requiere la compilación y conversión automática de Quarto/LaTeX/dvisvgm. Las curvas FPP se representan como polilíneas conectando los puntos dados.
+  </p>
+
+</div>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -731,20 +1626,13 @@ b)
     \node[red, right] at (10,8) {FPP de mayor rendimiento};
 \end{tikzpicture}
 ```
-
-
+:::
 
 ### Maximización de Producción en una Panadería:
 
-&nbsp; Tenemos que un pastelero tiene como insumo limitante 100 huevos, para hacer un pie de limón gasta 10 huevos, mientras que para hacer un kg de pan gasta 5 huevos.
-1) si quiere hacer 3 pie de limón, cuanto es la máxima cantidad de pan que puede hacer.
-2) exprese la situación en la forma matemática $\bar x=a_1y_1+a_2y_2$.
-3) Haga un gráfico de la situación.
-4) Ahora, digamos que le llegaron más huevos y le alcanzó para hacer 15 pie de limón y 15 kg de pan, cuantos huevos más tiene.
+  Tenemos que un pastelero tiene como insumo limitante 100 huevos, para hacer un pie de limón gasta 10 huevos, mientras que para hacer un kg de pan gasta 5 huevos. 1) si quiere hacer 3 pie de limón, cuanto es la máxima cantidad de pan que puede hacer. 2) exprese la situación en la forma matemática $\bar x=a_1y_1+a_2y_2$. 3) Haga un gráfico de la situación. 4) Ahora, digamos que le llegaron más huevos y le alcanzó para hacer 15 pie de limón y 15 kg de pan, cuantos huevos más tiene.
 
-
-
-&nbsp; **RESPUESTA:**
+  **RESPUESTA:**
 
 1)  Podemos expresar esto como:
 
@@ -752,30 +1640,91 @@ $$
 100=3\cdot 10 +5 \cdot x
 $$
 
-&nbsp; Donde "$x$" será la cantidad de pan.   Resolviendo:
+  Donde "$x$" será la cantidad de pan.   Resolviendo:
 
 $$
 100-`r 3*10`= 5 \cdot x
-$$
-$$
+$$ $$
 `r 100-3*10`/5= x
-$$
-$$
+$$ $$
 `r (100-3*10)/5`= x
 $$
 
-&nbsp; Se podrán hacer 14Kg de pan.
+  Se podrán hacer 14Kg de pan.
 
-2) Esto lo podemos expresar como:
+2)  Esto lo podemos expresar como:
 
 $$
 100=10\cdot y_1+ 5\cdot y_2
 $$
 
-&nbsp; Donde "$y_1$" son la cantidad de pie de limón y "$y_2$" la cantidad de huevo.
+  Donde "$y_1$" son la cantidad de pie de limón y "$y_2$" la cantidad de huevo.
 
-3) Calculando la máxima cantidad de pan y pies que se pueden hacer podemos decir que el máximo de pan es $20$ y de pies son $10$. El gráfico resulta:
+3)  Calculando la máxima cantidad de pan y pies que se pueden hacer podemos decir que el máximo de pan es $20$ y de pies son $10$. El gráfico resulta:
 
+
+::: {.content-visible when-format="html"}
+```{=html}
+<div style="text-align: center;">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="60%" viewBox="-1.5 -3.5 5 5" font-family="Arial, sans-serif"
+       font-size="0.3"> <style>
+      /* Estilos generales */
+      line, polygon { /* Ajustamos elementos usados */
+        stroke: black;
+        stroke-width: 0.05;     /* Grosor de línea base (ajustar) */
+        fill: none;
+      }
+      text {
+        fill: black;
+        stroke: none;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        font-size: 0.3px;       /* Tamaño de fuente base (ajustar) */
+      }
+      /* Ejes (Clase opcional, ya no aplica estilo de flecha) */
+      .axis {
+         /* Estilos específicos del eje si fueran necesarios */
+      }
+      /* Línea discontinua */
+      .dashed-line {
+        stroke-dasharray: 0.2 0.1; /* Patrón de línea discontinua (ajustar) */
+      }
+      /* Triángulo relleno */
+      .filled-triangle {
+        fill: #d3d3d3;        /* lightgray */
+        stroke: none;         /* Sin borde para el área rellena */
+      }
+      /* Etiquetas numéricas */
+      .number-label {
+         /* Estilo específico si se necesita */
+      }
+    </style>
+
+    <line class="axis" x1="-1" y1="0" x2="3" y2="0" />
+    <text x="3.2" y="0" text-anchor="start">Pies de limón</text>
+
+    <line class="axis" x1="0" y1="1" x2="0" y2="-3" />
+    <text x="0" y="-3.2">Kg de pan</text>
+
+    <line x1="0" y1="-0.1" x2="0" y2="0.1" /> <line x1="3" y1="-0.1" x2="3" y2="0.1" /> <line x1="-0.1" y1="0" x2="0.1" y2="0" /> <line x1="-0.1" y1="-3" x2="0.1" y2="-3" /> <text class="number-label" x="1.5" y="0.2" dominant-baseline="hanging">10</text>
+    <text class="number-label" x="-0.2" y="-3" text-anchor="end">20</text>
+
+    <line class="dashed-line" x1="0" y1="-3" x2="1.5" y2="0"/>
+
+    <polygon class="filled-triangle" points="0,0 0,-3 1.5,0"/>
+
+  </svg>
+  <p style="font-size: small; color: grey; margin-top: 5px;">
+    <strong>Nota:</strong> Esta es una aproximación visual usando SVG/HTML del gráfico TikZ. La generación precisa requiere la compilación y conversión automática de Quarto/LaTeX/dvisvgm. Los ejes se dibujan sin puntas de flecha según el código TikZ proporcionado.
+  </p>
+
+</div>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -805,6 +1754,7 @@ $$
     
 \end{tikzpicture}
 ```
+:::
 
 4)  Modelamos la ecuación, recuerde que dice cuantos huevos más tenemos, por lo que el resultado de la cantidad de huevos totales habrá que restarle los 100 iniciales. $$
     \bar x=10\cdot 15+ 5\cdot 15
@@ -814,21 +1764,17 @@ $$
     \bar x=`r 10*15+5*15`
     $$
 
-&nbsp; Ahora, a este resultado le restaremos los $100$ huevos iniciales.
+  Ahora, a este resultado le restaremos los $100$ huevos iniciales.
 
 $$
 \text{huevos agregados}=`r 10*15+5*15`-100
-$$
-$$
+$$ $$
 \text{huevos agregados}=`r 10*15+5*15-100`
 $$
 
-
-
-
 ### Ventajas Comparativas en la Producción de Papas y Carne:
 
-&nbsp; En una economía Pablo y Felipe ambos se dedican a la producción de bienes y lo hacen por separado. Ellos cosechan papas y producen carne de ganado. Sus producciones mensuales están dadas por la siguiente tabla:
+  En una economía Pablo y Felipe ambos se dedican a la producción de bienes y lo hacen por separado. Ellos cosechan papas y producen carne de ganado. Sus producciones mensuales están dadas por la siguiente tabla:
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -859,19 +1805,19 @@ $$
 
     <table>
 <tr>
-    <th></th>
-    <th>Producción máxima posible de papas</th>
-    <th>Producción máxima posible de carne</th>
+<th></th>
+<th>Producción máxima posible de papas</th>
+<th>Producción máxima posible de carne</th>
 </tr>
 <tr>
-    <td><strong>Pablo</strong></td>
-    <td>30 kg</td>
-    <td>10 kg</td>
+<td><strong>Pablo</strong></td>
+<td>30 kg</td>
+<td>10 kg</td>
 </tr>
 <tr>
-    <td><strong>Felipe</strong></td>
-    <td>10 kg</td>
-    <td>20 kg</td>
+<td><strong>Felipe</strong></td>
+<td>10 kg</td>
+<td>20 kg</td>
 </tr>
 </table>
 
@@ -904,24 +1850,89 @@ c)  ¿Cuántas papas puede producir ahora de forma mensual?
 
 d)  Debido a que ahora Pablo no tiene carne para comer, decide proponerle a Felipe comenzar un comercio de intercambio de productos. Proponga un escenario donde ambos salen beneficiados mejor que en su estado inicial.
 
-
-
-&nbsp; **RESPUESTA:**
-
-
+  **RESPUESTA:**
 
 a)  
 
-&nbsp; Para encontrar la ventaja comparativa se deben encontrar los costos de oportunidad de ambos productos para ambos productores:\\
+  Para encontrar la ventaja comparativa se deben encontrar los costos de oportunidad de ambos productos para ambos productores:\\
 
 -   Pablo   1 mes = 10kg de carne o 30 kg de papas   10kg de carne = 30 kg de papas   1 C = 3 P   Por cada kg de carne producida el costo de oportunidad es de 3kg de papas   Por cada kg de papas se tiene un costo de oportunidad de 0,33 kg de carne
 
 -   Felipe   1 mes = 20kg de carne o 10 kg de papas   20kg de carne = 10 kg de papas   2 C = 1 P   Por cada kg de carne producida el costo de oportunidad es de 0,5 kg de papas   Por cada kg de papas se tiene un costo de oportunidad de 2 kg de carne
 
-&nbsp; Entonces Felipe tiene una ventaja comparativa con Pablo en la producción de carne y Pablo tiene una ventaja comparativa en la producción de papas.
+  Entonces Felipe tiene una ventaja comparativa con Pablo en la producción de carne y Pablo tiene una ventaja comparativa en la producción de papas.
 
 b)  
 
+
+::: {.content-visible when-format="html"}
+```{=html}
+<div style="text-align: center;">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="60%" viewBox="-2 -42 35 45" font-family="Arial, sans-serif"
+       font-size="0.8"> <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7"
+              refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+        <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+      </marker>
+    </defs>
+
+    <style>
+      /* Estilos generales (ajustados para escala) */
+      line, circle { /* Elementos usados */
+        stroke: black;
+        stroke-width: 0.2;      /* Grosor de línea base (ajustar) */
+        fill: none;
+      }
+      text {
+        fill: black;
+        stroke: none;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        font-size: 0.8px;       /* Tamaño de fuente base (ajustar) */
+      }
+      /* Ejes (con flechas) */
+      .axis {
+        marker-end: url(#arrowhead);
+      }
+      /* --- Estilos específicos para la FPP ROJA (Pablo) --- */
+      .fpp-line-red {
+        stroke: red;
+      }
+      .fpp-marker-red {
+        fill: red;
+        stroke: none;
+      }
+      .legend-text-red {
+        fill: red;
+        text-anchor: start;     /* Alineado a la izquierda del punto x */
+      }
+       /* --- Fin estilos FPP ROJA --- */
+    </style>
+
+    <line class="axis" x1="0" y1="0" x2="30" y2="0" />
+    <text x="31" y="0" text-anchor="start">kg Carne</text>
+
+    <line class="axis" x1="0" y1="0" x2="0" y2="-40" />
+    <text x="0" y="-41">kg Papas</text>
+
+    <line class="fpp-line-red" x1="0" y1="-30" x2="10" y2="0"/>
+
+    <circle class="fpp-marker-red" cx="0" cy="-30" r="0.4"/> <circle class="fpp-marker-red" cx="10" cy="0" r="0.4"/>
+
+    <text class="legend-text-red" x="31" y="-15">FPP Pablo</text>
+
+  </svg>
+  <p style="font-size: small; color: grey; margin-top: 5px;">
+    <strong>Nota:</strong> Esta es una aproximación visual usando SVG/HTML del gráfico TikZ. La generación precisa requiere la compilación y conversión automática de Quarto/LaTeX/dvisvgm.
+  </p>
+
+</div>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -936,7 +1947,78 @@ b)
     \node[red, right] at (30,15) {FPP Pablo};
 \end{tikzpicture}
 ```
+:::
 
+
+::: {.content-visible when-format="html"}
+```{=html}
+<div style="text-align: center;">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="60%" viewBox="-2 -42 35 45" font-family="Arial, sans-serif"
+       font-size="0.8"> <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7"
+              refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+        <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+      </marker>
+    </defs>
+
+    <style>
+      /* Estilos generales (igual que antes) */
+      line, circle { /* Elementos usados */
+        stroke: black;
+        stroke-width: 0.2;      /* Grosor de línea base */
+        fill: none;
+      }
+      text {
+        fill: black;
+        stroke: none;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        font-size: 0.8px;       /* Tamaño de fuente base */
+      }
+      /* Ejes (con flechas) */
+      .axis {
+        marker-end: url(#arrowhead);
+      }
+      /* --- Estilos específicos para la FPP VERDE (Felipe) --- */
+      .fpp-line-green {
+        stroke: green;          /* Color de línea VERDE */
+      }
+      .fpp-marker-green {
+        fill: green;            /* Relleno VERDE */
+        stroke: none;           /* Sin borde para marcadores */
+      }
+      .legend-text-green {
+        fill: green;            /* Color de texto VERDE */
+        text-anchor: start;     /* Alineado a la izquierda del punto x */
+      }
+       /* --- Fin estilos FPP VERDE --- */
+    </style>
+
+    <line class="axis" x1="0" y1="0" x2="30" y2="0" />
+    <text x="31" y="0" text-anchor="start">kg Carne</text>
+
+    <line class="axis" x1="0" y1="0" x2="0" y2="-40" />
+    <text x="0" y="-41">kg Papas</text>
+
+    <line class="fpp-line-green" x1="0" y1="-10" x2="20" y2="0"/>
+
+    <circle class="fpp-marker-green" cx="0" cy="-10" r="0.4"/> <circle class="fpp-marker-green" cx="20" cy="0" r="0.4"/>
+
+    <text class="legend-text-green" x="31" y="-5">FPP Felipe</text>
+
+  </svg>
+  <p style="font-size: small; color: grey; margin-top: 5px;">
+    <strong>Nota:</strong> Esta es una aproximación visual usando SVG/HTML del gráfico TikZ. La generación precisa requiere la compilación y conversión automática de Quarto/LaTeX/dvisvgm.
+  </p>
+
+</div>
+```
+:::
+
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -951,12 +2033,10 @@ b)
     \node[green, right] at (30,5) {FPP Felipe};
 \end{tikzpicture}
 ```
+:::
 
-c)
-&nbsp; La FPP de Pablo sería la siguiente: $$P=-3C + 30$$ $$P(C=0)=30kg de papas$$
+c)    La FPP de Pablo sería la siguiente: $$P=-3C + 30$$ $$P(C=0)=30kg de papas$$
 
 d)  
 
-&nbsp; Cualquier escenario donde Pablo le ofresca más kilogramos de papas que el costo de oportunidad de Felipe de producir las papas singificarán mejores escenarios.
-
-
+  Cualquier escenario donde Pablo le ofresca más kilogramos de papas que el costo de oportunidad de Felipe de producir las papas singificarán mejores escenarios.
