@@ -18,6 +18,15 @@ d)  Luego del fracaso del arancel, los escritores organizados nuevamente acuden 
 
 a)  
 
+::: {.content-visible when-format="html"}
+```{=html}
+
+
+```
+:::
+
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -45,6 +54,7 @@ a)
     \node[below] at (3.5,0) {$350$};
 \end{tikzpicture}
 ```
+:::
 
   Luego se tiene que $Q_D = 700 - 5(70) = 350$. Novelas locales = 0 y novelas extranjeras = 350 $$ET = 350(70)\div2 = 12,250$$
 
@@ -142,6 +152,16 @@ c)
 
 $$C_{(q)}= a + bq^{2}-\frac{bq^{2}}{4}$$ $$Cmg_{(q)}= 2bq-\frac{{bq}}{2}= \frac{{3bq}}{2}$$   y con la condición de competencia perfecta $$P = Cmg$$ $$a - cq = \frac{{3bq}}{2}$$ $${q*(\frac{{3b}}{2} + c)} = a $$
 
+
+::: {.content-visible when-format="html"}
+```{=html}
+
+
+```
+:::
+
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -163,7 +183,7 @@ $$C_{(q)}= a + bq^{2}-\frac{bq^{2}}{4}$$ $$Cmg_{(q)}= 2bq-\frac{{bq}}{2}= \frac{
 \node[above left] at (0,6) {Precio, $P$};
 \end{tikzpicture}
 ```
-
+:::
 
 ### Incidencia Fiscal y Objetivo del Impuesto:
 
@@ -173,11 +193,9 @@ $$C_{(q)}= a + bq^{2}-\frac{bq^{2}}{4}$$ $$Cmg_{(q)}= 2bq-\frac{{bq}}{2}= \frac{
 
   El capítulo 6 del Mankiew 6ta edición, define la incidencia fiscal como la forma en que los participantes de un mercado comparten la carga de un impuesto. El impuesto puede ser aplicado al vendedor, a los compradores o a ambos. Estos impuestos buscan recaudar dinero para gastos fiscales. Estos gastos fiscales tienen como objetivo generar un mayor o igual beneficio social que el costo social producido por el impuesto.
 
-
-
 ### Análisis de Externalidades y Políticas de Intervención:
 
-&nbsp; Reconozca la externalidad y su tipo, es decir, si es positiva o negativa, en los siguientes casos y proponga en que caso podría ser bueno aplicar un impuesto o un subsidio.
+  Reconozca la externalidad y su tipo, es decir, si es positiva o negativa, en los siguientes casos y proponga en que caso podría ser bueno aplicar un impuesto o un subsidio.
 
 1)  Una empresa de textiles sintéticos que da una alta taza de empleo en la zona contamina las aguas de los ríos cercanos.
 
@@ -187,41 +205,42 @@ $$C_{(q)}= a + bq^{2}-\frac{bq^{2}}{4}$$ $$Cmg_{(q)}= 2bq-\frac{{bq}}{2}= \frac{
 
 4)  Una fundación para ancianos tiene una buena administración, pero no tiene los suficientes recursos para calefacción.
 
-
-&nbsp; **RESPUESTA:**
-
+  **RESPUESTA:**
 
 1)  Externalidad Negativa, se le debería aplicar un impuesto.
 2)  Externalidad Negativa, se le debería aplicar un impuesto.
 3)  Externalidad positiva, al no tener problemas por enunciado, se le debería mantener igual.
 4)  Externalidad positiva, se le debería aplicar un subsidio.
 
-
 ### Curva de Laffer y Recaudación Máxima en un Mercado de Libros:
 
-
-
-&nbsp; Para un mercado de libros tenemos las siguientes funciones de oferta y demanda:
+  Para un mercado de libros tenemos las siguientes funciones de oferta y demanda:
 
 $$
 \begin{array}{cc} P(Q)=5+2Q & Q(P)=15-P\\\end{array}
 $$
 
-&nbsp; Calcule cuanto es la máxima recaudación posible teniendo en cuenta la curva de Laffer.
+  Calcule cuanto es la máxima recaudación posible teniendo en cuenta la curva de Laffer.
 
+  **RESPUESTA:**
 
-
-&nbsp; **RESPUESTA:**
-
-
-&nbsp; Primero calculamos la demanda inversa:
+  Primero calculamos la demanda inversa:
 
 $$
 Q(P)=15-P \longleftrightarrow P(Q)=15-Q
 $$
 
-&nbsp; Inserto gráfico con un impuesto arbitrario para entender los siguientes pasos:
+  Inserto gráfico con un impuesto arbitrario para entender los siguientes pasos:
 
+::: {.content-visible when-format="html"}
+```{=html}
+
+
+```
+:::
+
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -268,8 +287,9 @@ $$
         
 \end{tikzpicture}
 ```
+:::
 
-&nbsp; Como se podrá ver, mientras más impuesto, crecerá de forma mayor el peso muerto, entonces intentaremos ver cuanto tiene que ser el impuesto, para que sea la máxima recaudación posible, para esto el peso muerto tiene que ser igual a lo recaudado
+  Como se podrá ver, mientras más impuesto, crecerá de forma mayor el peso muerto, entonces intentaremos ver cuanto tiene que ser el impuesto, para que sea la máxima recaudación posible, para esto el peso muerto tiene que ser igual a lo recaudado
 
 $$
 Q_i\cdot (P_f-P_i)=\frac{(P_f-P_i)\cdot (Q_f-Q_i)}{2}
@@ -281,7 +301,7 @@ $$ $$
 3Q_i=Q_f
 $$
 
-&nbsp; Si calculamos el punto de equilibrio inicial nos da $(3+\frac{1}{3},11+\frac{2}{3})$, entonces reemplazamos en la ecuación:
+  Si calculamos el punto de equilibrio inicial nos da $(3+\frac{1}{3},11+\frac{2}{3})$, entonces reemplazamos en la ecuación:
 
 $$
 Q_f=3\cdot\frac{10}{3}
@@ -289,7 +309,7 @@ $$ $$
 Q_f=10
 $$
 
-&nbsp; Buscamos la nueva demanda con el nuevo punto de equilibrio.
+  Buscamos la nueva demanda con el nuevo punto de equilibrio.
 
 $$
 P_d(Q)=a-Q \longleftrightarrow a-10=5+2\cdot10
@@ -299,13 +319,13 @@ $$ $$
 P_di(Q)=35-Q
 $$
 
-&nbsp; Con esto calculamos el $P_f$:
+  Con esto calculamos el $P_f$:
 
 $$
 P_di(10/3)=35-\frac{10}{3}\leftrightarrow P_f=31.66
 $$
 
-&nbsp; finalmente la máxima recaudación es: $$
+  finalmente la máxima recaudación es: $$
 Q_i\cdot (P_f-P_i)
 $$ $$
 \frac{10}{3}\cdot (31+\frac{2}{3}-(11+\frac{2}{3}))
@@ -313,24 +333,13 @@ $$ $$
 \frac{10}{3}\cdot 20=66.66
 $$
 
-&nbsp; Lo recaudado es \$66.66 por unidad.
-
-
+  Lo recaudado es \$66.66 por unidad.
 
 ### Definición de Conceptos Económicos Relacionados con Impuestos y Equidad:
 
-&nbsp; Defina con sus palbras los siguintes terminos:
-1) Déficit presupuestario:
-2) Superávit presupuestal:
-3) Equidad horizontal:
-4) Equidad vertical:
-5) Impuestos proporcionales:
-6) Impuestos regresivos:
-7) Impuestos progresivos:
+  Defina con sus palbras los siguintes terminos: 1) Déficit presupuestario: 2) Superávit presupuestal: 3) Equidad horizontal: 4) Equidad vertical: 5) Impuestos proporcionales: 6) Impuestos regresivos: 7) Impuestos progresivos:
 
-
-&nbsp; **RESPUESTA:**
-
+  **RESPUESTA:**
 
 1)  Déficit presupuestario: Es cuando el gobierno gasta más de lo que recibe.
 2)  Superávit presupuestal: Es cuando el gobierno gasta menos de lo que recibe.
@@ -340,18 +349,15 @@ $$
 6)  Impuestos regresivos: Es cuando los contribuyentes de mayor ingreso pagan una menor fracción de sus ingresos en impuestos con respecto a los que tienen menos.
 7)  Impuestos progresivos: Es cuando los contribuyentes de menor ingreso pagan una menor fracción de sus ingresos en impuestos con respecto a los que tienen más.
 
-
 ### Excedente en un Mercado No Regulado con un Productor Corrupto:
 
-&nbsp; Un mercado no regulado, está constituido por un solo productor y varios compradores, tiene de funciones de oferta y demanda $P(Q)=1+Q$ y $P(Q)=5-Q$ respectivamente. El productor se corrompió y decidió aprovecharse del mercado y obtener el máximo beneficio posible. ¿Cuánto será su excedente?
+  Un mercado no regulado, está constituido por un solo productor y varios compradores, tiene de funciones de oferta y demanda $P(Q)=1+Q$ y $P(Q)=5-Q$ respectivamente. El productor se corrompió y decidió aprovecharse del mercado y obtener el máximo beneficio posible. ¿Cuánto será su excedente?
 
+  **RESPUESTA:**
 
-&nbsp; **RESPUESTA:**
+  Para esto, usaremos las siguientes ecuaciones:
 
-
-&nbsp; Para esto, usaremos las siguientes ecuaciones:
-
-&nbsp; Para calcular el máximo de la curva de Laffer:
+  Para calcular el máximo de la curva de Laffer:
 
 $$
 \frac{(P_f-P_i)\cdot (Q_i-Q_f)}{2}=Q_f\cdot (P_f-P_i)
@@ -361,9 +367,9 @@ $$
 EC = \int_{0}^{Q_f}{P_f-P_s(Q) \ dQ} + Q_f\cdot (P_f-P_i) 
 $$
 
-&nbsp; Primero calculamos el punto de equilibrio inicial, este será $(2,3)$
+  Primero calculamos el punto de equilibrio inicial, este será $(2,3)$
 
-&nbsp; Luego el punto de equilibrio final:
+  Luego el punto de equilibrio final:
 
 $$
 \frac{(P_f-P_i)\cdot (Q_i-Q_f)}{2}=Q_f\cdot (P_f-P_i)
@@ -373,18 +379,17 @@ $$ $$
 Q_f=\frac{2}{3}
 $$
 
-&nbsp; Ahora el $P_f$ lo vemos con la demanda:
+  Ahora el $P_f$ lo vemos con la demanda:
 
 $$
 P(2/3)=5-\frac{2}{3}=\frac{13}{3}
 $$
 
-&nbsp; Finalmente el nuevo punto inicial es $(2/3,13/3)$
+  Finalmente el nuevo punto inicial es $(2/3,13/3)$
 
-&nbsp; Ahora reemplazamos en la ecuación del nuevo excedente: 
-$$
+  Ahora reemplazamos en la ecuación del nuevo excedente: $$
 EC = \int_{0}^{2/3}{\frac{5}{3}-1+Q \ dQ} + \frac{2}{3}\cdot (\frac{13}{3}-3)
-$$ 
+$$
 
 $$
 EC = \frac{26}{9}+\frac{4}{9}+ \frac{2}{3}\cdot \frac{4}{3}
@@ -398,19 +403,15 @@ $$
 EC = \frac{38}{9}
 $$
 
-
-
-
-
 ### Función de Producción y Retorno del Trabajo en una Empresa:
 
-&nbsp; Una empresa tiene la siguiente función de producción:
+  Una empresa tiene la siguiente función de producción:
 
 $$
 Q(K,L)=K^3+2K^2+KL^2+L^3
 $$
 
-&nbsp; En el mercado de la empresa, cada unidad producida es vendida por \$3 dólares.
+  En el mercado de la empresa, cada unidad producida es vendida por \$3 dólares.
 
 1)  Determine la función de la producción media de trabajo.
 
@@ -418,9 +419,7 @@ $$
 
 3)  Asuma un $\bar{K}=1$ y una cantidad de trabajadores $\bar{L}=2$ ¿Cuánto es el retorno del trabajo?
 
-
-&nbsp; **RESPUESTA:**
-
+  **RESPUESTA:**
 
 a)  $\frac{Q(K,L)}{L}=\frac{K^3+2K^2}{L}+KL+L^2$
 
@@ -432,20 +431,17 @@ $$
 Q''(K,L) = 6L
 $$
 
-&nbsp; Evaluamos:
+  Evaluamos:
 
 $$
 Q''(1,2)=6\cdot 1=6
 $$
 
-
-
 ### Cálculo del Coeficiente de Gini y Curva de Lorenz:
 
-&nbsp; Tenemos la siguiente tabla que representa el porcentaje de población acumulado de la población según su ingreso porcentual acumulado:
+  Tenemos la siguiente tabla que representa el porcentaje de población acumulado de la población según su ingreso porcentual acumulado:
 
 ::: {.content-visible when-format="pdf"}
-```{=tex}
 \begin{table}[H]
     \centering
     \begin{tabular}{|p{25mm}|p{25mm}|}
@@ -464,7 +460,6 @@ $$
         1 & 1 \\ \hline
         \end{tabular}
 \end{table}
-```
 :::
 
 ::: {.content-visible when-format="html"}
@@ -552,9 +547,7 @@ $$
 
 2)  Grafique la curva de Lorenz.
 
-
-&nbsp; **RESPUESTA:**
-
+  **RESPUESTA:**
 
 1)    Usamos la formula:
 
@@ -562,14 +555,13 @@ $$
 G=1-\left|\sum_{k=0}^{n-1}\left(X_{k+1}-X_k\right)\left(Y_{k+1}+Y_k\right)\right|
 $$
 
-&nbsp; Las condiciones extremas que se pueden cumplir son:
+  Las condiciones extremas que se pueden cumplir son:
 
 -   $G=0$: todos los ciudadanos tienen los mismos ingresos.
 
 -   $G=1$: todos los ingresos los tiene solo 1 ciudadano.
 
-&nbsp; Y esto da: 
-$$
+  Y esto da: $$
 G=1-0.01+0.01+0.01+0.03+0.04+0.05+0.013+0.011+0.011+0.05
 $$
 
@@ -581,6 +573,15 @@ $$
 
 2)  
 
+::: {.content-visible when-format="html"}
+```{=html}
+
+
+```
+:::
+
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -600,13 +601,11 @@ $$
 \draw[blue] (1.5,0.6) -- (2,0.6) node[right] {Recta de Aproximación};
 \end{tikzpicture}
 ```
-
-
-
+:::
 
 ### Función de Producción y Retornos de Capital en una Empresa:
 
-&nbsp; Tenemos la siguiente función de producción: $$
+  Tenemos la siguiente función de producción: $$
 Q(K,L)=7K^2L^3-3K\^3L
 $$
 
@@ -614,13 +613,11 @@ $$
 
 2)  ¿Para qué valor de $L$, con $\bar{K}=2$ el retorno de capital es una constante a escala?
 
-&nbsp; **RESPUESTA:**
-
+  **RESPUESTA:**
 
 1)  
 
 ::: {.content-visible when-format="pdf"}
-```{=tex}
 \begin{table}[h]
     \centering
     \begin{tabular}{|p{40mm}|p{40mm}|p{40mm}|}
@@ -635,7 +632,6 @@ $$
     \end{tabular}
     \label{tab:my_label}
 \end{table}
-```
 :::
 
 ::: {.content-visible when-format="html"}
@@ -725,12 +721,6 @@ $$ $$
 L=\frac{111}{24}
 $$
 
-
-
-
-
-
-
 ### Análisis de una Función de Producción y Beneficio Marginal:
 
   La función de producción es la relación entre la cantidad de insumos utilizados para producir un bien y la cantidad producida de estos.
@@ -779,59 +769,59 @@ d)  Asuma un $K=10$ y un salario $S=20$ y complete la siguiente tabla.
 <body>
 
   <table>
-  <thead>
-    <tr>
-      <th>Trabajo</th>
-      <th>Produccion</th>
-      <th>Producto marginal del trabajo</th>
-      <th>Valor del producto marginal del trabajo</th>
-      <th>Beneficio marginal (VPMgt - S)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
+<thead>
+  <tr>
+    <th>Trabajo</th>
+    <th>Produccion</th>
+    <th>Producto marginal del trabajo</th>
+    <th>Valor del producto marginal del trabajo</th>
+    <th>Beneficio marginal (VPMgt - S)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>0</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
 </table>
 
 </body>
@@ -840,7 +830,6 @@ d)  Asuma un $K=10$ y un salario $S=20$ y complete la siguiente tabla.
 :::
 
 ::: {.content-visible when-format="pdf"}
-```{=tex}
 \begin{table}[H]
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|l|l|l|l|l|}
@@ -855,11 +844,9 @@ Trabajo & Produccion & Producto marginal del trabajo & Valor del producto margin
 \end{tabular}%
 }
 \end{table}
-```
 :::
 
-&nbsp; **RESPUESTA:**
-
+  **RESPUESTA:**
 
 a)  
 
@@ -870,7 +857,6 @@ $$PM = \frac{Q}{L}$$
   Con esta función podemos obtener la producción media como:
 
 $$PM = \frac{3KL + K^2 + 0.8L^2}{L}$$ $$PM = 3K + \frac{K^2}{L} + 0,8L$$
-
 
 b)    Determine el Producto Marginal del trabajo.
 
@@ -893,7 +879,6 @@ d)
   Asuma un $K=10$ y un salario $S=20$ y complete la siguiente tabla.
 
 ::: {.content-visible when-format="pdf"}
-```{=tex}
 \begin{table}[H]
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|l|r|r|r|r|}
@@ -908,7 +893,6 @@ Trabajo & \multicolumn{1}{l|}{Produccion} & \multicolumn{1}{l|}{Producto margina
 \end{tabular}%
 }
 \end{table}
-```
 :::
 
 ::: {.content-visible when-format="html"}
@@ -943,68 +927,65 @@ Trabajo & \multicolumn{1}{l|}{Produccion} & \multicolumn{1}{l|}{Producto margina
 <body>
 
   <table>
-  <thead>
-    <tr>
-      <th>Trabajo</th>
-      <th>Produccion</th>
-      <th>Producto marginal del trabajo</th>
-      <th>Valor del producto marginal del trabajo</th>
-      <th>Beneficio marginal</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>100</td>
-      <td>30</td>
-      <td>150</td>
-      <td>130</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>130.8</td>
-      <td>31.6</td>
-      <td>158</td>
-      <td>138</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>163.2</td>
-      <td>33.2</td>
-      <td>166</td>
-      <td>146</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>197.2</td>
-      <td>34.8</td>
-      <td>174</td>
-      <td>154</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>232.8</td>
-      <td>36.4</td>
-      <td>182</td>
-      <td>162</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>270</td>
-      <td>38</td>
-      <td>190</td>
-      <td>170</td>
-    </tr>
-  </tbody>
+<thead>
+  <tr>
+    <th>Trabajo</th>
+    <th>Produccion</th>
+    <th>Producto marginal del trabajo</th>
+    <th>Valor del producto marginal del trabajo</th>
+    <th>Beneficio marginal</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>0</td>
+    <td>100</td>
+    <td>30</td>
+    <td>150</td>
+    <td>130</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>130.8</td>
+    <td>31.6</td>
+    <td>158</td>
+    <td>138</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>163.2</td>
+    <td>33.2</td>
+    <td>166</td>
+    <td>146</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>197.2</td>
+    <td>34.8</td>
+    <td>174</td>
+    <td>154</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>232.8</td>
+    <td>36.4</td>
+    <td>182</td>
+    <td>162</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>270</td>
+    <td>38</td>
+    <td>190</td>
+    <td>170</td>
+  </tr>
+</tbody>
 </table>
 
 </body>
 </html>
 ```
 :::
-
-
-
 
 ### Demanda de Trabajo en el Mercado Ganadero:
 
@@ -1020,9 +1001,7 @@ d)  Suponga que debido a la alta inmigración la nueva función de oferta labora
 
 e)  Considere que el gobierno fija un salario mínimo de 95 u.m. ¿Que pasa en ese mercado?
 
-
-&nbsp; **RESPUESTA:**
-
+  **RESPUESTA:**
 
 a)  Para eso es necesario primero obtener el valor del producto marginal del trabajo, que será igual al salario (w). Derivando la función de producción de cada campo respecto al trabajo se obtiene $PMgL = 100 - 2L$. Luego tenemos $$VPMgL = P\cdot PMgL = 2 \cdot (100 - 2L) = 200 - 4L = w$$ Ahora despejamos en función de L y obtenemos la demanda de trabajo de cada campo $$L_d = 50 - \frac{1}{4}w$$
 
@@ -1034,14 +1013,11 @@ d)  La nueva función de oferta laboral del mercado es $w = 10 + 0,003L$. Iguala
 
 e)  Para ver que pasa en ese mercado luego de la fijación de precios reemplazamos el valor fijado en las funciones de oferta y demanda. Para poder hacerlo ambas ecuaciones deben estar en función de w, para eso hay que despejar L en la oferta, y así obtenemos lo siguiente $$L_D = 50000 - 250 \cdot (95) = 26250 $$ $$L_S = 333,3 \cdot (95) - 3333,33 = 28333$$ Como la oferta es mayor a la demanda de trabajo existe desempleo en ese mercado. $$Desempleo = L_s - L_D = 2083$$ Mientras más por encima del equilibrio se fije el salario mínimo, mayor será el desempleo.
 
-
-
 ### Cálculo del Coeficiente de Gini y Curva de Lorenz:
 
-&nbsp; Tenemos la siguiente tabla que representa el porcentaje de población acumulado de la población según su ingreso porcentual acumulado:
+  Tenemos la siguiente tabla que representa el porcentaje de población acumulado de la población según su ingreso porcentual acumulado:
 
 ::: {.content-visible when-format="pdf"}
-```{=tex}
 \begin{table}[H]
     \centering
     \begin{tabular}{|p{25mm}|p{25mm}|}
@@ -1060,7 +1036,6 @@ e)  Para ver que pasa en ese mercado luego de la fijación de precios reemplazam
         1 & 1 \\ \hline
         \end{tabular}
 \end{table}
-```
 :::
 
 ::: {.content-visible when-format="html"}
@@ -1095,55 +1070,55 @@ e)  Para ver que pasa en ese mercado luego de la fijación de precios reemplazam
 <body>
 
   <table>
-  <caption>Tabla de demanda:</caption>
-  <thead>
-    <tr>
-      <th>decil:</th>
-      <th>Ingresos:</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0.1</td>
-      <td>0.01</td>
-    </tr>
-    <tr>
-      <td>0.2</td>
-      <td>0.03</td>
-    </tr>
-    <tr>
-      <td>0.3</td>
-      <td>0.07</td>
-    </tr>
-    <tr>
-      <td>0.4</td>
-      <td>0.13</td>
-    </tr>
-    <tr>
-      <td>0.5</td>
-      <td>0.23</td>
-    </tr>
-    <tr>
-      <td>0.6</td>
-      <td>0.35</td>
-    </tr>
-    <tr>
-      <td>0.7</td>
-      <td>0.48</td>
-    </tr>
-    <tr>
-      <td>0.8</td>
-      <td>0.62</td>
-    </tr>
-    <tr>
-      <td>0.9</td>
-      <td>0.80</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-  </tbody>
+<caption>Tabla de demanda:</caption>
+<thead>
+  <tr>
+    <th>decil:</th>
+    <th>Ingresos:</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>0.1</td>
+    <td>0.01</td>
+  </tr>
+  <tr>
+    <td>0.2</td>
+    <td>0.03</td>
+  </tr>
+  <tr>
+    <td>0.3</td>
+    <td>0.07</td>
+  </tr>
+  <tr>
+    <td>0.4</td>
+    <td>0.13</td>
+  </tr>
+  <tr>
+    <td>0.5</td>
+    <td>0.23</td>
+  </tr>
+  <tr>
+    <td>0.6</td>
+    <td>0.35</td>
+  </tr>
+  <tr>
+    <td>0.7</td>
+    <td>0.48</td>
+  </tr>
+  <tr>
+    <td>0.8</td>
+    <td>0.62</td>
+  </tr>
+  <tr>
+    <td>0.9</td>
+    <td>0.80</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+</tbody>
 </table>
 
 </body>
@@ -1155,28 +1130,35 @@ a)  Calcule la desigualdad con el coeficiente de Gini.
 
 b)  Grafique la curva de Lorenz.
 
-
-&nbsp; **RESPUESTA:**
-
+  **RESPUESTA:**
 
 a)  
 
-&nbsp; El coeficiente de Gini es un método utilizado para medir la desigualdad salarial.
+  El coeficiente de Gini es un método utilizado para medir la desigualdad salarial.
 
-&nbsp; Para calcular esto, se necesita la proporción acumulada de población ($X$) y la proporción acumulada de ingresos ($Y$). Con las cuales, el coeficiente de Gini se calcula de la siguiente manera:
+  Para calcular esto, se necesita la proporción acumulada de población ($X$) y la proporción acumulada de ingresos ($Y$). Con las cuales, el coeficiente de Gini se calcula de la siguiente manera:
 
 $$G=1-\left|\sum_{k=0}^{n-1}\left(X_{k+1}-X_k\right)\left(Y_{k+1}+Y_k\right)\right| $$
 
-&nbsp; Las condiciones extremas que se pueden cumplir son: - $G=0$: todos los ciudadanos tienen los mismos ingresos. - $G=1$: todos los ingresos los tiene solo 1 ciudadano.
+  Las condiciones extremas que se pueden cumplir son: - $G=0$: todos los ciudadanos tienen los mismos ingresos. - $G=1$: todos los ingresos los tiene solo 1 ciudadano.
 
 $$1-0.1(0.01+(0.01+0.03)+(0.03+0.07)+(0.07+0.13)+(0.13+0.23)+(0.23+0.35))+$$ $$0.1((0.35+0.48)+(0.48+0.62)+(0.62+0.8)+(0.8+1))$$ $$=$$ $$1-0.1\cdot 6.43$$ $$1-0.643$$ $$0.357$$
 
 b)  Grafique la curva de Lorenz.
 
-&nbsp; "La curva de Lorenz es una representación gráfica de la desigualdad en el reparto de la renta existente en un determinado territorio (normalmente un país). En ella, se sitúa en el eje X los acumulados de población (P) expresados en tanto por ciento y en el eje Y los acumulados de renta (Q) expresados en tanto por ciento."
+  "La curva de Lorenz es una representación gráfica de la desigualdad en el reparto de la renta existente en un determinado territorio (normalmente un país). En ella, se sitúa en el eje X los acumulados de población (P) expresados en tanto por ciento y en el eje Y los acumulados de renta (Q) expresados en tanto por ciento."
 
-&nbsp; Aproximadamente, en nuestro ejemplo tenemos:
+  Aproximadamente, en nuestro ejemplo tenemos:
 
+::: {.content-visible when-format="html"}
+```{=html}
+
+
+```
+:::
+
+
+::: {.content-visible when-format="pdf"}
 ```{r, engine='tikz',echo=FALSE,out.width="60%"}
 #| fig-align: center
 \begin{tikzpicture}
@@ -1193,4 +1175,4 @@ b)  Grafique la curva de Lorenz.
 \end{tikzpicture}
 
 ```
-
+:::
